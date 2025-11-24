@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Nav from "./components/Nav";
 import HomeHero from "./components/HomeHero";
+import BrandList from "./components/BrandList";
 
 export default function Home() {
   return (
     <>
-    <Nav/>
-    <HomeHero/>
+      <HomeHero />
+      <BrandList />
     </>
   );
 }

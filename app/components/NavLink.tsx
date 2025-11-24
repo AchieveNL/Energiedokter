@@ -1,20 +1,16 @@
 import Link from "next/link";
-import { act } from "react";
 
 export default function NavLink({
   href,
   text,
   active,
-  onclick,
 }: {
   href: string;
   text?: string;
   active?: string;
-  onclick?: () => void;
 }) {
   return (
     <Link
-      onClick={onclick}
       style={{ fontFamily: "Poppins" }}
       className={`${
         active !== text ? "hover:bg-[#82c71324]" : ""
