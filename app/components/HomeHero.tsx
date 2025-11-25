@@ -1,9 +1,12 @@
-import Link from "next/link"
+"use client";
+import Link from "next/link";
 import BrandList from "./BrandList";
+import AnimatedLink from "./AnimatedLink";
 
 export default function HomeHero() {
   return (
-    <div className="w-full h-screen bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center px-5">
+    // <div className="w-full h-screen bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center px-5">
+    <div className="w-full h-screen bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center px-5 animate-slow-pan bg-rotate">
       <div className="m-auto md:pt-44 pt-40 flex flex-col items-center ">
         <h1
           style={{ fontFamily: "Poppins" }}
@@ -13,20 +16,29 @@ export default function HomeHero() {
           <span className="text-[#81C713]">Energie Dokter</span>
         </h1>
         <div className="text-center mt-10">
-          <p className="text-[#4D4D4D] text-sm md:text-[16px]" style={{ fontFamily: "Poppins" }}>
+          <p
+            className="text-[#4D4D4D] text-sm md:text-[16px]"
+            style={{ fontFamily: "Poppins" }}
+          >
             Ontdek hoe uw pand beter kan presteren — technisch, ﬁnancieel én
             duurzaam. Wij maken inzichtelijk
           </p>
-          <p className="text-[#4D4D4D] text-sm md:text-[16px] mt-2" style={{ fontFamily: "Poppins" }}>
+          <p
+            className="text-[#4D4D4D] text-sm md:text-[16px] mt-2"
+            style={{ fontFamily: "Poppins" }}
+          >
             waar de kansen liggen en begeleiden u stap voor stap naar een
             toekomstbestendig gebouw.
           </p>
         </div>
-        <Link href='#' className="bg-white p-2 rounded-2xl md:mt-20 mt-10 flex items-center justify-around gap-6 pr-5 text-sm md:text-[16px]">
-          <img src="/assets/arrow-right.svg" className="bg-[#8DD1BA] w-12 rounded-xl p-3" alt="" />
-          <span className="text-[#4D4D4D]" style={{fontFamily:"Poppins"}}>Plan vandaag nog een consult met Rutger</span>
-        </Link>
-        <p className="text-[#254055] font-semibold mt-5 text-sm text-center" style={{fontFamily:"Poppins"}}>Geen verplichtingen, wel inzicht in de mogelijkheden voor uw gebouw</p>
+        <AnimatedLink />
+
+        <p
+          className="text-[#254055] font-semibold mt-5 text-sm text-center"
+          style={{ fontFamily: "Poppins" }}
+        >
+          Geen verplichtingen, wel inzicht in de mogelijkheden voor uw gebouw
+        </p>
       </div>
     </div>
   );

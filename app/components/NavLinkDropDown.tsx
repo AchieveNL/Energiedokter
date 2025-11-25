@@ -35,9 +35,8 @@ export default function NavLinkDropdown({
 
   useEffect(() => {
     const isTouchScreen =
-      "ontouchstart" in window ||
-      navigator.maxTouchPoints > 0 
-      // navigator.msMaxTouchPoints > 0;
+      "ontouchstart" in window || navigator.maxTouchPoints > 0;
+    // navigator.msMaxTouchPoints > 0;
 
     if (!isTouchScreen) {
       // Desktop hover
@@ -54,21 +53,6 @@ export default function NavLinkDropdown({
 
       document.addEventListener("mouseover", handleHover);
       return () => document.removeEventListener("mouseover", handleHover);
-    } else {
-      // Touch devices (phones + tablets + touch laptops)
-      function handleClick(event: TouchEvent) {
-        if (
-          dropdownRef.current &&
-          dropdownRef.current.contains(event.target as Node)
-        ) {
-          setIsOpen((prev) => !prev);
-        } else {
-          setIsOpen(false);
-        }
-      }
-
-      document.addEventListener("touchstart", handleClick);
-      return () => document.removeEventListener("touchstart", handleClick);
     }
   }, []);
 
