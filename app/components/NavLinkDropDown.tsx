@@ -32,13 +32,50 @@ export default function NavLinkDropdown({
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
   useEffect(() => {
-    // alert(pathname.split('/')[3]);
-  }, [pathname]);
+    const isTouchScreen =
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 
+      // navigator.msMaxTouchPoints > 0;
+
+    if (!isTouchScreen) {
+      // Desktop hover
+      function handleHover(event: MouseEvent) {
+        if (
+          dropdownRef.current &&
+          dropdownRef.current.contains(event.target as Node)
+        ) {
+          setIsOpen(true);
+        } else {
+          setIsOpen(false);
+        }
+      }
+
+      document.addEventListener("mouseover", handleHover);
+      return () => document.removeEventListener("mouseover", handleHover);
+    } else {
+      // Touch devices (phones + tablets + touch laptops)
+      function handleClick(event: MouseEvent) {
+        if (
+          dropdownRef.current &&
+          dropdownRef.current.contains(event.target as Node)
+        ) {
+          setIsOpen((prev) => !prev);
+        } else {
+          setIsOpen(false);
+        }
+      }
+
+      document.addEventListener("click", handleClick);
+      return () => document.removeEventListener("click", handleClick);
+    }
+  }, []);
 
   return (
     <div ref={dropdownRef} className="relative">
-      <button
+      <Link
+        href="/pages/diensten/diensten"
         onClick={() => {
           onclick && onclick();
           setIsOpen(!isOpen);
@@ -65,14 +102,13 @@ export default function NavLinkDropdown({
             d="M19 9l-7 7-7-7"
           />
         </svg>
-      </button>
+      </Link>
 
       {isOpen && (
-        <div className="absolute top-full left-0 min-w-[200px] bg-white rounded-2xl shadow-lg border border-gray-100 md:p-4 p-2 md:mt-3 z-50 md:w-max wrap-break-word">
+        <div className="absolute top-full left-0 min-w-[200px] bg-white rounded-2xl shadow-lg border border-gray-100 md:p-4 p-2 z-50 md:w-max wrap-break-word">
           {items.map((item, index) => (
-            <>
+            <div key={index}>
               <Link
-                key={index}
                 href={item.href}
                 onClick={() => {
                   setIsOpen(false);
@@ -95,7 +131,7 @@ export default function NavLinkDropdown({
               {item.text !== "Trainingen" && (
                 <div className="bg-[#4d4d4d5b] py-[0.1px] mx-3.5"></div>
               )}
-            </>
+            </div>
           ))}
         </div>
       )}

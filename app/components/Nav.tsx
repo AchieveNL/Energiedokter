@@ -12,7 +12,7 @@ export default function Nav() {
   // Map pathnames to nav link text
   const getActiveLink = () => {
     if (pathname === "/") return "Home";
-    if (pathname === "/pages/about-us") return "Over Ons";
+    if (pathname === "/pages/about-us") return "Over ons";
     if (pathname === "/pages/partners") return "Partners";
     if (pathname === "/pages/projects") return "Projecten";
     if (pathname === "/pages/blogs") return "Blogs";
@@ -21,6 +21,7 @@ export default function Nav() {
     for (let i = 1; i <= 8; i++) {
       if (pathname === `/pages/diensten/${i}`) return "Diensten";
     }
+    if (pathname === "/pages/diensten/diensten") return "Diensten";
     return "";
   };
 
@@ -45,7 +46,7 @@ export default function Nav() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex bg-[#FFFFFF78] items-center gap-3 rounded-2xl px-3 py-1">
           <NavLink href="/" text="Home" active={active} />
-          <NavLink href="/pages/about-us" text="Over Ons" active={active} />
+          <NavLink href="/pages/about-us" text="Over ons" active={active} />
           <NavLinkDropdown
             text="Diensten"
             active={active}
