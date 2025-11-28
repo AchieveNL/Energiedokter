@@ -8,7 +8,7 @@ export default function BrandList() {
     <div className="w-full bg-[#F6F6F6] py-4">
       <Marquee
         direction="right"
-        speed={100}
+        speed={70}
         gradient={false}
       >
         {/* Repeat the brands multiple times to ensure full coverage */}

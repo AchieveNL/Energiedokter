@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { on } from "events";
 import { usePathname } from "next/navigation";
 
 export default function NavLinkDropdown({
@@ -58,14 +57,13 @@ export default function NavLinkDropdown({
 
   return (
     <div ref={dropdownRef} className="relative">
-      <Link
-        href="/pages/diensten/diensten"
+      <button
         onClick={() => {
           onclick && onclick();
           setIsOpen(!isOpen);
         }}
         style={{ fontFamily: "Poppins" }}
-        className={`flex items-center gap-1 ${
+        className={`flex items-center gap-1 w-full ${
           active !== text ? "hover:bg-[#82c71324]" : ""
         } p-2 px-4 rounded-2xl transition-all duration-200 text-lg
       ${active === text ? "bg-[#81C713] text-white" : "bg-transparent"}`}
@@ -86,10 +84,10 @@ export default function NavLinkDropdown({
             d="M19 9l-7 7-7-7"
           />
         </svg>
-      </Link>
+      </button>
 
       {isOpen && (
-        <div className="absolute top-full left-0 min-w-[200px] bg-white rounded-2xl shadow-lg border border-gray-100 md:p-4 p-2 z-50 md:w-max wrap-break-word">
+        <div className="absolute top-full left-0 min-w-[200px] bg-white rounded-2xl shadow-lg border border-gray-100 md:p-4 p-2 z-50 md:w-max wrap-break-word overflow-auto">
           {items.map((item, index) => (
             <div key={index}>
               <Link
@@ -98,15 +96,13 @@ export default function NavLinkDropdown({
                   setIsOpen(false);
                 }}
                 style={{ fontFamily: "Poppins" }}
-                className={`font-medium text-[14px] md:text-[16px] text-[#4D4D4D] py-2 mx-3 pl-1 ${
-                  Number(index + 1).toString() !== pathname.split("/")[3]
-                    ? "hover:text-[#81C713]"
-                    : ""
-                } block transition-all duration-200
+                className={`font-medium text-[14px] md:text-[16px] text-[#4D4D4D] py-2 mx-3 pl-1 block transition-all duration-200 hover:text-[#81C713]
               ${
-                Number(index + 1).toString() === pathname.split("/")[3]
+                Number(index + 0).toString() === pathname.split("/")[2] ||
+                (item.text === "Alle diensten" &&
+                  pathname === "/diensten/Alle-diensten")
                   ? "text-[#81C713]"
-                  : "bg-transparent"
+                  : ""
               }
               `}
               >
