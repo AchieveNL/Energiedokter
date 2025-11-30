@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import HomeHero from "./components/HomeHero";
 import BrandList from "./components/BrandList";
 import About from "./components/About";
+import Diensten from "./components/Diensten";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HomeHero />
       <BrandList />
       <About />
+      <Diensten />
     </>
   );
 }

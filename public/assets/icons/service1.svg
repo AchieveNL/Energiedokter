@@ -1,0 +1,22 @@
+<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Circular Coin Lines -->
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M9.19244 0.610463C9.8264 0.472758 10.4837 0.400024 11.158 0.400024C16.2401 0.400024 20.3647 4.52476 20.3647 9.60557C20.3647 14.6877 16.2401 18.8124 11.158 18.8124C10.4837 18.8124 9.8264 18.7395 9.19244 18.6018C9.23401 18.6018 9.27558 18.6018 9.31715 18.6018C14.2395 18.6018 18.2342 14.5708 18.2342 9.60557C18.2342 4.64038 14.2395 0.609194 9.31715 0.609194C9.27558 0.609194 9.23401 0.610463 9.19244 0.610463Z"
+    stroke="#6B9D1C" stroke-width="0.8" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <path d="M9.31706 18.5967C14.2418 18.5967 18.2341 14.5688 18.2341 9.60032C18.2341 4.63179 14.2418 0.603943 9.31706 0.603943C4.3923 0.603943 0.400002 4.63179 0.400002 9.60032C0.400002 14.5688 4.3923 18.5967 9.31706 18.5967Z"
+    stroke="#6B9D1C" stroke-width="0.8" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <path d="M9.31712 16.0193C12.8306 16.0193 15.6789 13.1454 15.6789 9.60033C15.6789 6.05528 12.8306 3.1814 9.31712 3.1814C5.80364 3.1814 2.9554 6.05528 2.9554 9.60033C2.9554 13.1454 5.80364 16.0193 9.31712 16.0193Z"
+    stroke="#6B9D1C" stroke-width="0.8" stroke-miterlimit="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Spark Outline (NOT solid) -->
+  <path
+    d="M9.5 6.2L8 10H9.4L8.6 13.4L11.7 9.4H10.2L11.4 6.2H9.5Z"
+    fill="none"
+    stroke="#6B9D1C"
+    stroke-width="0.7"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+  />
+</svg>

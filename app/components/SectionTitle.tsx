@@ -15,7 +15,7 @@ export default function SectionTitle({
             {title}
         </div>
       </div>
-      <h1 className="text-4xl font-extrabold" style={{fontFamily:"Poppins"}} >{span}</h1>
+      <h1 className="text-4xl font-extrabold text-center" style={{fontFamily:"Poppins"}} >{span}</h1>
     </div>
   );
 }
