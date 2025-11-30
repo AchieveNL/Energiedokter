@@ -6,7 +6,7 @@ import AnimatedLink from "./AnimatedLink";
 export default function HomeHero() {
   return (
     <div className="w-full h-screen bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center px-5">
-    {/* <div className="w-full h-screen bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center px-5 animate-slow-pan bg-rotate"> */}
+      {/* <div className="w-full h-screen bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center px-5 animate-slow-pan bg-rotate"> */}
       <div className="m-auto md:pt-44 pt-40 flex flex-col items-center ">
         <h1
           style={{ fontFamily: "Poppins" }}
@@ -30,8 +30,19 @@ export default function HomeHero() {
             waar de kansen liggen en begeleiden u stap voor stap naar een
             toekomstbestendig gebouw.
           </p>
+          <span className="bg-[#8dd1ba53]"></span>
         </div>
-        <AnimatedLink />
+        <AnimatedLink
+          text="Plan vandaag nog een consult met Rutger"
+          bg="white"
+          arrowColor="white"
+          arrowBg="#8DD1BA"
+          textColor="black"
+          borderColor="#8DD1BA"
+          shimmerColor="white"
+          fillBg="#8dd1ba53"
+          href="#"
+        />
 
         <p
           className="text-[#254055] font-semibold mt-5 text-sm text-center"
