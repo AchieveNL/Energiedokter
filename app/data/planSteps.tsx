@@ -1,7 +1,11 @@
 export const planSteps = [
   [
     {
-      header: "Zo <span style='color:#81C713'>verduurzamen</span> we uwgebouw",
+      header: (
+        <>
+          Zo <span className="text-[#81C713]">verduurzamen</span> we uwgebouw
+        </>
+      ),
       subtitle: "Van aanvraag tot nazorg: wij begeleiden u stap voor stap",
     },
     {
@@ -32,8 +36,11 @@ export const planSteps = [
   ],
   [
     {
-      header:
-        "Zo komt u tot een <span style='color:#81C713'>energielabel</span>",
+      header: (
+        <>
+          Zo komt u tot een <span className="text-[#81C713]">energielabel</span>
+        </>
+      ),
       subtitle: "Van aanvraag tot ontvangst: wij begeleiden u stap voor stap",
     },
     {
@@ -59,7 +66,11 @@ export const planSteps = [
   ],
   [
     {
-      header: "Onze <span style='color:#81C713'>energielabel</span> bij GACS",
+      header: (
+        <>
+          Onze <span className="text-[#81C713]">energielabel</span> bij GACS
+        </>
+      ),
       subtitle:
         "Bij Energie Dokter zorgen we dat uw pand of woning niet alleen voldoet aan de regels, maar ook maximaal profiteert van energiebesparende maatregelen. Onze vierstappen-aanpak maakt verduurzaming inzichtelijk en haalbaar:",
     },
@@ -86,8 +97,12 @@ export const planSteps = [
   ],
   [
     {
-      header:
-        "Onze <span style='color:#81C713'>aanpak</span> bij informatieplicht",
+      header: (
+        <>
+          Onze <span className="text-[#81C713]">aanpak</span> bij
+          informatieplicht
+        </>
+      ),
       subtitle:
         "Bij Energie Dokter maken we het naleven van de informatieplicht eenvoudig en overzichtelijk. Met onze vierstappen-aanpak weet u precies wat er moet gebeuren, bent u verzekerd van correcte resultaten, en haalt u maximaal inzicht en waarde uit uw energiebeheer.",
     },
@@ -114,7 +129,11 @@ export const planSteps = [
   ],
   [
     {
-      header: "Onze <span style='color:#81C713'>aanpak</span> bij WKO-beheer",
+      header: (
+        <>
+          Onze <span className="text-[#81C713]">aanpak</span> bij WKO-beheer
+        </>
+      ),
       subtitle:
         "Bij Energie Dokter zorgen we dat uw WKO-installatie efficiënt, betrouwbaar en toekomstbestendig werkt. Met onze vierstappen-aanpak krijgt u grip op prestaties, besparing en onderhoud:",
     },
@@ -141,7 +160,11 @@ export const planSteps = [
   ],
   [
     {
-      header: "Onze <span style='color:#81C713'>aanpak</span> bij trainingen",
+      header: (
+        <>
+          Onze <span className="text-[#81C713]">aanpak</span> bij trainingen
+        </>
+      ),
       subtitle:
         "Bij Energie Dokter helpen we professionals en bedrijven om kennis en vaardigheden op het gebied van energieadvies en duurzaam bouwen te ontwikkelen. Onze vierstappen-aanpak maakt leren praktisch, efficiënt en direct toepasbaar:",
     },

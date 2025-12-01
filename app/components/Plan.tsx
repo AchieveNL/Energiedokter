@@ -46,12 +46,7 @@ export default function Plan({ active }: { active: string }) {
         animate={titleInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <h1
-          className="text-[#254055] font-extrabold text-3xl"
-          dangerouslySetInnerHTML={{
-            __html: steps[tabs.indexOf(active)][0].header,
-          }}
-        ></h1>
+        <h1 className="text-[#254055] font-extrabold text-3xl">{steps[tabs.indexOf(active)][0].header}</h1>
         <div className="mt-2 text-[#4D4D4D] md:max-w-1/2">
           {steps[tabs.indexOf(active)][0].subtitle}
         </div>
