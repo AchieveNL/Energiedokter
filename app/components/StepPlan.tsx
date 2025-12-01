@@ -36,75 +36,7 @@ export default function StepPlan() {
         <NavLink text="WKO-beheer" />
         <NavLink text="Trainingen" />
       </nav>
-      <Plan
-        title={
-          <span className="text-[#254055] font-extrabold text-3xl">
-            {active === "Onze aanpak" ? (
-              <>
-                Zo <span className="text-[#81C713]">verduurzamen</span> we uw
-                gebouw
-              </>
-            ) : active === "Energielabels" ? (
-              <>
-                Zo komt u tot een{" "}
-                <span className="text-[#81C713]">energielabel</span>
-              </>
-            ) : active === "GACS" ? (
-              <>
-                Onze <span className="text-[#81C713]">energielabel</span> bij
-                GACS
-              </>
-            ) : active === "Informatieplicht" ? (
-              <>
-                Onze <span className="text-[#81C713]">aanpak</span> bij
-                informatieplicht
-              </>
-            ) : active === "WKO-beheer" ? (
-              <>
-                Onze <span className="text-[#81C713]">aanpak</span> bij
-                WKO-beheer
-              </>
-            ) : active === "Trainingen" ? (
-              <>
-                Onze <span className="text-[#81C713]">aanpak</span> bij
-                trainingen
-              </>
-            ) : null}
-          </span>
-        }
-        subtitle={
-          <div className="text-[#4D4D4D] max-w-1/2">
-            {active === "Onze aanpak"
-              ? "Van aanvraag tot nazorg: wij begeleiden u stap voor stap"
-              : active === "Energielabels"
-              ? "Van aanvraag tot ontvangst: wij begeleiden u stap voor stap"
-              : active === "GACS"
-              ? "Bij Energie Dokter zorgen we dat uw pand of woning niet alleen voldoet aan de regels, maar ook maximaal profiteert van energiebesparende maatregelen. Onze vierstappen-aanpak maakt verduurzaming inzichtelijk en haalbaar:"
-              : active === "Informatieplicht"
-              ? "Bij Energie Dokter maken we het naleven van de informatieplicht eenvoudig en overzichtelijk. Met onze vierstappen-aanpak weet u precies wat er moet gebeuren, bent u verzekerd van correcte resultaten, en haalt u maximaal inzicht en waarde uit uw energiebeheer."
-              : active === "WKO-beheer"
-              ? "Bij Energie Dokter zorgen we dat uw WKO-installatie efficiënt, betrouwbaar en toekomstbestendig werkt. Met onze vierstappen-aanpak krijgt u grip op prestaties, besparing en onderhoud:"
-              : active === "Trainingen"
-              ? "Bij Energie Dokter helpen we professionals en bedrijven om kennis en vaardigheden op het gebied van energieadvies en duurzaam bouwen te ontwikkelen. Onze vierstappen-aanpak maakt leren praktisch, efficiënt en direct toepasbaar:"
-              : null}
-          </div>
-        }
-        steps={
-          active === "Onze aanpak"
-            ? planSteps[0]
-            : active === "Energielabels"
-            ? planSteps[1]
-            : active === "GACS"
-            ? planSteps[2]
-            : active === "Informatieplicht"
-            ? planSteps[3]
-            : active === "WKO-beheer"
-            ? planSteps[4]
-            : active === "Trainingen"
-            ? planSteps[5]
-            : []
-        }
-      />
+      <Plan active={active} />
     </div>
   );
 }
