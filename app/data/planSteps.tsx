@@ -3,7 +3,7 @@ export const planSteps = [
     {
       header: (
         <>
-          Zo <span className="text-[#81C713]">verduurzamen</span> we uwgebouw
+          Zo <span className="text-[#81C713]">verduurzamen</span> we uw gebouw
         </>
       ),
       subtitle: "Van aanvraag tot nazorg: wij begeleiden u stap voor stap",

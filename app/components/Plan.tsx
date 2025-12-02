@@ -35,7 +35,7 @@ export default function Plan({ active }: { active: string }) {
   const currentSteps = steps[tabs.indexOf(active)];
 
   return (
-    <div className="md:px-24 md:mt-28 mt-20 ">
+    <div className="md:px-24 md:mt-28 mt-10 ">
       {/* Plan title */}
       <motion.div
         key={active}

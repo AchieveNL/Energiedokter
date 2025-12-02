@@ -38,26 +38,27 @@ export default function About() {
       ),
     },
   ];
+
   return (
     <>
-      <div className="mt-20 md:px-20 lg:px-24 px-5">
+      <div className="mt-20 md:px-20 lg:px-24 px-1">
         {/* First section */}
-        <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between md:gap-5 gap-10">
-          <div className="w-1/2 mt-3">
+        <div className="flex items-start justify-between gap-5">
+          <div className="md:w-1/2 w-1/5 mt-3">
             <SectionTitle
               title="Wie wij zijn"
               span={
-                <>
+                <div className="md:text-4xl text-2xl font-extrabold text-center">
                   <span className="text-[#254055]">Over </span>
-                  <span className="text-[#81C713] ">ons</span>
-                </>
+                  <span className="text-[#81C713]">ons</span>
+                </div>
               }
             />
           </div>
 
           {/* paragraphs */}
           <div
-            className="text-[#4D4D4D] md:text-lg  flex flex-col gap-5"
+            className="text-[#4D4D4D] md:text-lg  flex flex-col gap-5 w-[60%] md:w-auto md:text-[16px] text-sm"
             style={{ fontFamily: "Poppins" }}
           >
             <p>
@@ -76,13 +77,13 @@ export default function About() {
         </div>
         {/* Second Section */}
         <div
-          className="bg-[#F6F6F6] flex flex-col md:flex-row items-center justify-center py-2 mt-10 rounded-4xl"
+          className="bg-[#F6F6F6] flex flex-col md:flex-row items-center justify-center py-2 mt-10 rounded-4xl md:mx-0 mx-10"
           style={{ fontFamily: "Poppins" }}
         >
           {aboutStatistiques.map((stat, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center gap-2 px-20 py-5 ${
+              className={`flex flex-col items-center gap-2 md:px-20 py-5 ${
                 stat.title !== "12+"
                   ? "md:border-r-4 border-r-0 md:border-b-0 border-b-4 border-white"
                   : ""
@@ -94,31 +95,32 @@ export default function About() {
               <span className="text-[rgb(77,77,77)] text-center">
                 {stat.subtitle}
               </span>
-              <span className="bg-[#ffffff38]"></span>
             </div>
           ))}
         </div>
+
         <div className="w-fit m-auto">
           <AnimatedLink
             text="Lees Meer"
-            bg="#8DD1BA"
+            bg="#63A0AC"
             arrowColor="#417A85"
             arrowBg="white"
             textColor="white"
             borderColor="transparent"
             shimmerColor="transparent"
-            fillBg="#81C713"
+            fillBg="#266d78b4"
             href="/about-us"
           />
+          <span className="bg-[#266d78b4]"></span>
         </div>
       </div>
       <div
-        className="mt-20 flex flex-col items-center md:gap-8 gap-5 md:py-20 py-10 bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center"
+        className="md:mt-20 mt-10 flex flex-col items-center md:gap-8 gap-5 md:py-20 py-10 bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center"
         style={{ fontFamily: "Poppins" }}
       >
         <h1 className="md:text-4xl text-2xl text-center text-[#254055] font-bold ">
-          ″The future will be <span className="text-[#81C713] ">green</span>,
-          or not at all″
+          ″The future will be <span className="text-[#81C713] ">green</span>, or
+          not at all″
         </h1>
         <div className="bg-[#254055] md:py-0.5 py-px rounded-full w-20 "></div>
         <span className="text-[#81c713] font-semibold md:text-2xl text-xl ">

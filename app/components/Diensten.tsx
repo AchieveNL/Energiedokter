@@ -55,18 +55,18 @@ export default function Diensten() {
   return (
     <div
       style={{ fontFamily: "Poppins" }}
-      className="flex flex-col items-center my-20"
+      className="flex flex-col items-center md:my-20 my-10"
     >
       <SectionTitle
         title="Diensten"
         span={
-          <span className="text-[#254055] ">
+          <div className="text-[#254055] md:text-4xl text-2xl font-extrabold text-center ">
             Onze <span className="text-[#81C713] ">kerndiensten</span> voor
             <br /> duurzaam wonen
-          </span>
+          </div>
         }
       />
-      <p className="text-[#4D4D4D] text-center mt-5 w-2/3 ">
+      <p className="text-[#4D4D4D] text-center mt-5 md:w-2/3 mx-5 ">
         Wij bieden complete energieke oplossingen die volledig zijn afgestemd op
         uw situatie — of u nu huiseigenaar, verhuurder of ondernemer bent. Van
         analyse tot uitvoering begeleiden wij u naar een comfortabel,
