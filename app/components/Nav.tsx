@@ -77,24 +77,16 @@ export default function Nav() {
               },
               {
                 href: "/diensten/1",
-                text: "Energielabels woningbouw bestaand",
+                text: "Energielabels bestaande woningen en utiliteit",
               },
               {
                 href: "/diensten/2",
-                text: "Energielabels woningbouw nieuwbouw (BENG)",
+                text: "Energielabels nieuwbouw woningen en utiliteit",
               },
-              {
-                href: "/diensten/3",
-                text: "Energielabels utiliteit bestaand",
-              },
-              {
-                href: "/diensten/4",
-                text: "Energielabels nieuwbouw (BENG)",
-              },
-              { href: "/diensten/5", text: "Maatwerkadvies" },
-              { href: "/diensten/6", text: "Informatieplicht" },
-              { href: "/diensten/7", text: "WKO beheer" },
-              { href: "/diensten/8", text: "Trainingen" },
+              { href: "/diensten/3", text: "Informatieplicht" },
+              { href: "/diensten/4", text: "GACS" },
+              { href: "/diensten/5", text: "WKO beheer" },
+              { href: "/diensten/6", text: "Trainingen" },
             ]}
           />
           <NavLink href="/partners" text="Partners" active={active} />
@@ -124,24 +116,16 @@ export default function Nav() {
               },
               {
                 href: "/diensten/1",
-                text: "Energielabels woningbouw bestaand",
+                text: "Energielabels bestaande woningen en utiliteit",
               },
               {
                 href: "/diensten/2",
-                text: "Energielabels woningbouw nieuwbouw (BENG)",
+                text: "Energielabels nieuwbouw woningen en utiliteit",
               },
-              {
-                href: "/diensten/3",
-                text: "Energielabels utiliteit bestaand",
-              },
-              {
-                href: "/diensten/4",
-                text: "Energielabels nieuwbouw (BENG)",
-              },
-              { href: "/diensten/5", text: "Maatwerkadvies" },
-              { href: "/diensten/6", text: "Informatieplicht" },
-              { href: "/diensten/7", text: "WKO beheer" },
-              { href: "/diensten/8", text: "Trainingen" },
+              { href: "/diensten/3", text: "Informatieplicht" },
+              { href: "/diensten/4", text: "GACS" },
+              { href: "/diensten/5", text: "WKO beheer" },
+              { href: "/diensten/6", text: "Trainingen" },
             ]}
           />
           <NavLink href="/partners" text="Partners" active={active} />

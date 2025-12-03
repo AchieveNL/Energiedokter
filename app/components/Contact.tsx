@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Contact() {
   return (
     <>
@@ -41,12 +43,18 @@ export default function Contact() {
             Klaar om uw gebouw energiezuiniger te maken?
           </p>
           <div className="md:flex hidden md:gap-5 gap-2 mt-10 md:text-sm text-xs">
-            <button className="bg-[#6B9D1C] text-white rounded-xl p-3 md:px-5 px-3 hover:bg-[#3b560f] hover:cursor-pointer transition-colors duration-300 ">
+            <Link
+              href="/contact"
+              className="bg-[#6B9D1C] text-white rounded-xl p-3 md:px-5 px-3 hover:bg-[#3b560f] hover:cursor-pointer transition-colors duration-300 "
+            >
               Plan een consult
-            </button>
-            <button className="border-3 border-[#254055] text-[#254055] rounded-xl p-3 md:px-5 px-3 hover:bg-[#254055] hover:text-white transition-colors duration-300 cursor-pointer ">
+            </Link>
+            <Link
+              href="/diensten/Alle-diensten"
+              className="border-3 border-[#254055] text-[#254055] rounded-xl p-3 md:px-5 px-3 hover:bg-[#254055] hover:text-white transition-colors duration-300 cursor-pointer "
+            >
               Bekijk alle diensten
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -64,12 +72,18 @@ export default function Contact() {
         </div>
       </div>
       <div className="md:hidden flex justify-center gap-2 text-sm mt-5">
-        <button className="bg-[#6B9D1C] text-white rounded-xl p-3 hover:bg-[#3b560f] hover:cursor-pointer transition-colors duration-300 ">
+        <Link
+          href="/contact"
+          className="bg-[#6B9D1C] text-white py-3 px-5 rounded-xl hover:bg-[#3b560f] transition-colors duration-300 "
+        >
           Plan een consult
-        </button>
-        <button className="border-3 border-[#254055] text-[#254055] rounded-xl px-3 hover:bg-[#254055] hover:text-white transition-colors duration-300 ">
+        </Link>
+        <Link
+          href="/diensten/Alle-diensten"
+          className="border-3 border-[#254055] text-[#254055] rounded-xl hover:bg-[#254055] hover:text-white transition-colors duration-300 flex justify-center items-center px-5 "
+        >
           Bekijk alle diensten
-        </button>
+        </Link>
       </div>
     </>
   );

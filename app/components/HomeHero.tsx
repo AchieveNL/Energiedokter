@@ -16,7 +16,7 @@ export default function HomeHero() {
           <span className="text-[#81C713]">Energie Dokter</span>
         </h1>
         <div className="text-center mt-10">
-          <p className="text-[#4D4D4D] px-5" style={{ fontFamily: "Poppins" }}>
+          <p className="text-[#4D4D4D] px-5 md:w-2/3 m-auto" style={{ fontFamily: "Poppins" }}>
             Ontdek hoe uw pand beter kan presteren — technisch, ﬁnancieel én
             duurzaam. Wij maken inzichtelijk waar de kansen liggen en begeleiden
             u stap voor stap naar een toekomstbestendig gebouw.
@@ -33,7 +33,7 @@ export default function HomeHero() {
             borderColor="#63A0AC"
             shimmerColor="white"
             fillBg="#8dd1ba53"
-            href="#"
+            href="/contact"
           />
         </div>
 
