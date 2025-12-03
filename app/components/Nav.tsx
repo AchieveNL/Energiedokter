@@ -32,11 +32,13 @@ export default function Nav() {
   return (
     <nav className="fixed w-full backdrop-blur-lg z-50">
       <div className="flex p-4 px-4 md:px-10 justify-between md:justify-around items-start">
-        <img
-          src="/assets/logo.svg"
-          className="w-[200px] md:w-[300px] mt-1"
-          alt=""
-        />
+        <Link href="/">
+          <img
+            src="/assets/logo.svg"
+            className="w-[200px] md:w-[300px] mt-1"
+            alt=""
+          />
+        </Link>
 
         {/* Hamburger Menu Button */}
         <button
