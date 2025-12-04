@@ -2,10 +2,19 @@
 import Link from "next/link";
 import BrandList from "./BrandList";
 import AnimatedLink from "./AnimatedLink";
+import Iridescence from "./Iredescence";
 
 export default function HomeHero() {
   return (
-    <div className="w-full h-screen bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center px-">
+    <div className="w-full h-screen">
+      <div className="absolute inset-0 -z-10 blur-lg">
+        <Iridescence
+          colorBalance={0}
+          speed={0.3}
+          amplitude={0}
+          mouseReact={false}
+        />
+      </div>
       {/* <div className="w-full h-screen bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center px-5 animate-slow-pan bg-rotate"> */}
       <div className="m-auto md:pt-44 pt-40 flex flex-col items-center ">
         <h1
@@ -16,7 +25,10 @@ export default function HomeHero() {
           <span className="text-[#81C713]">Energie Dokter</span>
         </h1>
         <div className="text-center mt-10">
-          <p className="text-[#4D4D4D] px-5 md:w-2/3 m-auto" style={{ fontFamily: "Poppins" }}>
+          <p
+            className="text-[#4D4D4D] px-5 md:w-2/3 m-auto"
+            style={{ fontFamily: "Poppins" }}
+          >
             Ontdek hoe uw pand beter kan presteren — technisch, ﬁnancieel én
             duurzaam. Wij maken inzichtelijk waar de kansen liggen en begeleiden
             u stap voor stap naar een toekomstbestendig gebouw.
