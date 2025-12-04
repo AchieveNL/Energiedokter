@@ -23,8 +23,10 @@ export default function Plan({ active }: { active: string }) {
         className="hover:cursor-pointer md:w-1/2 p-5 pl-0"
         ref={stepSection}
         initial={{ opacity: 0, x: -30 }}
-        animate={inView ? { opacity: 1, x: 0 } : {}}
+        animate={inView ? { opacity: 0.3, x: 0 } : {}}
         transition={{ duration: 0.6 }}
+        whileHover={{opacity:1,x:30}}
+        whileTap={{opacity:1,x:30}}
       >
         <h1 className="text-[#254055] font-bold text-3xl ">{step.title}</h1>
         <p className="text-[#4D4D4D] mt-3">{step.content}</p>
