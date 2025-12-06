@@ -16,7 +16,7 @@ export default function Plan({ active }: { active: string }) {
   // step component
   const Step = ({ step }: { step: { title: string; content: string } }) => {
     const stepSection = useRef(null);
-    const inView = useInView(stepSection, { amount: 0.2, once: true });
+    const inView = useInView(stepSection, { amount:0.2, once: true });
 
     return (
       <motion.div
@@ -26,7 +26,8 @@ export default function Plan({ active }: { active: string }) {
         animate={inView ? { opacity: 0.3, x: 0 } : {}}
         transition={{ duration: 0.6 }}
         whileHover={{opacity:1,x:30}}
-        whileTap={{opacity:1,x:30}}
+        whileInView={{opacity:1}}
+        // whileTap={{opacity:1,x:30}}
       >
         <h1 className="text-[#254055] font-bold text-3xl ">{step.title}</h1>
         <p className="text-[#4D4D4D] mt-3">{step.content}</p>

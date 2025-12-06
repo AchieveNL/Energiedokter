@@ -83,11 +83,11 @@ const CarouselSlider = () => {
                   <div
                     className={`
                       relative rounded-2xl overflow-hidden transition-all duration-500 ease-out border border-[#E3E3E3]
-                      ${isActive ? "scale-95 shadow-xl" : "scale-90 opacity-90"}
+                      ${isActive ? "scale-95 shadow-xlj" : "scale-90 opacity-90"}
                     `}
-                    style={{ minHeight: "500px" }}
+                    // style={{ minHeight: "500px" }}
                   >
-                    <div className="relative h-1/2 overflow-hidden shrink-0">
+                    <div className="relative h-1/ overflow-hidden shrink-0">
                       <img
                         src={card.image}
                         alt={card.title}
@@ -95,13 +95,13 @@ const CarouselSlider = () => {
                       />
                     </div>
 
-                    <div className="relative p-5 flex flex-col">
+                    <div className="relative p-5 pb-3 flex flex-col">
                       <div>
-                        <h2 className="font-bold text-[#254055] mb-3">
+                        <h2 className="font-bold text-[#254055] mb-3 ">
                           {card.title}
                         </h2>
 
-                        <p className="text-[#4D4D4D] text-lg">
+                        <p className="text-[#4D4D4D] md:text-lg text-sm">
                           {card.description}
                         </p>
                       </div>
@@ -109,7 +109,7 @@ const CarouselSlider = () => {
                       <div className="mt-8">
                         <Link
                           href="#"
-                          className="hover:underline text-[#81C713]"
+                          className="hover:underline text-[#81C713] md:text-base text-sm"
                         >
                           Lees meer
                         </Link>
@@ -122,7 +122,7 @@ const CarouselSlider = () => {
           </div>
         </div>
 
-        <div className="flex justify-center gap-2">
+        <div className="flex justify-center gap-2 mt-5">
           {cards.map((_, index) => (
             <button
               key={index}
@@ -142,6 +142,10 @@ const CarouselSlider = () => {
       </div>
 
       <style>{`
+
+        .embla__slide {
+          flex: 0 0 40% !important;
+        }
         @media (min-width: 768px) {
           .embla__slide {
             flex: 0 0 33.333% !important;

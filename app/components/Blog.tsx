@@ -13,7 +13,7 @@ import CarouselSlider from "./CarouselSlider";
 export default function Blog() {
   return (
     <div
-      className="my-40 flex flex-col items-center"
+      className="my-40 flex flex-col items-center overflow-hidden"
       style={{ fontFamily: "Poppins" }}
     >
       <SectionTitle
