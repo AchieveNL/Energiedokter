@@ -16,17 +16,18 @@ export default function Plan({ active }: { active: string }) {
   // step component
   const Step = ({ step }: { step: { title: string; content: string } }) => {
     const stepSection = useRef(null);
-    const inView = useInView(stepSection, { amount:0.2, once: true });
+    const inView = useInView(stepSection, { amount: 0.2, once: true });
 
     return (
       <motion.div
-        className="hover:cursor-pointer md:w-1/2 p-5 pl-0"
+        className="hover:cursor-pointer md:w-1/2 p-5 pl-0 md:py-15 py-5"
         ref={stepSection}
         initial={{ opacity: 0, x: -30 }}
         animate={inView ? { opacity: 0.3, x: 0 } : {}}
         transition={{ duration: 0.6 }}
-        whileHover={{opacity:1,x:30}}
-        whileInView={{opacity:1}}
+        whileHover={{ opacity: 1, x: 20 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ amount: 1 }}
         // whileTap={{opacity:1,x:30}}
       >
         <h1 className="text-[#254055] font-bold text-3xl ">{step.title}</h1>
@@ -56,7 +57,7 @@ export default function Plan({ active }: { active: string }) {
       </motion.div>
 
       {/* steps - only pass items that have title and content */}
-      <div className="flex flex-col md:gap-15 gap-5 md:mt-20 mt-10">
+      <div className="flex flex-col md:mt-20 mt-10">
         {currentSteps.slice(1).map((step, index) => (
           <Step step={step as { title: string; content: string }} key={index} />
         ))}
