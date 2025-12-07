@@ -8,6 +8,7 @@ import StepPlan from "./components/StepPlan";
 import Contact from "./components/Contact";
 import Faq from "./components/Faq";
 import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Contact />
       <Faq />
       <Blog />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,273 @@
+// "use client";
+
+// import Link from "next/link";
+// import { useRef } from "react";
+
+// export default function Footer() {
+//   return (
+//     <>
+//       <img src="/assets/footer/bg-head.svg" className="w-full" alt="" />
+//       <div
+//         className="mt-0 bg-[#254055] md:pt-0 pt-0 relative -z-20"
+//         style={{ fontFamily: "Poppins" }}
+//       >
+//         <img
+//           src="/assets/footer/light.svg"
+//           className="absolute w-1/2 top-0 right-1/2 translate-x-1/2"
+//           alt=""
+//         />
+//         {/* body */}
+//         <div className="flex md:flex-row flex-col text-[#FEEEF3] justify-center md:items-start items-center gap-5 z-10 absolute right-1/2 translate-x-1/2 md:mt-20 mt-10">
+//           <div>
+//             <Link
+//               href="/"
+//               className="md:text-3xl text-xl flex flex-col items-center font-bold text-white"
+//             >
+//               Energie Dokter
+//               <span className="md:text-xs text-[8px] font-normal ">
+//                 sustainable energy consultancy
+//               </span>
+//             </Link>
+//           </div>
+//           <div className="flex flex-col md:items-start items-center gap-2 md:text-sm text-xs ">
+//             <Link href="/" className="md:text-2xl text-lg">
+//               Home
+//             </Link>
+//             <Link href="/about-us">Over Ons</Link>
+//             <Link href="/blogs">Blog</Link>
+//             <Link href="/faq">FAQ</Link>
+//             <Link href="/contact">Contact</Link>
+//           </div>
+//           <div className="flex flex-col md:items-start items-center gap-2 md:text-sm text-xs ">
+//             <Link
+//               href="/diensten/Alle-diensten"
+//               className="md:text-2xl text-lg"
+//             >
+//               Diensten
+//             </Link>
+//             <Link href="/diensten/1">
+//               Energielabels bestaande woningen en utiliteit
+//             </Link>
+//             <Link href="/diensten/2">
+//               Energielabels nieuwbouw woningen en utiliteit
+//             </Link>
+//             <Link href="/diensten/3">Informatieplicht</Link>
+//             <Link href="/diensten/4">GCAS</Link>
+//             <Link href="/diensten/5">WKO-Beheer</Link>
+//             <Link href="/diensten/6">Trainingen</Link>
+//           </div>
+//         </div>
+
+//         {/* bg */}
+//         <div className="w-full relactive"></div>
+//         <img
+//           src="/assets/footer/bg.svg"
+//           className="w-full absolute top-0 bg-[#254055] -z-10"
+//           alt=""
+//         />
+//         <div className="bg-red-400 absolute bot">
+//           hello world
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
+"use client";
+
+import Link from "next/link";
+import { useRef, useEffect, useState } from "react";
+
+export default function Footer() {
+  const bgImageRef = useRef<HTMLImageElement>(null);
+  const mobileBgImageRef = useRef<HTMLImageElement>(null);
+  const divRef = useRef<HTMLDivElement>(null);
+  const [bgHeight, setBgHeight] = useState(0);
+  const [divHeight, setDivHeight] = useState(0);
+  const [mobileBgHeight, setMobileBgHeight] = useState(0);
+
+  useEffect(() => {
+    const logImageHeight = () => {
+      if (bgImageRef.current) {
+        setBgHeight(bgImageRef.current.offsetHeight);
+      }
+      if (divRef.current) {
+        setDivHeight(divRef.current.offsetHeight);
+      }
+      if (mobileBgImageRef.current) {
+        setMobileBgHeight(mobileBgImageRef.current.offsetHeight);
+      }
+    };
+
+    // Log height when image loads
+    const img = bgImageRef.current;
+    if (img) {
+      if (img.complete) {
+        logImageHeight();
+      } else {
+        img.addEventListener("load", logImageHeight);
+      }
+    }
+
+    const divSection = divRef.current;
+    if (divSection) {
+      divSection.addEventListener("load", logImageHeight);
+    }
+
+    const mobileBg = mobileBgImageRef.current;
+    if (mobileBg) {
+      mobileBg.addEventListener("load", logImageHeight);
+    }
+
+    // Log height on window resize
+    window.addEventListener("resize", logImageHeight);
+
+    return () => {
+      window.removeEventListener("resize", logImageHeight);
+      if (img) {
+        img.removeEventListener("load", logImageHeight);
+      }
+      if (divSection) {
+        divSection.removeEventListener("load", logImageHeight);
+      }
+      if (mobileBg) {
+        mobileBg.removeEventListener("load", logImageHeight);
+      }
+    };
+  }, []);
+
+  return (
+    <>
+      <img src="/assets/footer/bg-head.svg" className="w-full" alt="" />
+      <div
+        className="mt-0 bg-[#254055] md:pt-20 pt-0 relative -z-20"
+        style={{ fontFamily: "Poppins" }}
+      >
+        <img
+          src="/assets/footer/light.svg"
+          className="md:block absolute hidden w-1/2 top-0 right-1/2 translate-x-1/2"
+          alt=""
+        />
+        <img
+          src="/assets/footer/mobile-light.svg"
+          className="md:hidden block absolute top-0 right-1/2 translate-x-1/2"
+          alt=""
+        />
+        {/* body */}
+        <div
+          ref={divRef}
+          className="flex md:flex-row flex-col text-[#FEEEF3] justify-center md:items-start items-center gap-5 z-10 absolute right-1/2 translate-x-1/2 md:mt-20 mt-10"
+        >
+          <div className="flex flex-col items-center md:gap-5 gap-3">
+            <Link
+              href="/"
+              className="md:text-3xl text-xl flex flex-col items-center font-bold text-white"
+            >
+              Energie Dokter
+              <span className="md:text-xs text-[8px] font-normal ">
+                sustainable energy consultancy
+              </span>
+            </Link>
+            <div className="flex md:gap-5 gap-3 justify-center">
+              <Link href="#">
+                <img
+                  src="/assets/footer/linkedin.svg"
+                  className="md:size-13 size-10"
+                />
+              </Link>
+              <Link href="#">
+                <img
+                  src="/assets/footer/whatsapp.svg"
+                  className="md:size-13 size-10"
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="flex flex-col md:items-start items-center gap-2 md:text-sm text-xs ">
+            <Link href="/" className="md:text-2xl text-lg">
+              Home
+            </Link>
+            <Link href="/about-us">Over Ons</Link>
+            <Link href="/blogs">Blog</Link>
+            <Link href="/faq">FAQ</Link>
+            <Link href="/contact">Contact</Link>
+          </div>
+          <div className="flex flex-col md:items-start items-center gap-2 md:text-sm text-xs md:text-left text-center ">
+            <Link
+              href="/diensten/Alle-diensten"
+              className="md:text-2xl text-lg"
+            >
+              Diensten
+            </Link>
+            <Link href="/diensten/1">
+              Energielabels bestaande woningen en utiliteit
+            </Link>
+            <Link href="/diensten/2">
+              Energielabels nieuwbouw woningen en utiliteit
+            </Link>
+            <Link href="/diensten/3">Informatieplicht</Link>
+            <Link href="/diensten/4">GCAS</Link>
+            <Link href="/diensten/5">WKO-Beheer</Link>
+            <Link href="/diensten/6">Trainingen</Link>
+          </div>
+        </div>
+
+        {/* bg */}
+        <img
+          ref={bgImageRef}
+          src="/assets/footer/bg.svg"
+          className={`w-full absolute md:block hidden top-0 bg-[#254055] -z-10`}
+          alt=""
+        />
+        <img
+          ref={mobileBgImageRef}
+          src="/assets/footer/mobile-bg.svg"
+          className={`w-full md:hidden absolute bg-[#254055] -z-10`}
+          // style={{ top: divHeight }}
+          alt=""
+        />
+
+        {/* last footer */}
+        <div
+          className="bg-[#27313C] absolute top-0 w-full text-[#F6F6F6] md:flex hidden items-center p-4 justify-between px-10 "
+          style={{ marginTop: bgHeight }}
+        >
+          <div className="flex gap-5">
+            <Link href="#" className="hover:underline">
+              Privacy Policy
+            </Link>
+            <Link href="#" className="hover:underline">
+              Terms Of Service
+            </Link>
+          </div>
+          <div>
+            Developed by{" "}
+            <Link href="http://achieve.nl" className="hover:underline">
+              Achieve.nl
+            </Link>
+          </div>
+        </div>
+
+        <div
+          className="bg-[#27313C] absolute top-0 w-full text-[#F6F6F6] md:hidden flex items-center p-4 justify-between px-2 text-xs "
+          style={{ marginTop: mobileBgHeight }}
+        >
+          <div className="flex gap-2">
+            <Link href="#" className="hover:underline">
+              Privacy Policy
+            </Link>
+            <Link href="#" className="hover:underline">
+              Terms Of Service
+            </Link>
+          </div>
+          <div>
+            Developed by{" "}
+            <Link href="http://achieve.nl" className="hover:underline">
+              Achieve.nl
+            </Link>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
