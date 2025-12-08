@@ -145,13 +145,13 @@ export default function Footer() {
       >
         {/* desktop light */}
         <img
-          src="/assets/footer/light.svg"
-          className="md:block absolute hidden w-2/3 top-0 right-1/2 translate-x-1/2 flicker-light"
+          src="/assets/footer/spotlight.svg"
+          className="md:block absolute hidden w-2/3 top-0 right-1/2 translate-x-1/2"
           alt=""
         />
         <img
-          src="/assets/footer/spotlight.svg"
-          className="md:block absolute hidden w-2/3 top-0 right-1/2 translate-x-1/2"
+          src="/assets/footer/light.svg"
+          className="md:block absolute hidden w-2/3 top-0 right-1/2 translate-x-1/2 flicker-light"
           alt=""
         />
         {/* mobile light */}
