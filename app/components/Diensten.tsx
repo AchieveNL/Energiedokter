@@ -3,8 +3,37 @@ import SectionTitle from "./SectionTitle";
 import { services } from "../data/services";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
+import React, { useCallback, useEffect } from "react";
 
 export default function Diensten() {
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      loop: true,
+      align: "center",
+      skipSnaps: false,
+      containScroll: "trimSnaps",
+    },
+    [Autoplay({ delay: 5000, stopOnInteraction: false })]
+  );
+
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on("select", onSelect);
+    return () => {
+      emblaApi.off("select", onSelect);
+    };
+  }, [emblaApi, onSelect]);
+
   const Card = ({
     title,
     icon,
@@ -29,7 +58,7 @@ export default function Diensten() {
     return (
       <button
         onClick={handleClick}
-        className="bg-[#F6F6F6] flex flex-col gap-5 items-center justify-between rounded-tl-[3rem] rounded-br-[3rem] px-8 py-4 hover:bg-[#F0F8E2] hover:-translate-y-1 transition-all duration-300 hover:cursor-pointer"
+        className="bg-[#F0F8E2] flex flex-col md:gap-5 gap-2 items-center justify-between rounded-tl-[3rem] rounded-br-[3rem] md:px-8 px-4 py-4 hover:bg-[#F0F8E2] hover:-translate-y-1 transition-all duration-300 hover:cursor-pointer w-full h-full"
       >
         <div className="flex justify-between w-full gap-3 ">
           <img
@@ -37,7 +66,7 @@ export default function Diensten() {
             className="size-10"
             alt=""
           />
-          <h1 className="font-semibold md:max-w-2/3 text-right md:text-[17px] ">
+          <h1 className="font-semibold md:max-w-2/3 text-right md:text-[17px]">
             {title}
           </h1>
         </div>
@@ -72,7 +101,7 @@ export default function Diensten() {
         analyse tot uitvoering begeleiden wij u naar een comfortabel,
         energiezuinig en toekomstbestendig gebouw
       </p>
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-y-10 md:gap-x-15 md:px-24 px-5 mt-10">
+      <div className="md:grid hidden md:grid-cols-3 grid-cols-1 gap-y-10 md:gap-x-15 md:px-24 px-5 mt-10">
         {services.map((service, index) => (
           <Card
             href={service.href}
@@ -82,6 +111,51 @@ export default function Diensten() {
             text={service.text}
           />
         ))}
+      </div>
+
+      {/* mobile */}
+      <div className="md:hidden flex items-center justify-center w-full mt-10">
+        <div className="w-full">
+          <div className="embla overflow-hidden" ref={emblaRef}>
+            <div className="embla__container flex">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="embla__slide shrink-0 px-3"
+                  style={{
+                    flex: "0 0 80%",
+                    minWidth: 0,
+                  }}
+                >
+                  <Card
+                    href={service.href}
+                    title={service.title}
+                    icon={service.icon}
+                    text={service.text}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex justify-center gap-2 mt-5">
+            {services.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => emblaApi?.scrollTo(index)}
+                className={`
+                h-2 rounded-xs transition-all duration-300
+                ${
+                  index === selectedIndex
+                    ? "w-4 bg-[#8DD1BA]"
+                    : "w-2 bg-[#D0D0D0] hover:bg-gray-400"
+                }
+              `}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

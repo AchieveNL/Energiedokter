@@ -4,6 +4,7 @@ import Iridescence from "../components/Iredescence";
 import SectionTitle from "../components/SectionTitle";
 import BrandList from "../components/BrandList";
 import AboutSection from "../components/AboutSection";
+import Diensten from "../components/Diensten";
 
 export default function AboutPage() {
   return (
@@ -68,6 +69,7 @@ export default function AboutPage() {
       </div>
       <BrandList />
       <AboutSection />
+      <Diensten />
       <div className="mt-40"></div>
       <Footer />
     </>
