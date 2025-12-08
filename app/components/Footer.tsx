@@ -143,14 +143,26 @@ export default function Footer() {
         className="mt-0 bg-[#254055] md:pt-20 pt-0 relative -z-20"
         style={{ fontFamily: "Poppins" }}
       >
+        {/* desktop light */}
         <img
           src="/assets/footer/light.svg"
-          className="md:block absolute hidden w-1/2 top-0 right-1/2 translate-x-1/2"
+          className="md:block absolute hidden w-2/3 top-0 right-1/2 translate-x-1/2 flicker-light"
+          alt=""
+        />
+        <img
+          src="/assets/footer/spotlight.svg"
+          className="md:block absolute hidden w-2/3 top-0 right-1/2 translate-x-1/2"
+          alt=""
+        />
+        {/* mobile light */}
+        <img
+          src="/assets/footer/mobile-spotlight.svg"
+          className="md:hidden block absolute top-0 right-1/2 translate-x-1/2"
           alt=""
         />
         <img
           src="/assets/footer/mobile-light.svg"
-          className="md:hidden block absolute top-0 right-1/2 translate-x-1/2"
+          className="md:hidden block absolute top-0 right-1/2 translate-x-1/2 flicker-light"
           alt=""
         />
         {/* body */}

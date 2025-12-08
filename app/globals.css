@@ -1,1 +1,38 @@
 @import "tailwindcss";
+@keyframes streetFlicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  53% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+  68% {
+    opacity: 1;
+  }
+  69% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+}
+
+.flicker-light {
+  animation: streetFlicker 8s infinite step-end;
+}
