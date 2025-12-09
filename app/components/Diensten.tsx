@@ -58,7 +58,7 @@ export default function Diensten() {
     return (
       <button
         onClick={handleClick}
-        className="bg-[#F0F8E2] flex flex-col md:gap-5 gap-2 items-center justify-between rounded-tl-[3rem] rounded-br-[3rem] md:px-8 px-4 py-4 hover:bg-[#F0F8E2] hover:-translate-y-1 transition-all duration-300 hover:cursor-pointer w-full h-full"
+        className="bg-[#F6F6F6] flex flex-col md:gap-5 gap-2 items-center justify-between rounded-tl-[3rem] rounded-br-[3rem] md:px-8 px-4 py-4 hover:bg-[#F0F8E2] hover:-translate-y-1 transition-all duration-300 hover:cursor-pointer w-full h-full"
       >
         <div className="flex justify-between w-full gap-3 ">
           <img

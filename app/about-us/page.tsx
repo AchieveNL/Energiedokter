@@ -73,19 +73,20 @@ export default function AboutPage() {
 
       {/* help */}
       <div
-        className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover p-7 rounded-tl-4xl rounded-br-4xl mx-10 relative"
+        className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover md:p-7 p-3 rounded-tl-4xl rounded-br-4xl md:mx-10 mx-3 relative"
         style={{ fontFamily: "Poppins" }}
       >
-        <div>
-          <h1 className="text-[#0D2131] font-bold text-2xl ">
+        <div className="md:w-auto w-2/3 pb-3">
+          <h1 className="text-[#0D2131] font-bold md:text-2xl pb-2 ">
             Last van energieverlies? De{" "}
             <span className="text-[#81C713]">Energie Dokter</span> helpt!
           </h1>
-          <p className="text-[#254055] ">
+          <p className="text-[#254055] md:text-base text-sm ">
             De Energie Dokter schrijft het juiste behandelplan voor
           </p>
         </div>
-        <div className="flex gap-5 mt-10">
+        {/* links */}
+        <div className="md:flex hidden gap-5 mt-10">
           <Link
             href="#"
             className="border-2 border-[#81C713] bg-[#81C713] text-white text-sm p-3 px-5 rounded-xl hover:bg-[#72ab16] hover:border-[#72ab16] transition-all"
@@ -99,6 +100,30 @@ export default function AboutPage() {
             Bekijk alle diensten{" "}
           </Link>
         </div>
+        <img
+          src="/assets/about/man.svg"
+          className="absolute bottom-0 md:right-32 right-5 h-[110%]"
+          alt=""
+        />
+        <div className="absolute right-6 md:top-2 bottom-0 md:text-[#254055] text-white text-center md:bg-white rounded-tl-2xl rounded-br-2xl h-fit px-3 md:py-3 ">
+          <h1 className="font-bold md:text-base text-xs ">Rutger Jenner</h1>
+          <p className="md:text-[8px] text-[6px] ">Oprichter en Directeur</p>
+        </div>
+      </div>
+      {/* mobile links */}
+      <div className="md:hidden flex justify-center gap-3 mt-5">
+        <Link
+          href="/contact"
+          className="border-2 border-[#81C713] bg-[#81C713] text-white text-sm p-2 px-3 rounded-xl hover:bg-[#72ab16] hover:border-[#72ab16] transition-all"
+        >
+          Plan een consult
+        </Link>
+        <Link
+          href="/diensten/Alle-diensten"
+          className="border-2 text-[#254055] text-sm p-2 px-3 rounded-xl hover:bg-[#254055] hover:text-white transition-all"
+        >
+          Bekijk alle diensten
+        </Link>
       </div>
 
       <div className="mt-40"></div>
