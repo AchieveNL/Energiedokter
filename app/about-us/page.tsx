@@ -7,6 +7,8 @@ import BrandList from "../components/BrandList";
 import AboutSection from "../components/AboutSection";
 import Diensten from "../components/Diensten";
 import Reviews from "../components/Reviews";
+import Faq from "../components/Faq";
+import Projects from "../components/Projects";
 
 export default function AboutPage() {
   return (
@@ -129,6 +131,11 @@ export default function AboutPage() {
       </div>
 
       <Reviews />
+      <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover pb-1 mt-5 ">
+        <Faq />
+      </div>
+      <Projects />
+
       <div className="mt-40"></div>
       <Footer />
     </>

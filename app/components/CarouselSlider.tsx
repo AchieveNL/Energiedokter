@@ -3,7 +3,11 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Link from "next/link";
 
-const CarouselSlider = () => {
+const CarouselSlider = ({
+  cards,
+}: {
+  cards: { title: string; description: string; image: string;date?:string }[];
+}) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
@@ -30,40 +34,6 @@ const CarouselSlider = () => {
     };
   }, [emblaApi, onSelect]);
 
-  const cards = [
-    {
-      title: "Lorem ipsum",
-      description: "Lorem ipsum dolor sit amet",
-      image: "/assets/blogs/img1.svg",
-    },
-    {
-      title: "Lorem ipsum",
-      description: "Lorem ipsum dolor sit amet",
-      image: "/assets/blogs/img2.svg",
-    },
-    {
-      title: "Lorem ipsum",
-      description: "Lorem ipsum dolor sit amet",
-      image: "/assets/blogs/img3.svg",
-    },
-    {
-      title: "Lorem ipsum",
-      description: "Lorem ipsum dolor sit amet",
-      image: "/assets/blogs/img1.svg",
-    },
-    {
-      title: "Lorem ipsum",
-      description: "Lorem ipsum dolor sit amet",
-      image: "/assets/blogs/img2.svg",
-    },
-    {
-      title: "Lorem ipsum",
-      description: "Lorem ipsum dolor sit amet",
-      image: "/assets/blogs/img3.svg",
-    },
-  ];
-  
-
   return (
     <div className="flex items-center justify-center p-4">
       <div className="w-full max-w-7xl">
@@ -84,7 +54,9 @@ const CarouselSlider = () => {
                   <div
                     className={`
                       relative rounded-2xl overflow-hidden transition-all duration-500 ease-out border border-[#E3E3E3]
-                      ${isActive ? "scale-95 shadow-xlj" : "scale-90 opacity-90"}
+                      ${
+                        isActive ? "scale-95 shadow-xlj" : "scale-90 opacity-90"
+                      }
                     `}
                     // style={{ minHeight: "500px" }}
                   >
@@ -107,13 +79,14 @@ const CarouselSlider = () => {
                         </p>
                       </div>
 
-                      <div className="mt-8">
+                      <div className="mt-8 flex justify-between">
                         <Link
                           href="#"
                           className="hover:underline text-[#81C713] md:text-base text-sm"
                         >
                           Lees meer
                         </Link>
+                        {card.date?<span className="text-[#4D4D4D] md:text-base text-sm">{card.date}</span>:null}
                       </div>
                     </div>
                   </div>
