@@ -17,14 +17,7 @@ export default function AboutPage() {
         className="md:pt-44 pt-28 min-h-screen md:px-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover"
         style={{ fontFamily: "Poppins" }}
       >
-        {/* <div className="absolute inset-0 -z-10 blur-lg">
-          <Iridescence
-            colorBalance={0}
-            speed={0.3}
-            amplitude={0}
-            mouseReact={false}
-          />
-        </div> */}
+       
         <div className="md:block hidden">
           <SectionTitle
             title="Wie wij zijn"
