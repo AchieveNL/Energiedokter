@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Footer from "../components/Footer";
 import Iridescence from "../components/Iredescence";
@@ -5,6 +6,7 @@ import SectionTitle from "../components/SectionTitle";
 import BrandList from "../components/BrandList";
 import AboutSection from "../components/AboutSection";
 import Diensten from "../components/Diensten";
+import Reviews from "../components/Reviews";
 
 export default function AboutPage() {
   return (
@@ -126,6 +128,7 @@ export default function AboutPage() {
         </Link>
       </div>
 
+      <Reviews />
       <div className="mt-40"></div>
       <Footer />
     </>

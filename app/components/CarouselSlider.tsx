@@ -62,6 +62,7 @@ const CarouselSlider = () => {
       image: "/assets/blogs/img3.svg",
     },
   ];
+  
 
   return (
     <div className="flex items-center justify-center p-4">
