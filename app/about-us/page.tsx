@@ -10,17 +10,17 @@ export default function AboutPage() {
   return (
     <>
       <div
-        className="md:pt-44 pt-28 min-h-screen md:px-20"
+        className="md:pt-44 pt-28 min-h-screen md:px-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover"
         style={{ fontFamily: "Poppins" }}
       >
-        <div className="absolute inset-0 -z-10 blur-lg">
+        {/* <div className="absolute inset-0 -z-10 blur-lg">
           <Iridescence
             colorBalance={0}
             speed={0.3}
             amplitude={0}
             mouseReact={false}
           />
-        </div>
+        </div> */}
         <div className="md:block hidden">
           <SectionTitle
             title="Wie wij zijn"
@@ -70,6 +70,37 @@ export default function AboutPage() {
       <BrandList />
       <AboutSection />
       <Diensten />
+
+      {/* help */}
+      <div
+        className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover p-7 rounded-tl-4xl rounded-br-4xl mx-10 relative"
+        style={{ fontFamily: "Poppins" }}
+      >
+        <div>
+          <h1 className="text-[#0D2131] font-bold text-2xl ">
+            Last van energieverlies? De{" "}
+            <span className="text-[#81C713]">Energie Dokter</span> helpt!
+          </h1>
+          <p className="text-[#254055] ">
+            De Energie Dokter schrijft het juiste behandelplan voor
+          </p>
+        </div>
+        <div className="flex gap-5 mt-10">
+          <Link
+            href="#"
+            className="border-2 border-[#81C713] bg-[#81C713] text-white text-sm p-3 px-5 rounded-xl hover:bg-[#72ab16] hover:border-[#72ab16] transition-all"
+          >
+            Plan een consult
+          </Link>
+          <Link
+            href="#"
+            className="border-2 text-[#254055] text-sm p-3 px-5 rounded-xl hover:bg-[#254055] hover:text-white transition-all"
+          >
+            Bekijk alle diensten{" "}
+          </Link>
+        </div>
+      </div>
+
       <div className="mt-40"></div>
       <Footer />
     </>

@@ -113,20 +113,15 @@ export default function Diensten() {
         ))}
       </div>
 
-      {/* mobile */}
-      <div className="md:hidden flex items-center justify-center w-full mt-10">
-        <div className="w-full">
-          <div className="embla overflow-hidden" ref={emblaRef}>
-            <div className="embla__container flex">
+      {/* mobile carousel - FIX APPLIED */}
+      <div className="md:hidden w-full mt-10 px-5">
+        <div className="relative">
+          {/* Embla viewport with proper overflow handling */}
+          <div className="overflow-hidden" ref={emblaRef}>
+            {/* Embla container with flex and proper spacing */}
+            <div className="flex -mx-2">
               {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="embla__slide shrink-0 px-3"
-                  style={{
-                    flex: "0 0 80%",
-                    minWidth: 0,
-                  }}
-                >
+                <div key={index} className="flex-[0_0_85%] min-w-0 px-2">
                   <Card
                     href={service.href}
                     title={service.title}
@@ -138,19 +133,20 @@ export default function Diensten() {
             </div>
           </div>
 
-          <div className="flex justify-center gap-2 mt-5">
+          {/* Carousel dots */}
+          <div className="flex justify-center gap-1 mt-6">
             {services.map((_, index) => (
               <button
                 key={index}
                 onClick={() => emblaApi?.scrollTo(index)}
                 className={`
-                h-2 rounded-xs transition-all duration-300
-                ${
-                  index === selectedIndex
-                    ? "w-4 bg-[#8DD1BA]"
-                    : "w-2 bg-[#D0D0D0] hover:bg-gray-400"
-                }
-              `}
+                  h-2 rounded-xs transition-all duration-300
+                  ${
+                    index === selectedIndex
+                      ? "w-5 bg-[#8DD1BA]"
+                      : "w-3 bg-[#D0D0D0] hover:bg-gray-400"
+                  }
+                `}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
