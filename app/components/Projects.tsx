@@ -8,7 +8,11 @@ import Autoplay from "embla-carousel-autoplay";
 import CarouselSlider from "./CarouselSlider";
 import { cards } from "../data/projects";
 
-export default function Projects() {
+export default function Projects({
+  linkVisible = true,
+}: {
+  linkVisible?: boolean;
+}) {
   return (
     <div
       className="mt-40 flex flex-col items-center overflow-hidden"
@@ -20,7 +24,7 @@ export default function Projects() {
           <div className="md:text-4xl text-2xl font-extrabold text-center mb-5 ">
             <span className="text-[#254055]">
               Projecten waar we <br />
-              <span className="text-[#81C713]"> trots </span> 
+              <span className="text-[#81C713]"> trots </span>
               op zijn
             </span>
           </div>
@@ -28,7 +32,10 @@ export default function Projects() {
       />
       <CarouselSlider cards={cards} />
 
-      <div className="w-fit m-auto md:scale-100 scale-80">
+      <div
+        style={!linkVisible ? { display: "none" } : { display: "block" }}
+        className="w-fit m-auto md:scale-100 scale-80"
+      >
         <AnimatedLink
           text="Bekijk alle projecten"
           bg="#63A0AC"

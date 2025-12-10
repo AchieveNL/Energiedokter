@@ -87,7 +87,7 @@ export default function Reviews() {
   return (
     <div
       style={{ fontFamily: "Poppins" }}
-      className="flex flex-col items-center md:mt-28 mt-15 overflow-hidden"
+      className="flex flex-col items-center overflow-hidden"
     >
       <SectionTitle
         title="Reviews"

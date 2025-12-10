@@ -72,6 +72,7 @@ export default function DienstenPage() {
         <Faq />
       </div>
       <Projects />
+      <div className="mt-10"></div>
       <Footer />
     </>
   );

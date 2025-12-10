@@ -24,21 +24,21 @@ export const cards: project[] = [
     date: "01-10-2025",
   },
   {
-    title: "Warmte opwekking",
+    title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet",
-    image: "/assets/projects/img1.svg",
+    image: "/assets/projects/img4.svg",
     date: "01-10-2025",
   },
   {
-    title: "WKO put",
+    title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet",
-    image: "/assets/projects/img2.svg",
+    image: "/assets/projects/img5.svg",
     date: "01-10-2025",
   },
   {
-    title: "Ventilatie systeem",
+    title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet",
-    image: "/assets/projects/img3.svg",
+    image: "/assets/projects/img6.svg",
     date: "01-10-2025",
   },
 ];
