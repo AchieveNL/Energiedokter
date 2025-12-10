@@ -11,7 +11,7 @@ import { cards } from "../data/projects";
 export default function Projects() {
   return (
     <div
-      className="my-40 flex flex-col items-center overflow-hidden"
+      className="mt-40 flex flex-col items-center overflow-hidden"
       style={{ fontFamily: "Poppins" }}
     >
       <SectionTitle

@@ -4,7 +4,7 @@ export default function DienstenSection() {
   return (
     <div
       style={{ fontFamily: "Poppins" }}
-      className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover flex flex-col gap-3 md:items-center items-start py-10 md:px-10 px-5 md:mx-20 mx-5 rounded-tl-[4rem] rounded-br-[4rem]"
+      className="md:my-20 my-10 bg-[url('/assets/HomeHeroBg.svg')] bg-cover flex flex-col gap-3 md:items-center items-start py-10 md:px-10 px-5 md:mx-20 mx-5 rounded-tl-[4rem] rounded-br-[4rem]"
     >
       <h3 className="text-[#6B9D1C] font-bold md:block hidden">
         Maak een afspraak met de Energie Dokter
