@@ -138,9 +138,14 @@ export default function Footer() {
 
   return (
     <>
-      <img src="/assets/footer/bg-head.svg" className="w-full" alt="" />
+      <img
+        src="/assets/footer/bg-head.svg"
+        className="w-full md:mb-0 -mb-px"
+        alt=""
+      />
+      <div className="bg-[#254055] p-px -mb-px "></div>
       <div
-        className="mt-0 bg-[#254055] md:pt-20 pt-0 relative -z-20"
+        className="mt-0 bg-[#254055] md:pt-20 relative -z-20 "
         style={{ fontFamily: "Poppins" }}
       >
         {/* desktop light */}
@@ -168,7 +173,7 @@ export default function Footer() {
         {/* body */}
         <div
           ref={divRef}
-          className="flex md:flex-row flex-col text-[#FEEEF3] justify-center md:items-start items-center gap-5 z-10 absolute right-1/2 translate-x-1/2 md:mt-20 mt-10"
+          className="flex md:flex-row flex-col text-[#FEEEF3] justify-center md:items-start items-center md:gap-10 gap-5 z-10 absolute right-1/2 md:translate-x-[57%] translate-x-1/2 md:mt-20 mt-10 md:w-2/3"
         >
           <div className="flex flex-col items-center md:gap-5 gap-3">
             <Link
@@ -189,7 +194,13 @@ export default function Footer() {
               </Link>
               <Link href="#">
                 <img
-                  src="/assets/footer/whatsapp.svg"
+                  src="/assets/footer/phone.svg"
+                  className="md:size-13 size-10"
+                />
+              </Link>
+              <Link href="#">
+                <img
+                  src="/assets/footer/mail.svg"
                   className="md:size-13 size-10"
                 />
               </Link>
@@ -228,7 +239,7 @@ export default function Footer() {
         <img
           ref={bgImageRef}
           src="/assets/footer/bg.svg"
-          className={`w-full absolute md:block hidden top-0 bg-[#254055] -z-10`}
+          className={`w-full absolute md:block hidden top-0 bg-[#254055] -z-10 `}
           alt=""
         />
         <img
@@ -241,7 +252,7 @@ export default function Footer() {
 
         {/* last footer */}
         <div
-          className="bg-[#27313C] absolute top-0 w-full text-[#F6F6F6] md:flex hidden items-center p-4 justify-between px-10 "
+          className="bg-[#27313C] absolute top-0 w-full text-[#F6F6F6] md:flex hidden items-center justify-between px-10 py-5 "
           style={{ marginTop: bgHeight }}
         >
           <div className="flex gap-5">
@@ -260,6 +271,7 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* last footer mobile */}
         <div
           className="bg-[#27313C] absolute top-0 w-full text-[#F6F6F6] md:hidden flex items-center p-4 justify-between px-2 text-xs "
           style={{ marginTop: mobileBgHeight }}

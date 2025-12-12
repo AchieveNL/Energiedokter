@@ -65,8 +65,8 @@ export default function NavLinkDropdown({
         style={{ fontFamily: "Poppins" }}
         className={`flex items-center gap-1 w-full ${
           active !== text ? "hover:bg-[#82c71324]" : ""
-        } p-2 px-4 rounded-2xl transition-all duration-200 text-lg
-      ${active === text ? "bg-[#81C713] text-white" : "bg-transparent"}`}
+        } md:p-2 md:px-4 p-1 rounded-2xl transition-all duration-200 md:text-lg
+      ${active === text ? "text-[#81C713]" : "md:text-black text-[#4D4D4D]"}`}
       >
         {text}
         <svg
@@ -85,9 +85,10 @@ export default function NavLinkDropdown({
           />
         </svg>
       </button>
+     
 
       {isOpen && (
-        <div className="absolute top-full left-0 min-w-[200px] bg-white rounded-2xl shadow-lg border border-gray-100 md:p-4 p-2 z-50 md:w-max wrap-break-word overflow-auto">
+        <div className="md:absolute top-full left-0 min-w-[200px] bg-white rounded-2xl md:shadow-lg md:border border-gray-100 md:p-4 p-0 z-50 md:w-max wrap-break-word overflow-auto">
           {items.map((item, index) => (
             <div key={index}>
               <Link
@@ -96,7 +97,7 @@ export default function NavLinkDropdown({
                   setIsOpen(false);
                 }}
                 style={{ fontFamily: "Poppins" }}
-                className={`font-medium text-[14px] md:text-[16px] text-[#4D4D4D] py-2 mx-3 pl-1 block transition-all duration-200 hover:text-[#81C713]
+                className={`font-medium text-[14px] md:text-[16px] text-[#4D4D4D] md:py-2 py-0.5 mx-3 pl-1 block transition-all duration-200 hover:text-[#81C713]
               ${
                 Number(index + 0).toString() === pathname.split("/")[2] ||
                 (item.text === "Alle diensten" &&
@@ -109,11 +110,13 @@ export default function NavLinkDropdown({
                 {item.text}
               </Link>
               {item.text !== "Trainingen" && (
-                <div className="bg-[#4d4d4d5b] py-[0.1px] mx-3.5"></div>
+                <div className="bg-[#4d4d4d5b] py-[0.1px] mx-3.5 md:block hidden "></div>
               )}
             </div>
           ))}
+          
         </div>
+        
       )}
     </div>
   );

@@ -154,7 +154,7 @@ export default function Faq() {
                   variants={containerVariants}
                   initial="hidden"
                   animate="visible"
-                  className="md:hidden flex flex-col gap-2 mx-5 mt-5"
+                  className="md:hidden flex flex-col gap-2 mx-5 mt-1"
                 >
                   {data[services.indexOf(active)].faqs.map((faq, index) => (
                     <motion.div

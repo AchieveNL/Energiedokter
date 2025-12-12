@@ -79,7 +79,7 @@ export default function ContactSection() {
                   Lorem ipsum
                 </label>
               </div>
-              <button className="text-[#F6F6F6] bg-[#81C713] w-fit p-2 px-4 rounded-lg mt-3 ">
+              <button className="text-[#F6F6F6] bg-[#81C713] w-fit p-2 px-4 rounded-lg mt- ">
                 Verstuur
               </button>
             </div>
