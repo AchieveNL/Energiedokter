@@ -6,7 +6,7 @@ import Link from "next/link";
 const CarouselSlider = ({
   cards,
 }: {
-  cards: { title: string; description: string; image: string;date?:string }[];
+  cards: { title: string; description: string; image: string; date?: string }[];
 }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
@@ -53,14 +53,12 @@ const CarouselSlider = ({
                 >
                   <div
                     className={`
-                      relative rounded-2xl overflow-hidden transition-all duration-500 ease-out border border-[#E3E3E3]
-                      ${
-                        isActive ? "scale-95 shadow-xlj" : "scale-90 opacity-90"
-                      }
+                      relative rounded-xl overflow-hidden transition-all duration-500 ease-out border border-[#E3E3E3]
+                      ${isActive ? "scale-95" : "scale-90 opacity-90"}
                     `}
                     // style={{ minHeight: "500px" }}
                   >
-                    <div className="relative h-1/ overflow-hidden shrink-0">
+                    <div className="relative overflow-hidden scale-x-105 shrink-0">
                       <img
                         src={card.image}
                         alt={card.title}
@@ -86,7 +84,11 @@ const CarouselSlider = ({
                         >
                           Lees meer
                         </Link>
-                        {card.date?<span className="text-[#4D4D4D] md:text-base text-sm">{card.date}</span>:null}
+                        {card.date ? (
+                          <span className="text-[#4D4D4D] md:text-base text-sm">
+                            {card.date}
+                          </span>
+                        ) : null}
                       </div>
                     </div>
                   </div>

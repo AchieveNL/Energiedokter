@@ -13,7 +13,7 @@ export default function SectionTitle({
 }) {
   return (
     <div
-      className="flex flex-col gap-3 w-fit"
+      className="flex flex-col md:gap-5 gap-3 w-fit"
       style={{ alignItems: align ? align : "center" }}
     >
       <div

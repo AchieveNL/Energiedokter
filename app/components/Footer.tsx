@@ -1,78 +1,3 @@
-// "use client";
-
-// import Link from "next/link";
-// import { useRef } from "react";
-
-// export default function Footer() {
-//   return (
-//     <>
-//       <img src="/assets/footer/bg-head.svg" className="w-full" alt="" />
-//       <div
-//         className="mt-0 bg-[#254055] md:pt-0 pt-0 relative -z-20"
-//         style={{ fontFamily: "Poppins" }}
-//       >
-//         <img
-//           src="/assets/footer/light.svg"
-//           className="absolute w-1/2 top-0 right-1/2 translate-x-1/2"
-//           alt=""
-//         />
-//         {/* body */}
-//         <div className="flex md:flex-row flex-col text-[#FEEEF3] justify-center md:items-start items-center gap-5 z-10 absolute right-1/2 translate-x-1/2 md:mt-20 mt-10">
-//           <div>
-//             <Link
-//               href="/"
-//               className="md:text-3xl text-xl flex flex-col items-center font-bold text-white"
-//             >
-//               Energie Dokter
-//               <span className="md:text-xs text-[8px] font-normal ">
-//                 sustainable energy consultancy
-//               </span>
-//             </Link>
-//           </div>
-//           <div className="flex flex-col md:items-start items-center gap-2 md:text-sm text-xs ">
-//             <Link href="/" className="md:text-2xl text-lg">
-//               Home
-//             </Link>
-//             <Link href="/about-us">Over Ons</Link>
-//             <Link href="/blogs">Blog</Link>
-//             <Link href="/faq">FAQ</Link>
-//             <Link href="/contact">Contact</Link>
-//           </div>
-//           <div className="flex flex-col md:items-start items-center gap-2 md:text-sm text-xs ">
-//             <Link
-//               href="/diensten/Alle-diensten"
-//               className="md:text-2xl text-lg"
-//             >
-//               Diensten
-//             </Link>
-//             <Link href="/diensten/1">
-//               Energielabels bestaande woningen en utiliteit
-//             </Link>
-//             <Link href="/diensten/2">
-//               Energielabels nieuwbouw woningen en utiliteit
-//             </Link>
-//             <Link href="/diensten/3">Informatieplicht</Link>
-//             <Link href="/diensten/4">GCAS</Link>
-//             <Link href="/diensten/5">WKO-Beheer</Link>
-//             <Link href="/diensten/6">Trainingen</Link>
-//           </div>
-//         </div>
-
-//         {/* bg */}
-//         <div className="w-full relactive"></div>
-//         <img
-//           src="/assets/footer/bg.svg"
-//           className="w-full absolute top-0 bg-[#254055] -z-10"
-//           alt=""
-//         />
-//         <div className="bg-red-400 absolute bot">
-//           hello world
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
 "use client";
 
 import Link from "next/link";
@@ -253,7 +178,7 @@ export default function Footer() {
         {/* last footer */}
         <div
           className="bg-[#27313C] absolute top-0 w-full text-[#F6F6F6] md:flex hidden items-center justify-between px-10 py-5 "
-          style={{ marginTop: bgHeight }}
+          style={{ marginTop: bgHeight-1 }}
         >
           <div className="flex gap-5">
             <Link href="#" className="hover:underline">

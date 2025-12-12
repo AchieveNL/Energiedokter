@@ -26,9 +26,8 @@ export default function GridView() {
         >
           <div
             className={`relative rounded-2xl overflow-hidden transition-all duration-500 ease-out border border-[#E3E3E3]`}
-            // style={{ minHeight: "500px" }}
           >
-            <div className="relative h-1/ overflow-hidden shrink-0">
+            <div className="relative rounded-l scale-x-105 overflow-hidden shrink-0">
               <img
                 src={image}
                 alt={title}

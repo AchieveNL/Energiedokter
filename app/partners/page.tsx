@@ -17,8 +17,8 @@ export default function Partners() {
           <SectionTitle
             title="Partners"
             span={
-              <span className="font-black text-4xl text-[#254055] ">
-                Ons netwerk van <br />
+              <span className="font-black text-4xl text-[#254055] flex flex-col gap-2 ">
+                <span>Ons netwerk van </span>
                 <span className="text-[#81C713]"> experts</span>
               </span>
             }
@@ -48,9 +48,9 @@ export default function Partners() {
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 mt-24 ">
         <Reviews />
       </div>
-      <Projects/>
-      <DienstenSection/>
-      <Footer/>
+      <Projects />
+      <DienstenSection />
+      <Footer />
     </>
   );
 }
