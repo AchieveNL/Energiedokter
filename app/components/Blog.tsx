@@ -8,8 +8,10 @@ import { cards } from "../data/blogs";
 
 export default function Blog({
   linkVisible = true,
+  titleVisible = true,
 }: {
   linkVisible?: boolean;
+  titleVisible?: boolean;
 }) {
   return (
     <div
@@ -17,6 +19,7 @@ export default function Blog({
       style={{ fontFamily: "Poppins" }}
     >
       <SectionTitle
+        titleVisible={titleVisible}
         title="Blog"
         span={
           <div className="md:text-4xl text-2xl font-extrabold text-center">

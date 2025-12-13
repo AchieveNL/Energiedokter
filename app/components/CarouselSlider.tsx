@@ -6,7 +6,14 @@ import Link from "next/link";
 const CarouselSlider = ({
   cards,
 }: {
-  cards: { title: string; description: string; image: string; date?: string }[];
+  cards: {
+    href: string;
+    id: string;
+    title: string;
+    description: string;
+    image: string;
+    date?: string;
+  }[];
 }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
@@ -79,7 +86,7 @@ const CarouselSlider = ({
 
                       <div className="mt-8 flex justify-between">
                         <Link
-                          href="#"
+                          href={card.id?card.id:'/projects/'+card.href}
                           className="hover:underline text-[#81C713] md:text-base text-sm"
                         >
                           Lees meer

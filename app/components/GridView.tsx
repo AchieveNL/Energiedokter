@@ -1,22 +1,28 @@
 "use client";
 
-import SectionTitle from "./SectionTitle";
-import { cards } from "../data/projects";
 import Link from "next/link";
 import React from "react";
 export default function GridView({
   cards,
   sectionTitle,
 }: {
-  cards: { title: string; image: string; description: string; date?: string }[];
+  cards: {
+    title: string;
+    image: string;
+    description: string;
+    date?: string;
+    id: string;
+  }[];
   sectionTitle: React.ReactNode;
 }) {
   const Card = ({
+    id,
     title,
     image,
     description,
     date,
   }: {
+    id: string;
     title: string;
     image: string;
     description: string;
@@ -53,7 +59,7 @@ export default function GridView({
 
               <div className="mt-8 flex justify-between">
                 <Link
-                  href="#"
+                  href={`${id}`}
                   className="hover:underline text-[#81C713] md:text-base text-sm"
                 >
                   Lees meer
@@ -80,6 +86,7 @@ export default function GridView({
       <div className="grid grid-cols-3 gap-y-10 gap-x-15 mt-10">
         {cards.map((card, index) => (
           <Card
+            id={card.id}
             key={index}
             title={card.title}
             description={card.description}

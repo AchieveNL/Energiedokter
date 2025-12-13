@@ -22,6 +22,7 @@ export default function Nav() {
       if (pathname === `/diensten/${i}`) return "Diensten";
     }
     if (pathname === "/diensten/Alle-diensten") return "Diensten";
+    if (pathname.startsWith("/blogs/")) return "Blogs";
     return "";
   };
 
