@@ -8,6 +8,7 @@ import Faq from "../components/Faq";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
+import { cards } from "../data/projects";
 
 export default function ProjectsPage() {
   return (
@@ -28,7 +29,20 @@ export default function ProjectsPage() {
         }
       />
       <BrandList />
-      <GridView />
+      <GridView
+        sectionTitle={
+          <SectionTitle
+            title="Projecten"
+            span={
+              <div className="text-[#254055] md:text-4xl text-2xl font-extrabold text-center ">
+                Projecten waar we <br />
+                <span className="text-[#81C713] ">trots</span> op zijn
+              </div>
+            }
+          />
+        }
+        cards={cards}
+      />
       <div className="md:hidden block ">
         <Projects linkVisible={false} />
       </div>

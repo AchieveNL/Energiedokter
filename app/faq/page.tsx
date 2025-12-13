@@ -1,7 +1,24 @@
+import DienstenSection from "../components/DienstenSection";
+import Faq from "../components/Faq";
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+
 export default function FaqPage() {
-    return(
-        <>
-        <h1 className="text-5xl">FAQ</h1>
-        </>
-    )
+  return (
+    <>
+      <Hero
+        title="FAQ"
+        span={
+          <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-2 ">
+            <span>Alles wat je moet</span>
+            <span className="text-[#81C713]">weten</span>
+          </span>
+        }
+        text="Heeft u vragen? Op deze pagina beantwoorden we de meest voorkomende vragen over onze aanpak, diensten en projecten."
+      />
+      <Faq />
+      <DienstenSection />
+      <Footer />
+    </>
+  );
 }

@@ -3,7 +3,14 @@
 import SectionTitle from "./SectionTitle";
 import { cards } from "../data/projects";
 import Link from "next/link";
-export default function GridView() {
+import React from "react";
+export default function GridView({
+  cards,
+  sectionTitle,
+}: {
+  cards: { title: string; image: string; description: string; date?: string }[];
+  sectionTitle: React.ReactNode;
+}) {
   const Card = ({
     title,
     image,
@@ -68,15 +75,7 @@ export default function GridView() {
       style={{ fontFamily: "Poppins" }}
       className="md:flex hidden flex-col items-center md:my-20 my-10 "
     >
-      <SectionTitle
-        title="Projecten"
-        span={
-          <div className="text-[#254055] md:text-4xl text-2xl font-extrabold text-center ">
-            Projecten waar we <br />
-            <span className="text-[#81C713] ">trots</span> op zijn
-          </div>
-        }
-      />
+      {sectionTitle}
 
       <div className="grid grid-cols-3 gap-y-10 gap-x-15 mt-10">
         {cards.map((card, index) => (

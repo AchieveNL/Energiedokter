@@ -3,12 +3,14 @@
 import { useState, useEffect, useRef } from "react";
 import SectionTitle from "./SectionTitle";
 import AnimatedLink from "./AnimatedLink";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
 import CarouselSlider from "./CarouselSlider";
 import { cards } from "../data/blogs";
 
-export default function Blog() {
+export default function Blog({
+  linkVisible = true,
+}: {
+  linkVisible?: boolean;
+}) {
   return (
     <div
       className="my-40 flex flex-col items-center overflow-hidden"
@@ -28,7 +30,10 @@ export default function Blog() {
       />
       <CarouselSlider cards={cards} />
 
-      <div className="w-fit m-auto md:scale-100 scale-80">
+      <div
+        style={{ display: linkVisible ? "block" : "none" }}
+        className="w-fit m-auto md:scale-100 scale-80"
+      >
         <AnimatedLink
           text="Zie alles"
           bg="#63A0AC"

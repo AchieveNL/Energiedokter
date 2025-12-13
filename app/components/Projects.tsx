@@ -3,8 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import SectionTitle from "./SectionTitle";
 import AnimatedLink from "./AnimatedLink";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
 import CarouselSlider from "./CarouselSlider";
 import { cards } from "../data/projects";
 
