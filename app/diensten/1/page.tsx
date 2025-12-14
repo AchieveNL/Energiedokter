@@ -1,6 +1,158 @@
+// import Hero from "@/app/components/Hero";
+// import ServiceOverview from "@/app/components/ServiceOverview";
+
+// const data = [
+//   {
+//     bold: "Boetes en juridische risico's ",
+//     normal:
+//       "Zonder geldig energielabel riskeert u hoge boetes of andere juridische gevolgen",
+//   },
+//   {
+//     bold: "Hogere energiekosten",
+//     normal:
+//       "U heeft geen overzicht van waar uw gebouw energie verliest, waardoor kosten onnodig hoog blijven",
+//   },
+//   {
+//     bold: "Minder aantrekkelijk voor huurders of kopers",
+//     normal:
+//       "Een laag of ontbrekend energielabel kan uw pand minder aantrekkelijk maken",
+//   },
+//   {
+//     bold: "Beperkt inzicht in verbeteringen",
+//     normal:
+//       "Zonder label mist u concrete informatie om energie-efficiëntie te verbeteren",
+//   },
+//   {
+//     bold: "Waardedaling van het pand",
+//     normal:
+//       "Gebouwen zonder actueel energielabel kunnen in waarde dalen bij verkoop of verhuur",
+//   },
+// ];
+
+// export default function Service1() {
+//   const Card = ({ bold, normal }: { bold: string; normal: string }) => {
+//     return (
+//       <div className="bg-linear-to-r from-[#f2f2ca] via-[#e5f0bf] to-[#d0f0ed] p-1 rounded-xl h-full">
+//         <div className="bg-white rounded-xl p-4 text-[#4D4D4D] flex flex-col h-full">
+//           <span className="font-semibold">{bold}</span>
+//           <span>{normal}</span>
+//         </div>
+//       </div>
+//     );
+//   };
+
+//   return (
+//     <>
+//       <Hero
+//         title="Diensten"
+//         span={
+//           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-3 ">
+//             <span> Energielabels bestaande</span>
+//             <span>woningen en utiliteit</span>
+//           </span>
+//         }
+//         text="Krijg inzicht in de energieprestatie van uw bestaande kantoor, school of winkel en voldoe aan de wettelijke energielabelplicht. Zo verlaagt u energiekosten en versterkt u het duurzame imago van uw gebouw."
+//       />
+
+//       <ServiceOverview
+//         title={
+//           <h1 className="md:text-2xl text-xl font-extrabold text-[#254055] ">
+//             Wat is een <span className="text-[#81C713]">energielabel?</span>
+//           </h1>
+//         }
+//         img="/assets/services/img1.svg"
+//         spans={
+//           <>
+//             <p>
+//               Een energielabel laat zien hoe energiezuinig uw bestaande woning
+//               of appartement is. Het geeft inzicht in het energieverbruik dat
+//               nodig is voor een comfortabel binnenklimaat en toont precies waar
+//               u kunt besparen. Het energielabel wordt bepaald op basis van
+//               bouwkundige en installatietechnische eigenschappen, zoals
+//               isolatie, ventilatie en verwarmingssystemen. Apparaten en
+//               AV-middelen zoals koffiemachines, koelkasten, televisies of
+//               laadpalen vallen hier niet onder.
+//             </p>
+//             <p>
+//               Bij Energie Dokter bekijken onze gecertificeerde energieadviseurs
+//               uw woning zorgvuldig en registreren we het officiële energielabel
+//               bij de RVO. Zo bent u verzekerd van een label, dat voldoet aan de
+//               wettelijke verplichtingen bij verkoop of verhuur.
+//             </p>
+//             <p>
+//               Onze aanpak is persoonlijk, snel en helder — jij weet precies waar
+//               je aan toe bent.
+//             </p>
+//           </>
+//         }
+//       />
+//       <div
+//         style={{ fontFamily: "Poppins" }}
+//         className="md:mx-24 mx-5 md:mt-20 mt-10 flex flex-col gap-2 items-center"
+//       >
+//         <h1 className="md:text-3xl text-xl font-bold text-[#254055]">
+//           Energieverlies is{" "}
+//           <span className="text-[#81C713] ">winstverlies</span>, ontdek waar uw
+//           gebouw lekt.
+//         </h1>
+//         <p className="text-[#4D4D4D] text-sm">
+//           Een energielabel is niet alleen verplicht, het biedt ook praktische
+//           voordelen voor uzelf en toekomstige bewoners:
+//         </p>
+//         <div className="mt-7 flex ">
+//           {data.map((item, index) => (
+//             <Card key={index} bold={item.bold} normal={item.normal} />
+//           ))}
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
 import Hero from "@/app/components/Hero";
+import ServiceOverview from "@/app/components/ServiceOverview";
+import Link from "next/link";
+
+const data = [
+  {
+    bold: "Boetes en juridische risico's ",
+    normal:
+      "Zonder geldig energielabel riskeert u hoge boetes of andere juridische gevolgen",
+  },
+  {
+    bold: "Hogere energiekosten",
+    normal:
+      "U heeft geen overzicht van waar uw gebouw energie verliest, waardoor kosten onnodig hoog blijven",
+  },
+  {
+    bold: "Minder aantrekkelijk voor huurders of kopers",
+    normal:
+      "Een laag of ontbrekend energielabel kan uw pand minder aantrekkelijk maken",
+  },
+  {
+    bold: "Beperkt inzicht in verbeteringen",
+    normal:
+      "Zonder label mist u concrete informatie om energie-efficiëntie te verbeteren",
+  },
+  {
+    bold: "Waardedaling van het pand",
+    normal:
+      "Gebouwen zonder actueel energielabel kunnen in waarde dalen bij verkoop of verhuur",
+  },
+];
 
 export default function Service1() {
+  const Card = ({ bold, normal }: { bold: string; normal: string }) => {
+    return (
+      <div className="bg-linear-to-r from-[#f2f2ca] via-[#e5f0bf] to-[#d0f0ed] p-1 rounded-tl-3xl rounded-br-3xl h-full">
+        <div className="pb-5 bg-white p-4 text-[#4D4D4D] flex flex-col h-full rounded-tl-3xl rounded-br-3xl">
+          <span className="font-semibold">{bold}</span>
+          <span>{normal}</span>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <>
       <Hero
@@ -13,6 +165,69 @@ export default function Service1() {
         }
         text="Krijg inzicht in de energieprestatie van uw bestaande kantoor, school of winkel en voldoe aan de wettelijke energielabelplicht. Zo verlaagt u energiekosten en versterkt u het duurzame imago van uw gebouw."
       />
+
+      <ServiceOverview
+        title={
+          <h1 className="md:text-2xl text-xl font-extrabold text-[#254055] ">
+            Wat is een <span className="text-[#81C713]">energielabel?</span>
+          </h1>
+        }
+        img="/assets/services/img1.svg"
+        spans={
+          <>
+            <p>
+              Een energielabel laat zien hoe energiezuinig uw bestaande woning
+              of appartement is. Het geeft inzicht in het energieverbruik dat
+              nodig is voor een comfortabel binnenklimaat en toont precies waar
+              u kunt besparen. Het energielabel wordt bepaald op basis van
+              bouwkundige en installatietechnische eigenschappen, zoals
+              isolatie, ventilatie en verwarmingssystemen. Apparaten en
+              AV-middelen zoals koffiemachines, koelkasten, televisies of
+              laadpalen vallen hier niet onder.
+            </p>
+            <p>
+              Bij Energie Dokter bekijken onze gecertificeerde energieadviseurs
+              uw woning zorgvuldig en registreren we het officiële energielabel
+              bij de RVO. Zo bent u verzekerd van een label, dat voldoet aan de
+              wettelijke verplichtingen bij verkoop of verhuur.
+            </p>
+            <p>
+              Onze aanpak is persoonlijk, snel en helder — jij weet precies waar
+              je aan toe bent.
+            </p>
+          </>
+        }
+      />
+      <div
+        style={{ fontFamily: "Poppins" }}
+        className="md:mx-24 mx-5 md:mt-20 mt-10 flex flex-col gap-2 items-center"
+      >
+        <h1 className="md:text-3xl text-xl font-bold text-[#254055]">
+          Energieverlies is{" "}
+          <span className="text-[#81C713] ">winstverlies</span>, ontdek waar uw
+          gebouw lekt.
+        </h1>
+        <p className="text-[#4D4D4D] text-sm">
+          Een energielabel is niet alleen verplicht, het biedt ook praktische
+          voordelen voor uzelf en toekomstige bewoners:
+        </p>
+        <div className="md:mt-10 mt-5 grid grid-cols-1 md:grid-cols-5 gap-5 w-full">
+          {data.map((item, index) => (
+            <Card key={index} bold={item.bold} normal={item.normal} />
+          ))}
+        </div>
+        <p className="text-sm text-[#4D4D4D] md:mt-10 mt-5 ">
+          Kortom: een energielabel is meer dan verplichting — het is een
+          investering in inzicht, comfort en waarde van uw woning.
+        </p>
+        <Link
+          href="#"
+          className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 "
+        >
+          Advies aanvragen
+        </Link>
+      </div>
+      
     </>
   );
 }
