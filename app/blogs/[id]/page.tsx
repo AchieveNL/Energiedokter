@@ -86,7 +86,6 @@ export default async function BlogDetails({
             laborum nihil et odit incidunt rem accusamus asperiores.
           </p>
         </div>
-        {/* <img src="/assets/blogs/section-img.svg" className="w-[20%]" /> */}
         <img
           src="/assets/blogs/section-img.svg"
           className="w-[20%] drop-shadow-[-15px_-15px_0px_#254055] md:block hidden"
