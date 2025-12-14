@@ -2,6 +2,7 @@ import ContactSection from "../components/ContactSection";
 import DienstenSection from "../components/DienstenSection";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
+import Map from "../components/Map";
 
 export default function ContactPage() {
   return (
@@ -20,6 +21,15 @@ export default function ContactPage() {
         text="We staan klaar om u te helpen. Neem contact op en ontdek hoe we samen uw gebouw toekomstbestendig kunnen maken."
       />
       <ContactSection />
+      <iframe
+        src="https://www.google.com/maps?q=Leersum,Netherlands&z=14&output=embed"
+        width="100%"
+        height="400"
+        style={{ border: 0 }}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+
       <DienstenSection />
       <Footer />
     </>
