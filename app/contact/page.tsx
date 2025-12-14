@@ -2,7 +2,6 @@ import ContactSection from "../components/ContactSection";
 import DienstenSection from "../components/DienstenSection";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import Map from "../components/Map";
 
 export default function ContactPage() {
   return (
