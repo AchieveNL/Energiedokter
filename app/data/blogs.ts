@@ -1,4 +1,5 @@
 interface BlogPost {
+  href: string;
   id: string;
   title: string;
   description: string;
@@ -6,6 +7,7 @@ interface BlogPost {
 }
 export const cards: BlogPost[] = [
   {
+    href: "/blogs/1",
     id: "/blogs/1",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet",
@@ -13,6 +15,7 @@ export const cards: BlogPost[] = [
   },
   {
     id: "/blogs/2",
+    href: "/blogs/1",
 
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet",
@@ -20,6 +23,7 @@ export const cards: BlogPost[] = [
   },
   {
     id: "/blogs/3",
+    href: "/blogs/1",
 
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet",
@@ -27,6 +31,7 @@ export const cards: BlogPost[] = [
   },
   {
     id: "/blogs/4",
+    href: "/blogs/1",
 
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet",
@@ -34,6 +39,7 @@ export const cards: BlogPost[] = [
   },
   {
     id: "/blogs/5",
+    href: "/blogs/1",
 
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet",
@@ -41,6 +47,7 @@ export const cards: BlogPost[] = [
   },
   {
     id: "/blogs/6",
+    href: "/blogs/1",
 
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet",
