@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Energie Dokter",
   description: "Energie Dokter website",
-  icons:"favicon.svg",
+  icons:"/favicon.svg",
 };
 
 export default function RootLayout({

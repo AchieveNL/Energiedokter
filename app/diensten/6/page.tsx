@@ -1,7 +1,151 @@
+import AboutSection from "@/app/components/AboutSection";
+import Contact from "@/app/components/Contact";
+import ContactSection from "@/app/components/ContactSection";
+import Faq from "@/app/components/Faq";
+import Footer from "@/app/components/Footer";
+import Hero from "@/app/components/Hero";
+import Projects from "@/app/components/Projects";
+import Reviews from "@/app/components/Reviews";
+import ServiceOverview from "@/app/components/ServiceOverview";
+import ServicesCTA from "@/app/components/ServicesCTA";
+import ServicesStats from "@/app/components/ServicesStats";
+import StepPlan from "@/app/components/StepPlan";
+import Link from "next/link";
+
 export default function Service6() {
   return (
     <>
-      <h1 className="text-4xl font-bold text-center mt-20">Informatieplicht</h1>
+      <Hero
+        title="Diensten"
+        span={
+          <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-3 ">
+            <span> Trainingen </span>
+          </span>
+        }
+        text="Vergroot uw kennis over energieprestaties, regelgeving en duurzaamheid met onze praktijkgerichte trainingen. Energie Dokter biedt heldere opleidingen voor professionals die up-to-date willen blijven in een veranderende energiemarkt."
+      />
+
+      <ServiceOverview
+        rounded={false}
+        title={
+          <h1 className="md:text-3xl text-xl font-extrabold text-[#254055] flex flex-col ">
+            <span>
+              Wat zijn onze<span className="text-[#81C713]"> trainingen? </span>
+            </span>
+          </h1>
+        }
+        img="/assets/services/img5.svg"
+        spans={
+          <>
+            <p>
+              Bij Energie Dokter bieden we praktijkgerichte trainingen op het
+              gebied van energieadvies, duurzaam bouwen en energielabels. Ze
+              zijn geschikt voor professionals, bedrijven en particulieren die
+              hun kennis willen vergroten en direct toepasbare vaardigheden
+              willen ontwikkelen.
+            </p>
+            <p>
+              Onze trainingen zijn alles behalve droge ‘zendverhalen’. Door goed
+              in te schatten wat een groep nodig heeft, houden we de aandacht
+              vast en creëren we een levendige, dynamische sfeer. We combineren
+              theorie met praktijk en zorgen dat deelnemers actief meedoen,
+              oefenen en meteen toepassen wat ze leren.
+            </p>
+            <p>
+              Onze aanpak is persoonlijk, snel en helder — jij weet precies waar
+              je aan toe bent.
+            </p>
+          </>
+        }
+      />
+
+      <div className="md:mt-20 mt-10 p-1"></div>
+
+      <div
+        style={{ fontFamily: "Poppins" }}
+        className="flex flex-col md:gap-5 gap-3 items-center relative"
+      >
+        <h1 className="md:text-3xl text-xl font-extrabold text-[#254055] text-center ">
+          De gevolgen van
+          <span className="text-[#81C713]"> onvoldoende </span>
+          kennis
+        </h1>
+        <p className="text-[#4D4D4D] text-sm md:w-1/2 px-5 text-center">
+          Zonder de juiste kennis en vaardigheden lopen medewerkers en
+          opdrachtgevers het risico verkeerde keuzes te maken bij het beheer van
+          gebouwen. Energiebesparende maatregelen worden over het hoofd gezien,
+          processen verlopen inefficiënt en fouten leiden tot hogere kosten en
+          verspilling van tijd. Het gebrek aan training beperkt het potentieel
+          van uw team en kan de duurzaamheidsdoelen van uw organisatie of
+          project ernstig in gevaar brengen. Zo blijft waardevolle kennis
+          onbenut en blijft energie-efficiëntie een uitdaging.
+        </p>
+        <Link
+          href="#"
+          className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 w-fit "
+        >
+          Advies aanvragen
+        </Link>
+        <img
+          src="/assets/services/icon6.svg"
+          className="md:w-60 w-40 absolute md:top-0 bottom-0 md:translate-y-1 -translate-y-1/2 left-0 -z-10"
+        />
+        <img
+          src="/assets/services/icon7.svg"
+          className="md:w-28 w-20 absolute md:top-0 top-10 md:right-10 right-5 -z-10"
+        />
+      </div>
+      <div className="md:mt-20 mt-10"></div>
+      <ServicesCTA
+        reverse={true}
+        title={
+          <div>
+            <h1 className="text-[#254055] font-extrabold text-2xl flex flex-col  ">
+              <span>
+                Zo haalt uw team het{" "}
+                <span className="text-[#81C713] ">maximale </span>
+              </span>
+              <span> uit energiebeheer</span>
+            </h1>
+          </div>
+        }
+        text={
+          <>
+            <p className="text-sm text-[#4D4D4D] ">
+              Met de juiste training beschikken uw medewerkers en opdrachtgevers
+              over de kennis en vaardigheden om gebouwen energiezuinig en
+              duurzaam te beheren. Ze herkennen energiebesparende maatregelen,
+              optimaliseren processen en nemen geïnformeerde beslissingen. Dit
+              leidt tot lagere kosten, hogere efficiëntie en een duurzaam
+              resultaat dat direct waarde toevoegt aan uw organisatie of
+              project. Goed opgeleide teams werken met vertrouwen, voorkomen
+              fouten en zorgen dat uw energie- en duurzaamheidsdoelen
+              daadwerkelijk worden bereikt.
+            </p>
+            <Link
+              href="#"
+              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-2 w-fit "
+            >
+              Advies aanvragen
+            </Link>
+          </>
+        }
+        img="/assets/blogs/section-img5.svg"
+      />
+
+      <div className="md:mt-20 mt-10"></div>
+
+      <StepPlan />
+      <div className="md:mt-40 mt-20"></div>
+      <Contact />
+      <div className="md:mt-31 mt-10"></div>
+      <Faq />
+      <Projects />
+      <div className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover md:mt-20 mt-10 py-10 ">
+        <Reviews />
+      </div>
+      <ContactSection />
+      <Footer />
     </>
   );
 }

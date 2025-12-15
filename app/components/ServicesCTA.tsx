@@ -3,16 +3,21 @@ import React from "react";
 export default function ServicesCTA({
   title,
   text,
-  img
+  img,
+  reverse = false,
 }: {
   title: React.ReactNode;
   text: React.ReactNode;
-  img:string;
+  img: string;
+  reverse?: boolean;
 }) {
   return (
     <div
-      className="md:mt-20 mt-10 md:px-24 px-5 flex md:gap-32"
-      style={{ fontFamily: "Poppins" }}
+      className="md:mt-20 mt-10 md:px-24 px-5 flex md:gap-20 justify-center"
+      style={{
+        fontFamily: "Poppins",
+        flexDirection: reverse ? "row-reverse" : "row",
+      }}
     >
       <div className="flex flex-col gap-5 md:w-1/2">
         {title}

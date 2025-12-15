@@ -1,4 +1,4 @@
-export default function ServicesStats() {
+export default function ServicesStats({ text }: { text: string }) {
   const aboutStatistiques = [
     {
       title: "150+",
@@ -38,22 +38,12 @@ export default function ServicesStats() {
     <div className="flex flex-col items-center">
       <div
         style={{ fontFamily: "Poppins" }}
-        className="flex md:flex-row flex-col md:mx-24 px-5 md:gap-10 gap-3 "
+        className="flex md:flex-row md:items-center flex-col md:mx-24 px-5 md:gap-10 gap-3 "
       >
         <h1 className="text-[#254055] font-extrabold md:text-3xl text-nowrap pt-2 ">
-          Waarom <br /> Energie Dokter?
+          <span className="text-[#81C713]">Waarom</span> <br /> Energie Dokter?
         </h1>
-        <p className="text-[#4D4D4D] text-sm ">
-          Bij Energie Dokter combineren we kennis, ervaring en praktische
-          oplossingen om uw energielabel snel en betrouwbaar te verzorgen. Onze
-          gecertificeerde energieadviseurs geven deskundig advies op maat,
-          passend bij uw woning, en bieden direct praktische tips om energie te
-          besparen en het wooncomfort te verhogen. We werken persoonlijk en
-          transparant, zodat u altijd precies weet wat er gebeurt en er geen
-          verrassingen achteraf zijn. Met Energie Dokter haalt u dus niet alleen
-          een officieel energielabel in huis, maar ook rust, zekerheid en extra
-          waarde voor uw woning.
-        </p>
+        <p className="text-[#4D4D4D] text-sm ">{text}</p>
       </div>
       <div
         className="bg-[#F6F6F6] flex flex-col md:flex-row items-center justify-center py-2 mt-10 rounded-4xl md:mx-0 mx-10 md:px-0 px-10 w-fit m-auto"

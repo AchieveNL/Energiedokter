@@ -166,7 +166,17 @@ export default function Service1() {
       <div className="md:mt-40 mt-20"></div>
       <Contact />
       <div className="md:mt-31 mt-10"></div>
-      <ServicesStats />
+      <ServicesStats
+        text="Bij Energie Dokter combineren we kennis, ervaring en praktische
+          oplossingen om uw energielabel snel en betrouwbaar te verzorgen. Onze
+          gecertificeerde energieadviseurs geven deskundig advies op maat,
+          passend bij uw woning, en bieden direct praktische tips om energie te
+          besparen en het wooncomfort te verhogen. We werken persoonlijk en
+          transparant, zodat u altijd precies weet wat er gebeurt en er geen
+          verrassingen achteraf zijn. Met Energie Dokter haalt u dus niet alleen
+          een officieel energielabel in huis, maar ook rust, zekerheid en extra
+          waarde voor uw woning."
+      />
       <Faq />
       <Projects />
       <div className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover md:mt-20 mt-10 py-10 ">

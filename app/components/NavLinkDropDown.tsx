@@ -66,7 +66,7 @@ export default function NavLinkDropdown({
         className={`flex items-center gap-1 w-full ${
           active !== text ? "hover:bg-[#82c71324]" : ""
         } md:p-2 md:px-4 p-1 rounded-2xl transition-all duration-200 md:text-lg
-      ${active === text ? "text-[#81C713]" : "md:text-black text-[#4D4D4D]"}`}
+      ${active === text ? "md:bg-[#81C713] md:text-white text-[#81C713]" : "md:text-black text-[#4D4D4D]"}`}
       >
         {text}
         <svg
