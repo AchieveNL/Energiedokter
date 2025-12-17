@@ -5,10 +5,10 @@ export default function Contact() {
     <>
       <div
         style={{ fontFamily: "Poppins" }}
-        className="relative mt-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center md:mx-24 mx-1 md:px-7 px-3 md:pt-3 pb-5 rounded-tl-[4rem] md:rounded-br-[4rem] flex md:flex-row flex-col-reverse justify-between overflow-x-clip "
+        className="relative mt-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center md:mx-24 mx-1 md:px-7 px-3 md:pt-3 pb-5 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl flex md:flex-row flex-col-reverse justify-between overflow-x-clip "
       >
         {/* left section */}
-        <div className="md:w-3/4 w-[70%]">
+        <div className="md:w-3/4 w-[70%] md:block hidden">
           <h1 className="md:text-[26px] text- font-bold text-[#0D2131] md:mt-5 mt-5  ">
             Last van energieverlies? De
             <span className="text-[#81C713] "> Energie Dokter</span> helpt!
@@ -58,19 +58,51 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* right section */}
+        {/* mobile left section */}
+        <div className="w-[70%] md:hidden block">
+          <h1 className="font-bold text-[#0D2131] mt-5  ">
+            Last van energieverlies? De
+            <span className="text-[#81C713] "> Energie Dokter</span> helpt!
+          </h1>
+
+          <ul className="list-disc list-inside text-[#254055] flex flex-col mt-3 text-sm w-[90%]">
+            <li className="font-semibold">Energiescan</li>
+            <li className="font-semibold">Duidelijk rapport</li>
+            <li className="font-semibold">Snel inzicht</li>
+            <li className="font-semibold">Persoonlijke begeleiding</li>
+            <li className="font-semibold">Transparant & voordelig</li>
+          </ul>
+
+          <p className="text-[#254055] mt-3 text-sm w-[90%] ">
+            Klaar om uw gebouw energiezuiniger te maken?
+          </p>
+        </div>
+        {/* right section mobile */}
         <div>
           <img
-            src="/assets/man.svg"
-            className="absolute md:bottom-0 md:right-10 md:translate-x-0 translate-x-[78%] md:translate-y-0 translate-y-2 md:scale-100 scale-[1.3] md:h-[115%]"
+            src="/assets/man.png"
+            className="absolute bottom-0 right-3 h-[105%] md:hidden block"
             alt=""
           />
         </div>
-        <div className="absolute md:right-3 -right-2 md:text-[#254055] text-white text-center md:bg-white rounded-tl-2xl rounded-br-2xl h-fit px-3 md:py-3 ">
+        <div className="absolute text-center text-sm text-white right-5 md:hidden block">
+          <h1 className="font-bold ">Rutger Jenner</h1>
+          <p className="text-[8px] ">Oprichter en Directeur</p>
+        </div>
+        {/* right section desktop */}
+        <div>
+          <img
+            src="/assets/man.svg"
+            className="absolute bottom-0 right-10 h-[115%] md:block hidden"
+            alt=""
+          />
+        </div>
+        <div className="absolute text-center right-5 md:block hidden bg-white p-3 rounded-tl-2xl rounded-br-2xl">
           <h1 className="font-bold ">Rutger Jenner</h1>
           <p className="text-[8px] ">Oprichter en Directeur</p>
         </div>
       </div>
+
       <div className="md:hidden flex justify-center gap-2 text-sm mt-5">
         <Link
           href="/contact"
