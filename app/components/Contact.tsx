@@ -42,16 +42,16 @@ export default function Contact() {
           <p className="text-[#254055] md:mt-5 mt-3 md:text-[16px] text-[11px] w-[90%] ">
             Klaar om uw gebouw energiezuiniger te maken?
           </p>
-          <div className="md:flex hidden md:gap-5 gap-2 mt-10 md:text-sm text-xs">
+          <div className="md:flex hidden md:gap-5 gap-2 mt-5 items-center">
             <Link
               href="/contact"
-              className="bg-[#6B9D1C] text-white rounded-xl p-3 md:px-5 px-3 hover:bg-[#3b560f] hover:cursor-pointer transition-colors duration-300 "
+              className="md:border-2 border border-[#81C713] bg-[#81C713] text-white md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#5a8613] hover:border-[#5a8613]"
             >
               Plan een consult
             </Link>
             <Link
               href="/diensten/Alle-diensten"
-              className="border-3 border-[#254055] text-[#254055] rounded-xl p-3 md:px-5 px-3 hover:bg-[#254055] hover:text-white transition-colors duration-300 cursor-pointer "
+              className="text-[#254055] md:border-2 border border-[#254055] md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#72a2c7] hover:border-[#72a2c7] hover:text-white"
             >
               Bekijk alle diensten
             </Link>
@@ -103,16 +103,16 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="md:hidden flex justify-center gap-2 text-sm mt-5">
+      <div className="md:hidden justify-center flex md:gap-5 gap-2 mt-5 items-center">
         <Link
           href="/contact"
-          className="bg-[#6B9D1C] text-white py-3 px-5 rounded-xl hover:bg-[#3b560f] transition-colors duration-300 "
+          className="md:border-2 border border-[#81C713] bg-[#81C713] text-white md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#5a8613] hover:border-[#5a8613]"
         >
           Plan een consult
         </Link>
         <Link
           href="/diensten/Alle-diensten"
-          className="border-3 border-[#254055] text-[#254055] rounded-xl hover:bg-[#254055] hover:text-white transition-colors duration-300 flex justify-center items-center px-5 "
+          className="text-[#254055] md:border-2 border border-[#254055] md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#72a2c7] hover:border-[#72a2c7] hover:text-white"
         >
           Bekijk alle diensten
         </Link>
