@@ -165,7 +165,6 @@ export default function Service1() {
 
       <div className="md:mt-20 mt-10"></div>
       <StepPlan />
-      <div className="md:mt-40 mt-20"></div>
       <Contact />
       <div className="md:mt-31 mt-10"></div>
       <ServicesStats
