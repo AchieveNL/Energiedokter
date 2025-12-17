@@ -12,7 +12,7 @@ export default function Projects({
 }) {
   return (
     <div
-      className="mt-20 flex flex-col items-center overflow-hidden"
+      className="md:mt-20 mt-10 flex flex-col items-center overflow-hidden"
       style={{ fontFamily: "Poppins" }}
     >
       <SectionTitle

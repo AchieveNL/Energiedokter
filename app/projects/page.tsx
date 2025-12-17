@@ -48,7 +48,7 @@ export default function ProjectsPage() {
       <div className="md:hidden block p-5">
         <Projects linkVisible={false} />
       </div>
-      <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 mt-24 ">
+      <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 md:mt-0 mt-5 ">
         <Reviews />
       </div>
       <Faq />

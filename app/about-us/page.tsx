@@ -95,7 +95,7 @@ export default function AboutPage() {
       </div>
       <Projects />
 
-      <div className="mt-40"></div>
+      <div className="md:mt-20 mt-10"></div>
       <Footer />
     </>
   );
