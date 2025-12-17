@@ -114,7 +114,7 @@ export default function Nav() {
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="bg-[white] flex flex-col w-full px-2 relative pt-15">
+        <div className="bg-[white] flex flex-col w-full px-2 relative pt-15 gap-1">
           <NavLink href="/" text="Home" active={active} />
           <NavLink href="/about-us" text="Over ons" active={active} />
           <NavLinkDropdown

@@ -88,7 +88,7 @@ export default function NavLinkDropdown({
      
 
       {isOpen && (
-        <div className="md:absolute top-full left-0 min-w-[200px] bg-white rounded-2xl md:shadow-lg md:border border-gray-100 md:p-4 p-0 z-50 md:w-max wrap-break-word overflow-auto">
+        <div className="md:absolute top-full left-0 min-w-[200px] bg-white rounded-2xl md:shadow-lg md:border border-gray-100 md:p-4 p-0 z-50 md:w-max wrap-break-word overflow-auto md:block flex flex-col gap-1">
           {items.map((item, index) => (
             <div key={index}>
               <Link
