@@ -4,7 +4,7 @@ export default function DienstenSection() {
   return (
     <div
       style={{ fontFamily: "Poppins" }}
-      className="md:my-20 my-10 bg-[url('/assets/HomeHeroBg.svg')] bg-cover flex flex-col gap-3 md:items-center items-start py-10 md:px-10 px-5 md:mx-20 mx-5 rounded-tl-[4rem] rounded-br-[4rem]"
+      className="md:my-20 my-10 bg-[url('/assets/HomeHeroBg.svg')] bg-cover flex flex-col gap-2 md:items-center items-start md:py-10 py-5 md:px-10 px-3 md:mx-20 mx-2 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl"
     >
       <h3 className="text-[#6B9D1C] font-bold md:block hidden">
         Maak een afspraak met de Energie Dokter
@@ -21,7 +21,7 @@ export default function DienstenSection() {
           De Energie Dokter schrijft het juiste behandelplan voor
         </span>
       </p>
-      <div className="flex md:gap-5 gap-2 mt-5 items-center">
+      <div className="flex md:gap-5 gap-2 mt-5 items-center justify-center w-full">
         <Link
           href="/contact"
           className="md:border-2 border border-[#81C713] bg-[#81C713] text-white md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#5a8613] hover:border-[#5a8613]"
