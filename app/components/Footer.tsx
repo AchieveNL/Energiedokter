@@ -98,9 +98,9 @@ export default function Footer() {
         {/* body */}
         <div
           ref={divRef}
-          className="flex md:flex-row flex-col text-[#FEEEF3] justify-center md:items-start items-center md:gap-10 gap-5 z-10 absolute right-1/2 md:translate-x-[57%] translate-x-1/2 md:mt-20 mt-10 md:w-2/3"
+          className="flex md:flex-row flex-col text-[#FEEEF3] justify-center md:items-start items-center md:gap-10 gap-5 z-10 absolute right-1/2 md:translate-x-[57%] translate-x-1/2 md:mt-20 mt-15 md:w-2/3"
         >
-          <div className="flex flex-col items-center md:gap-5 gap-3">
+          <div className="flex flex-col items-center md:gap-5 gap-2">
             <Link
               href="/"
               className="md:text-3xl text-xl flex flex-col items-center font-bold text-white"
@@ -131,7 +131,7 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col md:items-start items-center gap-2 md:text-sm text-xs ">
+          <div className="flex flex-col md:items-start items-center md:gap-2 gap-1 md:text-sm text-xs ">
             <Link href="/" className="md:text-2xl text-lg">
               Home
             </Link>
@@ -178,7 +178,7 @@ export default function Footer() {
         {/* last footer */}
         <div
           className="bg-[#27313C] absolute top-0 w-full text-[#F6F6F6] md:flex hidden items-center justify-between px-10 py-5 "
-          style={{ marginTop: bgHeight-1 }}
+          style={{ marginTop: bgHeight - 1 }}
         >
           <div className="flex gap-5">
             <Link href="#" className="hover:underline">
@@ -199,7 +199,7 @@ export default function Footer() {
         {/* last footer mobile */}
         <div
           className="bg-[#27313C] absolute top-0 w-full text-[#F6F6F6] md:hidden flex items-center p-4 justify-between px-2 text-xs "
-          style={{ marginTop: mobileBgHeight-1 }}
+          style={{ marginTop: mobileBgHeight - 1 }}
         >
           <div className="flex gap-2">
             <Link href="#" className="hover:underline">
