@@ -19,7 +19,7 @@ export default function AboutSection() {
     <div
       id="about-us"
       style={{ fontFamily: "Poppins" }}
-      className="md:pt-32 pt-20 flex md:flex-row flex-col gap-10 md:mx-20 mx-5"
+      className="md:pt-32 pt-10 flex md:flex-row flex-col gap-10 md:mx-20 mx-5"
     >
       {/* left section */}
       <div className="md:w-1/2 h-fit bg-[#F6F6F6] rounded-4xl md:p-7 p-4 md:pb-10 pb-7 flex flex-col md:gap-5 gap-3">

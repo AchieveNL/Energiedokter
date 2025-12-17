@@ -94,6 +94,9 @@ export default function AboutPage() {
           Bekijk alle diensten
         </Link>
       </div>
+
+
+      
       <div className="md:mt-20 mt-10"></div>
       <Reviews />
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover pb-1 mt-5 ">
