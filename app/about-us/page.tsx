@@ -49,18 +49,19 @@ export default function AboutPage() {
           </p>
         </div>
         {/* links */}
-        <div className="md:flex hidden gap-5 mt-10">
+
+        <div className="md:flex hidden md:gap-5 gap-2 mt-5 items-center">
           <Link
             href="/contact"
-            className="border-2 border-[#81C713] bg-[#81C713] text-white text-sm p-3 px-5 rounded-xl hover:bg-[#72ab16] hover:border-[#72ab16] transition-all"
+            className="md:border-2 border border-[#81C713] bg-[#81C713] text-white md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#5a8613] hover:border-[#5a8613]"
           >
             Plan een consult
           </Link>
           <Link
             href="/diensten/Alle-diensten"
-            className="border-2 text-[#254055] text-sm p-3 px-5 rounded-xl hover:bg-[#254055] hover:text-white transition-all"
+            className="text-[#254055] md:border-2 border border-[#254055] md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#72a2c7] hover:border-[#72a2c7] hover:text-white"
           >
-            Bekijk alle diensten{" "}
+            Bekijk alle diensten
           </Link>
         </div>
         <img
@@ -74,16 +75,16 @@ export default function AboutPage() {
         </div>
       </div>
       {/* mobile links */}
-      <div className="md:hidden flex justify-center gap-3 mt-5">
+      <div className="md:hidden justify-center flex md:gap-5 gap-2 mt-5 items-center">
         <Link
           href="/contact"
-          className="border-2 border-[#81C713] bg-[#81C713] text-white text-sm p-2 px-3 rounded-xl hover:bg-[#72ab16] hover:border-[#72ab16] transition-all"
+          className="md:border-2 border border-[#81C713] bg-[#81C713] text-white md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#5a8613] hover:border-[#5a8613]"
         >
           Plan een consult
         </Link>
         <Link
           href="/diensten/Alle-diensten"
-          className="border-2 text-[#254055] text-sm p-2 px-3 rounded-xl hover:bg-[#254055] hover:text-white transition-all"
+          className="text-[#254055] md:border-2 border border-[#254055] md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#72a2c7] hover:border-[#72a2c7] hover:text-white"
         >
           Bekijk alle diensten
         </Link>

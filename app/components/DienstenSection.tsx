@@ -17,18 +17,20 @@ export default function DienstenSection() {
           <span className="text-[#81C713] "> Energie Dokter</span> schrijft het
           juiste behandelplan voor!
         </span>
-        <span className="md:hidden block font-normal">De Energie Dokter schrijft het juiste behandelplan voor</span>
+        <span className="md:hidden block font-normal">
+          De Energie Dokter schrijft het juiste behandelplan voor
+        </span>
       </p>
-      <div className="flex md:gap-5 gap-2 mt-5">
+      <div className="flex md:gap-5 gap-2 mt-5 items-center">
         <Link
           href="/contact"
-          className="border-2 border-[#81C713] bg-[#81C713] text-white text-sm md:p-3 p-2 md:px-5 text-nowrap rounded-xl hover:bg-[#72ab16] hover:border-[#72ab16] transition-all"
+          className="md:border-2 border border-[#81C713] bg-[#81C713] text-white md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#5a8613] hover:border-[#5a8613]"
         >
           Plan een consult
         </Link>
         <Link
           href="/diensten/Alle-diensten"
-          className="border-2 text-[#254055] text-sm md:p-3 p-2 md:px-5 text-nowrap rounded-xl hover:bg-[#254055] hover:text-white transition-all"
+          className="text-[#254055] md:border-2 border border-[#254055] md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#72a2c7] hover:border-[#72a2c7] hover:text-white"
         >
           Bekijk alle diensten
         </Link>
