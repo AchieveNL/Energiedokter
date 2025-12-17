@@ -199,7 +199,7 @@ export default function Footer() {
         {/* last footer mobile */}
         <div
           className="bg-[#27313C] absolute top-0 w-full text-[#F6F6F6] md:hidden flex items-center p-4 justify-between px-2 text-xs "
-          style={{ marginTop: mobileBgHeight }}
+          style={{ marginTop: mobileBgHeight-1 }}
         >
           <div className="flex gap-2">
             <Link href="#" className="hover:underline">

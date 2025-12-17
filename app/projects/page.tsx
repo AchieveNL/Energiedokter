@@ -9,7 +9,6 @@ import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import { cards } from "../data/projects";
-import { useRef } from "react";
 
 export default function ProjectsPage() {
   return (
