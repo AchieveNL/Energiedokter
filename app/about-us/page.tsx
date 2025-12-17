@@ -15,6 +15,7 @@ export default function AboutPage() {
   return (
     <>
       <Hero
+        sectionId={"about-us"}
         title="Wie wij zijn"
         span={
           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-2 ">
@@ -50,13 +51,13 @@ export default function AboutPage() {
         {/* links */}
         <div className="md:flex hidden gap-5 mt-10">
           <Link
-            href="#"
+            href="/contact"
             className="border-2 border-[#81C713] bg-[#81C713] text-white text-sm p-3 px-5 rounded-xl hover:bg-[#72ab16] hover:border-[#72ab16] transition-all"
           >
             Plan een consult
           </Link>
           <Link
-            href="#"
+            href="/diensten/Alle-diensten"
             className="border-2 text-[#254055] text-sm p-3 px-5 rounded-xl hover:bg-[#254055] hover:text-white transition-all"
           >
             Bekijk alle diensten{" "}
@@ -87,7 +88,7 @@ export default function AboutPage() {
           Bekijk alle diensten
         </Link>
       </div>
-
+      <div className="md:mt-20 mt-10"></div>
       <Reviews />
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover pb-1 mt-5 ">
         <Faq />

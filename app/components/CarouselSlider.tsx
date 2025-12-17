@@ -86,7 +86,7 @@ const CarouselSlider = ({
 
                       <div className="mt-8 flex justify-between">
                         <Link
-                          href={card.id?card.id:'/projects/'+card.href}
+                          href={card.id}
                           className="hover:underline text-[#81C713] md:text-base text-sm"
                         >
                           Lees meer

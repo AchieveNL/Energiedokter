@@ -79,7 +79,7 @@ export default function GridView({
   return (
     <div
       style={{ fontFamily: "Poppins" }}
-      className="md:flex hidden flex-col items-center md:my-20 my-10 "
+      className="md:flex hidden flex-col items-center md:py-24 py-10 "
     >
       {sectionTitle}
 

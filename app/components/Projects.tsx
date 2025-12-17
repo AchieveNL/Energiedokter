@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
 import SectionTitle from "./SectionTitle";
 import AnimatedLink from "./AnimatedLink";
 import CarouselSlider from "./CarouselSlider";
@@ -13,7 +12,7 @@ export default function Projects({
 }) {
   return (
     <div
-      className="mt-40 flex flex-col items-center overflow-hidden"
+      className="mt-20 flex flex-col items-center overflow-hidden"
       style={{ fontFamily: "Poppins" }}
     >
       <SectionTitle

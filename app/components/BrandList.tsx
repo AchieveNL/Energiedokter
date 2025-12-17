@@ -6,15 +6,12 @@ export default function BrandList() {
 
   return (
     <div className="w-full bg-[#F6F6F6] py-4">
-      <Marquee
-        direction="right"
-        speed={70}
-        gradient={false}
-      >
+      <Marquee direction="right" speed={70} gradient={false}>
         {/* Repeat the brands multiple times to ensure full coverage */}
         {[...Array(3)].map((_, repeatIndex) =>
           brands.map((brand, index) => (
             <div
+              
               key={`${repeatIndex}-${index}`}
               className="flex items-center justify-center px-8 md:px-12 lg:px-16"
             >

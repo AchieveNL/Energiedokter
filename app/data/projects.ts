@@ -8,7 +8,7 @@ interface project {
 }
 export const cards: project[] = [
   {
-    id: "1",
+    id: "/projects/1",
     href: "1",
     title: "Warmte opwekking",
     description: "Lorem ipsum dolor sit amet",
@@ -16,7 +16,7 @@ export const cards: project[] = [
     date: "01-10-2025",
   },
   {
-    id: "1",
+    id: "/projects/2",
 
     href: "2",
     title: "WKO put",
@@ -25,7 +25,7 @@ export const cards: project[] = [
     date: "01-10-2025",
   },
   {
-    id: "1",
+    id: "/projects/3",
 
     href: "3",
     title: "Ventilatie systeem",
@@ -34,7 +34,7 @@ export const cards: project[] = [
     date: "01-10-2025",
   },
   {
-    id: "1",
+    id: "/projects/4",
 
     href: "4",
     title: "Lorem ipsum",
@@ -43,7 +43,7 @@ export const cards: project[] = [
     date: "01-10-2025",
   },
   {
-    id: "1",
+    id: "/projects/5",
 
     href: "6",
     title: "Lorem ipsum",
@@ -52,7 +52,7 @@ export const cards: project[] = [
     date: "01-10-2025",
   },
   {
-    id: "1",
+    id: "/projects/6",
 
     href: "7",
     title: "Lorem ipsum",

@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import SectionTitle from "./SectionTitle";
 
@@ -5,11 +6,18 @@ export default function Hero({
   span,
   title,
   text,
+  sectionId,
 }: {
   span: React.ReactNode;
   title: string;
   text: string;
+  sectionId?: any;
 }) {
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div
       className="md:pt-44 pt-28 min-h-screen md:px-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover flex flex-col gap-3"
@@ -37,6 +45,7 @@ export default function Hero({
           Plan een gesprek
         </Link>
         <Link
+          onClick={() => scrollToSection(sectionId)}
           href="#"
           className="text-[#4D4D4D] bg-white hover:bg-[#82c71350] transition-all duration-200 md:py-2 md:pb-3 p-3 px-8 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
         >

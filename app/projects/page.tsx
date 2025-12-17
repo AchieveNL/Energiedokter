@@ -9,6 +9,7 @@ import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import { cards } from "../data/projects";
+import { useRef } from "react";
 
 export default function ProjectsPage() {
   return (
@@ -29,21 +30,23 @@ export default function ProjectsPage() {
         }
       />
       <BrandList />
-      <GridView
-        sectionTitle={
-          <SectionTitle
-            title="Projecten"
-            span={
-              <div className="text-[#254055] md:text-4xl text-2xl font-extrabold text-center ">
-                Projecten waar we <br />
-                <span className="text-[#81C713] ">trots</span> op zijn
-              </div>
-            }
-          />
-        }
-        cards={cards}
-      />
-      <div className="md:hidden block ">
+      <div>
+        <GridView
+          sectionTitle={
+            <SectionTitle
+              title="Projecten"
+              span={
+                <div className="text-[#254055] md:text-4xl text-2xl font-extrabold text-center ">
+                  Projecten waar we <br />
+                  <span className="text-[#81C713] ">trots</span> op zijn
+                </div>
+              }
+            />
+          }
+          cards={cards}
+        />
+      </div>
+      <div className="md:hidden block p-5">
         <Projects linkVisible={false} />
       </div>
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 mt-24 ">

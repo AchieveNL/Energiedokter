@@ -21,13 +21,13 @@ export default function DienstenSection() {
       </p>
       <div className="flex md:gap-5 gap-2 mt-5">
         <Link
-          href="#"
+          href="/contact"
           className="border-2 border-[#81C713] bg-[#81C713] text-white text-sm md:p-3 p-2 md:px-5 text-nowrap rounded-xl hover:bg-[#72ab16] hover:border-[#72ab16] transition-all"
         >
           Plan een consult
         </Link>
         <Link
-          href="#"
+          href="/diensten/Alle-diensten"
           className="border-2 text-[#254055] text-sm md:p-3 p-2 md:px-5 text-nowrap rounded-xl hover:bg-[#254055] hover:text-white transition-all"
         >
           Bekijk alle diensten
