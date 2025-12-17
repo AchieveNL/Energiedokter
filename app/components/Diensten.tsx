@@ -114,7 +114,7 @@ export default function Diensten() {
       </div>
 
       {/* mobile carousel - FIX APPLIED */}
-      <div className="md:hidden w-full mt-10 px-5">
+      <div className="md:hidden w-full mt-10 ">
         <div className="relative">
           {/* Embla viewport with proper overflow handling */}
           <div className="overflow-hidden" ref={emblaRef}>
