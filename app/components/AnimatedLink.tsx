@@ -36,9 +36,6 @@ export default function AnimatedLink({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
-        boxShadow: isHovered
-          ? "0 20px 60px rgba(141, 209, 186, 0.4)"
-          : "0 10px 30px rgba(0, 0, 0, 0.08)",
         backgroundColor: bg,
       }}
     >
