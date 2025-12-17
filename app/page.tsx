@@ -16,6 +16,7 @@ export default function Home() {
       <HomeHero />
       <BrandList />
       <About />
+      <div className="md:hidden block py-6"></div>
       <Diensten />
       <StepPlan />
       <Contact />

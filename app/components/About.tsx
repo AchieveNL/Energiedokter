@@ -116,7 +116,7 @@ export default function About() {
         </div>
       </div>
       <div
-        className="md:mt-20 mt-10 flex flex-col items-center md:gap-8 gap-5 md:py-20 py-10 relative"
+        className="md:mt-20 mt-15 flex flex-col items-center md:gap-8 gap-5 md:py-20 py-10 relative"
         style={{ fontFamily: "Poppins" }}
       >
         <div className="absolute inset-0 -z-10 blur">
