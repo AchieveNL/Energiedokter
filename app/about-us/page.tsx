@@ -66,7 +66,12 @@ export default function AboutPage() {
         </div>
         <img
           src="/assets/about/man.svg"
-          className="absolute bottom-0 md:right-32 right-5 h-[110%]"
+          className="absolute bottom-0 md:right-32 right-5 h-[110%] md:block hidden"
+          alt=""
+        />
+        <img
+          src="/assets/about/man.png"
+          className="absolute bottom-0 md:right-32 right-5 h-[110%] md:hidden block"
           alt=""
         />
         <div className="absolute right-6 md:top-2 bottom-0 md:text-[#254055] text-white text-center md:bg-white rounded-tl-2xl rounded-br-2xl h-fit px-3 md:py-3 ">
