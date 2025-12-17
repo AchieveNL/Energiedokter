@@ -127,7 +127,7 @@ export default function Service1() {
           Advies aanvragen
         </Link>
       </div>
-
+      <div className="py-5"></div>
       <ServicesCTA
         title={
           <div>
@@ -161,6 +161,8 @@ export default function Service1() {
         }
         img="/assets/blogs/section-img.svg"
       />
+      <div className="py-3"></div>
+
       <div className="md:mt-20 mt-10"></div>
       <StepPlan />
       <div className="md:mt-40 mt-20"></div>
