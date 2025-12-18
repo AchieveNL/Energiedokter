@@ -58,7 +58,7 @@ export default function Service2() {
         style={{ fontFamily: "Poppins" }}
         className="md:mx-24 px-5 flex flex-col md:gap-4 gap-2 md:mt-20 mt-10"
       >
-        <h1 className="md:text-3xl text-xl font-extrabold text-[#254055] ">
+        <h1 className="md:text-2xl text-xl font-extrabold text-[#254055] ">
           Wat is een <span className="text-[#81C713] ">energielabel?</span>
         </h1>
         <p className="text-sm text-[#4D4D4D] ">
@@ -94,6 +94,7 @@ export default function Service2() {
       </div>
 
       <ServiceOverview
+      imgStyle={{width:"100%"}}
         reverse={true}
         title={
           <h1 className="md:text-2xl text-xl font-extrabold text-[#254055] flex flex-col ">
@@ -122,18 +123,19 @@ export default function Service2() {
             </p>
             <Link
               href="#"
-              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg w-fit "
+              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg w-fit"
             >
               Advies aanvragen
             </Link>
           </>
         }
       />
+
       <div className="md:mt-10 mt-5 p-1"></div>
       <ServicesCTA
         title={
           <div>
-            <h1 className="text-[#254055] font-bold text-2xl ">
+            <h1 className="text-[#254055] font-extrabold md:text-2xl text-xl ">
               Toekomstbestendig <span className="text-[#81C713] ">bouwen </span>
               begint hier
             </h1>
@@ -166,7 +168,7 @@ export default function Service2() {
         img="/assets/blogs/section-img2.svg"
       />
 
-      <div className="md:mt-20 mt-10"></div>
+      <div className="md:mt-20 mt-15"></div>
 
       <StepPlan />
       <Contact />

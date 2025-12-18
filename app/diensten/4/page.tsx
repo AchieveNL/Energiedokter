@@ -66,7 +66,7 @@ export default function Service4() {
 
       <ServiceOverview
         title={
-          <h1 className="md:text-3xl text-xl font-extrabold text-[#254055] flex flex-col ">
+          <h1 className="md:text-2xl text-xl font-extrabold text-[#254055] flex flex-col ">
             <span>
               Wat is<span className="text-[#81C713]"> GACS? </span>
             </span>
@@ -102,7 +102,7 @@ export default function Service4() {
         reverse={true}
         title={
           <div>
-            <h1 className="text-[#254055] font-extrabold text-2xl flex flex-col  ">
+            <h1 className="text-[#254055] font-extrabold md:text-2xl text-xl flex flex-col  ">
               <span>
                 De grootste <span className="text-[#81C713] ">valkuilen </span>{" "}
                 zonder
@@ -136,13 +136,13 @@ export default function Service4() {
         }
         img="/assets/blogs/section-img4.svg"
       />
-      <div className="md:mt-20 mt-10"></div>
+      <div className="md:mt-20 mt-15"></div>
 
       <div
         style={{ fontFamily: "Poppins" }}
         className="flex flex-col md:gap-5 gap-3 items-center relative"
       >
-        <h1 className="md:text-3xl text-xl font-extrabold text-[#254055] text-center ">
+        <h1 className="md:text-2xl text-xl font-extrabold text-[#254055] text-center md:mx-0 mx-2 ">
           Dit is wat u wél wilt:{" "}
           <span className="text-[#81C713] ">
             grip<span className="text-[#254055]">,</span> comfort{" "}
@@ -177,7 +177,7 @@ export default function Service4() {
         />
       </div>
 
-      <div className="md:mt-20 mt-10"></div>
+      <div className="md:mt-20 mt-15"></div>
 
       <StepPlan />
       <Contact />

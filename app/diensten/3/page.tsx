@@ -68,7 +68,7 @@ export default function Service3() {
         reverse={true}
         title={
           <div>
-            <h1 className="text-[#254055] font-bold text-2xl ">
+            <h1 className="text-[#254055] font-extrabold md:text-2xl text-xl ">
               De <span className="text-[#81C713] ">waarde </span>
               van informatieplicht
             </h1>
@@ -113,7 +113,7 @@ export default function Service3() {
             <span> de informatieplicht</span>
           </h1>
         }
-        img="/assets/services/img2.svg"
+        img="/assets/services/img6.svg"
         spans={
           <>
             <p>
@@ -139,7 +139,7 @@ export default function Service3() {
         style={{ fontFamily: "Poppins" }}
         className="flex flex-col md:gap-5 gap-3 items-center relative"
       >
-        <h1 className="md:text-3xl text-xl font-extrabold text-[#254055] text-center ">
+        <h1 className="md:text-2xl text-xl font-extrabold text-[#254055] text-center ">
           Profiteer van een <span className="text-[#81C713] ">volledige </span>
           informatievoorziening
         </h1>
@@ -170,7 +170,7 @@ export default function Service3() {
         />
       </div>
 
-      <div className="md:mt-20 mt-10"></div>
+      <div className="md:mt-20 mt-15"></div>
 
       <StepPlan />
       <Contact />

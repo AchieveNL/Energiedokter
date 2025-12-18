@@ -6,12 +6,14 @@ export default function ServiceOverview({
   spans,
   reverse = false,
   rounded = true,
+  imgStyle,
 }: {
   title: React.ReactNode;
   img: string;
   spans: React.ReactNode;
   reverse?: boolean;
   rounded?: boolean;
+  imgStyle?: {};
 }) {
   return (
     <div
@@ -29,14 +31,15 @@ export default function ServiceOverview({
       <img
         src={img}
         alt=""
-        className="w-[30%] md:block hidden bg-[#596E3633]"
-        style={
-          reverse
-            ? { borderTopLeftRadius: "45px" }
-            : rounded
-            ? { borderBottomRightRadius: "45px" }
-            : { borderTopRightRadius: "45px" }
-        }
+        className="w-1/2 md:block hidden bg-[#596E3633]="
+        style={imgStyle}
+        // style={
+        //   reverse
+        //     ? { borderTopLeftRadius: "45px" }
+        //     : rounded
+        //     ? { borderTopRightRadius: "45px" }
+        //     : { borderTopRightRadius: "45px" }
+        // }
       />
     </div>
   );

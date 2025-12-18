@@ -133,13 +133,13 @@ export default function Service5() {
           className="md:w-20 w-10 absolute bottom-0 right-0 -z-10"
         />
       </div>
-      <div className="md:mt-20 mt-10"></div>
+      <div className="md:mt-20 mt-15"></div>
 
       <ServicesCTA
         reverse={true}
         title={
           <div>
-            <h1 className="text-[#254055] font-extrabold text-2xl flex flex-col  ">
+            <h1 className="text-[#254055] font-extrabold md:text-2xl text-xl  flex flex-col  ">
               <span>
                 Haal <span className="text-[#81C713] ">maximaal </span>{" "}
                 rendement uit
@@ -174,13 +174,13 @@ export default function Service5() {
         img="/assets/blogs/section-img5.svg"
       />
 
-      <div className="md:mt-20 mt-10"></div>
+      <div className="md:mt-20 mt-15"></div>
 
       <div
         style={{ fontFamily: "Poppins" }}
         className="flex flex-col md:gap-5 gap-3 items-center relative"
       >
-        <h1 className="md:text-3xl text-xl font-extrabold text-[#254055] text-center ">
+        <h1 className="md:text-3xl text-xl font-extrabold text-[#254055] text-center md:mx-0 mx-2 ">
           Dit is wat u wél wilt:{" "}
           <span className="text-[#81C713] ">
             grip<span className="text-[#254055]">,</span> comfort{" "}
@@ -215,7 +215,7 @@ export default function Service5() {
         />
       </div>
 
-      <div className="md:mt-20 mt-10"></div>
+      <div className="md:mt-20 mt-15"></div>
 
       <StepPlan />
       <Contact />

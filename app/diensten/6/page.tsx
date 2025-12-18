@@ -95,12 +95,12 @@ export default function Service6() {
           className="md:w-28 w-20 absolute md:top-0 top-10 md:right-10 right-5 -z-10"
         />
       </div>
-      <div className="md:mt-20 mt-10"></div>
+      <div className="md:mt-20 mt-15"></div>
       <ServicesCTA
         reverse={true}
         title={
           <div>
-            <h1 className="text-[#254055] font-extrabold text-2xl flex flex-col  ">
+            <h1 className="text-[#254055] font-extrabold md:text-2xl text-xl flex flex-col  ">
               <span>
                 Zo haalt uw team het{" "}
                 <span className="text-[#81C713] ">maximale </span>
@@ -133,7 +133,7 @@ export default function Service6() {
         img="/assets/blogs/section-img5.svg"
       />
 
-      <div className="md:mt-20 mt-10"></div>
+      <div className="md:mt-20 mt-15"></div>
 
       <StepPlan />
       <Contact />

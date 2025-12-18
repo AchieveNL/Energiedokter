@@ -131,7 +131,7 @@ export default function Service1() {
       <ServicesCTA
         title={
           <div>
-            <h1 className="text-[#254055] font-bold text-2xl ">
+            <h1 className="text-[#254055] font-extrabold md:text-2xl text-xl ">
               Grip op energie, <span className="text-[#81C713] ">waarde </span>
               voor uw pand
             </h1>
