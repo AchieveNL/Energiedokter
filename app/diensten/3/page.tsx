@@ -133,7 +133,7 @@ export default function Service3() {
         }
       />
 
-      <div className="md:mt-20 mt-10"></div>
+      <div className="md:mt-20 mt-15"></div>
 
       <div
         style={{ fontFamily: "Poppins" }}

@@ -32,11 +32,10 @@ export default function Service5() {
         <div className="block md:hidden text-center">
           <SectionTitle
             titleSize={{ fontSize: 14 }}
-            title="Partners"
+            title="Diensten"
             span={
               <span className="font-black text-2xl text-[#254055]">
-                Ons netwerk van <br />
-                <span className="text-[#81C713]"> experts</span>
+                WKO Beheer
               </span>
             }
             align="center"
@@ -174,7 +173,7 @@ export default function Service5() {
         img="/assets/blogs/section-img5.svg"
       />
 
-      <div className="md:mt-20 mt-15"></div>
+      <div className="mt-20"></div>
 
       <div
         style={{ fontFamily: "Poppins" }}

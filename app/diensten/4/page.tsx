@@ -136,7 +136,7 @@ export default function Service4() {
         }
         img="/assets/blogs/section-img4.svg"
       />
-      <div className="md:mt-20 mt-15"></div>
+      <div className="mt-20"></div>
 
       <div
         style={{ fontFamily: "Poppins" }}
