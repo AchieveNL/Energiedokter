@@ -140,10 +140,10 @@ export default function Service5() {
           <div>
             <h1 className="text-[#254055] font-extrabold md:text-2xl text-xl  flex flex-col  ">
               <span>
-                Haal <span className="text-[#81C713] ">maximaal </span>{" "}
-                rendement uit
+                Haal <span className="text-[#81C713] ">maximaal </span>
+                rendement
               </span>
-              <span> uw WKO-installatie</span>
+              <span className="text-nowrap">uit uw WKO-installatie</span>
             </h1>
           </div>
         }
