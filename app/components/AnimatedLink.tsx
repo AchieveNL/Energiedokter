@@ -32,7 +32,7 @@ export default function AnimatedLink({
   return (
     <Link
       href={href}
-      className="relative p-2 rounded-2xl flex items-center justify-around gap-6 pr-5 text-sm md:text-base overflow-hidden group transition-all duration-500 md:mt-15 mt-5"
+      className="relative p-2 rounded-2xl flex items-center justify-around md:gap-6 gap-2 md:pr-5 pr-2 text-sm md:text-base overflow-hidden group transition-all duration-500 md:mt-15 mt-5"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
@@ -67,20 +67,20 @@ export default function AnimatedLink({
       <div className="relative z-10">
         <div
           style={{ backgroundColor: arrowBg }}
-          className="w-12 h-12 rounded-xl p-0 flex items-center justify-center transition-all duration-500"
+          className="md:w-12 md:h-12 w-8 h-8 rounded-xl p-0 flex items-center justify-center transition-all duration-500"
         >
           <ArrowRight
             style={{ color: arrowColor }}
             className={`${
               isHovered ? "-rotate-45" : "rotate-0"
-            } transition-all duration-300 size-8`}
+            } transition-all duration-300 md:size-8`}
           />
         </div>
       </div>
 
       {/* Text with slide animation */}
       <span
-        className="relative transition-all duration-300 z-10"
+        className="relative transition-all duration-300 z-10 text-nowrap"
         style={{
           fontFamily: "Poppins",
           transform: isHovered ? "translateX(6px)" : "translateX(0px)",

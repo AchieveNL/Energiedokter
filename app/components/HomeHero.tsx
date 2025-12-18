@@ -35,7 +35,7 @@ export default function HomeHero() {
           </p>
           <span className="bg-[#8dd1ba53]"></span>
         </div>
-        <div className="px-5">
+        <div className="md:px-5">
           <AnimatedLink
             text="Plan vandaag nog een consult met Rutger"
             bg="white"
