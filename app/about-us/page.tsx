@@ -34,6 +34,7 @@ export default function AboutPage() {
       <AboutSection />
       <Diensten />
 
+      <div className="md:mt-32 mt-20"></div>
       {/* help */}
       <div
         className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover md:p-7 p-3 rounded-tl-4xl rounded-br-4xl md:mx-10 mx-3 relative"
@@ -94,9 +95,9 @@ export default function AboutPage() {
           Bekijk alle diensten
         </Link>
       </div>
+      <div className="md:mt-32 mt-20"></div>
 
 
-      
       <div className="md:mt-20 mt-10"></div>
       <Reviews />
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover pb-1 mt-5 ">

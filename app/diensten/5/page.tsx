@@ -132,7 +132,7 @@ export default function Service5() {
           className="md:w-20 w-10 absolute bottom-0 right-0 -z-10"
         />
       </div>
-      <div className="md:mt-20 mt-20"></div>
+      <div className="mt-20"></div>
 
       <ServicesCTA
         reverse={true}
