@@ -30,7 +30,7 @@ export default function DienstenSection() {
         </Link>
         <Link
           href="/diensten/Alle-diensten"
-          className="text-[#254055] md:border-2 border border-[#254055] md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#72a2c7] hover:border-[#72a2c7] hover:text-white"
+          className="text-[#254055] md:border-2 border border-[#254055] md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#63A0AC] hover:border-[#63A0AC] hover:text-white"
         >
           Bekijk alle diensten
         </Link>
