@@ -44,12 +44,12 @@ export default function About() {
     <>
       <div className="mt-20 md:px-20 lg:px-24 px-1 flex flex-col items-center">
         {/* First section */}
-        <div className="flex items-start justify-between gap-5">
-          <div className="md:w-1/2 w-1/5 mt-3">
+        <div className="flex items-start justify-between md:gap-5">
+          <div className="md:w-1/2 w-1/5 ml-3">
             <SectionTitle
               title="Wie wij zijn"
               span={
-                <div className="md:text-4xl text-2xl font-extrabold text-center">
+                <div className="md:text-4xl text-2xl font-extrabold text-center text-nowrap">
                   <span className="text-[#254055]">Over </span>
                   <span className="text-[#81C713]">ons</span>
                 </div>
