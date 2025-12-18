@@ -29,7 +29,7 @@ export default function HomeHero() {
             className="text-[#4D4D4D] px-5 md:w-2/3 m-auto"
             style={{ fontFamily: "Poppins" }}
           >
-            Ontdek hoe uw pand beter kan presteren — technisch, ﬁnancieel én
+            Ontdek hoe uw pand beter kan presteren — technisch, financieel én
             duurzaam. Wij maken inzichtelijk waar de kansen liggen en begeleiden
             u stap voor stap naar een toekomstbestendig gebouw.
           </p>
