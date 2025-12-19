@@ -54,17 +54,11 @@ export default function ContactSection() {
             <h1 className="text-[#81C713] font-bold text-lg mb-5 ">
               Stuur ons een bericht
             </h1>
-            <TextInput
-              label="Vul uw volledige naam in"
-              placeholder="Lorem ipsum"
-            />
-            <TextInput
-              label="Vul uw e-mailadres in"
-              placeholder="Lorem ipsum"
-            />
+            <TextInput label="Vul uw volledige naam in" placeholder="Naam" />
+            <TextInput label="Vul uw e-mailadres in" placeholder="E-mail" />
             <TextInput
               label="Vul uw telefoonnummer in"
-              placeholder="Lorem ipsum"
+              placeholder="Telefoonnummer"
             />
             <div className="flex flex-col gap-2 w-full mb-4">
               <label htmlFor="" className="text-[#4D4D4D] font-bold ">
@@ -72,7 +66,7 @@ export default function ContactSection() {
               </label>
               <textarea
                 rows={4}
-                placeholder="Lorem ipsum"
+                placeholder="Bericht"
                 className=" border-[#D0D0D0] outline-0 border-2 rounded-xl p-2 pl-4 w-full "
               ></textarea>
               <div>
