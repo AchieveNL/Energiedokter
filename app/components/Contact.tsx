@@ -5,7 +5,7 @@ export default function Contact() {
     <>
       <div
         style={{ fontFamily: "Poppins" }}
-        className="relative mt-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center md:mx-24 mx-1 md:px-7 px-3 md:pt-3 pb-5 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl flex md:flex-row flex-col-reverse justify-between overflow-x-clip "
+        className="relative mt-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center md:mx-auto mx-1 md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-4/6 md:px-7 px-3 md:pt-3 pb-5 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl flex md:flex-row flex-col-reverse justify-between overflow-x-clip "
       >
         {/* left section */}
         <div className="md:w-3/4 w-[70%] md:block hidden">
@@ -103,7 +103,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="md:hidden justify-center flex md:gap-5 gap-2 mt-5 items-center">
+      <div className="md:hidden flex justify-center md:gap-5 gap-2 mt-5 items-center">
         <Link
           href="/contact"
           className="md:border-2 border border-[#81C713] bg-[#81C713] text-white md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#5a8613] hover:border-[#5a8613]"
