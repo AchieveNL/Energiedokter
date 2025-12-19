@@ -8,7 +8,7 @@ import React, { useCallback, useEffect } from "react";
 import { reviews } from "../data/reviews";
 import { Star } from "lucide-react";
 
-export default function Reviews() {
+export default function Reviews({ bg = "white" }: { bg?: string }) {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
@@ -46,20 +46,10 @@ export default function Reviews() {
     text: string;
     role: string;
   }) => {
-    // const navigate = useRouter();
-    // const handleClick = () => {
-    //   navigate.push("/diensten/" + href);
-    // };
-
-    // const handleReadMore = (e: React.MouseEvent) => {
-    //   e.stopPropagation();
-    //   navigate.push("/diensten/" + href);
-    // };
-
     return (
       <button
-        // onClick={handleClick}
-        className="bg-[#F6F6F6] flex flex-col md:gap-5 gap-2 items-center justify-between rounded-tl-[3rem] rounded-br-[3rem] md:px-8 px-6 py-6 hover:bg-[#F0F8E2] hover:-translate-y-1 transition-all duration-300 hover:cursor-pointer w-full h-full"
+        style={{ backgroundColor: bg }}
+        className="flex flex-col md:gap-5 gap-2 items-center justify-between rounded-tl-[3rem] rounded-br-[3rem] md:px-8 px-6 py-6 hover:bg-[#F0F8E2] hover:-translate-y-1 transition-all duration-300 hover:cursor-pointer w-full h-full"
       >
         <div className="flex justify-between w-full gap-3 items-center ">
           <div className="flex">

@@ -31,7 +31,7 @@ export default function DienstenPage() {
       <BrandList />
       <Diensten />
       <DienstenSection />
-      <Reviews />
+      <Reviews bg="#F6F6F6" />
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover pb-1 mt-5 ">
         <Faq />
       </div>

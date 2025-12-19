@@ -99,7 +99,7 @@ export default function AboutPage() {
 
 
       <div className="md:mt-20 mt-10"></div>
-      <Reviews />
+      <Reviews bg="#F6F6F6"  />
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover pb-1 mt-5 ">
         <Faq />
       </div>
