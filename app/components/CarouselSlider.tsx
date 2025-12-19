@@ -60,7 +60,7 @@ const CarouselSlider = ({
                 >
                   <div
                     className={`
-                      relative rounded-xl overflow-hidden transition-all duration-500 ease-out border border-[#E3E3E3]
+                      relative rounded-xl overflow-hidden border border-[#E3E3E3] bg-[#F9F9F9] hover:bg-[#F0F8E2] transition-all duration-500 ease-out
                       ${isActive ? "scale-95" : "scale-90 opacity-90"}
                     `}
                     // style={{ minHeight: "500px" }}
@@ -73,7 +73,7 @@ const CarouselSlider = ({
                       />
                     </div>
 
-                    <div className="relative p-5 pb-3 flex flex-col">
+                    <div className="relative p-5 pb-3 flex flex-col md:gap-10 gap-8">
                       <div>
                         <h2 className="font-bold text-[#254055] mb-3 ">
                           {card.title}

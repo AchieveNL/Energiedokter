@@ -38,7 +38,7 @@ export default function GridView({
           }}
         >
           <div
-            className={`relative rounded-2xl overflow-hidden transition-all duration-500 ease-out border border-[#E3E3E3]`}
+            className={`relative rounded-2xl overflow-hidden bg-[#F9F9F9] hover:bg-[#F0F8E2] transition-all duration-500 ease-out`}
           >
             <div className="relative rounded-l scale-x-105 overflow-hidden shrink-0">
               <img
