@@ -97,7 +97,7 @@ export default function Service2() {
       imgStyle={{width:"100%"}}
         reverse={true}
         title={
-          <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
+          <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col mt-2">
             <span>
               Geen <span className="text-[#81C713]">inzicht</span> in uw
               energieverbruik?
@@ -123,7 +123,7 @@ export default function Service2() {
             </p>
             <Link
               href="#"
-              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg w-fit"
+              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg w-fit mb-5"
             >
               Advies aanvragen
             </Link>
