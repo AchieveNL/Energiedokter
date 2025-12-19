@@ -12,34 +12,6 @@ import ServicesStats from "@/app/components/ServicesStats";
 import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
 
-const data = [
-  {
-    bold: "Boetes en juridische risico's ",
-    normal:
-      "Zonder geldig energielabel riskeert u hoge boetes of andere juridische gevolgen",
-  },
-  {
-    bold: "Hogere energiekosten",
-    normal:
-      "U heeft geen overzicht van waar uw gebouw energie verliest, waardoor kosten onnodig hoog blijven",
-  },
-  {
-    bold: "Minder aantrekkelijk voor huurders of kopers",
-    normal:
-      "Een laag of ontbrekend energielabel kan uw pand minder aantrekkelijk maken",
-  },
-  {
-    bold: "Beperkt inzicht in verbeteringen",
-    normal:
-      "Zonder label mist u concrete informatie om energie-efficiëntie te verbeteren",
-  },
-  {
-    bold: "Waardedaling van het pand",
-    normal:
-      "Gebouwen zonder actueel energielabel kunnen in waarde dalen bij verkoop of verhuur",
-  },
-];
-
 export default function Service2() {
   return (
     <>
@@ -94,7 +66,9 @@ export default function Service2() {
       </div>
 
       <ServiceOverview
-      imgStyle={{width:"100%"}}
+        roundedBl={false}
+        roundedBr={true}
+        imgStyle={{ width: "100%" }}
         reverse={true}
         title={
           <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col mt-2">

@@ -64,7 +64,7 @@ export default function Service3() {
       />
 
       <div className="md:mt-10 mt-5 p-1"></div>
-      <ServiceOverview
+      <ServiceOverview 
         title={
           <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
             <span className="flex gap-1">

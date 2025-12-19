@@ -5,14 +5,18 @@ export default function ServiceOverview({
   img,
   spans,
   reverse = false,
-  rounded = true,
+  roundedBl = true,
+  roundedTl = false,
+  roundedBr = false,
   imgStyle,
 }: {
   title: React.ReactNode;
   img: string;
   spans: React.ReactNode;
   reverse?: boolean;
-  rounded?: boolean;
+  roundedBl?: boolean;
+  roundedTl?: boolean;
+  roundedBr?: boolean;
   imgStyle?: {};
 }) {
   return (
@@ -24,7 +28,14 @@ export default function ServiceOverview({
       }}
       className="flex md:mt-20 mt-10 md:mx-24 w-fit "
     >
-      <div className="text-sm text-[#4D4D4D] bg-[#FAFAFA] flex flex-col gap-5 pt-3 px-5 md:px-10 md:pb-0 pb-5">
+      <div
+        style={{
+          borderBottomLeftRadius: roundedBl ? "40px" : "0px",
+          borderTopLeftRadius: roundedTl ? "40px" : "0px",
+          borderBottomRightRadius: roundedBr ? "40px" : "0px",
+        }}
+        className="text-sm text-[#4D4D4D] bg-[#FAFAFA] flex flex-col gap-5 pt-3 px-5 md:px-10 md:pb-5 pb-5"
+      >
         {title}
         {spans}
       </div>
@@ -33,13 +44,6 @@ export default function ServiceOverview({
         alt=""
         className=" md:block hidden bg-[#596E3633]="
         style={imgStyle}
-        // style={
-        //   reverse
-        //     ? { borderTopLeftRadius: "45px" }
-        //     : rounded
-        //     ? { borderTopRightRadius: "45px" }
-        //     : { borderTopRightRadius: "45px" }
-        // }
       />
     </div>
   );

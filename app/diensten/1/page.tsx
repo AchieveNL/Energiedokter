@@ -66,6 +66,8 @@ export default function Service1() {
       />
 
       <ServiceOverview
+        roundedTl={true}
+        roundedBl={false}
         title={
           <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] ">
             Wat is een <span className="text-[#81C713]">energielabel?</span>
