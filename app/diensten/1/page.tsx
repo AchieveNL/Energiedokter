@@ -67,7 +67,7 @@ export default function Service1() {
 
       <ServiceOverview
         title={
-          <h1 className="md:text-2xl text-xl font-extrabold text-[#254055] ">
+          <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] ">
             Wat is een <span className="text-[#81C713]">energielabel?</span>
           </h1>
         }
@@ -102,7 +102,7 @@ export default function Service1() {
         style={{ fontFamily: "Poppins" }}
         className="md:mx-24 mx-5 md:mt-20 mt-10 flex flex-col gap-2 items-center"
       >
-        <h1 className="md:text-3xl text-xl font-bold text-[#254055]">
+        <h1 className="md:text-3xl text-2xl font-bold text-[#254055]">
           Energieverlies is{" "}
           <span className="text-[#81C713] ">winstverlies</span>, ontdek waar uw
           gebouw lekt.
@@ -131,7 +131,7 @@ export default function Service1() {
       <ServicesCTA
         title={
           <div>
-            <h1 className="text-[#254055] font-extrabold md:text-2xl text-xl ">
+            <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl ">
               Grip op energie, <span className="text-[#81C713] ">waarde </span>
               voor uw pand
             </h1>

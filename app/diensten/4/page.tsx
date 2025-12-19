@@ -12,46 +12,7 @@ import ServicesStats from "@/app/components/ServicesStats";
 import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
 
-const data = [
-  {
-    bold: "Boetes en juridische risico's ",
-    normal:
-      "Zonder geldig energielabel riskeert u hoge boetes of andere juridische gevolgen",
-  },
-  {
-    bold: "Hogere energiekosten",
-    normal:
-      "U heeft geen overzicht van waar uw gebouw energie verliest, waardoor kosten onnodig hoog blijven",
-  },
-  {
-    bold: "Minder aantrekkelijk voor huurders of kopers",
-    normal:
-      "Een laag of ontbrekend energielabel kan uw pand minder aantrekkelijk maken",
-  },
-  {
-    bold: "Beperkt inzicht in verbeteringen",
-    normal:
-      "Zonder label mist u concrete informatie om energie-efficiëntie te verbeteren",
-  },
-  {
-    bold: "Waardedaling van het pand",
-    normal:
-      "Gebouwen zonder actueel energielabel kunnen in waarde dalen bij verkoop of verhuur",
-  },
-];
-
 export default function Service4() {
-  const Card = ({ bold, normal }: { bold: string; normal: string }) => {
-    return (
-      <div className="bg-linear-to-r from-[#f2f2ca] via-[#e5f0bf] to-[#d0f0ed] p-1 rounded-tl-3xl rounded-br-3xl h-full">
-        <div className="pb-5 bg-white p-4 text-[#4D4D4D] flex flex-col h-full rounded-tl-3xl rounded-br-3xl">
-          <span className="font-semibold">{bold}</span>
-          <span>{normal}</span>
-        </div>
-      </div>
-    );
-  };
-
   return (
     <>
       <Hero
@@ -66,7 +27,7 @@ export default function Service4() {
 
       <ServiceOverview
         title={
-          <h1 className="md:text-2xl text-xl font-extrabold text-[#254055] flex flex-col ">
+          <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
             <span>
               Wat is<span className="text-[#81C713]"> GACS? </span>
             </span>
@@ -102,12 +63,15 @@ export default function Service4() {
         reverse={true}
         title={
           <div>
-            <h1 className="text-[#254055] font-extrabold md:text-2xl text-xl flex flex-col  ">
-              <span>
+            <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl flex flex-col  ">
+              <span className="flex gap-1">
                 De grootste <span className="text-[#81C713] ">valkuilen </span>{" "}
-                zonder
+                <span className="md:block hidden">zonder</span>
               </span>
-              <span> goed GACS-beheer</span>
+              <span className="flex gap-1">
+                <span className="md:hidden block">zonder</span>
+                <span>goed GACS-beheer</span>
+              </span>
             </h1>
           </div>
         }
@@ -142,7 +106,7 @@ export default function Service4() {
         style={{ fontFamily: "Poppins" }}
         className="flex flex-col md:gap-5 gap-3 items-center relative"
       >
-        <h1 className="md:text-2xl text-xl font-extrabold text-[#254055] text-center md:mx-0 mx-2 ">
+        <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] text-center md:mx-0 mx-2 ">
           Dit is wat u wél wilt:{" "}
           <span className="text-[#81C713] ">
             grip<span className="text-[#254055]">,</span> comfort{" "}

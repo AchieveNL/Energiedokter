@@ -65,7 +65,7 @@ export default function Service5() {
 
       <ServiceOverview
         title={
-          <h1 className="md:text-3xl text-xl font-extrabold text-[#254055] flex flex-col ">
+          <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
             <span>
               Wat is<span className="text-[#81C713]"> WKO-beheer? </span>
             </span>
@@ -98,7 +98,7 @@ export default function Service5() {
         style={{ fontFamily: "Poppins" }}
         className="flex flex-col md:gap-5 gap-3 items-center relative"
       >
-        <h1 className="md:text-3xl text-xl font-extrabold text-[#254055] text-center ">
+        <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] text-center md:mx-0 mx-3 ">
           Risico's die uw installatie
           <span className="text-[#81C713] "> geld </span>kosten
         </h1>
@@ -138,8 +138,8 @@ export default function Service5() {
         reverse={true}
         title={
           <div>
-            <h1 className="text-[#254055] font-extrabold md:text-2xl text-xl  flex flex-col  ">
-              <span>
+            <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl  flex flex-col  ">
+              <span className="text-nowrap">
                 Haal <span className="text-[#81C713] ">maximaal </span>
                 rendement
               </span>
@@ -179,7 +179,7 @@ export default function Service5() {
         style={{ fontFamily: "Poppins" }}
         className="flex flex-col md:gap-5 gap-3 items-center relative"
       >
-        <h1 className="md:text-3xl text-xl font-extrabold text-[#254055] text-center md:mx-0 mx-2 ">
+        <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] text-center md:mx-0 mx-2 ">
           Dit is wat u wél wilt:{" "}
           <span className="text-[#81C713] ">
             grip<span className="text-[#254055]">,</span> comfort{" "}

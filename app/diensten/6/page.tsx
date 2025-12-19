@@ -28,7 +28,7 @@ export default function Service6() {
       <ServiceOverview
         rounded={false}
         title={
-          <h1 className="md:text-3xl text-xl font-extrabold text-[#254055] flex flex-col ">
+          <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
             <span>
               Wat zijn onze<span className="text-[#81C713]"> trainingen? </span>
             </span>
@@ -65,7 +65,7 @@ export default function Service6() {
         style={{ fontFamily: "Poppins" }}
         className="flex flex-col md:gap-5 gap-3 items-center relative"
       >
-        <h1 className="md:text-3xl text-xl font-extrabold text-[#254055] text-center ">
+        <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] text-center ">
           De gevolgen van
           <span className="text-[#81C713]"> onvoldoende </span>
           kennis
@@ -100,12 +100,19 @@ export default function Service6() {
         reverse={true}
         title={
           <div>
-            <h1 className="text-[#254055] font-extrabold md:text-2xl text-xl flex flex-col  ">
-              <span>
+            <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl flex flex-col  ">
+              <span className="flex gap-1">
                 Zo haalt uw team het{" "}
-                <span className="text-[#81C713] ">maximale </span>
+                <span className="text-[#81C713] md:block hidden">
+                  maximale{" "}
+                </span>
               </span>
-              <span> uit energiebeheer</span>
+              <span className="text-nowrap">
+                <span className="text-[#81C713] md:hidden block">
+                  maximale <span className="text-[#254055]">uit</span>
+                </span>
+                <span className="md:inline hidden">uit </span>energiebeheer
+              </span>
             </h1>
           </div>
         }

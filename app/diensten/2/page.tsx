@@ -58,7 +58,7 @@ export default function Service2() {
         style={{ fontFamily: "Poppins" }}
         className="md:mx-24 px-5 flex flex-col md:gap-4 gap-2 md:mt-20 mt-10"
       >
-        <h1 className="md:text-2xl text-xl font-extrabold text-[#254055] ">
+        <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] ">
           Wat is een <span className="text-[#81C713] ">energielabel?</span>
         </h1>
         <p className="text-sm text-[#4D4D4D] ">
@@ -97,7 +97,7 @@ export default function Service2() {
       imgStyle={{width:"100%"}}
         reverse={true}
         title={
-          <h1 className="md:text-2xl text-xl font-extrabold text-[#254055] flex flex-col ">
+          <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
             <span>
               Geen <span className="text-[#81C713]">inzicht</span> in uw
               energieverbruik?
@@ -135,7 +135,7 @@ export default function Service2() {
       <ServicesCTA
         title={
           <div>
-            <h1 className="text-[#254055] font-extrabold md:text-2xl text-xl ">
+            <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl ">
               Toekomstbestendig <span className="text-[#81C713] ">bouwen </span>
               begint hier
             </h1>

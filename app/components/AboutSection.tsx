@@ -23,7 +23,7 @@ export default function AboutSection() {
     >
       {/* left section */}
       <div className="md:w-1/2 h-fit bg-[#F6F6F6] rounded-4xl md:p-7 p-4 md:pb-10 pb-7 flex flex-col md:gap-5 gap-3">
-        <h1 className="text-[#254055] md:text-3xl text-xl font-extrabold ">
+        <h1 className="text-[#254055] md:text-3xl text-2xl font-extrabold ">
           Wie zijn wij?
         </h1>
         <p className="text-[#4D4D4D] md:text-base text-sm ">
@@ -85,7 +85,7 @@ export default function AboutSection() {
         </div>
 
         <div className="bg-[#F0F8E2] rounded-4xl md:p-7 p-4 md:px-10 flex flex-col gap-5 md:mt-0 mt-7">
-          <h1 className="text-[#254055] md:text-3xl text-xl font-extrabold ">
+          <h1 className="text-[#254055] md:text-3xl text-2xl font-extrabold ">
             Waarom Energie Dokter de
             <span className="text-[#81C713]"> juiste</span> partner is
           </h1>

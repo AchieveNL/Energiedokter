@@ -9,7 +9,7 @@ export default function Contact() {
       >
         {/* left section */}
         <div className="md:w-3/4 w-[70%] md:block hidden">
-          <h1 className="md:text-[26px] text- font-bold text-[#0D2131] md:mt-5 mt-5  ">
+          <h1 className="md:text-[26px] font-bold text-[#0D2131] md:mt-5 mt-5  ">
             Last van energieverlies? De
             <span className="text-[#81C713] "> Energie Dokter</span> helpt!
           </h1>

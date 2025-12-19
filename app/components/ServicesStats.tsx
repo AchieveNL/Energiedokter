@@ -35,12 +35,12 @@ export default function ServicesStats({ text }: { text: string }) {
   ];
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center md:mt-0 mt-15">
       <div
         style={{ fontFamily: "Poppins" }}
         className="flex md:flex-row md:items-center flex-col md:mx-24 px-5 md:gap-10 gap-3 "
       >
-        <h1 className="text-[#254055] font-extrabold md:text-3xl text-nowrap pt-2 ">
+        <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl text-nowrap pt-2 ">
           <span className="text-[#81C713]">Waarom</span> <br /> Energie Dokter?
         </h1>
         <p className="text-[#4D4D4D] text-sm ">{text}</p>
