@@ -41,8 +41,8 @@ export default function ContactSection() {
         mogelijk contact met je op om samen te kijken naar de mogelijkheden
       </p>
       {/* Contact form */}
-      <div className="md:mt-20 mt-10 w-full md:px-24 px-5">
-        <div className="flex gap-10 justify-center md:text-base text-sm w-full border-2 border-[#E3E3E3] rounded-tl-[64px] rounded-br-[64px]">
+      <div className="md:mt-20 mt-10 w-full md:px-24 px-3">
+        <div className="flex justify-center md:text-base text-sm w-full ">
           <div className="w-1/2 md:block hidden">
             <img
               src="/assets/projects/contact.svg"
@@ -50,7 +50,7 @@ export default function ContactSection() {
               alt=""
             />
           </div>
-          <div className="md:w-2/3 w-full pt-5 md:pr-5 md:px-0 px-7">
+          <div className="md:w-2/3 w-full pt-5 md:pr-5 md:px-13 px-7 border-2 border-[#E3E3E3] md:border-l-0 border-l-2 rounded-br-[64px]">
             <h1 className="text-[#81C713] font-bold text-lg mb-5 ">
               Stuur ons een bericht
             </h1>
