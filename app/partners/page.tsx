@@ -45,7 +45,7 @@ export default function Partners() {
       </div>
 
       <BrandList />
-      <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 mt-24 ">
+      <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 mt-10 ">
         <Reviews />
       </div>
       <Projects />
