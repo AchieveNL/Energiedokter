@@ -26,7 +26,6 @@ export default function Service6() {
       />
 
       <ServiceOverview
-        rounded={false}
         title={
           <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
             <span>
@@ -95,7 +94,7 @@ export default function Service6() {
           className="md:w-28 w-20 absolute md:top-0 top-10 md:right-10 right-5 -z-10"
         />
       </div>
-      <div className="md:mt-20 mt-15"></div>
+      <div className="md:mt-25 mt-20"></div>
       <ServicesCTA
         reverse={true}
         title={
