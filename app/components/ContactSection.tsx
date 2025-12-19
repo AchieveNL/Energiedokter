@@ -50,7 +50,7 @@ export default function ContactSection() {
               alt=""
             />
           </div>
-          <div className="md:w-2/3 w-full pt-5 md:pr-5 md:px-13 px-7 border-2 border-[#E3E3E3] md:border-l-0 border-l-2 rounded-br-[64px]">
+          <div className="md:w-2/3 w-full pt-5 md:pr-5 md:px-13 px-7 border-2 border-[#E3E3E3] md:border-l-0 border-l-2 md:rounded-br-[64px] md:rounded-tr-none md:rounded-bl-none rounded-tr-[39px] rounded-bl-[39px]">
             <h1 className="text-[#81C713] font-bold text-lg mb-5 ">
               Stuur ons een bericht
             </h1>
