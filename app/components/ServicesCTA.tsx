@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function ServicesCTA({
@@ -22,6 +23,12 @@ export default function ServicesCTA({
       <div className="flex flex-col gap-5 md:w-1/2">
         {title}
         {text}
+        <Link
+          href="/contact"
+          className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 w-fit "
+        >
+          Advies aanvragen
+        </Link>
       </div>
       <img
         src={img}

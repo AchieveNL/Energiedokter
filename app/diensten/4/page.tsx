@@ -90,12 +90,7 @@ export default function Service4() {
               inefficiënte installaties en risico's rondom niet voldoen aan wet-
               en regelgeving, zoals de EPBD-verplichtingen.
             </p>
-            <Link
-              href="#"
-              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-2 w-fit "
-            >
-              Advies aanvragen
-            </Link>
+            
           </>
         }
         img="/assets/blogs/section-img4.svg"
@@ -126,7 +121,7 @@ export default function Service4() {
           duurzaam presteert en bijdraagt aan waardestijging van het vastgoed.
         </p>
         <Link
-          href="#"
+          href="/contact"
           className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 w-fit "
         >
           Advies aanvragen

@@ -80,7 +80,7 @@ export default function Service6() {
           onbenut en blijft energie-efficiëntie een uitdaging.
         </p>
         <Link
-          href="#"
+          href="/contact"
           className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 w-fit "
         >
           Advies aanvragen
@@ -128,12 +128,7 @@ export default function Service6() {
               fouten en zorgen dat uw energie- en duurzaamheidsdoelen
               daadwerkelijk worden bereikt.
             </p>
-            <Link
-              href="#"
-              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-2 w-fit "
-            >
-              Advies aanvragen
-            </Link>
+            
           </>
         }
         img="/assets/blogs/section-img5.svg"

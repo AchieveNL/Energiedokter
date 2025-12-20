@@ -52,19 +52,13 @@ export default function Service3() {
               compleet overzicht dat voldoet aan de wettelijke eisen en
               tegelijkertijd praktisch bruikbaar is voor uw organisatie.
             </p>
-            <Link
-              href="#"
-              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 w-fit "
-            >
-              Advies aanvragen
-            </Link>
           </>
         }
         img="/assets/blogs/section-img3.svg"
       />
 
       <div className="md:mt-10 mt-5 p-1"></div>
-      <ServiceOverview 
+      <ServiceOverview
         title={
           <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
             <span className="flex gap-1">
@@ -119,7 +113,7 @@ export default function Service3() {
           gebouw.
         </p>
         <Link
-          href="#"
+          href="/contact"
           className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 w-fit "
         >
           Advies aanvragen

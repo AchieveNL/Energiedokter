@@ -96,7 +96,7 @@ export default function Service2() {
               je aan toe bent.
             </p>
             <Link
-              href="#"
+              href="/contact"
               className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg w-fit mb-5"
             >
               Advies aanvragen
@@ -131,12 +131,6 @@ export default function Service2() {
               traject en een snelle oplevering, zodat u zonder zorgen kunt
               bouwen aan duurzaam woongenot.
             </p>
-            <Link
-              href="#"
-              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 w-fit "
-            >
-              Advies aanvragen
-            </Link>
           </>
         }
         img="/assets/blogs/section-img2.svg"

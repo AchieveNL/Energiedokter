@@ -118,7 +118,7 @@ export default function Service5() {
           WKO-installatie onbenut.
         </p>
         <Link
-          href="#"
+          href="/contact"
           className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-2 w-fit "
         >
           Advies aanvragen
@@ -162,12 +162,6 @@ export default function Service5() {
               Onze aanpak is persoonlijk, snel en helder, zodat u altijd weet
               waar u aan toe bent.
             </p>
-            <Link
-              href="#"
-              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-2 w-fit "
-            >
-              Advies aanvragen
-            </Link>
           </>
         }
         img="/assets/blogs/section-img5.svg"
@@ -199,7 +193,7 @@ export default function Service5() {
           duurzaam presteert en bijdraagt aan waardestijging van het vastgoed.
         </p>
         <Link
-          href="#"
+          href="/contact"
           className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 w-fit "
         >
           Advies aanvragen

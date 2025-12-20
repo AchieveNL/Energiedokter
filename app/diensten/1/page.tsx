@@ -123,12 +123,13 @@ export default function Service1() {
           investering in inzicht, comfort en waarde van uw woning.
         </p>
         <Link
-          href="#"
+          href="/contact"
           className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 "
         >
           Advies aanvragen
         </Link>
       </div>
+
       <div className="py-5"></div>
       <ServicesCTA
         title={
@@ -137,7 +138,7 @@ export default function Service1() {
               Grip op energie, <span className="text-[#81C713] ">waarde </span>
               voor uw pand
             </h1>
-            <p className="text-sm text-[#4D4D4D] ">
+            <p className="text-sm text-[#4D4D4D] mt-1 ">
               Laat jouw woning energiezuiniger, comfortabeler en waardevoller
               worden
             </p>
@@ -153,12 +154,7 @@ export default function Service1() {
               juiste energielabel zet je die stap — naar een duurzame, zorgeloze
               en toekomstbestendige woning.
             </p>
-            <Link
-              href="#"
-              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 w-fit "
-            >
-              Advies aanvragen
-            </Link>
+           
           </>
         }
         img="/assets/blogs/section-img.svg"
@@ -168,6 +164,7 @@ export default function Service1() {
       <div className="md:mt-20 mt-10"></div>
       <StepPlan />
       <Contact />
+
       <div className="md:mt-31 mt-10"></div>
       <ServicesStats
         text="Bij Energie Dokter combineren we kennis, ervaring en praktische
@@ -180,6 +177,7 @@ export default function Service1() {
           een officieel energielabel in huis, maar ook rust, zekerheid en extra
           waarde voor uw woning."
       />
+
       <Faq />
       <Projects />
       <div className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover md:mt-20 mt-10 py-10 ">
