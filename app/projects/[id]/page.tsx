@@ -2,7 +2,8 @@ import Blog from "@/app/components/Blog";
 import Footer from "@/app/components/Footer";
 import Hero from "@/app/components/Hero";
 import ImagesSlider from "@/app/components/ImagesSlider";
-import { cards } from "@/app/data/blogs";
+import Projects from "@/app/components/Projects";
+import { cards } from "@/app/data/projects";
 
 const images = [
   "/assets/blogs/img7.svg",
@@ -23,7 +24,7 @@ export default async function BlogDetails({
   return (
     <>
       <Hero
-        title="Blog"
+        title="Projecten"
         span={
           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-2 ">
             Lorem Ipsum dolor sit amet
@@ -57,7 +58,7 @@ export default async function BlogDetails({
           dicta sed delectus esse ad nemo consequatur et magni natus.
         </p>
       </div>
-      
+
       <div
         className="md:mt-20 mt-10 md:px-24 px-5 flex md:gap-32"
         style={{ fontFamily: "Poppins" }}
@@ -93,7 +94,8 @@ export default async function BlogDetails({
         />
       </div>
       <div className="md:mt-20 mt-15"></div>
-      <Blog titleVisible={false} />
+      <Projects titleVisible={false} />
+      <div className="md:mt-15 mt-5"></div>
       <Footer />
     </>
   );

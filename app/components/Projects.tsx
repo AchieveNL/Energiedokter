@@ -7,8 +7,10 @@ import { cards } from "../data/projects";
 
 export default function Projects({
   linkVisible = true,
+  titleVisible = true,
 }: {
   linkVisible?: boolean;
+  titleVisible?: boolean;
 }) {
   return (
     <div
@@ -16,6 +18,7 @@ export default function Projects({
       style={{ fontFamily: "Poppins" }}
     >
       <SectionTitle
+        titleVisible={titleVisible}
         title="Projecten"
         span={
           <div className="md:text-4xl text-2xl font-extrabold text-center mb-5 ">
