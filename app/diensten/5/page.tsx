@@ -1,3 +1,4 @@
+"use client";
 import Contact from "@/app/components/Contact";
 import ContactSection from "@/app/components/ContactSection";
 import Faq from "@/app/components/Faq";
@@ -12,6 +13,10 @@ import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
 
 export default function Service5() {
+  const scrollToSection = () => {
+    const section1 = document.getElementById("section1");
+    section1?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <div
@@ -55,6 +60,7 @@ export default function Service5() {
             Plan een gesprek
           </Link>
           <Link
+            onClick={scrollToSection}
             href="#"
             className="text-[#4D4D4D] bg-white hover:bg-[#82c71350] transition-all duration-200 md:py-2 md:pb-3 p-3 px-8 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
           >
@@ -62,7 +68,7 @@ export default function Service5() {
           </Link>
         </div>
       </div>
-
+      <div id="section1"></div>
       <ServiceOverview
         title={
           <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">

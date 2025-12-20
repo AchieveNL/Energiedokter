@@ -16,6 +16,7 @@ export default function Service2() {
   return (
     <>
       <Hero
+        desktopSectionId="section1"
         title="Diensten"
         span={
           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-3 ">
@@ -26,9 +27,9 @@ export default function Service2() {
         text="Behaal een officieel BENG-energielabel voor uw nieuwbouwproject en garandeer dat het ontwerp energiezuinig en toekomstbestendig is. Wij begeleiden u vanaf de ontwerpfase tot registratie bij de RVO."
       />
 
-      <div
+      <div id="section1"
         style={{ fontFamily: "Poppins" }}
-        className="md:mx-24 px-5 flex flex-col md:gap-4 gap-2 md:mt-20 mt-10"
+        className="md:mx-24 px-5 flex flex-col md:gap-4 gap-2 md:pt-20 pt-10"
       >
         <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] ">
           Wat is een <span className="text-[#81C713] ">energielabel?</span>

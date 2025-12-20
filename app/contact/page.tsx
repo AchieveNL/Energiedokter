@@ -7,6 +7,7 @@ export default function ContactPage() {
   return (
     <>
       <Hero
+        desktopSectionId="contact"
         title="Contact"
         span={
           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-3 ">
@@ -19,6 +20,7 @@ export default function ContactPage() {
         }
         text="We staan klaar om u te helpen. Neem contact op en ontdek hoe we samen uw gebouw toekomstbestendig kunnen maken."
       />
+      <div id="contact"></div>
       <ContactSection />
       <iframe
         src="https://www.google.com/maps?q=Leersum,Netherlands&z=14&output=embed"

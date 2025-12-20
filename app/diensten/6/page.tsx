@@ -16,6 +16,7 @@ export default function Service6() {
   return (
     <>
       <Hero
+        desktopSectionId="section1"
         title="Diensten"
         span={
           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-3 ">
@@ -24,7 +25,7 @@ export default function Service6() {
         }
         text="Vergroot uw kennis over energieprestaties, regelgeving en duurzaamheid met onze praktijkgerichte trainingen. Energie Dokter biedt heldere opleidingen voor professionals die up-to-date willen blijven in een veranderende energiemarkt."
       />
-
+      <div id="section1"></div>
       <ServiceOverview
         title={
           <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
@@ -128,7 +129,6 @@ export default function Service6() {
               fouten en zorgen dat uw energie- en duurzaamheidsdoelen
               daadwerkelijk worden bereikt.
             </p>
-            
           </>
         }
         img="/assets/blogs/section-img5.svg"

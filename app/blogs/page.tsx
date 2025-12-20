@@ -10,6 +10,8 @@ export default function BlogsPage() {
   return (
     <>
       <Hero
+        desktopSectionId="blogs1"
+        mobileSectionId="blogs2"
         title="Blog"
         span={
           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-2 ">
@@ -21,28 +23,29 @@ export default function BlogsPage() {
         }
         text="Blijf op de hoogte van de nieuwste ontwikkelingen en laat u inspireren door onze inzichten en projecten op het gebied van energie en duurzaamheid."
       />
+      <div id="blogs1">
+        <GridView
+          sectionTitle={
+            <SectionTitle
+              title="Blog"
+              span={
+                <div className="text-[#254055] md:text-4xl text-2xl font-extrabold text-center ">
+                  Onze
+                  <span className="text-[#81C713] "> uitgelichte</span>
+                  <br /> blog content
+                </div>
+              }
+            />
+          }
+          cards={cards}
+        />
+      </div>
 
-      <GridView
-        sectionTitle={
-          <SectionTitle
-            title="Blog"
-            span={
-              <div className="text-[#254055] md:text-4xl text-2xl font-extrabold text-center ">
-                Onze
-                <span className="text-[#81C713] "> uitgelichte</span>
-                <br /> blog content
-              </div>
-            }
-          />
-        }
-        cards={cards}
-      />
-      
       <div className="md:hidden block ">
         <Blog linkVisible={false} />
       </div>
-      <DienstenSection/>
-      <Footer/>
+      <DienstenSection />
+      <Footer />
     </>
   );
 }

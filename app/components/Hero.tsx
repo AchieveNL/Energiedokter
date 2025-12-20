@@ -6,16 +6,20 @@ export default function Hero({
   span,
   title,
   text,
-  sectionId,
+  mobileSectionId,
+  desktopSectionId,
 }: {
   span: React.ReactNode;
   title: string;
   text: string;
-  sectionId?: any;
+  mobileSectionId?: any;
+  desktopSectionId?: any;
 }) {
-  const scrollToSection = (id: string) => {
-    const section = document.getElementById(id);
-    section?.scrollIntoView({ behavior: "smooth" });
+  const scrollToSection = (id1: string, id2: string) => {
+    const section1 = document.getElementById(id1);
+    const section2 = document.getElementById(id2);
+    section1?.scrollIntoView({ behavior: "smooth" });
+    section2?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -45,7 +49,7 @@ export default function Hero({
           Plan een gesprek
         </Link>
         <Link
-          onClick={() => scrollToSection(sectionId)}
+          onClick={() => scrollToSection(desktopSectionId, mobileSectionId)}
           href="#"
           className="text-[#4D4D4D] bg-white hover:bg-[#82c71350] transition-all duration-200 md:py-2 md:pb-3 p-3 px-8 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
         >

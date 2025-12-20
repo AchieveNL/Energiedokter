@@ -7,6 +7,7 @@ export default function FaqPage() {
   return (
     <>
       <Hero
+        desktopSectionId="faq1"
         title="FAQ"
         span={
           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-2 ">
@@ -16,7 +17,9 @@ export default function FaqPage() {
         }
         text="Heeft u vragen? Op deze pagina beantwoorden we de meest voorkomende vragen over onze aanpak, diensten en projecten."
       />
-      <Faq />
+      <div id="faq1">
+        <Faq />
+      </div>
       <DienstenSection />
       <Footer />
     </>

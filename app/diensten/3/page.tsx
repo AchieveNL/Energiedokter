@@ -16,6 +16,7 @@ export default function Service3() {
   return (
     <>
       <Hero
+        desktopSectionId="section1"
         title="Diensten"
         span={
           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-3 ">
@@ -24,7 +25,7 @@ export default function Service3() {
         }
         text="Voldoe aan de wettelijke informatieplicht voor energiebesparing zonder gedoe. Wij helpen u met de juiste rapportage, begeleiding en registratie zodat u volledig compliant bent met de RVO-eisen."
       />
-
+      <div id="section1"></div>
       <ServicesCTA
         reverse={true}
         title={

@@ -14,6 +14,8 @@ export default function ProjectsPage() {
   return (
     <>
       <Hero
+        desktopSectionId="projects2"
+        mobileSectionId="projects1"
         title="Projecten"
         text="Elk project dat we uitvoeren is een kans om innovatie te combineren
           met praktische oplossingen. Van analyse tot uitvoering zorgen we voor
@@ -29,7 +31,7 @@ export default function ProjectsPage() {
         }
       />
       <BrandList />
-      <div>
+      <div id="projects2">
         <GridView
           sectionTitle={
             <SectionTitle
@@ -45,7 +47,7 @@ export default function ProjectsPage() {
           cards={cards}
         />
       </div>
-      <div className="md:hidden block p-5">
+      <div id="projects1" className="md:hidden block p-5">
         <Projects linkVisible={false} />
       </div>
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 md:mt-0 mt-5 ">

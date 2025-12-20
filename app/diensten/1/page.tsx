@@ -55,6 +55,7 @@ export default function Service1() {
   return (
     <>
       <Hero
+        desktopSectionId="section1"
         title="Diensten"
         span={
           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-3 ">
@@ -64,7 +65,7 @@ export default function Service1() {
         }
         text="Krijg inzicht in de energieprestatie van uw bestaande kantoor, school of winkel en voldoe aan de wettelijke energielabelplicht. Zo verlaagt u energiekosten en versterkt u het duurzame imago van uw gebouw."
       />
-
+      <div id="section1"></div>
       <ServiceOverview
         roundedTl={true}
         roundedBl={false}
@@ -154,7 +155,6 @@ export default function Service1() {
               juiste energielabel zet je die stap — naar een duurzame, zorgeloze
               en toekomstbestendige woning.
             </p>
-           
           </>
         }
         img="/assets/blogs/section-img.svg"

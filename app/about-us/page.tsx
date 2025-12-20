@@ -15,7 +15,7 @@ export default function AboutPage() {
   return (
     <>
       <Hero
-        sectionId={"about-us"}
+        desktopSectionId={"about-us"}
         title="Wie wij zijn"
         span={
           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-2 ">
@@ -97,9 +97,8 @@ export default function AboutPage() {
       </div>
       <div className="md:mt-32 mt-20"></div>
 
-
       <div className="md:mt-20 mt-10"></div>
-      <Reviews bg="#F6F6F6"  />
+      <Reviews bg="#F6F6F6" />
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover pb-1 mt-5 ">
         <Faq />
       </div>

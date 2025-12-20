@@ -23,6 +23,7 @@ export default async function BlogDetails({
   return (
     <>
       <Hero
+        desktopSectionId="section1"
         title="Blog"
         span={
           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-2 ">
@@ -31,7 +32,7 @@ export default async function BlogDetails({
         }
         text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. At rem distinctio corrupti veniam magni dolor quibusdam, iste quidem nam dolorum non eligendi? Qui deserunt nobis rerum repudiandae, molestias pariatur harum."
       />
-
+      <div id="section1"></div>
       <ImagesSlider images={images} />
       <div
         className="flex flex-col gap-5 text-[#4D4D4D] md:px-24 px-5 mt-10 "
@@ -57,7 +58,7 @@ export default async function BlogDetails({
           dicta sed delectus esse ad nemo consequatur et magni natus.
         </p>
       </div>
-      
+
       <div
         className="md:mt-20 mt-10 md:px-24 px-5 flex md:gap-32"
         style={{ fontFamily: "Poppins" }}

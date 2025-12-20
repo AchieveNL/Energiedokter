@@ -4,8 +4,6 @@
 // import Autoplay from "embla-carousel-autoplay";
 // import Link from "next/link";
 
-
-
 // const ImagesSlider = ({ images }: { images: string[] }) => {
 //   const [emblaRef, emblaApi] = useEmblaCarousel(
 //     {
@@ -121,8 +119,8 @@ const ImagesSlider = ({ images }: { images: string[] }) => {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="flex items-center justify-center p-4">
-      <div className="w-full max-w-7xl">
+    <div className="flex items-center justify-center pt-10">
+      <div className="w-full">
         <div className="embla overflow-hidden" ref={emblaRef}>
           <div className="embla__container flex">
             {images.map((card, index) => {
@@ -131,7 +129,7 @@ const ImagesSlider = ({ images }: { images: string[] }) => {
               return (
                 <div
                   key={index}
-                  className="embla__slide shrink-0 px-2 md:px-4"
+                  className="embla__slide shrink-0"
                   style={{
                     flex: "0 0 85%",
                     minWidth: 0,
@@ -152,7 +150,7 @@ const ImagesSlider = ({ images }: { images: string[] }) => {
         </div>
       </div>
 
-      <style>{`
+      {/* <style>{`
         .embla__slide {
           flex: 0 0 40% !important;
         }
@@ -161,7 +159,7 @@ const ImagesSlider = ({ images }: { images: string[] }) => {
             flex: 0 0 33.333% !important;
           }
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 };

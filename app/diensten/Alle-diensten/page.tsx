@@ -13,6 +13,7 @@ export default function DienstenPage() {
   return (
     <>
       <Hero
+        desktopSectionId="service1"
         title="Diensten"
         span={
           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-2">
@@ -29,6 +30,7 @@ export default function DienstenPage() {
           energie optimaal werkt — voor u én uw gebouw."
       />
       <BrandList />
+      <div id="service1"></div>
       <Diensten />
       <DienstenSection />
       <Reviews bg="#F6F6F6" />
