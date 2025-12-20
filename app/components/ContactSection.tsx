@@ -249,19 +249,11 @@
 //   );
 // }
 
-
 "use client";
 
 import { useState } from "react";
+import SectionTitle from "./SectionTitle";
 
-const SectionTitle = ({ title, span }: { title: string; span: React.ReactNode }) => {
-  return (
-    <div className="flex flex-col items-center gap-4">
-      <h2 className="text-[#81C713] font-bold text-xl">{title}</h2>
-      {span}
-    </div>
-  );
-};
 
 const TextInput = ({
   label,
@@ -401,7 +393,7 @@ export default function ContactSection() {
 
   return (
     <div
-      className="flex flex-col items-center md:my-32 my-20"
+      className="flex flex-col items-center md:mb-20 mb-10 mt-10"
       style={{ fontFamily: "Poppins" }}
     >
       <SectionTitle
