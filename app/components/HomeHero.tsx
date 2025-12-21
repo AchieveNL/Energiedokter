@@ -2,21 +2,18 @@
 import Link from "next/link";
 import BrandList from "./BrandList";
 import AnimatedLink from "./AnimatedLink";
-import Iridescence from "./Iredescence";
+import AnimatedBg from "./AnimatedBg";
 
 export default function HomeHero() {
   return (
     <div className="w-full h-screen">
-      <div className="absolute inset-0 -z-10 blur-lg">
-        <Iridescence
-          colorBalance={0}
-          speed={0.3}
-          amplitude={0}
-          mouseReact={false}
-        />
+      <div className="absolute inset-0 -z-10 h-screen overflow-hidden">
+        <div className="absolute w-full h-screen md:scale-y-[2] scale-y-[6]">
+          <AnimatedBg />
+        </div>
+        
       </div>
-      {/* <div className="w-full h-screen bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center px-5 animate-slow-pan bg-rotate"> */}
-      <div className="m-auto md:pt-44 pt-40 flex flex-col items-center ">
+      <div className="m-auto md:pt-44 pt-40 flex flex-col items-center">
         <h1
           style={{ fontFamily: "Poppins" }}
           className="font-black text-[#254055] md:text-5xl text-3xl text-center mx-5 "

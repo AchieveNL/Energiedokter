@@ -21,7 +21,6 @@ export default function Home() {
       <StepPlan />
       <Contact />
       <div className="md:py-10 py-7 "></div>
-
       <Faq />
       <div className="py-3 "></div>
       <Blog />

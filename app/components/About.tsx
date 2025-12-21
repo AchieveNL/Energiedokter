@@ -2,7 +2,7 @@
 
 import SectionTitle from "./SectionTitle";
 import AnimatedLink from "./AnimatedLink";
-import Iridescence from "./Iredescence";
+import AnimatedBg from "./AnimatedBg";
 
 export default function About() {
   const aboutStatistiques = [
@@ -119,13 +119,10 @@ export default function About() {
         className="md:mt-20 mt-15 flex flex-col items-center md:gap-8 gap-5 md:py-20 py-10 relative"
         style={{ fontFamily: "Poppins" }}
       >
-        <div className="absolute inset-0 -z-10 blur">
-          <Iridescence
-            colorBalance={0}
-            speed={0.3}
-            amplitude={0}
-            mouseReact={false}
-          />
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <div className="scale-x-[1.1] md:h-auto h-full md:scale-y-100 scale-y-200">
+            <AnimatedBg />
+          </div>
         </div>
         <h1 className="md:text-4xl text-2xl text-center text-[#254055] font-bold ">
           ″The future will be <span className="text-[#81C713] ">green</span>, or
