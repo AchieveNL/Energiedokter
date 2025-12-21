@@ -25,7 +25,7 @@ export default function Service4() {
         }
         text="Met GACS (Gebouw Automatisering en Controle Systemen) optimaliseren wij de prestaties van uw gebouw. Zo krijgt u grip op energieverbruik, comfort en wettelijke verplichtingen — volledig inzichtelijk, volledig onder controle."
       />
-      <div id="section1"></div>
+      <div id="section1" className="py-2"></div>
       <ServiceOverview
         title={
           <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">

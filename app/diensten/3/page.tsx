@@ -25,7 +25,7 @@ export default function Service3() {
         }
         text="Voldoe aan de wettelijke informatieplicht voor energiebesparing zonder gedoe. Wij helpen u met de juiste rapportage, begeleiding en registratie zodat u volledig compliant bent met de RVO-eisen."
       />
-      <div id="section1"></div>
+      <div id="section1" className="py-2"></div>
       <ServicesCTA
         reverse={true}
         title={

@@ -30,7 +30,7 @@ export default function Service2() {
       <div
         id="section1"
         style={{ fontFamily: "Poppins" }}
-        className="md:mx-24 px-5 flex flex-col md:gap-4 gap-2 md:pt-20 pt-10"
+        className="md:mx-24 px-5 flex flex-col md:gap-4 gap-2 md:pt-24 pt-20"
       >
         <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] ">
           Wat is een <span className="text-[#81C713] ">energielabel?</span>

@@ -65,7 +65,7 @@ export default function Service1() {
         }
         text="Krijg inzicht in de energieprestatie van uw bestaande kantoor, school of winkel en voldoe aan de wettelijke energielabelplicht. Zo verlaagt u energiekosten en versterkt u het duurzame imago van uw gebouw."
       />
-      <div id="section1"></div>
+      <div id="section1" className="py-4"></div>
       <ServiceOverview
         roundedTl={true}
         roundedBl={false}
