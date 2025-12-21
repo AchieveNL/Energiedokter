@@ -141,7 +141,7 @@ export default function ContactSection() {
 
   return (
     <div
-      className="flex flex-col items-center md:mb-20 mb-10 pt-10"
+      className="flex flex-col items-center md:mb-20 mb-10 md:pt-20 pt-15"
       style={{ fontFamily: "Poppins" }}
     >
       <SectionTitle

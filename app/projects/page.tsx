@@ -53,7 +53,9 @@ export default function ProjectsPage() {
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 md:mt-0 mt-5 ">
         <Reviews />
       </div>
-      <Faq />
+      <div className="md:my-20 my-10">
+        <Faq />
+      </div>
       <ContactSection />
       <Footer />
     </>

@@ -17,7 +17,7 @@ export default function FaqPage() {
         }
         text="Heeft u vragen? Op deze pagina beantwoorden we de meest voorkomende vragen over onze aanpak, diensten en projecten."
       />
-      <div id="faq1">
+      <div id="faq1" className="md:pt-20 pt-10">
         <Faq />
       </div>
       <DienstenSection />

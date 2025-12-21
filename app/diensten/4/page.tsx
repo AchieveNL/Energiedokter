@@ -142,6 +142,8 @@ export default function Service4() {
       <Contact />
       <div className="md:mt-31 mt-10"></div>
       <ServicesStats text="Energie Dokter combineert technische expertise met een integrale blik op wetgeving, gebouwbeheer en duurzaamheid. Wij fungeren als spin in het web tussen gebouweigenaar, beheerder en technici, waardoor we niet alleen technische optimalisaties realiseren, maar ook organisatorische afstemming en blijvende prestaties." />
+      <div className="md:py-10 py-7"></div>
+
       <Faq />
       <Projects />
       <div className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover md:mt-20 mt-10 py-10 ">

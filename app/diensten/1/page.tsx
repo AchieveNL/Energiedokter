@@ -177,7 +177,7 @@ export default function Service1() {
           een officieel energielabel in huis, maar ook rust, zekerheid en extra
           waarde voor uw woning."
       />
-
+      <div className="md:py-10 py-7"></div>
       <Faq />
       <Projects />
       <div className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover md:mt-20 mt-10 py-10 ">

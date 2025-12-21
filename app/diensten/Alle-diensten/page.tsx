@@ -34,7 +34,7 @@ export default function DienstenPage() {
       <Diensten />
       <DienstenSection />
       <Reviews bg="#F6F6F6" />
-      <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover pb-1 mt-5 ">
+      <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 md:mt-20 mt-10 ">
         <Faq />
       </div>
       <Projects />

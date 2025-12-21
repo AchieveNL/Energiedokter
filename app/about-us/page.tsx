@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
 import Footer from "../components/Footer";
-import Iridescence from "../components/Iredescence";
-import SectionTitle from "../components/SectionTitle";
 import BrandList from "../components/BrandList";
 import AboutSection from "../components/AboutSection";
 import Diensten from "../components/Diensten";
@@ -99,7 +97,7 @@ export default function AboutPage() {
 
       <div className="md:mt-20 mt-10"></div>
       <Reviews bg="#F6F6F6" />
-      <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover pb-1 mt-5 ">
+      <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 md:my-20 my-10 ">
         <Faq />
       </div>
       <Projects />

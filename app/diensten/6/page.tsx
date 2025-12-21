@@ -138,7 +138,7 @@ export default function Service6() {
 
       <StepPlan />
       <Contact />
-      <div className="md:mt-31 mt-10"></div>
+      <div className="md:py-10 py-7"></div>
       <Faq />
       <Projects />
       <div className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover md:mt-20 mt-10 py-10 ">

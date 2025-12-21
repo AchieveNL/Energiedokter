@@ -41,7 +41,7 @@ export default function BlogsPage() {
         />
       </div>
 
-      <div className="md:hidden block ">
+      <div id="blog" className="md:hidden block">
         <Blog linkVisible={false} />
       </div>
       <DienstenSection />

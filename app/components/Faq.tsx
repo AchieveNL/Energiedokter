@@ -58,7 +58,7 @@ export default function Faq() {
 
   return (
     <div
-      className="my-10 md:mt-18 flex flex-col items-center pt-10"
+      className="flex flex-col items-center"
       style={{ fontFamily: "Poppins" }}
     >
       <SectionTitle

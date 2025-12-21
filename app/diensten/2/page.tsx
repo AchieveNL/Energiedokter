@@ -27,7 +27,8 @@ export default function Service2() {
         text="Behaal een officieel BENG-energielabel voor uw nieuwbouwproject en garandeer dat het ontwerp energiezuinig en toekomstbestendig is. Wij begeleiden u vanaf de ontwerpfase tot registratie bij de RVO."
       />
 
-      <div id="section1"
+      <div
+        id="section1"
         style={{ fontFamily: "Poppins" }}
         className="md:mx-24 px-5 flex flex-col md:gap-4 gap-2 md:pt-20 pt-10"
       >
@@ -143,6 +144,7 @@ export default function Service2() {
       <Contact />
       <div className="md:mt-31 mt-10"></div>
       <ServicesStats text="Bij Energie Dokter begeleiden we uw project vanaf het ontwerptraject en voeren we de EP-berekening uit volgens de BENG-eisen. Onze adviseurs geven praktisch advies over installaties en isolatie, zorgen voor de officiële registratie bij de RVO en houden het proces transparant en overzichtelijk. Zo bent u verzekerd van een compliant, energiezuinig en toekomstbestendig nieuwbouwproject dat voldoet aan alle wettelijke eisen." />
+      <div className="md:py-10 py-7"></div>
       <Faq />
       <Projects />
       <div className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover md:mt-20 mt-10 py-10 ">

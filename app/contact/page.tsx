@@ -20,7 +20,7 @@ export default function ContactPage() {
         }
         text="We staan klaar om u te helpen. Neem contact op en ontdek hoe we samen uw gebouw toekomstbestendig kunnen maken."
       />
-      <div id="contact"></div>
+      <div id="contact" className=""></div>
       <ContactSection />
       <iframe
         src="https://www.google.com/maps?q=Leersum,Netherlands&z=14&output=embed"
