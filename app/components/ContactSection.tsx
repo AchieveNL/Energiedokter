@@ -50,7 +50,6 @@ export default function ContactSection() {
     email: "",
     phone: "",
     message: "",
-    isChecked: false,
   });
 
   const [errors, setErrors] = useState({
@@ -135,10 +134,6 @@ export default function ContactSection() {
     }
   };
 
-  const handleToggle = () => {
-    setFormData((prev) => ({ ...prev, isChecked: !prev.isChecked }));
-  };
-
   return (
     <div
       className="flex flex-col items-center md:mb-20 mb-10 md:pt-20 pt-15"
@@ -214,29 +209,9 @@ export default function ContactSection() {
                 onChange={(e) => handleChange("message", e.target.value)}
                 className="border-[#D0D0D0] outline-0 border-2 rounded-xl p-2 pl-4 w-full"
               ></textarea>
-              <div
-                onClick={handleToggle}
-                className="flex items-center my-2 w-fit"
-              >
-                <div
-                  className={`rounded-full flex justify-center items-center size-4 cursor-pointer border border-[#A1A1A1]`}
-                >
-                  <div
-                    className={`size-3 rounded-full  ${
-                      formData.isChecked ? "bg-blue-400" : "bg-transparent"
-                    }`}
-                  ></div>
-                </div>
-                <label
-                  htmlFor="lorem-option"
-                  className="text-[#A1A1A1] ml-3 cursor-pointer"
-                >
-                  Lorem ipsum
-                </label>
-              </div>
               <button
                 onClick={handleSubmit}
-                className="text-[#F6F6F6] bg-[#81C713] w-fit p-2 px-6 rounded-lg hover:bg-[#6FA30A] transition-colors cursor-pointer"
+                className="text-[#F6F6F6] bg-[#81C713] w-fit p-2 px-6 rounded-lg hover:bg-[#6FA30A] transition-colors cursor-pointer mt-3"
               >
                 Verstuur
               </button>

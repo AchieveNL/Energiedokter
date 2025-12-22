@@ -43,7 +43,7 @@ export default function Hero({
       </p>
       <div className="flex md:justify-start justify-center md:gap-5 gap-2 mt-10">
         <Link
-          href="#"
+          href="/contact"
           className="text-white bg-[#81C713] hover:bg-[#689e12] transition-all duration-200 md:py-2 md:pb-3 px-5 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
         >
           Plan een gesprek
