@@ -1,22 +1,80 @@
 "use client";
+import { useEffect, useRef, useState } from "react";
 import AnimatedLink from "./AnimatedLink";
 import AnimatedBg from "./AnimatedBg";
+import Lottie from "lottie-react";
+import animationData from "@/public/assets/animaions/home.json";
 
 export default function HomeHero() {
+  const lottieRef = useRef<HTMLDivElement>(null);
+  const [containerHeight, setContainerHeight] = useState<number>(0);
+
+  useEffect(() => {
+    const calculateHeight = () => {
+      if (lottieRef.current) {
+        const lottieHeight = lottieRef.current.offsetHeight;
+        setContainerHeight(lottieHeight);
+      }
+    };
+
+    // Initial calculation
+    calculateHeight();
+
+    // Recalculate on window resize
+    window.addEventListener("resize", calculateHeight);
+
+    // Small delay to ensure Lottie has rendered
+    const timer = setTimeout(calculateHeight, 100);
+
+    return () => {
+      window.removeEventListener("resize", calculateHeight);
+      clearTimeout(timer);
+    };
+  }, []);
+
   return (
-    <div className="w-full h-screen">
-      <div className="absolute inset-0 -z-10 h-screen overflow-hidden">
-          <AnimatedBg />
+    <div
+      className="w-full min-h-screen"
+      style={{ height: containerHeight > 0 ? `${containerHeight}px` : "100vh" }}
+    >
+      <div className="absolute inset-0 -z-10">
+        <AnimatedBg />
+        <div
+          ref={lottieRef}
+          className="absolute w-full md:block hidden top-0 pointer-events-none"
+        >
+          <Lottie
+            animationData={animationData}
+            loop
+            autoplay
+            style={{ width: "100%", height: "auto" }}
+          />
+        </div>
+
+        {/* mobile view */}
+        <div
+          // ref={lottieRef}
+          className="absolute w-full md:hidden block bottom-0 pointer-events-none"
+        >
+          <Lottie
+            animationData={animationData}
+            loop
+            autoplay
+            style={{ width: "100%", height: "auto" }}
+          />
+        </div>
       </div>
-      <div className="m-auto md:pt-44 pt-40 flex flex-col items-center">
+
+      <div className="m-auto md:pt-32 pt-32 flex flex-col items-center">
         <h1
           style={{ fontFamily: "Poppins" }}
-          className="font-black text-[#254055] md:text-5xl text-3xl text-center mx-5 "
+          className="font-black text-[#254055] md:text-5xl text-2xl text-center mx-5 "
         >
-          Tijd voor een check-up door de <br />
+          Tijd voor een check-up door de <br className="md:block hidden" />
           <span className="text-[#81C713]">Energie Dokter</span>
         </h1>
-        <div className="text-center mt-10">
+
+        <div className="text-center mt-5">
           <p
             className="text-[#4D4D4D] px-5 md:w-2/3 m-auto"
             style={{ fontFamily: "Poppins" }}

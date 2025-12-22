@@ -32,7 +32,7 @@ export default function AnimatedLink({
   return (
     <Link
       href={href}
-      className="relative p-2 rounded-2xl flex items-center justify-around md:gap-6 gap-2 md:pr-5 pr-2 text-sm md:text-base overflow-hidden group transition-all duration-500 md:mt-15 mt-5"
+      className="relative p-2 rounded-2xl flex items-center justify-around md:gap-6 gap-2 md:pr-5 pr-2 text-sm md:text-base overflow-hidden group transition-all duration-500 md:mt-10 mt-5"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
