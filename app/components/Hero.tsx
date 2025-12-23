@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import SectionTitle from "./SectionTitle";
+import AnimatedBg from "./AnimatedBg";
 
 export default function Hero({
   span,
@@ -24,9 +25,12 @@ export default function Hero({
 
   return (
     <div
-      className="md:pt-44 pt-28 min-h-screen md:px-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover flex flex-col gap-3"
+      className="md:pt-44 pt-28 min-h-screen md:px-20 bg-cover flex flex-col gap-3"
       style={{ fontFamily: "Poppins" }}
     >
+      <div className="absolute inset-0 -z-10">
+        <AnimatedBg />
+      </div>
       <div className="md:block hidden">
         <SectionTitle title={title} span={span} align="start" />
       </div>

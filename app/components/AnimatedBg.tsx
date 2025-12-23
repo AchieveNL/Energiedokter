@@ -114,7 +114,7 @@ export default function AnimatedBg({ speed = 1 }) {
         </radialGradient>
 
         <filter id="blur">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="50" />
+          <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
         </filter>
       </defs>
 
@@ -133,23 +133,23 @@ export default function AnimatedBg({ speed = 1 }) {
         r="350"
         fill="url(#grad1)"
         filter="url(#blur)"
-        opacity="0.8"
+        opacity="0.95"
       >
         <animate
           attributeName="cx"
-          values="400;450;380;400"
+          values="400;420;380;400"
           dur={`${baseSpeed.circle1Cx}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="cy"
-          values="250;280;230;250"
+          values="250;270;230;250"
           dur={`${baseSpeed.circle1Cy}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="r"
-          values="350;380;340;350"
+          values="350;370;340;350"
           dur={`${baseSpeed.circle1R}s`}
           repeatCount="indefinite"
         />
@@ -161,23 +161,23 @@ export default function AnimatedBg({ speed = 1 }) {
         r="400"
         fill="url(#grad2)"
         filter="url(#blur)"
-        opacity="0.9"
+        opacity="0.98"
       >
         <animate
           attributeName="cx"
-          values="1200;1150;1220;1200"
+          values="1200;1180;1210;1200"
           dur={`${baseSpeed.circle2Cx}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="cy"
-          values="400;430;380;400"
+          values="400;420;385;400"
           dur={`${baseSpeed.circle2Cy}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="r"
-          values="400;420;390;400"
+          values="400;415;395;400"
           dur={`${baseSpeed.circle2R}s`}
           repeatCount="indefinite"
         />
@@ -189,23 +189,23 @@ export default function AnimatedBg({ speed = 1 }) {
         r="300"
         fill="url(#grad3)"
         filter="url(#blur)"
-        opacity="0.7"
+        opacity="0.9"
       >
         <animate
           attributeName="cx"
-          values="800;820;780;800"
+          values="800;815;785;800"
           dur={`${baseSpeed.circle3Cx}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="cy"
-          values="300;320;280;300"
+          values="300;315;285;300"
           dur={`${baseSpeed.circle3Cy}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="r"
-          values="300;330;290;300"
+          values="300;320;290;300"
           dur={`${baseSpeed.circle3R}s`}
           repeatCount="indefinite"
         />
@@ -217,7 +217,7 @@ export default function AnimatedBg({ speed = 1 }) {
         r="250"
         fill="#d8eba3"
         filter="url(#blur)"
-        opacity="0.6"
+        opacity="0.85"
       >
         <animate
           attributeName="fill"
@@ -227,19 +227,19 @@ export default function AnimatedBg({ speed = 1 }) {
         />
         <animate
           attributeName="cx"
-          values="200;230;180;200"
+          values="200;215;185;200"
           dur={`${baseSpeed.circle4Cx}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="cy"
-          values="500;520;480;500"
+          values="500;515;485;500"
           dur={`${baseSpeed.circle4Cy}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="r"
-          values="250;270;240;250"
+          values="250;265;240;250"
           dur={`${baseSpeed.circle4R}s`}
           repeatCount="indefinite"
         />
@@ -251,7 +251,7 @@ export default function AnimatedBg({ speed = 1 }) {
         r="280"
         fill="#d1f0f5"
         filter="url(#blur)"
-        opacity="0.7"
+        opacity="0.88"
       >
         <animate
           attributeName="fill"
@@ -261,19 +261,19 @@ export default function AnimatedBg({ speed = 1 }) {
         />
         <animate
           attributeName="cx"
-          values="1400;1380;1420;1400"
+          values="1400;1385;1415;1400"
           dur={`${baseSpeed.circle5Cx}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="cy"
-          values="200;220;180;200"
+          values="200;215;185;200"
           dur={`${baseSpeed.circle5Cy}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="r"
-          values="280;300;270;280"
+          values="280;295;270;280"
           dur={`${baseSpeed.circle5R}s`}
           repeatCount="indefinite"
         />

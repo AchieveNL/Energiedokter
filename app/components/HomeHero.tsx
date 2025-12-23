@@ -4,9 +4,12 @@ import AnimatedLink from "./AnimatedLink";
 import AnimatedBg from "./AnimatedBg";
 import Lottie from "lottie-react";
 import animationData from "@/public/assets/animaions/home.json";
+import type { LottieRefCurrentProps } from "lottie-react";
 
 export default function HomeHero() {
   const lottieRef = useRef<HTMLDivElement>(null);
+  const lottieDesktopRef = useRef<LottieRefCurrentProps>(null);
+  const lottieMobileRef = useRef<LottieRefCurrentProps>(null);
   const [containerHeight, setContainerHeight] = useState<number>(0);
 
   useEffect(() => {
@@ -32,10 +35,22 @@ export default function HomeHero() {
     };
   }, []);
 
+  useEffect(() => {
+    // Set speed to 0.5 (half speed) for both animations
+    if (lottieDesktopRef.current) {
+      lottieDesktopRef.current.setSpeed(0.5);
+    }
+    if (lottieMobileRef.current) {
+      lottieMobileRef.current.setSpeed(0.5);
+    }
+  }, []);
+
   return (
     <div
       className="w-full min-h-screen"
-      style={{ height: containerHeight > 0 ? `${containerHeight}px` : "100vh" }}
+      style={{
+        height: containerHeight > 0 ? `${containerHeight - 50}px` : "100vh",
+      }}
     >
       <div className="absolute inset-0 -z-10">
         <AnimatedBg />
@@ -44,6 +59,7 @@ export default function HomeHero() {
           className="absolute w-full md:block hidden top-0 pointer-events-none"
         >
           <Lottie
+            lottieRef={lottieDesktopRef}
             animationData={animationData}
             loop
             autoplay
@@ -57,6 +73,7 @@ export default function HomeHero() {
           className="absolute w-full md:hidden block bottom-0 pointer-events-none"
         >
           <Lottie
+            lottieRef={lottieMobileRef}
             animationData={animationData}
             loop
             autoplay
