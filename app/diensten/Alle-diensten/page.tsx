@@ -8,7 +8,7 @@ import Projects from "@/app/components/Projects";
 import Reviews from "@/app/components/Reviews";
 import SectionTitle from "@/app/components/SectionTitle";
 import Link from "next/link";
-import animationData from "@/public/assets/animaions/diensten.json";
+import animationData from "@/public/assets/animations/diensten.json";
 
 export default function DienstenPage() {
   return (

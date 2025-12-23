@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import AnimatedLink from "./AnimatedLink";
 import AnimatedBg from "./AnimatedBg";
 import Lottie from "lottie-react";
-import animationData from "@/public/assets/animaions/home.json";
+import animationData from "@/public/assets/animations/home.json";
 import type { LottieRefCurrentProps } from "lottie-react";
 
 export default function HomeHero() {

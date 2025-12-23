@@ -2,7 +2,7 @@ import ContactSection from "../components/ContactSection";
 import DienstenSection from "../components/DienstenSection";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import animationData from "@/public/assets/animaions/contact.json";
+import animationData from "@/public/assets/animations/contact.json";
 
 export default function ContactPage() {
   return (

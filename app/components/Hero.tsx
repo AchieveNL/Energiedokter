@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle";
 import AnimatedBg from "./AnimatedBg";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import { useEffect, useRef, useState } from "react";
-import animationData1 from "@/public/assets/animaions/faq.json";
+import animationData1 from "@/public/assets/animations/faq.json";
 
 export default function Hero({
   span,

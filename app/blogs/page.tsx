@@ -5,7 +5,7 @@ import GridView from "../components/GridView";
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
 import { cards } from "../data/blogs";
-import animationData from "@/public/assets/animaions/blog.json";
+import animationData from "@/public/assets/animations/blog.json";
 
 export default function BlogsPage() {
   return (
