@@ -5,11 +5,13 @@ import GridView from "../components/GridView";
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
 import { cards } from "../data/blogs";
+import animationData from "@/public/assets/animaions/blog.json";
 
 export default function BlogsPage() {
   return (
     <>
       <Hero
+        animationData={animationData}
         desktopSectionId="blogs1"
         mobileSectionId="blogs2"
         title="Blog"

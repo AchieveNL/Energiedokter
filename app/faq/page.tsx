@@ -2,11 +2,12 @@ import DienstenSection from "../components/DienstenSection";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-
+import  animationData  from "@/public/assets/animaions/faq.json";
 export default function FaqPage() {
   return (
     <>
       <Hero
+      animationData={animationData}
         desktopSectionId="faq1"
         title="FAQ"
         span={

@@ -2,11 +2,13 @@ import ContactSection from "../components/ContactSection";
 import DienstenSection from "../components/DienstenSection";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
+import animationData from "@/public/assets/animaions/contact.json";
 
 export default function ContactPage() {
   return (
     <>
       <Hero
+        animationData={animationData}
         desktopSectionId="contact"
         title="Contact"
         span={
