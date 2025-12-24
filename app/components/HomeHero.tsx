@@ -47,16 +47,16 @@ export default function HomeHero() {
 
   return (
     <div
-      className="w-full min-h-screen"
+      className="w-full"
       style={{
-        height: containerHeight > 0 ? `${containerHeight - 50}px` : "100vh",
+        height: containerHeight > 0 ? `${containerHeight - 70}px` : "100vh",
       }}
     >
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 md:h-[90vh] h-[94vh]">
         <AnimatedBg />
         <div
           ref={lottieRef}
-          className="absolute w-full md:block hidden top-0 pointer-events-none"
+          className="absolute w-full md:block hidden -top-10 pointer-events-none"
         >
           <Lottie
             lottieRef={lottieDesktopRef}
@@ -70,7 +70,7 @@ export default function HomeHero() {
         {/* mobile view */}
         <div
           // ref={lottieRef}
-          className="absolute w-full md:hidden block bottom-0 pointer-events-none"
+          className="absolute w-full md:hidden block -bottom-12 pointer-events-none"
         >
           <Lottie
             lottieRef={lottieMobileRef}
