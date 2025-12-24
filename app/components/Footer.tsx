@@ -98,7 +98,7 @@ export default function Footer() {
         {/* body */}
         <div
           ref={divRef}
-          className="flex md:flex-row flex-col text-[#FEEEF3] justify-center md:items-start items-center md:gap-10 gap-5 z-10 absolute right-1/2 md:translate-x-[57%] translate-x-1/2 md:mt-20 mt-15 md:w-2/3"
+          className="flex md:flex-row flex-col text-[#FEEEF3] justify-center md:items-start items-center md:gap-10 gap-5 z-10 absolute right-1/2 md:translate-x-[57%] translate-x-1/2 min-[768px]:mt-20 mt-15 min-[1536px]:mt-28 min-[1900px]:mt-34 min-[2300px]:mt-48 min-[2600px]:mt-60 md:w-2/3"
         >
           <div className="flex flex-col items-center md:gap-5 gap-2">
             <Link
