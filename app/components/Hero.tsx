@@ -59,10 +59,10 @@ export default function Hero({
   useEffect(() => {
     // Set speed to 0.5 (half speed) for both animations
     if (lottieDesktopRef.current) {
-      lottieDesktopRef.current.setSpeed(0.5);
+      lottieDesktopRef.current.setSpeed(1);
     }
     if (lottieMobileRef.current) {
-      lottieMobileRef.current.setSpeed(0.5);
+      lottieMobileRef.current.setSpeed(1);
     }
   }, []);
 

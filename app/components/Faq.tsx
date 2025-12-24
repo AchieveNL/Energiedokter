@@ -7,7 +7,7 @@ import { data } from "../data/faq";
 export default function Faq() {
   const services = [
     "Algemene vragen",
-    "Energielabels",
+    "Energielabels",              
     "GACS",
     "Informatieplicht",
     "WKO-beheer",

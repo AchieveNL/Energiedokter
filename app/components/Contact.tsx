@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 export default function Contact() {
@@ -5,7 +6,7 @@ export default function Contact() {
     <>
       <div
         style={{ fontFamily: "Poppins" }}
-        className="relative mt-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center md:mx-auto mx-1 md:w-[95%] lg:w-[90%] xl:w-[75%] 2xl:w-4/6 md:px-7 px-3 md:pt-3 pb-5 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl flex md:flex-row flex-col-reverse justify-between overflow-x-clip "
+        className="relative mt-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center md:mx-auto mx-1 min-[768]:w-[95%] min-[1024]:w-[90%] min-[1280]:w-[75%] min-[1536]:w-4/6 min-[2300px]:w-[60%] min-[2500px]:w-[50%] min-[3000px]:w-[40%] max-w-[2000px] md:px-7 px-3 md:pt-3 pb-5 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl flex md:flex-row flex-col-reverse justify-between overflow-x-clip "
       >
         {/* left section */}
         <div className="md:w-3/4 w-[70%] md:block hidden">
