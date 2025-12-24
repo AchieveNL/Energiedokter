@@ -1,3 +1,4 @@
+"use client";
 export default function AboutSection() {
   const Statics = ({
     number,
@@ -45,7 +46,17 @@ export default function AboutSection() {
           >
             <Statics style={{}} number="150+" text="Gebouwen verduurzaamd" />
           </div>
-          <img src="/favicon.svg" className="md:w-1/4 p-7" />
+          <div
+            className="md:w-1/4 2xl:w-[20%] p-7"
+            style={{
+              width:
+                typeof window !== "undefined" && window.innerWidth >= 2000
+                  ? "12%"
+                  : undefined,
+            }}
+          >
+            <img src="/favicon.svg" className="w-full" />
+          </div>
           <Statics
             number="12+"
             text="Gecertificeerde specialisten"
