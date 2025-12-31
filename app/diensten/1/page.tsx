@@ -67,6 +67,7 @@ export default function Service1() {
       />
       <div id="section1" className="py-4"></div>
       <ServiceOverview
+      imgStyle={{borderBottomRightRadius:"40px"}}
         roundedTl={true}
         roundedBl={false}
         title={
@@ -125,10 +126,11 @@ export default function Service1() {
         </p>
         <Link
           href="/contact"
-          className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 "
+          className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 hover:bg-[#518103] transition-all "
         >
           Advies aanvragen
         </Link>
+       
       </div>
 
       <div className="py-5"></div>
