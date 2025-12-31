@@ -44,12 +44,12 @@ export default function About() {
     <>
       <div className="mt-20 md:px-20 lg:px-24 px-1 flex flex-col items-center">
         {/* First section */}
-        <div className="flex items-start justify-between md:gap-5">
-          <div className="md:w-1/2 w-1/5 ml-3">
+        <div className="flex md:flex-row flex-col md:items-start items-center justify-between gap-5">
+          <div className="md:w-1/2 md:ml-3">
             <SectionTitle
               title="Wie wij zijn"
               span={
-                <div className="md:text-4xl text-2xl font-extrabold text-center text-nowrap">
+                <div className="md:text-4xl text-3xl font-extrabold text-center text-nowrap">
                   <span className="text-[#254055]">Over </span>
                   <span className="text-[#81C713]">ons</span>
                 </div>
@@ -59,7 +59,7 @@ export default function About() {
 
           {/* paragraphs */}
           <div
-            className="text-[#4D4D4D] md:text-lg  flex flex-col gap-5 w-[60%] md:w-auto md:text-[16px] text-sm"
+            className="text-[#4D4D4D] md:text-lg  flex flex-col gap-5 md:w-auto md:text-[16px] md:text-left text-center md:mx-0 mx-7"
             style={{ fontFamily: "Poppins" }}
           >
             <p>
@@ -116,7 +116,7 @@ export default function About() {
         </div>
       </div>
       <div
-        className="md:mt-20 mt-15 flex flex-col items-center md:gap-8 gap-5 md:py-20 py-10 relative"
+        className="md:mt-20 mt-15 flex flex-col items-center md:gap-8 gap-5 md:py-20 py-10 relative overflow-hidden"
         style={{ fontFamily: "Poppins" }}
       >
         <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -124,12 +124,12 @@ export default function About() {
             <AnimatedBg />
           </div>
         </div>
-        <h1 className="md:text-4xl text-2xl text-center text-[#254055] font-bold ">
+        <h1 className="md:text-4xl text-lg text-center text-[#254055] font-bold text-nowrap">
           ″The future will be <span className="text-[#81C713] ">green</span>, or
           not at all″
         </h1>
         <div className="bg-[#254055] md:py-0.5 py-px rounded-full w-20 "></div>
-        <span className="text-[#81c713] font-semibold md:text-2xl text-xl ">
+        <span className="text-[#81c713] font-semibold md:text-2xl text-lg ">
           Jonathon Porritt
         </span>
       </div>
