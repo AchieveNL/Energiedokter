@@ -73,7 +73,7 @@ const CarouselSlider = ({
                       />
                     </div>
 
-                    <div className="relative p-5 pb-3 flex flex-col md:gap-10 gap-8">
+                    <div className="relative p-5 pb-3 flex flex-col md:gap-10">
                       <div>
                         <h2 className="font-bold text-[#254055] mb-3 ">
                           {card.title}
@@ -127,7 +127,7 @@ const CarouselSlider = ({
       <style>{`
 
         .embla__slide {
-          flex: 0 0 40% !important;
+          flex: 0 0 30% !important;
         }
         @media (min-width: 768px) {
           .embla__slide {
