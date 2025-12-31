@@ -1,7 +1,5 @@
 "use client";
 import SectionTitle from "./SectionTitle";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import React, { useCallback, useEffect } from "react";
@@ -49,9 +47,10 @@ export default function Reviews({ bg = "white" }: { bg?: string }) {
     return (
       <button
         style={{ backgroundColor: bg }}
-        className="flex flex-col md:gap-5 gap-2 items-center justify-between rounded-tl-[3rem] rounded-br-[3rem] md:px-8 px-6 py-6 hover:bg-[#F0F8E2] hover:-translate-y-1 transition-all duration-300 hover:cursor-pointer w-full h-full"
+        className="flex flex-col md:gap-3 gap-2 items-center justify-between rounded-tl-[3rem] rounded-br-[3rem] md:px-8 px-6 pt-6 pb-4 hover:bg-[#F0F8E2] hover:-translate-y-1 transition-all duration-300 hover:cursor-pointer w-full h-full"
       >
-        <div className="flex justify-between w-full gap-3 items-center ">
+        <div className="flex flex-col gap-2">
+          <div className="flex justify-between w-full gap-3 items-center">
           <div className="flex">
             <Star className="size-4" fill="#FFA800" stroke="0" />
             <Star className="size-4" fill="#FFA800" stroke="0" />
@@ -63,9 +62,12 @@ export default function Reviews({ bg = "white" }: { bg?: string }) {
             {rate} rating
           </h1>
         </div>
-        <p className="md:text-lg text-sm text-[#4D4D4D] text-left md:w-3/4 self-start ">
+
+        <p className="md:text-lg text-sm text-[#4D4D4D] text-left self-start">
           {text}
         </p>
+        </div>
+
         <div className="mt-4 self-start text-left text-[#4D4D4D] ">
           <h1 className="font-bold">{name}</h1>
           <span className="text-sm">{role}</span>
