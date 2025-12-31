@@ -1,4 +1,7 @@
 "use client";
+
+import { Plus } from "lucide-react";
+
 export default function AboutSection() {
   const Statics = ({
     number,
@@ -75,7 +78,7 @@ export default function AboutSection() {
         <div className="w-full relative flex items-center">
           <img
             src="/assets/about/img1.svg"
-            className="size-10 rounded-full absolute left-0"
+            className="w-10 rounded-full absolute left-0"
           />
           <img
             src="/assets/about/img2.svg"
@@ -85,13 +88,13 @@ export default function AboutSection() {
             src="/assets/about/img3.svg"
             className="size-10 rounded-full absolute left-14 z-20"
           />
-          {/* <Plus className="bg-black rounded-full absolute z-30 left-21 size-10 text-white p-2" /> */}
-          <span className="text-[#4D4D4D] ml-30 text-sm ">
+          <Plus className="bg-black rounded-full absolute z-30 left-21 size-10 text-white p-3" />
+          <span className="text-[#4D4D4D] ml-34 text-sm ">
             Trusted by 150+ Happy Customers
           </span>
         </div>
-        <div className="flex gap-5 items-center">
-          <span className="text-[#3C8101] font-bold text-2xl ">150+</span>
+        <div className="flex gap-3 items-center">
+          <span className="text-[#3C8101] font-bold text-3xl ">150+</span>
           <span className="text-[#4D4D4D] text-sm ">Reviews</span>
         </div>
 
