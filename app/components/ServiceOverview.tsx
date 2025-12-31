@@ -57,9 +57,9 @@ export default function ServiceOverview({
   img,
   spans,
   reverse = false,
-  roundedBl = true,
-  roundedTl = false,
-  roundedBr = false,
+  roundedBl = false,
+  roundedTl = true,
+  roundedBr = true,
   imgStyle,
   imgHeight = "350px",
 }: {
