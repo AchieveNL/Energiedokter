@@ -23,14 +23,39 @@ export default function AboutSection() {
     <div
       id="about-us"
       style={{ fontFamily: "Poppins" }}
-      className="md:pt-32 pt-10 flex md:flex-row flex-col gap-10 md:mx-20 mx-5"
+      className="md:pt-32 pt-10 flex md:flex-row flex-col md:gap-10 gap-1 md:mx-20 mx-5"
     >
+      <div className="md:hidden block">
+        <div className="w-full relative flex items-center">
+          <img
+            src="/assets/about/img1.svg"
+            className="w-10 rounded-full absolute left-0"
+          />
+          <img
+            src="/assets/about/img2.svg"
+            className="size-10 rounded-full absolute left-7 z-10"
+          />
+          <img
+            src="/assets/about/img3.svg"
+            className="size-10 rounded-full absolute left-14 z-20"
+          />
+          <Plus className="bg-black rounded-full absolute z-30 left-21 size-10 text-white p-3" />
+          <span className="text-[#4D4D4D] ml-34 text-sm ">
+            Trusted by 150+ Happy Customers
+          </span>
+        </div>
+        <div className="flex gap-3 items-center mt-3">
+          <span className="text-[#3C8101] font-bold text-3xl ">150+</span>
+          <span className="text-[#4D4D4D] text-sm ">Reviews</span>
+        </div>
+      </div>
+
       {/* left section */}
-      <div className="md:w-1/2 h-fit bg-[#F6F6F6] rounded-4xl md:p-7 p-4 md:pb-10 pb-7 flex flex-col md:gap-5 gap-3">
+      <div className="md:w-1/2 h-fit bg-[#F6F6F6] rounded-4xl md:p-7 p-4 md:pb-10 pb-7 flex flex-col md:gap-5 gap-3 md:mt-5 mt-5">
         <h1 className="text-[#254055] md:text-3xl text-2xl font-extrabold ">
           Wie zijn wij?
         </h1>
-        <p className="text-[#4D4D4D] md:text-base text-sm ">
+        <p className="text-[#4D4D4D] md:text-base text-sm">
           Energie Dokter is uw betrouwbare partner op het gebied van
           energieadvies en duurzaam bouwen. Met praktische oplossingen en
           persoonlijk advies helpen wij u sneller, slimmer en energiezuiniger te
@@ -75,27 +100,29 @@ export default function AboutSection() {
 
       {/* right section */}
       <div className="md:w-1/2 flex flex-col gap-5">
-        <div className="w-full relative flex items-center">
-          <img
-            src="/assets/about/img1.svg"
-            className="w-10 rounded-full absolute left-0"
-          />
-          <img
-            src="/assets/about/img2.svg"
-            className="size-10 rounded-full absolute left-7 z-10"
-          />
-          <img
-            src="/assets/about/img3.svg"
-            className="size-10 rounded-full absolute left-14 z-20"
-          />
-          <Plus className="bg-black rounded-full absolute z-30 left-21 size-10 text-white p-3" />
-          <span className="text-[#4D4D4D] ml-34 text-sm ">
-            Trusted by 150+ Happy Customers
-          </span>
-        </div>
-        <div className="flex gap-3 items-center">
-          <span className="text-[#3C8101] font-bold text-3xl ">150+</span>
-          <span className="text-[#4D4D4D] text-sm ">Reviews</span>
+        <div className="md:block hidden">
+          <div className="w-full relative flex items-center">
+            <img
+              src="/assets/about/img1.svg"
+              className="w-10 rounded-full absolute left-0"
+            />
+            <img
+              src="/assets/about/img2.svg"
+              className="size-10 rounded-full absolute left-7 z-10"
+            />
+            <img
+              src="/assets/about/img3.svg"
+              className="size-10 rounded-full absolute left-14 z-20"
+            />
+            <Plus className="bg-black rounded-full absolute z-30 left-21 size-10 text-white p-3" />
+            <span className="text-[#4D4D4D] ml-34 text-sm ">
+              Trusted by 150+ Happy Customers
+            </span>
+          </div>
+          <div className="flex gap-3 items-center mt-3">
+            <span className="text-[#3C8101] font-bold text-3xl ">150+</span>
+            <span className="text-[#4D4D4D] text-sm ">Reviews</span>
+          </div>
         </div>
 
         <div className="bg-[#F0F8E2] rounded-4xl md:p-7 p-4 md:px-10 flex flex-col gap-5 md:mt-0 mt-7">
