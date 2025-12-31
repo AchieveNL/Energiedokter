@@ -68,12 +68,12 @@ export default function Hero({
 
   return (
     <div
-      className="md:pt-44 pt-28 Jmin-h-screen md:px-20 flex flex-col gap-3"
+      className="md:pt-44 pt-28 Jmin-h-screen md:px-20 flex flex-col gap-3 relative"
       style={{
-        height: containerHeight > 0 ? `${containerHeight - 50}px` : "100vh",
+        height: containerHeight > 0 ? `${containerHeight - 50}px` : "fit-content",
       }}
     >
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 md:h-screen h-">
         <AnimatedBg />
         <div
           ref={lottieRef}
@@ -82,19 +82,6 @@ export default function Hero({
           <Lottie
             lottieRef={lottieDesktopRef}
             animationData={animationData || animationData1}
-            loop
-            autoplay
-            style={{ width: "100%", height: "auto" }}
-          />
-        </div>
-        {/* mobile view */}
-        <div
-          // ref={lottieRef}
-          className="absolute w-full md:hidden block bottom-0 pointer-events-none"
-        >
-          <Lottie
-            lottieRef={lottieMobileRef}
-            animationData={animationData}
             loop
             autoplay
             style={{ width: "100%", height: "auto" }}
@@ -129,6 +116,18 @@ export default function Hero({
         >
           Lees meer
         </Link>
+      </div>
+      <div
+        // ref={lottieRef}
+        className="w-full md:hidden block pointer-events-none"
+      >
+        <Lottie
+          lottieRef={lottieMobileRef}
+          animationData={animationData}
+          loop
+          autoplay
+          style={{ width: "100%", height: "auto" }}
+        />
       </div>
     </div>
   );

@@ -47,12 +47,12 @@ export default function HomeHero() {
 
   return (
     <div
-      className="w-full"
+      className="w-full relative"
       style={{
-        height: containerHeight > 0 ? `${containerHeight - 70}px` : "100vh",
+        height: containerHeight > 0 ? `${containerHeight - 70}px` : "fit-content",
       }}
     >
-      <div className="absolute inset-0 -z-10 md:h-[90vh] h-[94vh]">
+      <div className="absolute inset-0 -z-10 md:h-[90vh] h-full">
         <AnimatedBg />
         <div
           ref={lottieRef}
@@ -68,7 +68,7 @@ export default function HomeHero() {
         </div>
 
         {/* mobile view */}
-        <div
+        {/* <div
           // ref={lottieRef}
           className="absolute w-full md:hidden block -bottom-12 pointer-events-none"
         >
@@ -79,7 +79,7 @@ export default function HomeHero() {
             autoplay
             style={{ width: "100%", height: "auto" }}
           />
-        </div>
+        </div> */}
       </div>
 
       <div className="m-auto md:pt-32 pt-32 flex flex-col items-center">
@@ -122,6 +122,17 @@ export default function HomeHero() {
         >
           Geen verplichtingen, wel inzicht in de mogelijkheden voor uw gebouw
         </p>
+        <div
+          className="w-full md:hidden block pointer-events-none"
+        >
+          <Lottie
+            lottieRef={lottieMobileRef}
+            animationData={animationData}
+            loop
+            autoplay
+            style={{ width: "100%", height: "auto" }}
+          />
+        </div>
       </div>
     </div>
   );
