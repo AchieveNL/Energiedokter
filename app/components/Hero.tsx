@@ -73,7 +73,7 @@ export default function Hero({
         height: containerHeight > 0 ? `${containerHeight - 50}px` : "fit-content",
       }}
     >
-      <div className="absolute inset-0 -z-10 md:h-screen h-">
+      <div className="absolute inset-0 -z-10 md:h-screen">
         <AnimatedBg />
         <div
           ref={lottieRef}
