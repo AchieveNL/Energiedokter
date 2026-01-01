@@ -31,7 +31,7 @@ export default function ProjectsPage() {
         }
       />
       <BrandList />
-      <div id="projects2">
+      {/* <div id="projects2">
         <GridView
           sectionTitle={
             <SectionTitle
@@ -46,8 +46,8 @@ export default function ProjectsPage() {
           }
           cards={cards}
         />
-      </div>
-      <div id="projects1" className="md:hidden block p-">
+      </div> */}
+      <div id="projects1">
         <Projects linkVisible={false} />
       </div>
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 md:mt-0 mt-5 ">

@@ -25,7 +25,7 @@ export default function BlogsPage() {
         }
         text="Blijf op de hoogte van de nieuwste ontwikkelingen en laat u inspireren door onze inzichten en projecten op het gebied van energie en duurzaamheid."
       />
-      <div id="blogs1">
+      {/* <div id="blogs1">
         <GridView
           sectionTitle={
             <SectionTitle
@@ -41,9 +41,9 @@ export default function BlogsPage() {
           }
           cards={cards}
         />
-      </div>
+      </div> */}
 
-      <div id="blog" className="md:hidden block">
+      <div id="blogs1">
         <Blog linkVisible={false} />
       </div>
       <DienstenSection />

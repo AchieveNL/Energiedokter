@@ -79,12 +79,12 @@ const CarouselSlider = ({
                           {card.title}
                         </h2>
 
-                        <p className="text-[#4D4D4D] md:text-lg text-sm">
+                        <p className="text-[#4D4D4D] md:text-base text-sm">
                           {card.description}
                         </p>
                       </div>
 
-                      <div className="mt-8 flex justify-between">
+                      <div className="mt-8 md:mt-0 flex justify-between">
                         <Link
                           href={card.id}
                           className="hover:underline text-[#81C713] md:text-base text-sm"
