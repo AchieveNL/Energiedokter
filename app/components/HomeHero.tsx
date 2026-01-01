@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import AnimatedLink from "./AnimatedLink";
 import AnimatedBg from "./AnimatedBg";
 import Lottie from "lottie-react";
@@ -7,36 +7,11 @@ import animationData from "@/public/assets/animations/home.json";
 import type { LottieRefCurrentProps } from "lottie-react";
 
 export default function HomeHero() {
-  const lottieRef = useRef<HTMLDivElement>(null);
   const lottieDesktopRef = useRef<LottieRefCurrentProps>(null);
   const lottieMobileRef = useRef<LottieRefCurrentProps>(null);
-  const [containerHeight, setContainerHeight] = useState<number>(0);
 
   useEffect(() => {
-    const calculateHeight = () => {
-      if (lottieRef.current) {
-        const lottieHeight = lottieRef.current.offsetHeight;
-        setContainerHeight(lottieHeight);
-      }
-    };
-
-    // Initial calculation
-    calculateHeight();
-
-    // Recalculate on window resize
-    window.addEventListener("resize", calculateHeight);
-
-    // Small delay to ensure Lottie has rendered
-    const timer = setTimeout(calculateHeight, 100);
-
-    return () => {
-      window.removeEventListener("resize", calculateHeight);
-      clearTimeout(timer);
-    };
-  }, []);
-
-  useEffect(() => {
-    // Set speed to 0.5 (half speed) for both animations
+    // Set speed to 1 for both animations
     if (lottieDesktopRef.current) {
       lottieDesktopRef.current.setSpeed(1);
     }
@@ -46,43 +21,23 @@ export default function HomeHero() {
   }, []);
 
   return (
-    <div
-      className="w-full relative"
-      style={{
-        height: containerHeight > 0 ? `${containerHeight - 70}px` : "fit-content",
-      }}
-    >
-      <div className="absolute inset-0 -z-10 md:h-[90vh] h-full">
+    <div className="w-full relative h-fit">
+      <div className="absolute inset-0 -z-10 h-full">
         <AnimatedBg />
-        <div
-          ref={lottieRef}
-          className="absolute w-full md:block hidden -top-10 pointer-events-none"
-        >
-          <Lottie
-            lottieRef={lottieDesktopRef}
-            animationData={animationData}
-            loop
-            autoplay
-            style={{ width: "100%", height: "auto" }}
-          />
-        </div>
-
-        {/* mobile view */}
-        {/* <div
-          // ref={lottieRef}
-          className="absolute w-full md:hidden block -bottom-12 pointer-events-none"
-        >
-          <Lottie
-            lottieRef={lottieMobileRef}
-            animationData={animationData}
-            loop
-            autoplay
-            style={{ width: "100%", height: "auto" }}
-          />
-        </div> */}
       </div>
 
-      <div className="m-auto md:pt-32 pt-32 flex flex-col items-center">
+      <div className="relative w-full md:block hidden top-7 pointer-events-none">
+        <Lottie
+          lottieRef={lottieDesktopRef}
+          animationData={animationData}
+          loop
+          autoplay
+          style={{ width: "100%", height: "auto" }}
+        />
+      </div>
+      <div className="bg-white p-7 md:block hidden"></div>
+
+      <div className="m-auto md:pt-32 pt-32 flex flex-col items-center md:absolute top-0 md:right-1/2 md:translate-x-1/2 w-full">
         <h1
           style={{ fontFamily: "Poppins" }}
           className="font-black text-[#254055] md:text-5xl text-2xl text-center mx-5 "
@@ -122,9 +77,7 @@ export default function HomeHero() {
         >
           Geen verplichtingen, wel inzicht in de mogelijkheden voor uw gebouw
         </p>
-        <div
-          className="w-full md:hidden block pointer-events-none"
-        >
+        <div className="w-full md:hidden block pointer-events-none">
           <Lottie
             lottieRef={lottieMobileRef}
             animationData={animationData}
@@ -133,6 +86,7 @@ export default function HomeHero() {
             style={{ width: "100%", height: "auto" }}
           />
         </div>
+        <div className="bg-white p-2 w-full -mt-px md:hidden block "></div>
       </div>
     </div>
   );
