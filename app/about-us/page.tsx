@@ -8,11 +8,13 @@ import Reviews from "../components/Reviews";
 import Faq from "../components/Faq";
 import Projects from "../components/Projects";
 import Hero from "../components/Hero";
+import animationData from "@/public/assets/animations/faq.json";
 
 export default function AboutPage() {
   return (
     <>
       <Hero
+        animationData={animationData}
         desktopSectionId={"about-us"}
         title="Wie wij zijn"
         span={

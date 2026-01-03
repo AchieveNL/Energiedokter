@@ -5,14 +5,18 @@ import Reviews from "../components/Reviews";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import DienstenSection from "../components/DienstenSection";
+import AnimatedBg from "../components/AnimatedBg";
 
 export default function Partners() {
   return (
     <>
       <div
-        className="md:pt-44 pt-28 min-h-screen md:px-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover flex flex-col items-center gap-3 "
+        className="md:pt-44 pt-28 md:px-20 bg-cover flex flex-col items-center gap-3 relative "
         style={{ fontFamily: "Poppins" }}
       >
+        <div className="absolute inset-0 -z-10 h-full">
+          <AnimatedBg />
+        </div>
         <div className="md:flex hidden text-center  ">
           <SectionTitle
             title="Partners"

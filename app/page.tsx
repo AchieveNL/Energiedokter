@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <HomeHero />
-      <BrandList />
+      {/* <BrandList /> */}
       <About />
       <div className="md:hidden block py-6"></div>
       <Diensten />

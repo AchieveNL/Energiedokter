@@ -14,6 +14,8 @@ export default function DienstenPage() {
   return (
     <>
       <Hero
+        whiteBoxVisible={false}
+        heroStyle="100px"
         animationData={animationData}
         desktopSectionId="service1"
         title="Diensten"
