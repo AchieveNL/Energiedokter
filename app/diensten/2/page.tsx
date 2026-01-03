@@ -70,6 +70,7 @@ export default function Service2() {
       <ServiceOverview
         roundedBl={false}
         roundedBr={true}
+        roundedTl={false}
         imgStyle={{ width: "100%", borderTopLeftRadius: "40px" }}
         reverse={true}
         title={
@@ -99,7 +100,7 @@ export default function Service2() {
             </p>
             <Link
               href="/contact"
-              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg w-fit mb-5 hover:bg-[#518103] transition-all "
+              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg w-fit hover:bg-[#518103] transition-all "
             >
               Advies aanvragen
             </Link>
