@@ -52,7 +52,7 @@ const CarouselSlider = ({
               return (
                 <div
                   key={index}
-                  className="embla__slide shrink-0 px-2 md:px-4"
+                  className="embla__slide shrink-0 px-2 md:px-4 flex"
                   style={{
                     flex: "0 0 85%",
                     minWidth: 0,
@@ -60,10 +60,9 @@ const CarouselSlider = ({
                 >
                   <div
                     className={`
-                      relative rounded-xl overflow-hidden border border-[#E3E3E3] bg-[#F9F9F9] hover:bg-[#F0F8E2] transition-all duration-500 ease-out
+                      relative rounded-xl overflow-hidden border border-[#E3E3E3] bg-[#F9F9F9] hover:bg-[#F0F8E2] transition-all duration-500 ease-out w-full flex flex-col
                       ${isActive ? "scale-95" : "scale-90 opacity-90"}
                     `}
-                    // style={{ minHeight: "500px" }}
                   >
                     <div className="relative overflow-hidden scale-x-105 shrink-0">
                       <img
@@ -73,8 +72,8 @@ const CarouselSlider = ({
                       />
                     </div>
 
-                    <div className="relative p-5 pb-3 flex flex-col md:gap-10">
-                      <div>
+                    <div className="relative p-5 pb-3 flex flex-col md:gap-10 flex-1">
+                      <div className="flex-1">
                         <h2 className="font-bold text-[#254055] mb-3 ">
                           {card.title}
                         </h2>
