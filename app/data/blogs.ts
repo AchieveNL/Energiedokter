@@ -33,7 +33,7 @@ export const cards: BlogPost[] = [
     image: "/assets/blogs/img3.svg",
   },
   {
-    href: "/blogs/4",
+    href: "/blogs/1",
     id: "/blogs/1",
     title: "Slimme lampen, grote besparing",
     description:
@@ -41,7 +41,7 @@ export const cards: BlogPost[] = [
     image: "/assets/blogs/img1.svg",
   },
   {
-    id: "/blogs/5",
+    id: "/blogs/2",
     href: "/blogs/1",
 
     title: "Windenergie in je buurt",
@@ -50,7 +50,7 @@ export const cards: BlogPost[] = [
     image: "/assets/blogs/img2.svg",
   },
   {
-    id: "/blogs/6",
+    id: "/blogs/3",
     href: "/blogs/1",
 
     title: "Energiebewust werken",

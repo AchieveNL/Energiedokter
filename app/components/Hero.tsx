@@ -15,6 +15,7 @@ export default function Hero({
   animationData,
   heroStyle = "130px",
   whiteBoxVisible = true,
+  displayBtns=true,
 }: {
   span: React.ReactNode;
   title: string;
@@ -24,6 +25,7 @@ export default function Hero({
   animationData?: any;
   heroStyle?: string;
   whiteBoxVisible?: boolean;
+  displayBtns?:boolean
 }) {
   const scrollToSection = (id1: string, id2: string) => {
     const section1 = document.getElementById(id1);
@@ -85,7 +87,7 @@ export default function Hero({
         <p className="text-[#4D4D4D] md:w-1/2 mt-3 md:text-base text-sm md:text-left text-center px-3">
           {text}
         </p>
-        <div className="flex md:justify-start justify-center md:gap-5 gap-2 md:mt-10 mt-5 md:mb-0">
+        <div style={{display:displayBtns?"flex":"none"}} className="flex md:justify-start justify-center md:gap-5 gap-2 md:mt-10 mt-5 md:mb-0">
           <Link
             href="/contact"
             className="text-white bg-[#81C713] hover:bg-[#689e12] transition-all duration-200 md:py-2 md:pb-3 px-5 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
