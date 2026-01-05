@@ -175,45 +175,6 @@ export default function Service5() {
 
       <div className="mt-20"></div>
 
-      <div
-        style={{ fontFamily: "Poppins" }}
-        className="flex flex-col md:gap-5 gap-3 items-center relative"
-      >
-        <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] text-center md:mx-0 mx-2 ">
-          Dit is wat u wél wilt:{" "}
-          <span className="text-[#81C713] ">
-            grip<span className="text-[#254055]">,</span> comfort{" "}
-          </span>
-          en <span className="text-[#81C713]"> zekerheid</span>
-        </h1>
-        <p className="text-[#4D4D4D] text-sm md:w-1/2 px-5 text-center">
-          Met een goed ingericht en optimaal beheerd GACS krijg je volledige
-          grip op de prestaties van je gebouw. Je profiteert van lagere
-          energiekosten, een gezond en comfortabel binnenklimaat en een
-          toekomstbestendig pand dat voldoet aan de Europese eisen.
-        </p>
-        <p className="text-[#4D4D4D] text-sm md:w-1/2 px-5 text-center">
-          GACS biedt real-time inzicht in gedrag, verbruik en
-          binnenmilieukwaliteit, waardoor je direct kunt bijsturen en
-          verbeteringen kunt doorvoeren. Het resultaat is een slimmer gebouw dat
-          duurzaam presteert en bijdraagt aan waardestijging van het vastgoed.
-        </p>
-        <Link
-          href="/contact"
-          className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg mt-5 w-fit "
-        >
-          Advies aanvragen
-        </Link>
-        <img
-          src="/assets/services/icon1.svg"
-          className="md:w-32 w-20 absolute bottom-0 left-0 -z-10"
-        />
-        <img
-          src="/assets/services/icon2.svg"
-          className="md:w-20 w-10 absolute top-0 right-0 -z-10"
-        />
-      </div>
-
       <div className="md:mt-20 mt-15"></div>
 
       <StepPlan />
