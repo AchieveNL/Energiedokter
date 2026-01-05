@@ -3,8 +3,12 @@ import { useState } from "react";
 import Plan from "./Plan";
 import { planSteps } from "../data/planSteps";
 
-export default function StepPlan() {
-  const [active, setActive] = useState("Onze aanpak");
+export default function StepPlan({
+  activeBtn = "Onze aanpak",
+}: {
+  activeBtn?: string;
+}) {
+  const [active, setActive] = useState(activeBtn);
 
   const toggleActive = (e: React.MouseEvent<HTMLButtonElement>) => {
     setActive(e.currentTarget.innerText);

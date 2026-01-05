@@ -138,7 +138,7 @@ export default function Service4() {
 
       <div className="md:mt-20 mt-15"></div>
 
-      <StepPlan />
+      <StepPlan activeBtn="GACS" />
       <Contact />
       <div className="md:mt-31 mt-10"></div>
       <ServicesStats text="Energie Dokter combineert technische expertise met een integrale blik op wetgeving, gebouwbeheer en duurzaamheid. Wij fungeren als spin in het web tussen gebouweigenaar, beheerder en technici, waardoor we niet alleen technische optimalisaties realiseren, maar ook organisatorische afstemming en blijvende prestaties." />

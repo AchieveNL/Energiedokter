@@ -136,7 +136,7 @@ export default function Service6() {
 
       <div className="md:mt-20 mt-15"></div>
 
-      <StepPlan />
+      <StepPlan activeBtn="Trainingen" />
       <Contact />
       <div className="md:py-10 py-7"></div>
       <Faq />

@@ -131,7 +131,7 @@ export default function Service3() {
 
       <div className="md:mt-20 mt-15"></div>
 
-      <StepPlan />
+      <StepPlan activeBtn="Informatieplicht" />
       <Contact />
       <div className="md:mt-31 mt-10"></div>
       <ServicesStats text="Bij Energie Dokter combineren we technische expertise met praktische uitvoerbaarheid. Wij zorgen dat uw informatieplicht volledig en correct wordt nageleefd, en vertalen complexe regelgeving naar overzichtelijke, bruikbare adviezen. Van opname en analyse tot rapportage en advies: onze adviseurs begeleiden u stap voor stap, zodat u precies weet wat nodig is en direct actie kunt ondernemen. Zo krijgt u niet alleen inzicht in uw energieverbruik, maar ook grip op kosten, duurzaamheid en toekomstbestendigheid van uw gebouwen." />
