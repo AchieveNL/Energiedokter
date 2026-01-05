@@ -26,19 +26,19 @@ export const blogPage = [
         "Niet elke locatie is geschikt voor windenergie. Er wordt altijd gekeken naar windkracht, afstand tot woningen, natuur en veiligheid. Daarom worden windprojecten uitgebreid onderzocht voordat ze worden gerealiseerd.",
         "De Energiedokter helpt bewoners en organisaties om duurzame energie beter te begrijpen. Of het nu gaat om windenergie, zonnepanelen of energiebesparing: wij maken complexe informatie helder en praktisch. Zo kun jij beter meedenken en meebeslissen over energie in jouw buurt.",
       ],
-      img: "/assets/blogImgs/section-img1.svg",
+      img: "/assets/blogImgs/section-img1.png",
     },
   },
 
   {
     title: "Slimme lampen, grote besparing",
     imgs: [
-      "/assets/blogImgs/img4.jpg",
+      "/assets/blogImgs/img4.webp",
       "/assets/blogImgs/img5.png",
-      "/assets/blogImgs/img6.jpg",
-      "/assets/blogImgs/img4.jpg",
+      "/assets/blogImgs/img6.webp",
+      "/assets/blogImgs/img4.webp",
       "/assets/blogImgs/img5.png",
-      "/assets/blogImgs/img6.jpg",
+      "/assets/blogImgs/img6.webp",
     ],
     sections: [
       {
@@ -57,19 +57,19 @@ export const blogPage = [
         "Doordat slimme lampen efficiënter omgaan met energie, wordt onnodig verbruik voorkomen. Lampen die automatisch uitschakelen of dimmen, zorgen voor minder stroomverbruik en een langere levensduur. Vooral in kantoren, scholen en openbare ruimtes kan dit leiden tot aanzienlijke energiebesparingen.",
         "Het overstappen op slimme verlichting is een laagdrempelige manier om direct te besparen op energiekosten. Of het nu gaat om een woning of een groter gebouw, slimme lampen laten zien dat kleine aanpassingen een groot effect kunnen hebben.",
       ],
-      img: "/assets/blogImgs/section-img1.svg",
+      img: "/assets/blogImgs/section-img1.png",
     },
   },
 
   {
     title: "Energiebewust werken",
     imgs: [
-      "/assets/blogImgs/img7.jpg",
+      "/assets/blogImgs/img7.webp",
       "/assets/blogImgs/img8.png",
-      "/assets/blogImgs/img9.jpg",
-      "/assets/blogImgs/img7.jpg",
+      "/assets/blogImgs/img9.webp",
+      "/assets/blogImgs/img7.webp",
       "/assets/blogImgs/img8.png",
-      "/assets/blogImgs/img9.jpg",
+      "/assets/blogImgs/img9.webp",
     ],
     sections: [
       {
@@ -90,7 +90,7 @@ export const blogPage = [
       paragraphs: [
         "Energiebewust werken begint met kleine veranderingen: apparaten uit na werktijd, bewust omgaan met verwarming en verlichting, en slimme technologie inzetten. Samen zorgen deze stappen voor een duurzamere werkplek en een lagere CO₂-uitstoot.",
       ],
-      img: "/assets/blogImgs/section-img2.svg",
+      img: "/assets/blogImgs/section-img2.png",
     },
   },
 ];

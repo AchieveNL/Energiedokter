@@ -28,15 +28,15 @@ export default function AboutSection() {
       <div className="md:hidden block">
         <div className="w-full relative flex items-center">
           <img
-            src="/assets/about/img1.svg"
+            src="/assets/about/img1.png"
             className="w-10 rounded-full absolute left-0"
           />
           <img
-            src="/assets/about/img2.svg"
+            src="/assets/about/img2.png"
             className="size-10 rounded-full absolute left-7 z-10"
           />
           <img
-            src="/assets/about/img3.svg"
+            src="/assets/about/img3.png"
             className="size-10 rounded-full absolute left-14 z-20"
           />
           <Plus className="bg-black rounded-full absolute z-30 left-21 size-10 text-white p-3" />
@@ -103,15 +103,15 @@ export default function AboutSection() {
         <div className="md:block hidden">
           <div className="w-full relative flex items-center">
             <img
-              src="/assets/about/img1.svg"
+              src="/assets/about/img1.png"
               className="w-10 rounded-full absolute left-0"
             />
             <img
-              src="/assets/about/img2.svg"
+              src="/assets/about/img2.png"
               className="size-10 rounded-full absolute left-7 z-10"
             />
             <img
-              src="/assets/about/img3.svg"
+              src="/assets/about/img3.png"
               className="size-10 rounded-full absolute left-14 z-20"
             />
             <Plus className="bg-black rounded-full absolute z-30 left-21 size-10 text-white p-3" />

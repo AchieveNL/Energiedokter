@@ -136,7 +136,7 @@ export default function Service2() {
             </p>
           </>
         }
-        img="/assets/blogs/section-img2.svg"
+        img="/assets/blogs/section-img2.png"
       />
 
       <div className="md:mt-20 mt-15"></div>

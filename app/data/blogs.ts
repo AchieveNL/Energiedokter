@@ -12,7 +12,7 @@ export const cards: BlogPost[] = [
     title: "Slimme lampen, grote besparing",
     description:
       "Ontdek hoe je met led-verlichting en timers eenvoudig tot 30% op je energierekening kunt besparen",
-    image: "/assets/blogs/img1.svg",
+    image: "/assets/blogs/img1.webp",
   },
   {
     id: "/blogs/2",
@@ -21,7 +21,7 @@ export const cards: BlogPost[] = [
     title: "Windenergie in je buurt",
     description:
       "Hoe kleine windturbines en lokale initiatieven bijdragen aan een groener Nederland",
-    image: "/assets/blogs/img2.svg",
+    image: "/assets/blogs/img2.webp",
   },
   {
     id: "/blogs/3",
@@ -30,7 +30,7 @@ export const cards: BlogPost[] = [
     title: "Energiebewust werken",
     description:
       "5 simpele manieren om energie te besparen terwijl je thuis aan het werk bent",
-    image: "/assets/blogs/img3.svg",
+    image: "/assets/blogs/img3.webp",
   },
   {
     href: "/blogs/1",
@@ -38,7 +38,7 @@ export const cards: BlogPost[] = [
     title: "Slimme lampen, grote besparing",
     description:
       "Ontdek hoe je met led-verlichting en timers eenvoudig tot 30% op je energierekening kunt besparen",
-    image: "/assets/blogs/img1.svg",
+    image: "/assets/blogs/img1.webp",
   },
   {
     id: "/blogs/2",
@@ -47,7 +47,7 @@ export const cards: BlogPost[] = [
     title: "Windenergie in je buurt",
     description:
       "Hoe kleine windturbines en lokale initiatieven bijdragen aan een groener Nederland",
-    image: "/assets/blogs/img2.svg",
+    image: "/assets/blogs/img2.webp",
   },
   {
     id: "/blogs/3",
@@ -56,6 +56,6 @@ export const cards: BlogPost[] = [
     title: "Energiebewust werken",
     description:
       "5 simpele manieren om energie te besparen terwijl je thuis aan het werk bent",
-    image: "/assets/blogs/img3.svg",
+    image: "/assets/blogs/img3.webp",
   },
 ];

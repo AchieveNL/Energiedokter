@@ -55,7 +55,7 @@ export default function Service3() {
             </p>
           </>
         }
-        img="/assets/blogs/section-img3.svg"
+        img="/assets/blogs/section-img3.png"
       />
 
       <div className="md:mt-10 mt-5 p-1"></div>
@@ -72,7 +72,7 @@ export default function Service3() {
             </span>
           </h1>
         }
-        img="/assets/services/img6.svg"
+        img="/assets/services/img6.webp"
         spans={
           <>
             <p>

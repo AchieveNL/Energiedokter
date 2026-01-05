@@ -42,7 +42,7 @@ export const cards: project[] = [
     title: "Hybride ketelhuis renovatie",
     description:
       "Een complete herziening van de centrale verwarmingsinstallatie voor een appartementencomplex, waarbij efficiëntie en betrouwbaarheid centraal stonden",
-    image: "/assets/projects/img4.svg",
+    image: "/assets/projects/img1.svg",
     date: "28-11-2025",
   },
   {
@@ -52,7 +52,7 @@ export const cards: project[] = [
     title: "Duurzame bodemenergie campus",
     description:
       "Installatie van een Warmte-Koude Opslag (WKO) systeem om het gebouw in de zomer te koelen en in de winter op een natuurlijke manier te verwarmen",
-    image: "/assets/projects/img5.svg",
+    image: "/assets/projects/img2.svg",
     date: "01-11-2025",
   },
   {
@@ -62,7 +62,7 @@ export const cards: project[] = [
     title: "Optimaal binnenklimaat kantoor",
     description:
       "Implementatie van een hoogwaardig luchtbehandelingssysteem met warmteterugwinning (WTW) voor een gezonde en energiezuinige werkomgeving",
-    image: "/assets/projects/img6.svg",
+    image: "/assets/projects/img3.svg",
     date: "04-10-2025",
   },
 ];

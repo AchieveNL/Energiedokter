@@ -65,9 +65,11 @@ export default function Service1() {
         }
         text="Krijg inzicht in de energieprestatie van uw bestaande kantoor, school of winkel en voldoe aan de wettelijke energielabelplicht. Zo verlaagt u energiekosten en versterkt u het duurzame imago van uw gebouw."
       />
+
+      
       <div id="section1" className="py-4"></div>
       <ServiceOverview
-      imgStyle={{borderBottomRightRadius:"40px"}}
+        imgStyle={{ borderBottomRightRadius: "40px" }}
         roundedTl={true}
         roundedBl={false}
         title={
@@ -130,7 +132,6 @@ export default function Service1() {
         >
           Advies aanvragen
         </Link>
-       
       </div>
 
       <div className="py-5"></div>
@@ -159,7 +160,7 @@ export default function Service1() {
             </p>
           </>
         }
-        img="/assets/blogs/section-img.svg"
+        img="/assets/blogs/section-img.png"
       />
       <div className="py-3"></div>
 

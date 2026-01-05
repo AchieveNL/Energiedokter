@@ -34,7 +34,7 @@ export default function Service4() {
             </span>
           </h1>
         }
-        img="/assets/services/img3.svg"
+        img="/assets/services/img3.webp"
         spans={
           <>
             <p>
@@ -93,7 +93,7 @@ export default function Service4() {
             </p>
           </>
         }
-        img="/assets/blogs/section-img4.svg"
+        img="/assets/blogs/section-img4.png"
       />
       <div className="mt-20"></div>
 

@@ -1,3 +1,4 @@
+
 import React, { useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
@@ -64,7 +65,7 @@ const CarouselSlider = ({
                       ${isActive ? "scale-95" : "scale-90 opacity-90"}
                     `}
                   >
-                    <div className="relative overflow-hidden scale-x-105 shrink-0">
+                    <div className="relative overflow-hidden scale-x-105 shrink-0 h-48 md:h-64">
                       <img
                         src={card.image}
                         alt={card.title}
@@ -74,11 +75,11 @@ const CarouselSlider = ({
 
                     <div className="relative p-5 pb-3 flex flex-col md:gap-10 flex-1">
                       <div className="flex-1">
-                        <h2 className="font-bold text-[#254055] mb-3 ">
+                        <h2 className="font-bold text-[#254055] mb-3 line-clamp-2">
                           {card.title}
                         </h2>
 
-                        <p className="text-[#4D4D4D] md:text-base text-sm">
+                        <p className="text-[#4D4D4D] md:text-base text-sm line-clamp-3">
                           {card.description}
                         </p>
                       </div>

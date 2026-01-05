@@ -14,7 +14,7 @@ export default function ServicesCTA({
 }) {
   return (
     <div
-      className="md:mt-20 mt-10 md:px-24 px-5 flex md:gap-20 justify-center"
+      className="md:mt-20 mt-10 md:px-24 px-5 flex md:gap-20 justify-center items-center"
       style={{
         fontFamily: "Poppins",
         flexDirection: reverse ? "row-reverse" : "row",
@@ -32,8 +32,10 @@ export default function ServicesCTA({
       </div>
       <img
         src={img}
-        className="w-[20%] drop-shadow-[-15px_-15px_0px_#254055] md:block hidden"
+        className="w-[20%] h-fit drop-shadow-[-15px_-15px_0px_#254055] md:block hidden"
       />
     </div>
   );
 }
+
+

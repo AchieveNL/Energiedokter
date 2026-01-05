@@ -3,7 +3,6 @@ import Footer from "@/app/components/Footer";
 import Hero from "@/app/components/Hero";
 import ImagesSlider from "@/app/components/ImagesSlider";
 import { blogPage } from "@/app/data/blogPage";
-import { cards } from "@/app/data/blogs";
 
 export default async function BlogDetails({
   params,

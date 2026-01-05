@@ -170,7 +170,7 @@ export default function Service5() {
             </p>
           </>
         }
-        img="/assets/blogs/section-img5.svg"
+        img="/assets/blogs/section-img5.png"
       />
 
       <div className="mt-20"></div>

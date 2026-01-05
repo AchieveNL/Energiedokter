@@ -34,7 +34,7 @@ export default function Service6() {
             </span>
           </h1>
         }
-        img="/assets/services/img5.svg"
+        img="/assets/services/img5.webp"
         spans={
           <>
             <p>
@@ -131,7 +131,7 @@ export default function Service6() {
             </p>
           </>
         }
-        img="/assets/blogs/section-img5.svg"
+        img="/assets/blogs/section-img5.png"
       />
 
       <div className="md:mt-20 mt-15"></div>
