@@ -11,61 +11,105 @@ import ServicesCTA from "@/app/components/ServicesCTA";
 import ServicesStats from "@/app/components/ServicesStats";
 import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
+import animationData from "@/public/assets/animations/faq.json";
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
+import { useEffect, useRef } from "react";
+import AnimatedBg from "@/app/components/AnimatedBg";
 
 export default function Service5() {
   const scrollToSection = () => {
     const section1 = document.getElementById("section1");
     section1?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const lottieDesktopRef = useRef<LottieRefCurrentProps>(null);
+  const lottieMobileRef = useRef<LottieRefCurrentProps>(null);
+
+  useEffect(() => {
+    // Set speed to 1 for both animations
+    if (lottieDesktopRef.current) {
+      lottieDesktopRef.current.setSpeed(1);
+    }
+    if (lottieMobileRef.current) {
+      lottieMobileRef.current.setSpeed(1);
+    }
+  }, []);
+
   return (
     <>
       <div
-        className="md:pt-44 pt-28 min-h-screen md:px-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover flex flex-col items-center gap-3 "
+        className="flex flex-col items-center gap-3 relative "
         style={{ fontFamily: "Poppins" }}
       >
-        <div className="md:flex hidden text-center  ">
-          <SectionTitle
-            title="Diensten"
-            span={
-              <span className="font-black text-4xl text-[#254055] flex flex-col gap-2 ">
-                <span>WKO Beheer </span>
-              </span>
-            }
-            align="center"
+        <div className="absolute inset-0 -z-10 h-full">
+          <AnimatedBg />
+        </div>
+        <div
+          className="relative w-full md:block hidden pointer-events-none"
+          style={{ paddingTop: "130px" }}
+        >
+          <Lottie
+            lottieRef={lottieDesktopRef}
+            animationData={animationData}
+            loop
+            autoplay
+            style={{ width: "100%", height: "auto" }}
           />
         </div>
-        <div className="block md:hidden text-center">
-          <SectionTitle
-            titleSize={{ fontSize: 14 }}
-            title="Diensten"
-            span={
-              <span className="font-black text-2xl text-[#254055]">
-                WKO Beheer
-              </span>
-            }
-            align="center"
-          />
+        <div className="md:absolute pt-36 flex flex-col items-center">
+          <div className="md:flex hidden text-center  ">
+            <SectionTitle
+              title="Diensten"
+              span={
+                <span className="font-black text-4xl text-[#254055] flex flex-col gap-2 ">
+                  <span>WKO Beheer </span>
+                </span>
+              }
+              align="center"
+            />
+          </div>
+          <div className="block md:hidden text-center">
+            <SectionTitle
+              titleSize={{ fontSize: 14 }}
+              title="Diensten"
+              span={
+                <span className="font-black text-2xl text-[#254055]">
+                  WKO Beheer
+                </span>
+              }
+              align="center"
+            />
+          </div>
+          <p className="text-[#4D4D4D] md:w-1/2 mt-3 md:text-base text-sm text-center px-3">
+            Haal het maximale rendement uit uw Warmte-Koudeopslag (WKO)-systeem.
+            Wij zorgen voor professioneel beheer, monitoring en optimalisatie
+            zodat uw installatie efficiënt, duurzaam en storingsvrij blijft
+            werken.
+          </p>
+          <div className="flex md:justify-start justify-center md:gap-5 gap-2 mt-10">
+            <Link
+              href="#"
+              className="text-white bg-[#81C713] hover:bg-[#689e12] transition-all duration-200 md:py-2 md:pb-3 px-5 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
+            >
+              Plan een gesprek
+            </Link>
+            <Link
+              onClick={scrollToSection}
+              href="#"
+              className="text-[#4D4D4D] bg-white hover:bg-[#82c71350] transition-all duration-200 md:py-2 md:pb-3 p-3 px-8 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
+            >
+              Lees meer
+            </Link>
+          </div>
         </div>
-        <p className="text-[#4D4D4D] md:w-1/2 mt-3 md:text-base text-sm text-center px-3">
-          Haal het maximale rendement uit uw Warmte-Koudeopslag (WKO)-systeem.
-          Wij zorgen voor professioneel beheer, monitoring en optimalisatie
-          zodat uw installatie efficiënt, duurzaam en storingsvrij blijft
-          werken.
-        </p>
-        <div className="flex md:justify-start justify-center md:gap-5 gap-2 mt-10">
-          <Link
-            href="#"
-            className="text-white bg-[#81C713] hover:bg-[#689e12] transition-all duration-200 md:py-2 md:pb-3 px-5 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
-          >
-            Plan een gesprek
-          </Link>
-          <Link
-            onClick={scrollToSection}
-            href="#"
-            className="text-[#4D4D4D] bg-white hover:bg-[#82c71350] transition-all duration-200 md:py-2 md:pb-3 p-3 px-8 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
-          >
-            Lees meer
-          </Link>
+        <div className="w-full md:hidden block pointer-events-none mt-10">
+          <Lottie
+            lottieRef={lottieMobileRef}
+            animationData={animationData}
+            loop
+            autoplay
+            style={{ width: "100%", height: "auto" }}
+          />
         </div>
       </div>
       <div id="section1" className="py-2"></div>

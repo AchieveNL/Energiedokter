@@ -11,6 +11,7 @@ import ServicesCTA from "@/app/components/ServicesCTA";
 import ServicesStats from "@/app/components/ServicesStats";
 import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
+import animationData from "@/public/assets/animations/faq.json";
 
 const data = [
   {
@@ -55,6 +56,7 @@ export default function Service1() {
   return (
     <>
       <Hero
+      animationData={animationData}
         desktopSectionId="section1"
         title="Diensten"
         span={
