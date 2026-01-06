@@ -9,11 +9,14 @@ import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import { cards } from "../data/projects";
+import animationData from "@/public/assets/animations/faq.json";
+
 
 export default function ProjectsPage() {
   return (
     <>
       <Hero
+      animationData={animationData}
         desktopSectionId="projects2"
         mobileSectionId="projects1"
         title="Projecten"
