@@ -7,7 +7,7 @@ export default function ServiceOverview({
   reverse = false,
   roundedBl = false,
   roundedTl = true,
-  roundedBr = true,
+  roundedBr = false,
   imgStyle,
   imgHeight = "350px",
 }: {
