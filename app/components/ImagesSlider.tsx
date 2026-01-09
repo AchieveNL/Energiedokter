@@ -43,7 +43,7 @@ const ImagesSlider = ({ images }: { images: string[] }) => {
                   key={index}
                   className="embla__slide shrink-0"
                   style={{
-                    flex: "0 0 85%",
+                    flex: "0 0 8%",
                     minWidth: 0,
                   }}
                 >
@@ -61,17 +61,6 @@ const ImagesSlider = ({ images }: { images: string[] }) => {
           </div>
         </div>
       </div>
-
-      {/* <style>{`
-        .embla__slide {
-          flex: 0 0 40% !important;
-        }
-        @media (min-width: 768px) {
-          .embla__slide {
-            flex: 0 0 33.333% !important;
-          }
-        }
-      `}</style> */}
     </div>
   );
 };
