@@ -50,7 +50,7 @@ export default function Partners() {
             <SectionTitle
               title="Partners"
               span={
-                <span className="font-black text-4xl text-[#254055] flex flex-col gap-2 ">
+                <span className="font-black text-4xl text-[#254055]">
                   <span>Ons netwerk van </span>
                   <span className="text-[#81C713]"> experts</span>
                 </span>

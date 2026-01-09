@@ -12,9 +12,8 @@ export default function ContactPage() {
         desktopSectionId="contact"
         title="Contact"
         span={
-          <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-3 ">
+          <span className="font-black md:text-4xl text-2xl text-[#254055] flex md:flex-row flex-col gap-3 ">
             <span>Jouw stap naar</span>
-
             <span>
               <span className="text-[#81C713]"> duurzaam</span> energie
             </span>

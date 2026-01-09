@@ -13,16 +13,15 @@ import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
 import animationData from "@/public/assets/animations/faq.json";
 
-
 export default function Service2() {
   return (
     <>
       <Hero
-      animationData={animationData}
+        animationData={animationData}
         desktopSectionId="section1"
         title="Diensten"
         span={
-          <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-3 ">
+          <span className="font-black md:text-4xl text-2xl text-[#254055] flex md:flex-row flex-col md:gap-3 ">
             <span> Energielabels nieuwbouw </span>
             <span>woningen en utiliteit</span>
           </span>

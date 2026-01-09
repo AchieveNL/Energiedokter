@@ -18,11 +18,11 @@ export default function AboutPage() {
         desktopSectionId={"about-us"}
         title="Wie wij zijn"
         span={
-          <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-2 ">
+          <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-2 md:w-full w-2/3 m-auto">
             <span>
-              Uw <span className="text-[#81C713]">partner</span> in
+              Uw <span className="text-[#81C713]">partner</span> in duurzame
+              energie
             </span>
-            <span>duurzame energie</span>
           </span>
         }
         text="Bij de Energie Dokter helpen we bedrijven slimmer en groener met

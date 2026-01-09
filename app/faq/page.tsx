@@ -11,7 +11,7 @@ export default function FaqPage() {
         desktopSectionId="faq1"
         title="FAQ"
         span={
-          <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-2 ">
+          <span className="font-black md:text-4xl text-2xl text-[#254055] flex md:flex-row flex-col gap-2 ">
             <span>Alles wat je moet</span>
             <span className="text-[#81C713]">weten</span>
           </span>

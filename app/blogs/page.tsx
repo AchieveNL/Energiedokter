@@ -16,7 +16,7 @@ export default function BlogsPage() {
         mobileSectionId="blogs2"
         title="Blog"
         span={
-          <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-2 ">
+          <span className="font-black md:text-4xl text-2xl text-[#254055] flex md:flex-row flex-col gap-2 ">
             <span>
               Onze <span className="text-[#81C713]">uitgelichte</span>
             </span>

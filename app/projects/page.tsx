@@ -11,12 +11,11 @@ import Hero from "../components/Hero";
 import { cards } from "../data/projects";
 import animationData from "@/public/assets/animations/faq.json";
 
-
 export default function ProjectsPage() {
   return (
     <>
       <Hero
-      animationData={animationData}
+        animationData={animationData}
         desktopSectionId="projects2"
         mobileSectionId="projects1"
         title="Projecten"
@@ -25,11 +24,12 @@ export default function ProjectsPage() {
           slimme, duurzame resultaten die waarde toevoegen — technisch,
           financieel én duurzaam."
         span={
-          <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-3 ">
-            <span>
+          <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col">
+            <span className="flex gap-2">
               <span className="text-[#81C713]">Innovatie</span> in elk
+              <span className="md:block hidden">project</span>
             </span>
-            <span>project</span>
+            <span className="md:hidden block">project</span>
           </span>
         }
       />

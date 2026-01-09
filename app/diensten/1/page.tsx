@@ -60,7 +60,7 @@ export default function Service1() {
         desktopSectionId="section1"
         title="Diensten"
         span={
-          <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-3 ">
+          <span className="font-black md:text-4xl text-2xl text-[#254055] flex md:flex-row flex-col gap-3 ">
             <span> Energielabels bestaande</span>
             <span>woningen en utiliteit</span>
           </span>
