@@ -3,6 +3,7 @@
 import SectionTitle from "./SectionTitle";
 import AnimatedLink from "./AnimatedLink";
 import AnimatedBg from "./AnimatedBg";
+import SectionAnimatedBg from "./SectionAnimatedBg";
 
 export default function About() {
   const aboutStatistiques = [
@@ -121,13 +122,12 @@ export default function About() {
         style={{ fontFamily: "Poppins" }}
       >
         <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="w-full h-full flex blur-md">
-            {/* Repeat the background 2-3 times for seamless coverage */}
-            <div className="flex-shrink-0 h-full">
+          <div className="w-full h-full flex blur-sm">
+            <div className="shrink-0 h-full">
               <AnimatedBg />
             </div>
-            <div className="flex-shrink-0 h-full rotate-180">
-              <AnimatedBg />
+            <div className="shrink-0 h-full bg-red-300">
+              <SectionAnimatedBg />
             </div>
           </div>
         </div>
