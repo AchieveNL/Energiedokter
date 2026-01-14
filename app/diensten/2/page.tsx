@@ -128,13 +128,17 @@ export default function Service2() {
           <>
             <p className="text-sm text-[#4D4D4D] ">
               Stel u een woning voor die klaar is voor de toekomst —
-              energiezuinig, comfortabel en volledig volgens de BENG-eisen. Met
-              een goed energielabel weet u precies waar u staat: uw nieuwbouw
-              voldoet aan de regelgeving, verbruikt minder energie en behoudt
-              zijn waarde. Geen onzekerheid of uitstel meer, maar zekerheid bij
-              oplevering en trots op het resultaat. Wij zorgen voor een helder
-              traject en een snelle oplevering, zodat u zonder zorgen kunt
-              bouwen aan duurzaam woongenot.
+              energiezuinig, comfortabel en volledig volgens de BENG-eisen.
+              <br />
+              Met een goed energielabel weet u precies waar u staat: uw
+              nieuwbouw voldoet aan de regelgeving, verbruikt minder energie en
+              behoudt zijn waarde.
+              <br />
+              Geen onzekerheid of uitstel meer, maar zekerheid bij oplevering en
+              trots op het resultaat.
+              <br />
+              Wij zorgen voor een helder traject en een snelle oplevering, zodat
+              u zonder zorgen kunt bouwen aan duurzaam woongenot.
             </p>
           </>
         }
