@@ -43,7 +43,7 @@ export default function About() {
 
   return (
     <>
-      <div className="mt-20 md:px-20 lg:px-24 px-1 flex flex-col items-center">
+      <div className="md:mt-50 mt-20 md:px-20 lg:px-24 px-1 flex flex-col items-center">
         {/* First section */}
         <div className="flex md:flex-row flex-col md:items-start items-center justify-between gap-5">
           <div className="md:w-1/2 md:ml-3">

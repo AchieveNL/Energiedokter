@@ -22,12 +22,12 @@ export default function HomeHero() {
   }, []);
 
   return (
-    <div className="w-full relative h-screen overflow-hidden">
+    <div className="w-full relative min-h-screen h-fit">
       <div className="absolute inset-0 -z-10 h-full">
         <AnimatedBg />
       </div>
 
-      <div className="absolute w-full md:block hidden bottom-0 pointer-events-none">
+      <div className="absolute w-full md:block hidden top-0 pointer-events-none">
         <Lottie
           lottieRef={lottieDesktopRef}
           animationData={animationData}
@@ -35,9 +35,9 @@ export default function HomeHero() {
           autoplay
           style={{ width: "100%", height: "auto" }}
         />
+        <div className="py-5 bg-white"></div> 
         <BrandList />
       </div>
-      {/* <div className="bg-white p-7 md:block hidden"></div> */}
 
       <div className="m-auto md:pt-32 pt-32 flex flex-col items-center absolute top-0 md:right-1/2 md:translate-x-1/2 w-full">
         <h1
@@ -90,6 +90,7 @@ export default function HomeHero() {
             autoplay
             style={{ width: "100%", height: "auto" }}
           />
+          <div className="py-3 bg-white"></div>
           <BrandList />
         </div>
     </div>
