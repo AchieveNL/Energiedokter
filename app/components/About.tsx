@@ -16,7 +16,7 @@ export default function About() {
       ),
     },
     {
-      title: "60+",
+      title: "60%",
       subtitle: (
         <span>
           Gemiddeld <br /> energiebesparing

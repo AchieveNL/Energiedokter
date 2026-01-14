@@ -9,7 +9,7 @@ export default function ServicesStats({ text }: { text: string }) {
       ),
     },
     {
-      title: "60+",
+      title: "60%",
       subtitle: (
         <span>
           Gemiddeld <br /> energiebesparing
