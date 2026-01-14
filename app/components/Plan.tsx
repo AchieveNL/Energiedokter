@@ -14,7 +14,7 @@ export default function Plan({ active }: { active: string }) {
   ];
 
   // step component
-  const Step = ({ step }: { step: { title: string; content: string } }) => {
+  const Step = ({ step }: { step: { title: string; content: any } }) => {
     const stepSection = useRef(null);
     const inView = useInView(stepSection, { amount: 0.2, once: true });
 
@@ -59,7 +59,7 @@ export default function Plan({ active }: { active: string }) {
       {/* steps - only pass items that have title and content */}
       <div className="flex flex-col md:mt-20 mt-10">
         {currentSteps.slice(1).map((step, index) => (
-          <Step step={step as { title: string; content: string }} key={index} />
+          <Step step={step as { title: string; content: any }} key={index} />
         ))}
       </div>
     </div>

@@ -10,8 +10,27 @@ export const planSteps = [
     },
     {
       title: "Stap 1: Diagnose",
-      content:
-        "We onderzoeken waar de uitdagingen liggen op het gebied van energie en comfort. We brengen energiegebruik, onderhoudsstaat, installatietechniek en ervaringen van gebruikers in kaart. Het resultaat is een duidelijk overzicht van de huidige prestaties van uw gebouw.Onderdeel van de diagnose:Benchmark werkelijk energieverbruik Status t.o.v. wet- en regelgeving Energielabel / energieprestatie-rapport GACS-verplichting (gebouwautomatisering & monitoring) Informatieplicht (verplichte energiebesparingsmaatregelen)",
+      content: (
+        <>
+          We onderzoeken waar de uitdagingen liggen op het gebied van energie en
+          comfort. We brengen energiegebruik, onderhoudsstaat,
+          installatietechniek en ervaringen van gebruikers in kaart. Het
+          resultaat is een duidelijk overzicht van de huidige prestaties van uw
+          gebouw.
+          <br />
+          Onderdeel van de diagnose:
+          <br />
+          Benchmark werkelijk energieverbruik
+          <br />
+          Status t.o.v. wet- en regelgeving
+          <br />
+          Energielabel / energieprestatie-rapport
+          <br />
+          GACS-verplichting (gebouwautomatisering & monitoring)
+          <br />
+          Informatieplicht (verplichte energiebesparingsmaatregelen)
+        </>
+      ),
     },
     {
       title: "Stap 2: Ambitie bepalen",
@@ -20,8 +39,29 @@ export const planSteps = [
     },
     {
       title: "Stap 3: Opname op locatie",
-      content:
-        "We inventariseren alle mogelijke verbetermaatregelen en bepalen hun impact op uw doelen, wetgeving en het benodigde investeringsniveau. Dit behandelplan kan bestaan uit: EED-audit Gecertificeerd maatwerkadvies Overzicht van de impact van maatregelen Een meerjarig verduurzamingsplan",
+      content: (
+        <>
+          We inventariseren alle mogelijke verbetermaatregelen en bepalen hun
+          impact op uw doelen, wetgeving en het benodigde investeringsniveau.
+          <br />
+          Dit behandelplan kan bestaan uit:
+          <br />
+          <ul className="space-y-2 ml-2">
+            <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
+              EED-audit
+            </li>
+            <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
+              Gecertificeerd maatwerkadvies
+            </li>
+            <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
+              Overzicht van de impact van maatregelen
+            </li>
+            <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
+              Een meerjarig verduurzamingsplan
+            </li>
+          </ul>
+        </>
+      ),
     },
     {
       title: "Stap 4: Uitvoering",
@@ -55,8 +95,27 @@ export const planSteps = [
     },
     {
       title: "Stap 3: Opname op locatie",
-      content:
-        "Tijdens het bezoek bekijkt de energieadviseur: De isolatie van dak, gevels en vloeren Het type beglazing en kozijnen De verwarming en ventilatie-installaties Eventuele zonnepanelen of andere duurzame maatregelenDe adviseur legt alle gegevens vast met foto’s en documentatie",
+      content: (
+        <>
+          Tijdens het bezoek bekijkt de energieadviseur:
+          <br />
+          <ul className="space-y-2 ml-3">
+            <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
+              De isolatie van dak, gevels en vloeren
+            </li>
+            <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
+              Het type beglazing en kozijnen
+            </li>
+            <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
+              De verwarming en ventilatie-installaties
+            </li>
+            <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
+              Eventuele zonnepanelen of andere duurzame maatregelen De adviseur
+              legt alle gegevens vast met foto's en documentatie
+            </li>
+          </ul>
+        </>
+      ),
     },
     {
       title: "Stap 4: Berekening en beoordeling",
