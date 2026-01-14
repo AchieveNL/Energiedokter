@@ -2,6 +2,7 @@ import Blog from "@/app/components/Blog";
 import Footer from "@/app/components/Footer";
 import Hero from "@/app/components/Hero";
 import ImagesSlider from "@/app/components/ImagesSlider";
+import Projects from "@/app/components/Projects";
 import { projectPage } from "@/app/data/projectPage";
 
 export default async function BlogDetails({
@@ -42,7 +43,7 @@ export default async function BlogDetails({
       </div>
 
       <div
-        className="md:mt-20 mt-10 md:px-24 px-5 flex md:gap-32"
+        className="md:mt-20 mt-10 md:px-24 px-5 flex md:gap-32 justify-center"
         style={{ fontFamily: "Poppins" }}
       >
         <div className="flex flex-col gap-5 md:w-1/2">
@@ -68,7 +69,8 @@ export default async function BlogDetails({
         />
       </div>
       <div className="md:mt-20 mt-15"></div>
-      <Blog titleVisible={false} />
+      <Projects />
+      <div className="py-7"></div>
       <Footer />
     </>
   );

@@ -34,24 +34,8 @@ export default function ProjectsPage() {
         }
       />
       <BrandList />
-      {/* <div id="projects2">
-        <GridView
-          sectionTitle={
-            <SectionTitle
-              title="Projecten"
-              span={
-                <div className="text-[#254055] md:text-4xl text-2xl font-extrabold text-center ">
-                  Projecten waar we <br />
-                  <span className="text-[#81C713] ">trots</span> op zijn
-                </div>
-              }
-            />
-          }
-          cards={cards}
-        />
-      </div> */}
       <div id="projects1">
-        <Projects linkVisible={false} />
+        <Projects />
       </div>
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 md:mt-15 mt-5 ">
         <Reviews />
