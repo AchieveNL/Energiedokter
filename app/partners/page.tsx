@@ -24,6 +24,12 @@ export default function Partners() {
       lottieMobileRef.current.setSpeed(1);
     }
   }, []);
+
+  const scrollToSection = (id1: string) => {
+    const section1 = document.getElementById(id1);
+    section1?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div
@@ -76,6 +82,21 @@ export default function Partners() {
             eind, die passen bij iedere situatie — van huiseigenaar tot
             ondernemer.
           </p>
+          <div className="flex md:hidden md:justify-start justify-center md:gap-5 gap-2 md:mt-10 mt-5 md:mb-0">
+            <Link
+              href="/contact"
+              className="text-white bg-[#81C713] hover:bg-[#689e12] transition-all duration-200 md:py-2 md:pb-3 px-5 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
+            >
+              Plan een gesprek
+            </Link>
+            <Link
+              onClick={() => scrollToSection("partners")}
+              href="#"
+              className="text-[#4D4D4D] bg-white hover:bg-[#82c71350] transition-all duration-200 md:py-2 md:pb-3 p-3 px-8 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
+            >
+              Lees meer
+            </Link>
+          </div>
         </div>
         <div className="w-full md:hidden block pointer-events-none mt-10">
           <Lottie
@@ -89,6 +110,7 @@ export default function Partners() {
       </div>
 
       <BrandList />
+      <div id="partners"></div>
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 mt-10 ">
         <Reviews />
       </div>
