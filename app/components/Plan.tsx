@@ -2,6 +2,7 @@
 import { useAnimation, useInView, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { planSteps as steps } from "../data/planSteps";
+import { section } from "framer-motion/client";
 
 export default function Plan({ active }: { active: string }) {
   const tabs = [
@@ -14,7 +15,13 @@ export default function Plan({ active }: { active: string }) {
   ];
 
   // step component
-  const Step = ({ step }: { step: { title: string; content: any } }) => {
+  const Step = ({
+    step,
+    section,
+  }: {
+    step: { title: string; content: any };
+    section?: any;
+  }) => {
     const stepSection = useRef(null);
     const inView = useInView(stepSection, { amount: 0.2, once: true });
 
@@ -31,7 +38,8 @@ export default function Plan({ active }: { active: string }) {
         // whileTap={{opacity:1,x:30}}
       >
         <h1 className="text-[#254055] font-bold text-3xl ">{step.title}</h1>
-        <p className="text-[#4D4D4D] mt-3">{step.content}</p>
+        <div className="text-[#4D4D4D] mt-3">{step.content}</div>
+        {section ? <div>{section}</div> : null}
       </motion.div>
     );
   };
@@ -59,7 +67,7 @@ export default function Plan({ active }: { active: string }) {
       {/* steps - only pass items that have title and content */}
       <div className="flex flex-col md:mt-20 mt-10">
         {currentSteps.slice(1).map((step, index) => (
-          <Step step={step as { title: string; content: any }} key={index} />
+          <Step step={step as { title: string; content: any }} section={step.section} key={index} />
         ))}
       </div>
     </div>

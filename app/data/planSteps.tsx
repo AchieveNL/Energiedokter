@@ -85,8 +85,15 @@ export const planSteps = [
     },
     {
       title: "Stap 1: Aanvraag indienen",
-      content:
-        "U dient een aanvraag bij de Energiedokter hier op de website en ontvang een vrijblijvende offerte. Er moeten wel wat gegevens over het gebouw bekend zijn zoals bijvoorbeeld of het bestaande of nieuwbouw (BENG) betreft (zie toelichting*)",
+      content: (
+        <>
+          U dient een aanvraag bij de Energiedokter hier op de website en
+          ontvang een vrijblijvende offerte. Er moeten wel wat gegevens over het
+          gebouw bekend zijn zoals bijvoorbeeld of het bestaande of nieuwbouw
+          (BENG) betreft (zie{" "}
+          <span className="text-[#81C713]">toelichting*</span>)
+        </>
+      ),
     },
     {
       title: "Stap 2: Afspraak inplannen",
@@ -121,6 +128,19 @@ export const planSteps = [
       title: "Stap 4: Berekening en beoordeling",
       content:
         "Na het bezoek voert de adviseur de gegevens in een gecertificeerd softwareprogramma in. Op basis van de NTA 8800-norm wordt de energieprestatie berekend en de labelklasse bepaald (A++++ t/m G)",
+    },
+    {
+      section: (
+        <>
+          <span className="text-[#81C713] font-semibold text-lg">Toelichting*</span>
+          <p className="text-[#4D4D4D] mt-3">
+            BENG-label: verplicht voor nieuwbouw, toont de theoretische
+            energieprestatie van het ontwerp Energielabel bestaande bouw:
+            verplicht bij verkoop of verhuur, toont de feitelijke
+            energieprestatie van de woning
+          </p>
+        </>
+      ),
     },
   ],
   [
