@@ -118,7 +118,7 @@ export default function Service2() {
               Toekomstbestendig <span className="text-[#81C713] ">bouwen </span>
               begint hier
             </h1>
-            <p className="text-sm text-[#4D4D4D] ">
+            <p className="text-sm text-[#4D4D4D] md:mt-0 mt-2">
               Een goed energielabel geeft zekerheid, trots en rust bij
               oplevering
             </p>
