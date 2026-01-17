@@ -23,6 +23,7 @@ export default async function BlogDetails({
           </span>
         }
         text=""
+        // text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. At rem distinctio corrupti veniam magni dolor quibusdam, iste quidem nam dolorum non eligendi? Qui deserunt nobis rerum repudiandae, molestias pariatur harum."
       />
       <div id="section1"></div>
       <ImagesSlider images={blogPage[Number(id) - 1].imgs} />
@@ -41,7 +42,7 @@ export default async function BlogDetails({
       </div>
 
       <div
-        className="md:mt-20 mt-10 md:px-24 px-5 flex md:gap-32 justify-center"
+        className="md:mt-20 mt-10 md:px-24 px-5 flex md:gap-32 justify-cente"
         style={{ fontFamily: "Poppins" }}
       >
         <div className="flex flex-col gap-5 md:w-1/2">
