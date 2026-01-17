@@ -35,7 +35,7 @@ export default function ProjectsPage() {
       />
       <BrandList />
       <div id="projects1">
-        <Projects />
+        <Projects linkVisible={false} />
       </div>
       <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 md:mt-15 mt-5 ">
         <Reviews />
