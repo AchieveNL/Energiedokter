@@ -23,7 +23,6 @@ export default async function BlogDetails({
           </span>
         }
         text=""
-        // text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. At rem distinctio corrupti veniam magni dolor quibusdam, iste quidem nam dolorum non eligendi? Qui deserunt nobis rerum repudiandae, molestias pariatur harum."
       />
       <div id="section1"></div>
       <ImagesSlider images={blogPage[Number(id) - 1].imgs} />

@@ -52,7 +52,7 @@ const ImagesSlider = ({ images }: { images: string[] }) => {
                     alt={"test"}
                     className={`
                       w-full aspect-square object-cover rounded-tl-4xl rounded-br-4xl border border-[#E3E3E3] transition-all duration-500 ease-out
-                      ${isActive ? "scale-95" : "scale-90 opacity-90"}
+                      ${isActive ? "scale-95" : "scale-90"}
                     `}
                   />
                 </div>
