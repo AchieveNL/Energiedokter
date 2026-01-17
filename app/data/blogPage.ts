@@ -3,10 +3,10 @@ export const blogPage = [
     title: "Windenergie in je buurt",
     imgs: [
       "/assets/blogImgs/img1.jpg",
-      "/assets/blogImgs/img2.webp",
+      "/assets/blogImgs/img2.jpg",
       "/assets/blogImgs/img3.png",
       "/assets/blogImgs/img1.jpg",
-      "/assets/blogImgs/img2.webp",
+      "/assets/blogImgs/img2.jpg",
       "/assets/blogImgs/img3.png",
     ],
     sections: [
@@ -33,12 +33,12 @@ export const blogPage = [
   {
     title: "Slimme lampen, grote besparing",
     imgs: [
-      "/assets/blogImgs/img4.webp",
-      "/assets/blogImgs/img5.webp",
-      "/assets/blogImgs/img6.webp",
-      "/assets/blogImgs/img4.webp",
-      "/assets/blogImgs/img5.webp",
-      "/assets/blogImgs/img6.webp",
+      "/assets/blogImgs/img4.jpg",
+      "/assets/blogImgs/img5.jpg",
+      "/assets/blogImgs/img6.jpg",
+      "/assets/blogImgs/img4.jpg",
+      "/assets/blogImgs/img5.jpg",
+      "/assets/blogImgs/img6.jpg",
     ],
     sections: [
       {
@@ -64,12 +64,12 @@ export const blogPage = [
   {
     title: "Energiebewust werken",
     imgs: [
-      "/assets/blogImgs/img7.webp",
-      "/assets/blogImgs/img8.webp",
-      "/assets/blogImgs/img9.webp",
-      "/assets/blogImgs/img7.webp",
-      "/assets/blogImgs/img8.webp",
-      "/assets/blogImgs/img9.webp",
+      "/assets/blogImgs/img7.jpg",
+      "/assets/blogImgs/img8.jpg",
+      "/assets/blogImgs/img9.jpg",
+      "/assets/blogImgs/img7.jpg",
+      "/assets/blogImgs/img8.jpg",
+      "/assets/blogImgs/img9.jpg",
     ],
     sections: [
       {
