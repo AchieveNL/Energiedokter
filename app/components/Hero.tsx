@@ -65,12 +65,12 @@ export default function Hero({
           style={{ width: "100%", height: "auto" }}
         />
       </div>
-      <div className="md:block hidden">
+      {/* <div className="md:block hidden">
         <div
           className="bg-white p-4 -mt-px"
           style={{ display: whiteBoxVisible ? "block" : "none" }}
         ></div>
-      </div>
+      </div> */}
 
       <div className="md:absolute md:pt-36 md:ml-10">
         <div className="md:block hidden">
@@ -111,7 +111,7 @@ export default function Hero({
             style={{ width: "100%", height: "auto" }}
           />
         </div>
-        <div className="bg-white p-3 w-full md:hidden block -mt-px"></div>
+        {/* <div className="bg-white p-3 w-full md:hidden block -mt-px"></div> */}
       </div>
     </div>
   );

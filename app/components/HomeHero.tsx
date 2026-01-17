@@ -27,7 +27,7 @@ export default function HomeHero() {
         <AnimatedBg />
       </div>
 
-      <div className="absolute w-full md:block hidden top-0 pointer-events-none">
+      <div className="absolute w-full md:block hidden bottom-0 pointer-events-none">
         <Lottie
           lottieRef={lottieDesktopRef}
           animationData={animationData}
@@ -35,7 +35,6 @@ export default function HomeHero() {
           autoplay
           style={{ width: "100%", height: "auto" }}
         />
-        <div className="py-5 bg-white"></div> 
         <BrandList />
       </div>
 
