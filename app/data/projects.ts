@@ -23,7 +23,7 @@ export const cards: project[] = [
     title: "Duurzame bodemenergie campus",
     description:
       "Installatie van een Warmte-Koude Opslag (WKO) systeem om het gebouw in de zomer te koelen en in de winter op een natuurlijke manier te verwarmen",
-    image: "/assets/projects/img2.svg",
+    image: "/assets/projects/img2.png",
     date: "01-11-2025",
   },
   {
