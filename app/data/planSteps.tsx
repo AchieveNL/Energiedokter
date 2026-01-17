@@ -20,15 +20,23 @@ export const planSteps = [
           <br />
           Onderdeel van de diagnose:
           <br />
-          Benchmark werkelijk energieverbruik
-          <br />
-          Status t.o.v. wet- en regelgeving
-          <br />
-          Energielabel / energieprestatie-rapport
-          <br />
-          GACS-verplichting (gebouwautomatisering & monitoring)
-          <br />
-          Informatieplicht (verplichte energiebesparingsmaatregelen)
+          <ul className="space-y-2 ml-3">
+            <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
+              Benchmark werkelijk energieverbruik
+            </li>
+            <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
+              Status t.o.v. wet- en regelgeving
+            </li>
+            <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
+              Energielabel / energieprestatie-rapport
+            </li>
+            <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
+              GACS-verplichting (gebouwautomatisering & monitoring)
+            </li>
+            <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
+              Informatieplicht (verplichte energiebesparingsmaatregelen)
+            </li>
+          </ul>
         </>
       ),
     },
@@ -132,7 +140,9 @@ export const planSteps = [
     {
       section: (
         <>
-          <span className="text-[#81C713] font-semibold text-lg">Toelichting*</span>
+          <span className="text-[#81C713] font-semibold text-lg">
+            Toelichting*
+          </span>
           <p className="text-[#4D4D4D] mt-3">
             BENG-label: verplicht voor nieuwbouw, toont de theoretische
             energieprestatie van het ontwerp Energielabel bestaande bouw:
