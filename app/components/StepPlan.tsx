@@ -32,7 +32,7 @@ export default function StepPlan({
       className="bg-[linear-gradient(to_top,#FFFFFF,#F2F2CA80,#E5F0BFBF,#D0F0E7BF)] md:p-10 p-5"
       style={{ fontFamily: "Poppins" }}
     >
-      <nav className="flex flex-wrap md:justify-center items-center gap-2 md:gap-5">
+      <nav className="flex flex-wrap items-center gap-2 md:gap-5">
         <NavLink text="Onze aanpak" />
         <NavLink text="Energielabels" />
         <NavLink text="GACS" />

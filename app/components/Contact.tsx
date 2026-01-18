@@ -6,10 +6,10 @@ export default function Contact() {
     <>
       <div
         style={{ fontFamily: "Poppins" }}
-        className="relative mt-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center md:mx-auto mx-1 min-[768]:w-[95%] min-[1024]:w-[90%] min-[1280]:w-[75%] min-[1536]:w-4/6 min-[2300px]:w-[60%] min-[2500px]:w-[50%] min-[3000px]:w-[40%] max-w-[2000px] md:px-7 px-3 md:pt-3 pb-5 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl flex md:flex-row flex-col-reverse justify-between overflow-x-clip "
+        className="relative mt-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center md:mx-auto mx-1 min-[768]:w-[85%] min-[1024]:w-[90%] min-[1280]:w-[75%] min-[1536]:w-4/6 min-[2300px]:w-[60%] min-[2500px]:w-[50%] min-[3000px]:w-[40%] max-w-[2000px] md:px-7 px-3 md:pt-3 pb-5 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl flex md:flex-row flex-col-reverse justify-between overflow-x-clip "
       >
         {/* left section */}
-        <div className="md:w-3/4 w-[70%] md:block hidden">
+        <div className="md:w-3/4 w-[70%] lg:block hidden">
           <h1 className="md:text-[26px] font-bold text-[#0D2131] md:mt-5 mt-5  ">
             Last van energieverlies? De
             <span className="text-[#81C713] "> Energie Dokter</span> helpt!
@@ -60,7 +60,7 @@ export default function Contact() {
         </div>
 
         {/* mobile left section */}
-        <div className="w-[70%] md:hidden block">
+        <div className="w-[70%] lg:hidden block">
           <h1 className="font-bold text-[#0D2131] mt-5  ">
             Last van energieverlies? De
             <span className="text-[#81C713] "> Energie Dokter</span> helpt!
@@ -82,11 +82,11 @@ export default function Contact() {
         <div>
           <img
             src="/assets/man.png"
-            className="absolute bottom-0 right-3 h-[105%] md:hidden block"
+            className="absolute bottom-0 right-3 md:right-10 h-[105%] lg:hidden block"
             alt=""
           />
         </div>
-        <div className="absolute text-center text-sm text-white right-5 md:hidden block">
+        <div className="absolute text-center text-sm text-white md:right-10 right-5 bottom-5 lg:hidden block">
           <h1 className="font-bold ">Rutger Jenner</h1>
           <p className="text-[8px] ">Oprichter en Directeur</p>
         </div>
@@ -94,17 +94,17 @@ export default function Contact() {
         <div>
           <img
             src="/assets/man.svg"
-            className="absolute bottom-0 right-10 h-[115%] md:block hidden"
+            className="absolute bottom-0 right-5 h-[115%] lg:block hidden"
             alt=""
           />
         </div>
-        <div className="absolute text-center right-5 md:block hidden bg-white p-3 rounded-tl-2xl rounded-br-2xl">
+        <div className="absolute text-center right-5 lg:block hidden p-3 rounded-tl-2xl rounded-br-2xl bg-white">
           <h1 className="font-bold ">Rutger Jenner</h1>
           <p className="text-[8px] ">Oprichter en Directeur</p>
         </div>
       </div>
 
-      <div className="md:hidden flex justify-center md:gap-5 gap-2 mt-5 items-center">
+      <div className="lg:hidden flex justify-center md:gap-5 gap-2 mt-5 items-center">
         <Link
           href="/contact"
           className="md:border-2 border border-[#81C713] bg-[#81C713] text-white md:text-base text-sm flex justify-center items-center h-fit rounded-xl transition-all md:px-5 p-2 px-3 text-nowrap hover:bg-[#5a8613] hover:border-[#5a8613]"

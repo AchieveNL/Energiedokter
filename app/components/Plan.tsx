@@ -27,7 +27,7 @@ export default function Plan({ active }: { active: string }) {
 
     return (
       <motion.div
-        className="hover:cursor-pointer md:w-1/2 p-5 pl-0 md:py-15 py-5"
+        className="hover:cursor-pointer lg:w-1/2 p-5 pl-0 lg:py-15 md:py-10 py-5"
         ref={stepSection}
         initial={{ opacity: 0, x: -30 }}
         animate={inView ? { opacity: 0.3, x: 0 } : {}}
@@ -47,7 +47,7 @@ export default function Plan({ active }: { active: string }) {
   const currentSteps = steps[tabs.indexOf(active)];
 
   return (
-    <div className="md:px-24 md:mt-28 mt-10 ">
+    <div className="lg:px-10 lg:mt-28 md:mt-20 mt-10">
       {/* Plan title */}
       <motion.div
         key={active}

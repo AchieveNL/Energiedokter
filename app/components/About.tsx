@@ -27,7 +27,7 @@ export default function About() {
       title: "10+",
       subtitle: (
         <span>
-          Jaar ervaring <br /> in verduurzamen
+          Jaar ervaring <br /> <span className="text-nowrap">in verduurzamen</span>
         </span>
       ),
     },
@@ -78,7 +78,7 @@ export default function About() {
           </div>
         </div>
         {/* Second Section */}
-        <div
+        {/* <div
           className="bg-[#F6F6F6] flex flex-col md:flex-row items-center justify-center py-2 mt-10 rounded-4xl md:mx-0 mx-10 md:px-0 px-10 w-fit m-auto"
           style={{ fontFamily: "Poppins" }}
         >
@@ -99,6 +99,30 @@ export default function About() {
               </span>
             </div>
           ))}
+        </div> */}
+        <div
+          className="bg-[#F6F6F6] py-2 mt-10 rounded-4xl md:mx-0 mx-2 md:px-0 px-3 w-fit m-auto"
+          style={{ fontFamily: "Poppins" }}
+        >
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-7 md:gap-x-0">
+            {aboutStatistiques.map((stat, index) => (
+              <div
+                key={index}
+                className={`flex flex-col items-center gap-2 md:px-20 py-5 ${
+                  index !== aboutStatistiques.length - 1 && index !== aboutStatistiques.length - 3
+                    ? "md:border-r-4 border-white"
+                    : ""
+                } `}
+              >
+                <span className="text-[#3C8101] text-3xl font-bold ">
+                  {stat.title}
+                </span>
+                <span className="text-[rgb(77,77,77)] text-center">
+                  {stat.subtitle}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="w-fit m-auto">
