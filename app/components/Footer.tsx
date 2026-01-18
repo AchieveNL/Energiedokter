@@ -65,12 +65,12 @@ export default function Footer() {
     <>
       <img
         src="/assets/footer/bg-head.svg"
-        className="w-full md:mb-0 -mb-px"
+        className="w-full lg:mb-0 -mb-px"
         alt=""
       />
       <div className="bg-[#254055] p-px -mb-px "></div>
       <div
-        className="mt-0 bg-[#254055] md:pt-20 relative -z-20 "
+        className="mt-0 bg-[#254055] lg:pt-20 relative -z-20 "
         style={{ fontFamily: "Poppins" }}
       >
         {/* desktop light */}
@@ -98,7 +98,7 @@ export default function Footer() {
         {/* body */}
         <div
           ref={divRef}
-          className="flex md:flex-row flex-col text-[#FEEEF3] justify-center md:items-start items-center md:gap-10 gap-5 z-10 absolute right-1/2 md:translate-x-[57%] translate-x-1/2 min-[768px]:mt-20 mt-15 min-[1536px]:mt-28 min-[1900px]:mt-44 min-[2300px]:mt-60 min-[2600px]:mt-70 md:w-2/3 scale-[1] min-[1500px]:scale-[1.1] min-[1900px]:scale-[1.3] min-[2300px]:scale-[1.5]"
+          className="flex lg:flex-row flex-col text-[#FEEEF3] justify-center lg:items-start items-center md:gap-10 lg:gap-4 gap-5 z-10 absolute right-1/2 lg:translate-x-[57%] translate-x-1/2 min-[768px]:mt-64 min-[1024px]:mt-7 min-[1025px]:mt-20 mt-15 min-[1536px]:mt-28 min-[1900px]:mt-44 min-[2300px]:mt-60 min-[2600px]:mt-70 md:w-2/3 scale-[1] min-[768px]:scale-[1.5] min-[1024px]:scale-[1.1] min-[1900px]:scale-[1.3] min-[2300px]:scale-[1.5]"
         >
           <div className="flex flex-col items-center md:gap-5 gap-2">
             <Link
@@ -140,7 +140,7 @@ export default function Footer() {
             <Link href="/faq">FAQ</Link>
             <Link href="/contact">Contact</Link>
           </div>
-          <div className="flex flex-col md:items-start items-center gap-2 md:text-sm text-xs md:text-left text-center ">
+          <div className="flex flex-col lg:items-start items-center gap-2 md:text-sm text-xs md:text-left text-center ">
             <Link
               href="/diensten/Alle-diensten"
               className="md:text-2xl text-lg"
@@ -164,20 +164,20 @@ export default function Footer() {
         <img
           ref={bgImageRef}
           src="/assets/footer/bg.svg"
-          className={`w-full absolute md:block hidden top-0 bg-[#254055] -z-10 `}
+          className={`w-full absolute lg:block hidden top-0 bg-[#254055] -z-10 `}
           alt=""
         />
         <img
           ref={mobileBgImageRef}
           src="/assets/footer/mobile-bg.svg"
-          className={`w-full md:hidden absolute bg-[#254055] -z-10`}
+          className={`w-full lg:hidden absolute bg-[#254055] -z-10`}
           // style={{ top: divHeight }}
           alt=""
         />
 
         {/* last footer */}
         <div
-          className="bg-[#27313C] absolute top-0 w-full text-[#F6F6F6] md:flex hidden items-center justify-between px-10 py-5 "
+          className="bg-[#27313C] absolute top-0 w-full text-[#F6F6F6] lg:flex hidden items-center justify-between px-10 py-5 "
           style={{ marginTop: bgHeight - 1 }}
         >
           <div className="flex gap-5">
@@ -198,7 +198,7 @@ export default function Footer() {
 
         {/* last footer mobile */}
         <div
-          className="bg-[#27313C] absolute top-0 w-full text-[#F6F6F6] md:hidden flex items-center p-4 justify-between px-2 text-xs "
+          className="bg-[#27313C] absolute top-0 w-full text-[#F6F6F6] lg:hidden flex items-center p-4 justify-between px-2 text-xs "
           style={{ marginTop: mobileBgHeight - 1 }}
         >
           <div className="flex gap-2">
