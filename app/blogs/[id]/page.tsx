@@ -3,6 +3,7 @@ import Footer from "@/app/components/Footer";
 import Hero from "@/app/components/Hero";
 import ImagesSlider from "@/app/components/ImagesSlider";
 import { blogPage } from "@/app/data/blogPage";
+import animationData from "@/public/assets/animations/blog.json";
 
 export default async function BlogDetails({
   params,
@@ -14,6 +15,7 @@ export default async function BlogDetails({
   return (
     <>
       <Hero
+        animationData={animationData}
         displayBtns={false}
         desktopSectionId="section1"
         title="Blog"
@@ -59,11 +61,11 @@ export default async function BlogDetails({
               <p key={index} className="text-sm text-[#4D4D4D] ">
                 {paragraph}
               </p>
-            )
+            ),
           )}
         </div>
         <img
-          src={blogPage[Number(id)-1].section.img}
+          src={blogPage[Number(id) - 1].section.img}
           className="w-[20%] drop-shadow-[-15px_-15px_0px_#254055] md:block hidden"
         />
       </div>

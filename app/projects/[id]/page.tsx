@@ -4,6 +4,7 @@ import Hero from "@/app/components/Hero";
 import ImagesSlider from "@/app/components/ImagesSlider";
 import Projects from "@/app/components/Projects";
 import { projectPage } from "@/app/data/projectPage";
+import animationData from "@/public/assets/animations/faq.json";
 
 export default async function BlogDetails({
   params,
@@ -15,6 +16,7 @@ export default async function BlogDetails({
   return (
     <>
       <Hero
+        animationData={animationData}
         displayBtns={false}
         desktopSectionId="section1"
         title="Blog"
@@ -60,7 +62,7 @@ export default async function BlogDetails({
               <p key={index} className="text-sm text-[#4D4D4D] ">
                 {paragraph}
               </p>
-            )
+            ),
           )}
         </div>
         <img
