@@ -23,9 +23,9 @@ export default function AboutSection() {
     <div
       id="about-us"
       style={{ fontFamily: "Poppins" }}
-      className="md:pt-32 pt-10 flex md:flex-row flex-col md:gap-10 gap-1 md:mx-20 mx-5"
+      className="md:pt-32 pt-10 flex lg:flex-row flex-col md:gap-10 gap-1 md:mx-20 mx-5"
     >
-      <div className="md:hidden block">
+      <div className="lg:hidden block">
         <div className="w-full relative flex items-center">
           <img
             src="/assets/about/img1.png"
@@ -51,7 +51,7 @@ export default function AboutSection() {
       </div>
 
       {/* left section */}
-      <div className="md:w-1/2 h-fit bg-[#F6F6F6] rounded-4xl md:p-7 p-4 md:pb-10 pb-7 flex flex-col md:gap-5 gap-3 md:mt-5 mt-5">
+      <div className="lg:w-1/2 h-fit bg-[#F6F6F6] rounded-4xl lg:p-7 p-4 lg:pb-10 pb-7 flex flex-col lg:gap-5 gap-3 lg:mt-5 mt-5">
         <h1 className="text-[#254055] md:text-3xl text-2xl font-extrabold ">
           Wie zijn wij?
         </h1>
@@ -63,19 +63,19 @@ export default function AboutSection() {
         </p>
         <div className="flex flex-wrap justify-center">
           <div
-            className="md:block hidden "
+            className="lg:block hidden "
             style={{ width: "30.33%", textAlign: "center", marginTop: 20 }}
           >
             <Statics style={{}} number="150+" text="Gebouwen verduurzaamd" />
           </div>
           <div
-            className="block md:hidden "
+            className="block lg:hidden "
             style={{ width: "30.33%", textAlign: "left", marginTop: 20 }}
           >
             <Statics style={{}} number="150+" text="Gebouwen verduurzaamd" />
           </div>
           <div
-            className="md:w-1/4 2xl:w-[20%] p-7"
+            className="md:w-1/5 lg:w-1/4 2xl:w-[20%] p-7"
             style={{
               width:
                 typeof window !== "undefined" && window.innerWidth >= 2000
@@ -99,8 +99,8 @@ export default function AboutSection() {
       </div>
 
       {/* right section */}
-      <div className="md:w-1/2 flex flex-col gap-5">
-        <div className="md:block hidden">
+      <div className="lg:w-1/2 flex flex-col gap-5">
+        <div className="lg:block hidden">
           <div className="w-full relative flex items-center">
             <img
               src="/assets/about/img1.png"

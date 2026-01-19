@@ -15,7 +15,7 @@ export default function Hero({
   animationData,
   heroStyle = "130px",
   whiteBoxVisible = true,
-  displayBtns=true,
+  displayBtns = true,
 }: {
   span: React.ReactNode;
   title: string;
@@ -25,7 +25,7 @@ export default function Hero({
   animationData?: any;
   heroStyle?: string;
   whiteBoxVisible?: boolean;
-  displayBtns?:boolean
+  displayBtns?: boolean;
 }) {
   const scrollToSection = (id1: string, id2: string) => {
     const section1 = document.getElementById(id1);
@@ -54,7 +54,7 @@ export default function Hero({
       </div>
 
       <div
-        className="relative w-full md:block hidden pointer-events-none"
+        className="relative w-full lg:block hidden pointer-events-none"
         style={{ paddingTop: heroStyle }}
       >
         <Lottie
@@ -65,18 +65,12 @@ export default function Hero({
           style={{ width: "100%", height: "auto" }}
         />
       </div>
-      {/* <div className="md:block hidden">
-        <div
-          className="bg-white p-4 -mt-px"
-          style={{ display: whiteBoxVisible ? "block" : "none" }}
-        ></div>
-      </div> */}
 
-      <div className="md:absolute md:pt-36 md:ml-10">
-        <div className="md:block hidden">
+      <div className="lg:absolute lg:pt-36 lg:ml-10">
+        <div className="lg:block hidden">
           <SectionTitle title={title} span={span} align="start" />
         </div>
-        <div className="block md:hidden text-center mt-24 w-fit m-auto">
+        <div className="block lg:hidden text-center mt-24 w-fit m-auto">
           <SectionTitle
             titleSize={{ fontSize: 14 }}
             title={title}
@@ -84,10 +78,13 @@ export default function Hero({
             align="center"
           />
         </div>
-        <p className="text-[#4D4D4D] md:w-1/2 mt-3 md:text-base text-sm md:text-left text-center px-3">
+        <p className="text-[#4D4D4D] md:w-1/2 m-auto lg:m-3 lg:ml-0 mt-3 lg:text-base text-sm lg:text-left text-center px-3">
           {text}
         </p>
-        <div style={{display:displayBtns?"flex":"none"}} className="flex md:justify-start justify-center md:gap-5 gap-2 md:mt-10 mt-5 md:mb-0">
+        <div
+          style={{ display: displayBtns ? "flex" : "none" }}
+          className="flex lg:justify-start justify-center lg:gap-5 gap-2 lg:mt-10 mt-5 lg:mb-0"
+        >
           <Link
             href="/contact"
             className="text-white bg-[#81C713] hover:bg-[#689e12] transition-all duration-200 md:py-2 md:pb-3 px-5 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
@@ -102,7 +99,7 @@ export default function Hero({
             Lees meer
           </Link>
         </div>
-        <div className="w-full md:hidden block pointer-events-none mt-10">
+        <div className="w-full lg:hidden block pointer-events-none mt-10">
           <Lottie
             lottieRef={lottieMobileRef}
             animationData={animationData}
@@ -111,7 +108,6 @@ export default function Hero({
             style={{ width: "100%", height: "auto" }}
           />
         </div>
-        {/* <div className="bg-white p-3 w-full md:hidden block -mt-px"></div> */}
       </div>
     </div>
   );
