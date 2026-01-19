@@ -40,7 +40,7 @@ export default function Partners() {
           <AnimatedBg />
         </div>
         <div
-          className="relative w-full md:block hidden pointer-events-none"
+          className="relative w-full xl:block hidden pointer-events-none"
           style={{ paddingTop: "130px" }}
         >
           <Lottie
@@ -51,8 +51,8 @@ export default function Partners() {
             style={{ width: "100%", height: "auto" }}
           />
         </div>
-        <div className="md:absolute pt-36 md:w-1/2 flex flex-col items-center">
-          <div className="md:flex hidden text-center  ">
+        <div className="xl:absolute pt-36 md:w-2/3 lg:w-1/2 flex flex-col items-center">
+          <div className="lg:flex hidden text-center  ">
             <SectionTitle
               title="Partners"
               span={
@@ -64,7 +64,7 @@ export default function Partners() {
               align="center"
             />
           </div>
-          <div className="block md:hidden text-center">
+          <div className="block lg:hidden text-center">
             <SectionTitle
               titleSize={{ fontSize: 14 }}
               title="Partners"
@@ -82,7 +82,7 @@ export default function Partners() {
             eind, die passen bij iedere situatie — van huiseigenaar tot
             ondernemer.
           </p>
-          <div className="flex md:hidden md:justify-start justify-center md:gap-5 gap-2 md:mt-10 mt-5 md:mb-0">
+          <div className="flex lg:hidden lg:justify-start justify-center md:gap-5 gap-2 md:mt-10 mt-5 md:mb-0">
             <Link
               href="/contact"
               className="text-white bg-[#81C713] hover:bg-[#689e12] transition-all duration-200 md:py-2 md:pb-3 px-5 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
@@ -98,7 +98,7 @@ export default function Partners() {
             </Link>
           </div>
         </div>
-        <div className="w-full md:hidden block pointer-events-none mt-10">
+        <div className="w-full xl:hidden block pointer-events-none mt-10">
           <Lottie
             lottieRef={lottieMobileRef}
             animationData={animationData}

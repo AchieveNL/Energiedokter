@@ -4,20 +4,20 @@ export default function DienstenSection() {
   return (
     <div
       style={{ fontFamily: "Poppins" }}
-      className="md:my-20 my-10 bg-[url('/assets/HomeHeroBg.svg')] bg-cover flex flex-col gap-2 md:items-center items-start md:py-10 py-5 md:px-10 px-3 md:mx-20 mx-2 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl"
+      className="md:my-20 my-10 bg-[url('/assets/HomeHeroBg.svg')] bg-cover flex flex-col gap-2 lg:items-center items-start md:py-10 py-5 md:px-10 px-3 md:mx-10 lg:mx-10 xl:mx-20 mx-2 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl"
     >
-      <h3 className="text-[#6B9D1C] font-bold md:block hidden">
+      <h3 className="text-[#6B9D1C] font-bold lg:block hidden">
         Maak een afspraak met de Energie Dokter
       </h3>
       <p className="text-[#0D2131] font-bold md:text-2xl md:text-center">
         Heeft uw gebouw last van energielekken of verminderde efficiëntie?
         <br />
-        <span className="md:block hidden">
+        <span className="lg:block hidden">
           De
           <span className="text-[#81C713] "> Energie Dokter</span> schrijft het
           juiste behandelplan voor!
         </span>
-        <span className="md:hidden block font-normal">
+        <span className="lg:hidden block font-normal">
           De Energie Dokter schrijft het juiste behandelplan voor
         </span>
       </p>
