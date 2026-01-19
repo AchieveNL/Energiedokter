@@ -150,12 +150,12 @@ export default function ContactSection() {
           </div>
         }
       />
-      <p className="text-[#4D4D4D] text-center md:text-lg text-sm md:w-1/2 mt-5 md:mx-0 mx-5">
+      <p className="text-[#4D4D4D] text-center md:text-lg text-sm md:w-2/3 lg:w-1/2 mt-5 md:mx-0 mx-5">
         Of je nu al een concreet plan hebt of nog in de brainstormfase zit: wij
         denken graag met je mee. Laat je gegevens achter en we nemen zo snel
         mogelijk contact met je op om samen te kijken naar de mogelijkheden
       </p>
-      <div className="md:mt-20 mt-10 w-full md:px-24 px-3">
+      <div className="md:mt-20 mt-10 w-full md:px-12 lg:px-24 px-3">
         <div className="flex justify-center md:text-base text-sm w-full">
           <div className="w-1/2 md:block hidden">
             <img

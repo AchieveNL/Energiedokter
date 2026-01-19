@@ -32,7 +32,7 @@ export default function Nav() {
   }, [pathname]);
   return (
     <nav className="fixed w-full backdrop-blur-lg z-50">
-      <div className="flex p-4 px-4 md:px-10 justify-between lg:justify-around items-start">
+      <div className="flex p-4 px-4 md:px-10 justify-between xl:justify-around items-start">
         <Link href="/">
           <img
             src="/assets/logo.svg"
@@ -43,7 +43,7 @@ export default function Nav() {
 
         {/* Hamburger Menu Button */}
         <button
-          className="lg:hidden flex flex-col gap-1.5 p-2 mt-1 relative z-60"
+          className="xl:hidden flex flex-col gap-1.5 p-2 mt-1 relative z-60"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -65,7 +65,7 @@ export default function Nav() {
         </button>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex bg-[#FFFFFF78] items-center gap-3 rounded-2xl px-3 py-1">
+        <div className="hidden xl:flex bg-[#FFFFFF78] items-center gap-3 rounded-2xl px-3 py-1">
           <NavLink href="/" text="Home" active={active} />
           <NavLink href="/about-us" text="Over ons" active={active} />
           <NavLinkDropdown
@@ -100,7 +100,7 @@ export default function Nav() {
 
       {/* Backdrop Overlay */}
       <div
-        className={`lg:hidden fixed inset-0 bg-[#65616180] backdrop-blur-sm transition-opacity duration-300 h-screen ${
+        className={`xl:hidden fixed inset-0 bg-[#65616180] backdrop-blur-sm transition-opacity duration-300 h-screen ${
           isMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -110,7 +110,7 @@ export default function Nav() {
 
       {/* Mobile Navigation */}
       <div
-        className={`lg:hidden flex overflow-hidden transition-all duration-300 ease-in-out min-h-screen w-2/3 fixed right-0 top-0 z-55 ${
+        className={`xl:hidden flex overflow-hidden transition-all duration-300 ease-in-out min-h-screen w-2/3 fixed right-0 top-0 z-55 ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

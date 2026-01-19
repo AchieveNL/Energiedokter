@@ -110,11 +110,11 @@ export default function NavLinkDropdown({
         style={{ fontFamily: "Poppins" }}
         className={`flex items-center gap-1 w-full ${
           active !== text ? "hover:bg-[#82c71324]" : ""
-        } lg:p-2 lg:px-4 p-1 rounded-2xl transition-all duration-200 lg:text-lg
+        } lg:p-2 lg:px-2 p-1 rounded-2xl transition-all duration-200 lg:text-lg
       ${
         active === text
-          ? "lg:bg-[#81C713] lg:text-white text-[#81C713]"
-          : "lg:text-black text-[#4D4D4D]"
+          ? "xl:bg-[#81C713] xl:text-white text-[#81C713]"
+          : "xl:text-black text-[#4D4D4D]"
       }`}
       >
         {text}
@@ -136,7 +136,7 @@ export default function NavLinkDropdown({
       </button>
 
       {isOpen && (
-        <div className="lg:absolute top-full left-0 min-w-[200px] bg-white rounded-2xl lg:shadow-lg lg:border border-gray-100 lg:p-4 p-0 z-50 lg:w-max wrap-break-word overflow-auto lg:block flex flex-col gap-1">
+        <div className="xl:absolute top-full left-0 min-w-[200px] bg-white rounded-2xl xl:shadow-lg xl:border border-gray-100 xl:p-4 p-0 z-50 xl:w-max wrap-break-word overflow-auto xl:block flex flex-col gap-1">
           {items.map((item, index) => (
             <div key={index}>
               <Link
@@ -156,7 +156,7 @@ export default function NavLinkDropdown({
                 {item.text}
               </Link>
               {item.text !== "Trainingen" && (
-                <div className="bg-[#4d4d4d5b] py-[0.1px] mx-3.5 lg:block hidden"></div>
+                <div className="bg-[#4d4d4d5b] py-[0.1px] mx-3.5 xl:block hidden"></div>
               )}
             </div>
           ))}

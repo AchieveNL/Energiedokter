@@ -38,7 +38,7 @@ export default function HomeHero() {
         <BrandList />
       </div>
 
-      <div className="m-auto md:pt-32 pt-32 flex flex-col items-center absolute top-0 md:right-1/2 md:translate-x-1/2 w-full">
+      <div className="m-auto md:pt-32 lg:pt-50 pt-32 flex flex-col items-center absolute top-0 md:right-1/2 md:translate-x-1/2 w-full">
         <h1
           style={{ fontFamily: "Poppins" }}
           className="font-black text-[#254055] md:text-5xl text-2xl text-center mx-5 "
