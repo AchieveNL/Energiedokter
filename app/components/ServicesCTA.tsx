@@ -14,7 +14,7 @@ export default function ServicesCTA({
 }) {
   return (
     <div
-      className="md:mt-20 mt-10 md:px-24 px-5 flex md:gap-20 justify-center items-center"
+      className="md:mt-20 mt-10 lg:px-20 px-5 flex md:gap-20 justify-center items-center"
       style={{
         fontFamily: "Poppins",
         flexDirection: reverse ? "row-reverse" : "row",

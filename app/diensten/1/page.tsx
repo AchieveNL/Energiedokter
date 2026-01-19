@@ -56,11 +56,11 @@ export default function Service1() {
   return (
     <>
       <Hero
-      animationData={animationData}
+        animationData={animationData}
         desktopSectionId="section1"
         title="Diensten"
         span={
-          <span className="font-black md:text-4xl text-2xl text-[#254055] flex md:flex-row flex-col gap-3 ">
+          <span className="font-black md:text-4xl text-2xl text-[#254055] flex lg:flex-row flex-col gap-3 ">
             <span> Energielabels bestaande</span>
             <span>woningen en utiliteit</span>
           </span>
@@ -68,7 +68,6 @@ export default function Service1() {
         text="Krijg inzicht in de energieprestatie van uw bestaande kantoor, school of winkel en voldoe aan de wettelijke energielabelplicht. Zo verlaagt u energiekosten en versterkt u het duurzame imago van uw gebouw."
       />
 
-      
       <div id="section1" className="py-4"></div>
       <ServiceOverview
         imgStyle={{ borderBottomRightRadius: "40px" }}
@@ -119,7 +118,7 @@ export default function Service1() {
           Een energielabel is niet alleen verplicht, het biedt ook praktische
           voordelen voor uzelf en toekomstige bewoners:
         </p>
-        <div className="md:mt-10 mt-5 grid grid-cols-1 md:grid-cols-5 gap-5 w-full">
+        <div className="md:mt-10 mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-full">
           {data.map((item, index) => (
             <Card key={index} bold={item.bold} normal={item.normal} />
           ))}

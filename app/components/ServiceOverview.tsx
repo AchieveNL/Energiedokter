@@ -44,7 +44,7 @@ export default function ServiceOverview({
       <img
         src={img}
         alt=""
-        className="md:block hidden"
+        className="xl:block hidden"
         style={{
           height: imgHeight,
           width: "auto",

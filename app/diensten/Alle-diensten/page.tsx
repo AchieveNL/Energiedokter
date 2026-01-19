@@ -20,7 +20,7 @@ export default function DienstenPage() {
         desktopSectionId="service1"
         title="Diensten"
         span={
-          <span className="font-black md:text-4xl text-2xl text-[#254055] flex md:flex-row flex-col gap-2">
+          <span className="font-black md:text-4xl text-2xl text-[#254055] flex lg:flex-row flex-col gap-2">
             <span>
               Onze
               <span className="text-[#81C713]"> kerndiensten</span>
