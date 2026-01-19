@@ -66,7 +66,7 @@ export default function Hero({
         />
       </div>
 
-      <div className="lg:absolute lg:pt-36 lg:ml-10">
+      <div className="lg:absolute md:pt-20 lg:pt-36 lg:ml-10">
         <div className="lg:block hidden">
           <SectionTitle title={title} span={span} align="start" />
         </div>
