@@ -29,46 +29,76 @@ export default async function BlogDetails({
       />
       <div id="section1"></div>
       <ImagesSlider images={blogPage[Number(id) - 1].imgs} />
-      <div
-        className="flex flex-col md:gap-10 gap-5 text-[#4D4D4D] md:px-24 px-5 mt-10 "
-        style={{ fontFamily: "Poppins" }}
-      >
-        {blogPage[Number(id) - 1].sections.map((section, index) => (
-          <div key={index}>
-            <h1 className="text-[#254055] font-bold text-xl ">
-              {section.title}
-            </h1>
-            <p className="text-sm">{section.text}</p>
+      <div className="mx-5 md:mx-10 lg:mx-24 xl:mx-40">
+        <div
+          className="flex flex-col md:gap-10 gap-5 text-[#4D4D4D] mt-10 "
+          style={{ fontFamily: "Poppins" }}
+        >
+          {blogPage[Number(id) - 1].sections.map((section, index) => (
+            <div key={index}>
+              <h1 className="text-[#254055] font-bold text-xl ">
+                {section.title}
+              </h1>
+              <p className="text-sm">{section.text}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* <div
+          className="md:mt-20 mt-10 flex md:gap-32"
+          style={{ fontFamily: "Poppins" }}
+        >
+          <div className="flex flex-col gap-5 md:w-1/2">
+            <div>
+              <h1 className="text-[#254055] font-bold text-2xl ">
+                {blogPage[Number(id) - 1].section.title}
+              </h1>
+              <p className="text-sm text-[#4D4D4D] ">
+                {blogPage[Number(id) - 1].section.subtitle}
+              </p>
+            </div>
+            {blogPage[Number(id) - 1].section.paragraphs.map(
+              (paragraph, index) => (
+                <p key={index} className="text-sm text-[#4D4D4D] ">
+                  {paragraph}
+                </p>
+              ),
+            )}
           </div>
-        ))}
+          <img
+            src={blogPage[Number(id) - 1].section.img}
+            className="w-[20%] drop-shadow-[-15px_-15px_0px_#254055] md:block hidden"
+          />
+        </div> */}
+
+        <div
+          className="md:mt-20 mt-10 flex md:gap-20"
+          style={{ fontFamily: "Poppins" }}
+        >
+          <div className="flex flex-col gap-5 md:w-1/2">
+            <div>
+              <h1 className="text-[#254055] font-bold text-2xl ">
+                {blogPage[Number(id) - 1].section.title}
+              </h1>
+              <p className="text-sm text-[#4D4D4D] ">
+                {blogPage[Number(id) - 1].section.subtitle}
+              </p>
+            </div>
+            {blogPage[Number(id) - 1].section.paragraphs.map(
+              (paragraph, index) => (
+                <p key={index} className="text-sm text-[#4D4D4D] ">
+                  {paragraph}
+                </p>
+              ),
+            )}
+          </div>
+          <img
+            src={blogPage[Number(id) - 1].section.img}
+            className="lg:w-[30%] md:w-[40%] xl:w-[20%] mt-5 h-full object-contain drop-shadow-[-15px_-15px_0px_#254055] md:block hidden"
+          />
+        </div>
       </div>
 
-      <div
-        className="md:mt-20 mt-10 md:px-24 px-5 flex md:gap-32 justify-cente"
-        style={{ fontFamily: "Poppins" }}
-      >
-        <div className="flex flex-col gap-5 md:w-1/2">
-          <div>
-            <h1 className="text-[#254055] font-bold text-2xl ">
-              {blogPage[Number(id) - 1].section.title}
-            </h1>
-            <p className="text-sm text-[#4D4D4D] ">
-              {blogPage[Number(id) - 1].section.subtitle}
-            </p>
-          </div>
-          {blogPage[Number(id) - 1].section.paragraphs.map(
-            (paragraph, index) => (
-              <p key={index} className="text-sm text-[#4D4D4D] ">
-                {paragraph}
-              </p>
-            ),
-          )}
-        </div>
-        <img
-          src={blogPage[Number(id) - 1].section.img}
-          className="w-[20%] drop-shadow-[-15px_-15px_0px_#254055] md:block hidden"
-        />
-      </div>
       <div className="md:mt-20 mt-15"></div>
       <Blog />
       <Footer />
