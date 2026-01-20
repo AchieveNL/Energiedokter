@@ -145,7 +145,7 @@ export default function NavLinkDropdown({
                 style={{ fontFamily: "Poppins" }}
                 className={`font-medium text-[14px] md:text-[16px] text-[#4D4D4D] md:py-2 py-0.5 mx-3 pl-1 block transition-all duration-200 hover:text-[#81C713]
               ${
-                Number(index + 0).toString() === pathname.split("/")[2] ||
+                pathname.split("/")[2] === item.text.replace(/\s+/g, "-") ||
                 (item.text === "Alle diensten" &&
                   pathname === "/diensten/Alle-diensten")
                   ? "text-[#81C713]"

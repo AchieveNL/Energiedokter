@@ -18,10 +18,12 @@ export default function Nav() {
     if (pathname === "/blogs") return "Blogs";
     if (pathname === "/faq") return "FAQ";
     if (pathname === "/contact") return "Contact";
-    for (let i = 1; i <= 8; i++) {
-      if (pathname === `/diensten/${i}`) return "Diensten";
-    }
+    // for (let i = 1; i <= 8; i++) {
+    //   if (pathname === `/diensten/${i}`) return "Diensten";
+    // }
+    if (pathname.startsWith("/diensten/")) return "Diensten";
     if (pathname === "/diensten/Alle-diensten") return "Diensten";
+    if (pathname === "/diensten/bestaande") return "Diensten";
     if (pathname.startsWith("/blogs/")) return "Blogs";
     return "";
   };
@@ -77,17 +79,17 @@ export default function Nav() {
                 text: "Alle diensten",
               },
               {
-                href: "/diensten/1",
+                href: "/diensten/Energielabels-bestaande-woningen-en-utiliteit",
                 text: "Energielabels bestaande woningen en utiliteit",
               },
               {
-                href: "/diensten/2",
+                href: "/diensten/Energielabels-nieuwbouw-woningen-en-utiliteit",
                 text: "Energielabels nieuwbouw woningen en utiliteit",
               },
-              { href: "/diensten/3", text: "Informatieplicht" },
-              { href: "/diensten/4", text: "GACS" },
-              { href: "/diensten/5", text: "WKO beheer" },
-              { href: "/diensten/6", text: "Trainingen" },
+              { href: "/diensten/Informatieplicht", text: "Informatieplicht" },
+              { href: "/diensten/GACS", text: "GACS" },
+              { href: "/diensten/WKO-beheer", text: "WKO beheer" },
+              { href: "/diensten/Trainingen", text: "Trainingen" },
             ]}
           />
           <NavLink href="/partners" text="Partners" active={active} />
@@ -126,19 +128,20 @@ export default function Nav() {
                 text: "Alle diensten",
               },
               {
-                href: "/diensten/1",
+                href: "/diensten/Energielabels-bestaande-woningen-en-utiliteit",
                 text: "Energielabels bestaande woningen en utiliteit",
               },
               {
-                href: "/diensten/2",
+                href: "/diensten/Energielabels-nieuwbouw-woningen-en-utiliteit",
                 text: "Energielabels nieuwbouw woningen en utiliteit",
               },
-              { href: "/diensten/3", text: "Informatieplicht" },
-              { href: "/diensten/4", text: "GACS" },
-              { href: "/diensten/5", text: "WKO beheer" },
-              { href: "/diensten/6", text: "Trainingen" },
+              { href: "/diensten/Informatieplicht", text: "Informatieplicht" },
+              { href: "/diensten/GACS", text: "GACS" },
+              { href: "/diensten/WKO-beheer", text: "WKO beheer" },
+              { href: "/diensten/Trainingen", text: "Trainingen" },
             ]}
           />
+
           <NavLink href="/partners" text="Partners" active={active} />
           <NavLink href="/projects" text="Projecten" active={active} />
           <NavLink href="/blogs" text="Blogs" active={active} />
