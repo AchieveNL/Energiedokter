@@ -44,35 +44,8 @@ export default async function BlogDetails({
           ))}
         </div>
 
-        {/* <div
-          className="md:mt-20 mt-10 flex md:gap-32"
-          style={{ fontFamily: "Poppins" }}
-        >
-          <div className="flex flex-col gap-5 md:w-1/2">
-            <div>
-              <h1 className="text-[#254055] font-bold text-2xl ">
-                {blogPage[Number(id) - 1].section.title}
-              </h1>
-              <p className="text-sm text-[#4D4D4D] ">
-                {blogPage[Number(id) - 1].section.subtitle}
-              </p>
-            </div>
-            {blogPage[Number(id) - 1].section.paragraphs.map(
-              (paragraph, index) => (
-                <p key={index} className="text-sm text-[#4D4D4D] ">
-                  {paragraph}
-                </p>
-              ),
-            )}
-          </div>
-          <img
-            src={blogPage[Number(id) - 1].section.img}
-            className="w-[20%] drop-shadow-[-15px_-15px_0px_#254055] md:block hidden"
-          />
-        </div> */}
-
         <div
-          className="md:mt-20 mt-10 flex md:gap-20"
+          className="md:mt-20 mt-10 flex md:gap-10 lg:gap-20"
           style={{ fontFamily: "Poppins" }}
         >
           <div className="flex flex-col gap-5 md:w-1/2">
