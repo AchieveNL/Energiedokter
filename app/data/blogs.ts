@@ -8,14 +8,14 @@ interface BlogPost {
 export const cards: BlogPost[] = [
   {
     href: "/blogs/1",
-    id: "/blogs/1",
+    id: "/blogs/2",
     title: "Slimme lampen, grote besparing",
     description:
       "Ontdek hoe je met led-verlichting en timers eenvoudig tot 30% op je energierekening kunt besparen",
     image: "/assets/blogs/img1.webp",
   },
   {
-    id: "/blogs/2",
+    id: "/blogs/1",
     href: "/blogs/1",
 
     title: "Windenergie in je buurt",
@@ -34,14 +34,14 @@ export const cards: BlogPost[] = [
   },
   {
     href: "/blogs/1",
-    id: "/blogs/1",
+    id: "/blogs/2",
     title: "Slimme lampen, grote besparing",
     description:
       "Ontdek hoe je met led-verlichting en timers eenvoudig tot 30% op je energierekening kunt besparen",
     image: "/assets/blogs/img1.webp",
   },
   {
-    id: "/blogs/2",
+    id: "/blogs/1",
     href: "/blogs/1",
 
     title: "Windenergie in je buurt",

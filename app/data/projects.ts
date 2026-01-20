@@ -8,7 +8,7 @@ interface project {
 }
 export const cards: project[] = [
   {
-    id: "/projects/1",
+    id: "/projects/3",
     href: "1",
     title: "Hybride ketelhuis renovatie",
     description:
@@ -17,7 +17,7 @@ export const cards: project[] = [
     date: "28-11-2025",
   },
   {
-    id: "/projects/2",
+    id: "/projects/1",
 
     href: "2",
     title: "Duurzame bodemenergie campus",
@@ -27,7 +27,7 @@ export const cards: project[] = [
     date: "01-11-2025",
   },
   {
-    id: "/projects/3",
+    id: "/projects/2",
 
     href: "3",
     title: "Optimaal binnenklimaat kantoor",
@@ -37,7 +37,7 @@ export const cards: project[] = [
     date: "04-10-2025",
   },
   {
-    id: "/projects/1",
+    id: "/projects/3",
     href: "1",
     title: "Hybride ketelhuis renovatie",
     description:
@@ -46,7 +46,7 @@ export const cards: project[] = [
     date: "28-11-2025",
   },
   {
-    id: "/projects/2",
+    id: "/projects/1",
 
     href: "2",
     title: "Duurzame bodemenergie campus",
@@ -56,7 +56,7 @@ export const cards: project[] = [
     date: "01-11-2025",
   },
   {
-    id: "/projects/3",
+    id: "/projects/2",
 
     href: "3",
     title: "Optimaal binnenklimaat kantoor",
