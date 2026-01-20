@@ -37,10 +37,10 @@ export const projectPage = [
     title: "Optimaal binnenklimaat kantoor",
     imgs: [
       "/assets/projectImgs/img4.png",
-      "/assets/projectImgs/img5.png",
+      "/assets/projectImgs/img5.jpg",
       "/assets/projectImgs/img6.png",
       "/assets/projectImgs/img4.png",
-      "/assets/projectImgs/img5.png",
+      "/assets/projectImgs/img5.jpg",
       "/assets/projectImgs/img6.png",
     ],
     sections: [
@@ -70,12 +70,12 @@ export const projectPage = [
   {
     title: "Hybride ketelhuis renovatie",
     imgs: [
-      "/assets/projectImgs/img6.png",
       "/assets/projectImgs/img7.jpg",
-      "/assets/projectImgs/img8.png",
-      "/assets/projectImgs/img6.png",
+      "/assets/projectImgs/img8.jpg",
+      "/assets/projectImgs/img9.jpg",
       "/assets/projectImgs/img7.jpg",
-      "/assets/projectImgs/img8.png",
+      "/assets/projectImgs/img8.jpg",
+      "/assets/projectImgs/img9.jpg",
     ],
     sections: [
       {
