@@ -69,10 +69,10 @@ export default function Service4() {
             <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl flex flex-col  ">
               <span className="flex gap-1">
                 De grootste <span className="text-[#81C713] ">valkuilen </span>{" "}
-                <span className="md:block hidden">zonder</span>
+                <span className="xl:block hidden">zonder</span>
               </span>
               <span className="flex gap-1">
-                <span className="md:hidden block">zonder</span>
+                <span className="xl:hidden block">zonder</span>
                 <span>goed GACS-beheer</span>
               </span>
             </h1>

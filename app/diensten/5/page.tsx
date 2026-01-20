@@ -45,7 +45,7 @@ export default function Service5() {
           <AnimatedBg />
         </div>
         <div
-          className="relative w-full md:block hidden pointer-events-none"
+          className="relative w-full lg:block hidden pointer-events-none"
           style={{ paddingTop: "130px" }}
         >
           <Lottie
@@ -56,7 +56,7 @@ export default function Service5() {
             style={{ width: "100%", height: "auto" }}
           />
         </div>
-        <div className="md:absolute pt-36 flex flex-col items-center">
+        <div className="lg:absolute pt-36 flex flex-col items-center">
           <div className="md:flex hidden text-center  ">
             <SectionTitle
               title="Diensten"
@@ -102,7 +102,7 @@ export default function Service5() {
             </Link>
           </div>
         </div>
-        <div className="w-full md:hidden block pointer-events-none mt-10">
+        <div className="w-full lg:hidden block pointer-events-none mt-10">
           <Lottie
             lottieRef={lottieMobileRef}
             animationData={animationData}
@@ -152,7 +152,7 @@ export default function Service5() {
           Risico's die uw installatie
           <span className="text-[#81C713] "> geld </span>kosten
         </h1>
-        <p className="text-[#4D4D4D] text-sm md:w-1/2 px-5 text-center">
+        <p className="text-[#4D4D4D] text-sm md:w-2/3 lg:w-1/2 px-5 text-center">
           Een slecht beheerde WKO-installatie kan leiden tot verschillende
           problemen. Zo kan er onbalans in het systeem ontstaan, stijgen de
           energiekosten, ontstaan comfortklachten voor gebruikers en kunnen
@@ -160,7 +160,7 @@ export default function Service5() {
           risico op aanschrijvingen of boetes van omgevingsdiensten wanneer de
           voorwaarden van de waterwetvergunning worden overtreden.
         </p>
-        <p className="text-[#4D4D4D] text-sm md:w-1/2 px-5 text-center">
+        <p className="text-[#4D4D4D] text-sm md:w-2/3 lg:w-1/2 px-5 text-center">
           Het opsporen van de oorzaak van deze problemen is vaak een
           multidisciplinaire taak, waarbij technische, organisatorische,
           juridische en financiële aspecten allemaal een rol spelen. Zonder
@@ -189,7 +189,7 @@ export default function Service5() {
         title={
           <div>
             <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl  flex flex-col  ">
-              <span className="text-nowrap">
+              <span className="">
                 Haal <span className="text-[#81C713] ">maximaal </span>
                 rendement
               </span>

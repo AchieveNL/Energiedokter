@@ -71,7 +71,7 @@ export default function Service6() {
           <span className="text-[#81C713]"> onvoldoende </span>
           kennis
         </h1>
-        <p className="text-[#4D4D4D] text-sm md:w-1/2 px-5 text-center">
+        <p className="text-[#4D4D4D] text-sm md:w-2/3 lg:w-1/2 px-5 text-center">
           Zonder de juiste kennis en vaardigheden lopen medewerkers en
           opdrachtgevers het risico verkeerde keuzes te maken bij het beheer van
           gebouwen. Energiebesparende maatregelen worden over het hoofd gezien,
@@ -103,16 +103,16 @@ export default function Service6() {
           <div>
             <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl flex flex-col  ">
               <span className="flex gap-1">
-                Zo haalt uw team het{" "}
-                <span className="text-[#81C713] md:block hidden">
-                  maximale{" "}
+                Zo haalt uw team het
+                <span className="text-[#81C713] xl:block hidden">
+                  maximale
                 </span>
               </span>
               <span className="text-nowrap">
-                <span className="text-[#81C713] md:hidden block">
+                <span className="text-[#81C713] xl:hidden block">
                   maximale <span className="text-[#254055]">uit</span>
                 </span>
-                <span className="md:inline hidden">uit </span>energiebeheer
+                <span className="xl:inline hidden">uit </span>energiebeheer
               </span>
             </h1>
           </div>
