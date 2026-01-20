@@ -101,7 +101,7 @@ export default function Diensten() {
         analyse tot uitvoering begeleiden wij u naar een comfortabel,
         energiezuinig en toekomstbestendig gebouw
       </p>
-      <div className="lg:grid hidden lg:grid-cols-3 grid-cols-1 gap-y-10 lg:gap-x-15 lg:px-24 px-5 mt-10">
+      <div className="lg:grid hidden lg:grid-cols-3 grid-cols-1 lg:gap-y-5 xl:gap-y-10 lg:gap-x-5 lg:px-10 px-5 mt-10">
         {services.map((service, index) => (
           <Card
             href={service.href}
@@ -114,14 +114,14 @@ export default function Diensten() {
       </div>
 
       {/* mobile carousel - FIX APPLIED */}
-      <div className="lg:hidden w-full mt-10 ">
+      <div className="lg:hidden w-full mt-10">
         <div className="relative">
           {/* Embla viewport with proper overflow handling */}
           <div className="overflow-hidden" ref={emblaRef}>
             {/* Embla container with flex and proper spacing */}
             <div className="flex -mx-2">
               {services.map((service, index) => (
-                <div key={index} className="flex-[0_0_85%] min-w-0 px-2">
+                <div key={index} className="flex-[0_0_85%] md:flex-[0_0_60%] min-w-0 px-2">
                   <Card
                     href={service.href}
                     title={service.title}
