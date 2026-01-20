@@ -189,7 +189,7 @@ export default function ContactSection() {
               onBlur={() => handleBlur("email")}
             />
             <TextInput
-              type="number"
+              type="text"
               label="Vul uw telefoonnummer in"
               placeholder="Telefoonnummer"
               field="phone"
