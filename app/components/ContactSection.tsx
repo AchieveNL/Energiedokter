@@ -86,8 +86,13 @@ export default function ContactSection() {
     if (phone.length !== 10) {
       return "Het telefoonnummer moet uit 10 cijfers bestaan.";
     }
+    if (!/^\d+$/.test(phone)) {
+      return "Telefoonnummer mag alleen cijfers bevatten.";
+    }
     return "";
   };
+
+  
 
   const handleChange = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
