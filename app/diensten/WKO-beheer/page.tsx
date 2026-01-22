@@ -227,7 +227,10 @@ export default function Service5() {
       <div className="md:py-10 py-7"></div>
       <Faq />
       <Projects />
-      <div className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover md:mt-20 mt-10 py-10 ">
+      <div className="bg-cover py-10 mt-10 relative ">
+        <div className="inset-0 absolute -z-10">
+          <AnimatedBg />
+        </div>
         <Reviews />
       </div>
       <ContactSection />

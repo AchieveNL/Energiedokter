@@ -1,13 +1,17 @@
 "use client";
 import Link from "next/link";
+import AnimatedBg from "./AnimatedBg";
 
 export default function Contact() {
   return (
     <>
       <div
         style={{ fontFamily: "Poppins" }}
-        className="relative mt-20 bg-[url('/assets/HomeHeroBg.svg')] bg-cover bg-center md:mx-auto mx-1 min-[768]:w-[85%] min-[1024]:w-[90%] min-[1280]:w-[75%] min-[1536]:w-4/6 min-[2300px]:w-[60%] min-[2500px]:w-[50%] min-[3000px]:w-[40%] max-w-[2000px] md:px-7 px-3 md:pt-3 pb-5 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl flex md:flex-row flex-col-reverse justify-between overflow-x-clip "
+        className="relative mt-20 bg-cover bg-center md:mx-auto mx-1 min-[768]:w-[85%] min-[1024]:w-[90%] min-[1280]:w-[75%] min-[1536]:w-4/6 min-[2300px]:w-[60%] min-[2500px]:w-[50%] min-[3000px]:w-[40%] max-w-[2000px] md:px-7 px-3 md:pt-3 pb-5 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl flex md:flex-row flex-col-reverse justify-between overflow-x-clip "
       >
+        <div className="inset-0 absolute -z-10 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl overflow-hidden">
+          <AnimatedBg/>
+        </div>
         {/* left section */}
         <div className="md:w-3/4 w-[70%] lg:block hidden">
           <h1 className="md:text-[26px] font-bold text-[#0D2131] md:mt-5 mt-5  ">

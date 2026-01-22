@@ -111,7 +111,10 @@ export default function Partners() {
 
       <BrandList />
       <div id="partners"></div>
-      <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 mt-10 ">
+      <div className="bg-cover py-10 mt-10 relative ">
+        <div className="inset-0 absolute -z-10">
+          <AnimatedBg/>
+        </div>
         <Reviews />
       </div>
       <Projects />

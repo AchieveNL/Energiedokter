@@ -11,6 +11,7 @@ import ServicesCTA from "@/app/components/ServicesCTA";
 import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
 import animationData from "@/public/assets/animations/faq.json";
+import AnimatedBg from "@/app/components/AnimatedBg";
 
 export default function Service6() {
   return (
@@ -104,9 +105,7 @@ export default function Service6() {
             <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl flex flex-col  ">
               <span className="flex gap-1">
                 Zo haalt uw team het
-                <span className="text-[#81C713] xl:block hidden">
-                  maximale
-                </span>
+                <span className="text-[#81C713] xl:block hidden">maximale</span>
               </span>
               <span className="text-nowrap">
                 <span className="text-[#81C713] xl:hidden block">
@@ -142,7 +141,10 @@ export default function Service6() {
       <div className="md:py-10 py-7"></div>
       <Faq />
       <Projects />
-      <div className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover md:mt-20 mt-10 py-10 ">
+      <div className="bg-cover py-10 mt-10 relative ">
+        <div className="inset-0 absolute -z-10">
+          <AnimatedBg />
+        </div>
         <Reviews />
       </div>
       <ContactSection />

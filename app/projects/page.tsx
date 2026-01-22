@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import { cards } from "../data/projects";
 import animationData from "@/public/assets/animations/faq.json";
+import AnimatedBg from "../components/AnimatedBg";
 
 export default function ProjectsPage() {
   return (
@@ -37,7 +38,10 @@ export default function ProjectsPage() {
       <div id="projects1">
         <Projects linkVisible={false} />
       </div>
-      <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 md:mt-15 mt-5 ">
+      <div className="bg-cover py-10 mt-10 relative ">
+        <div className="inset-0 absolute -z-10">
+          <AnimatedBg />
+        </div>
         <Reviews />
       </div>
       <div className="md:mt-20 mt-10">

@@ -9,6 +9,7 @@ import Reviews from "@/app/components/Reviews";
 import SectionTitle from "@/app/components/SectionTitle";
 import Link from "next/link";
 import animationData from "@/public/assets/animations/diensten.json";
+import AnimatedBg from "@/app/components/AnimatedBg";
 
 export default function DienstenPage() {
   return (
@@ -38,7 +39,10 @@ export default function DienstenPage() {
       <Diensten />
       <DienstenSection />
       <Reviews bg="#F6F6F6" />
-      <div className="bg-[url('/assets/about/faq-bg.svg')] bg-cover py-10 md:mt-20 mt-10 ">
+      <div className="bg-cover relative py-10 md:my-20 my-10 ">
+        <div className="inset-0 absolute -z-10">
+          <AnimatedBg />
+        </div>
         <Faq />
       </div>
       <Projects />

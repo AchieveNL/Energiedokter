@@ -12,6 +12,7 @@ import ServicesStats from "@/app/components/ServicesStats";
 import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
 import animationData from "@/public/assets/animations/faq.json";
+import AnimatedBg from "@/app/components/AnimatedBg";
 
 export default function Service2() {
   return (
@@ -154,7 +155,10 @@ export default function Service2() {
       <div className="md:py-10 py-7"></div>
       <Faq />
       <Projects />
-      <div className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover md:mt-20 mt-10 py-10 ">
+      <div className="bg-cover py-10 mt-10 relative ">
+        <div className="inset-0 absolute -z-10">
+          <AnimatedBg />
+        </div>
         <Reviews />
       </div>
       <ContactSection />
