@@ -1,6 +1,6 @@
 export const reviews = [
   {
-    rate: "4.9",
+    rate: "4.5",
     text: "De tips van Energiedokter zijn makkelijk te volgen. Ik ben bewuster met energie bezig en merk verschil in mijn verbruik",
     name: "Nadine",
     role: "Projectleider",
@@ -12,13 +12,13 @@ export const reviews = [
     role: "Adviseur",
   },
   {
-    rate: "4.9",
+    rate: "4.7",
     text: "Energiedokter denkt echt mee. Het energieadvies en de begeleiding bij verduurzaming waren erg duidelijk",
     name: "Giorgi",
     role: "Installatietechnicus",
   },
   {
-    rate: "4.9",
+    rate: "4.5",
     text: "De tips van Energiedokter zijn makkelijk te volgen. Ik ben bewuster met energie bezig en merk verschil in mijn verbruik",
     name: "Nadine",
     role: "Projectleider",
@@ -30,7 +30,7 @@ export const reviews = [
     role: "Adviseur",
   },
   {
-    rate: "4.9",
+    rate: "4.7",
     text: "Energiedokter denkt echt mee. Het energieadvies en de begeleiding bij verduurzaming waren erg duidelijk",
     name: "Giorgi",
     role: "Installatietechnicus",
