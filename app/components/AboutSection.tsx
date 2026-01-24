@@ -23,7 +23,7 @@ export default function AboutSection() {
     <div
       id="about-us"
       style={{ fontFamily: "Poppins" }}
-      className="md:pt-32 pt-10 flex lg:flex-row flex-col md:gap-10 gap-1 md:mx-20 mx-5"
+      className="md:pt-20 lg:pt-28 pt-10 flex lg:flex-row flex-col md:gap-5 lg:gap-10 gap-1 md:mx-20 mx-5"
     >
       <div className="lg:hidden block">
         <div className="w-full relative flex items-center">
@@ -53,7 +53,7 @@ export default function AboutSection() {
       </div>
 
       {/* left section */}
-      <div className="lg:w-1/2 h-fit bg-[#F6F6F6] rounded-4xl lg:p-7 p-4 lg:pb-10 pb-7 flex flex-col lg:gap-5 gap-3 lg:mt-5 mt-5">
+      <div className="lg:w-1/2 h-fit bg-[#F6F6F6] rounded-4xl lg:p-7 p-4 lg:pb-10 pb-7 flex flex-col lg:gap-5 gap-3 md:mt-2 mt-5">
         <h1 className="text-[#254055] md:text-3xl text-2xl font-extrabold ">
           Wie zijn wij?
         </h1>
