@@ -41,12 +41,14 @@ export default function AboutSection() {
           />
           <Plus className="bg-black rounded-full absolute z-30 left-21 size-10 text-white p-3" />
           <span className="text-[#4D4D4D] ml-34 text-sm ">
-            Trusted by 150+ Happy Customers
+            Onze klanten vertrouwen ons
           </span>
         </div>
         <div className="flex gap-3 items-center mt-3">
           <span className="text-[#3C8101] font-bold text-3xl ">150+</span>
-          <span className="text-[#4D4D4D] text-sm ">Reviews</span>
+          <span className="text-[#4D4D4D] text-sm ">
+            Positieve beoordelingen
+          </span>
         </div>
       </div>
 
@@ -116,12 +118,14 @@ export default function AboutSection() {
             />
             <Plus className="bg-black rounded-full absolute z-30 left-21 size-10 text-white p-3" />
             <span className="text-[#4D4D4D] ml-34 text-sm ">
-              Trusted by 150+ Happy Customers
+              Onze klanten vertrouwen ons
             </span>
           </div>
           <div className="flex gap-3 items-center mt-3">
             <span className="text-[#3C8101] font-bold text-3xl ">150+</span>
-            <span className="text-[#4D4D4D] text-sm ">Reviews</span>
+            <span className="text-[#4D4D4D] text-sm ">
+              Positieve beoordelingen
+            </span>
           </div>
         </div>
 
