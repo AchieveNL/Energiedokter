@@ -79,7 +79,7 @@ export default function Reviews({ bg = "white" }: { bg?: string }) {
   return (
     <div
       style={{ fontFamily: "Poppins" }}
-      className="flex flex-col items-center overflow-hidden"
+      className="flex flex-col items-center overflow-hidden min-[1024px]:mx-0 min-[1280px]:mx-20 min-[1536px]:mx-32 min-[1760px]:mx-44"
     >
       <SectionTitle
         title="Reviews"
@@ -99,7 +99,7 @@ export default function Reviews({ bg = "white" }: { bg?: string }) {
               {reviews.map((review, index) => (
                 <div
                   key={index}
-                  className="md:flex-[0_0_33%] flex-[0_0_30%] min-w-0 px-2"
+                  className="md:flex-[0_0_30%] flex-[0_0_30%] min-w-0 px-2"
                 >
                   <Card
                     rate={review.rate}

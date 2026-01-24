@@ -84,7 +84,7 @@ export default function Diensten() {
   return (
     <div
       style={{ fontFamily: "Poppins" }}
-      className="flex flex-col items-center md:my-20 my-10"
+      className="flex flex-col items-center md:my-20 my-10 min-[1024px]:px-10 min-[1280px]:px-20 min-[1536px]:px-32 min-[1760px]:px-44 "
     >
       <SectionTitle
         title="Diensten"
@@ -101,7 +101,7 @@ export default function Diensten() {
         analyse tot uitvoering begeleiden wij u naar een comfortabel,
         energiezuinig en toekomstbestendig gebouw
       </p>
-      <div className="lg:grid hidden lg:grid-cols-3 grid-cols-1 lg:gap-y-5 xl:gap-y-10 lg:gap-x-5 lg:px-10 px-5 mt-10">
+      <div className="lg:grid hidden lg:grid-cols-3 grid-cols-1 lg:gap-y-5 xl:gap-y-10 lg:gap-x-5 mt-10">
         {services.map((service, index) => (
           <Card
             href={service.href}

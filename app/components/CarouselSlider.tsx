@@ -43,8 +43,8 @@ const CarouselSlider = ({
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="flex items-center justify-center p-4">
-      <div className="w-full max-w-7xl">
+    <div className="flex items-center justify-center py-10">
+      <div className="w-[90%]">
         <div className="embla overflow-hidden" ref={emblaRef}>
           <div className="embla__container flex">
             {cards.map((card, index) => {

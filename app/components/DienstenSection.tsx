@@ -52,7 +52,7 @@ export default function DienstenSection() {
   return (
     <div
       style={{ fontFamily: "Poppins" }}
-      className="md:my-20 my-10 overflow-hidden relative bg-cover flex flex-col gap-2 lg:items-center items-start md:py-10 py-5 md:px-10 px-3 md:mx-10 lg:mx-10 xl:mx-20 mx-2 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl"
+      className="md:my-20 my-10 overflow-hidden relative bg-cover flex flex-col gap-2 lg:items-center items-start md:py-10 py-5 md:px-10 px-3 md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl mx-2 min-[1024px]:mx-10 min-[1280px]:mx-20 min-[1536px]:mx-32 min-[1760px]:mx-44"
     >
       <div className="absolute inset-0 -z-10 overflow-hidden md:rounded-tl-[4rem] md:rounded-br-[4rem] rounded-tl-4xl rounded-br-4xl">
         <AnimatedBg/>
