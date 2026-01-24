@@ -78,7 +78,7 @@ export default function Hero({
             align="center"
           />
         </div>
-        <p className="text-[#4D4D4D] md:w-1/2 m-auto lg:m-3 lg:ml-0 mt-3 lg:text-base text-sm lg:text-left text-center px-3">
+        <p className="text-[#4D4D4D] md:w-1/2 m-auto lg:m-3 lg:ml-0 mt-3 lg:text-base text-sm lg:text-left text-center px-3 md:px-0">
           {text}
         </p>
         <div
