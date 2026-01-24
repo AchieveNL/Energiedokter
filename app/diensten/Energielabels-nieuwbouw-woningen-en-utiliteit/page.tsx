@@ -30,121 +30,125 @@ export default function Service2() {
         text="Behaal een officieel BENG-energielabel voor uw nieuwbouwproject en garandeer dat het ontwerp energiezuinig en toekomstbestendig is. Wij begeleiden u vanaf de ontwerpfase tot registratie bij de RVO."
       />
 
-      <div
-        id="section1"
-        style={{ fontFamily: "Poppins" }}
-        className="md:mx-24 px-5 flex flex-col md:gap-4 gap-2 md:pt-24 pt-20"
-      >
-        <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] ">
-          Wat is een <span className="text-[#81C713] ">energielabel?</span>
-        </h1>
-        <p className="text-sm text-[#4D4D4D] ">
-          Bij nieuwbouwwoningen wordt het energielabel berekend op basis van de
-          BENG-eisen (Bijna Energie Neutraal Gebouw). Deze normen bepalen
-          hoeveel energie een woning maximaal mag verbruiken voor verwarming,
-          koeling, ventilatie en warm water.
-        </p>
-        <p className="text-sm text-[#4D4D4D] ">
-          Onze gecertificeerde energieadviseurs bij Energie Dokter voeren een
-          EP-berekening uit volgens de NTA 8800-norm om vast te stellen of het
-          ontwerp voldoet aan de drie BENG-indicatoren:
-        </p>
-        <div className="flex flex-col items-center gap-2 w-fit m-auto md:mt-5 mt-2">
-          <p className="font-semibold text-[#4D4D4D] text-sm bg-[#C773131A] p-2 px-4 rounded-xl w-full ">
-            BENG 1 - Energiebehoefte van het gebouw (hoe goed het ontwerp warmte
-            vasthoudt)
-          </p>
-          <p className="font-semibold text-[#4D4D4D] text-sm bg-[#BBC7131A] p-2 px-4 rounded-xl w-full ">
-            BENG 2 - Primair fossiel energiegebruik (hoeveel fossiele energie
-            nodig is)
-          </p>
-          <p className="font-semibold text-[#4D4D4D] text-sm bg-[#90C2421A] p-2 px-4 rounded-xl w-full ">
-            BENG 3 - Aandeel hernieuwbare energie (hoeveel duurzame bronnen
-            worden gebruikt)
-          </p>
-        </div>
-        <p className="text-sm text-[#4D4D4D] md:mt-5 mt-3 ">
-          Na oplevering registreren wij het definitieve energielabel bij de RVO,
-          zodat uw nieuwbouwproject volledig voldoet aan de wettelijke vereisten
-          en direct energiezuinig, toekomstbestendig en compliant is.
-        </p>
-      </div>
-
-      <ServiceOverview
-        roundedBl={false}
-        roundedBr={true}
-        roundedTl={false}
-        imgStyle={{ width: "100%", borderTopLeftRadius: "40px" }}
-        reverse={true}
-        title={
-          <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col mt-2">
-            <span>
-              Geen <span className="text-[#81C713]">inzicht</span> in uw
-              energieverbruik?
-            </span>
-            <span> Dat kost meer dan u denkt</span>
+      <div className="px-5 min-[768px]:px-20 min-[1280px]:px-24 min-[1700px]:px-50 min-[2000px]:px-80">
+        <div
+          id="section1"
+          style={{ fontFamily: "Poppins" }}
+          className="flex flex-col md:gap-4 gap-2 md:pt-24 pt-20"
+        >
+          <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] ">
+            Wat is een <span className="text-[#81C713] ">energielabel?</span>
           </h1>
-        }
-        img="/assets/services/img2.svg"
-        spans={
-          <>
-            <p>
-              Zonder geldig energielabel loopt u niet alleen het risico op een
-              boete — u verliest elke maand geld door onzichtbaar
-              energieverlies. Veel gebouwen verspillen warmte, draaien op
-              verouderde installaties of voldoen niet aan de nieuwste eisen. Het
-              gevolg: hogere kosten, minder comfort en een pand dat aan waarde
-              verliest bij verkoop of verhuur. Zonder duidelijk energielabel
-              blijft besparen giswerk, en dat tikt ongemerkt aan.
+          <p className="text-sm text-[#4D4D4D] ">
+            Bij nieuwbouwwoningen wordt het energielabel berekend op basis van
+            de BENG-eisen (Bijna Energie Neutraal Gebouw). Deze normen bepalen
+            hoeveel energie een woning maximaal mag verbruiken voor verwarming,
+            koeling, ventilatie en warm water.
+          </p>
+          <p className="text-sm text-[#4D4D4D] ">
+            Onze gecertificeerde energieadviseurs bij Energie Dokter voeren een
+            EP-berekening uit volgens de NTA 8800-norm om vast te stellen of het
+            ontwerp voldoet aan de drie BENG-indicatoren:
+          </p>
+          <div className="flex flex-col items-center gap-2 w-fit m-auto md:mt-5 mt-2">
+            <p className="font-semibold text-[#4D4D4D] text-sm bg-[#C773131A] p-2 px-4 rounded-xl w-full ">
+              BENG 1 - Energiebehoefte van het gebouw (hoe goed het ontwerp
+              warmte vasthoudt)
             </p>
-            <p>
-              Onze aanpak is persoonlijk, snel en helder — jij weet precies waar
-              je aan toe bent.
+            <p className="font-semibold text-[#4D4D4D] text-sm bg-[#BBC7131A] p-2 px-4 rounded-xl w-full ">
+              BENG 2 - Primair fossiel energiegebruik (hoeveel fossiele energie
+              nodig is)
             </p>
-            <Link
-              href="/contact"
-              className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg w-fit hover:bg-[#518103] transition-all "
-            >
-              Advies aanvragen
-            </Link>
-          </>
-        }
-      />
-
-      <div className="md:mt-10 mt-5 p-1"></div>
-      <ServicesCTA
-        title={
-          <div>
-            <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl ">
-              Toekomstbestendig <span className="text-[#81C713] ">bouwen </span>
-              begint hier
-            </h1>
-            <p className="text-sm text-[#4D4D4D] md:mt-0 mt-2">
-              Een goed energielabel geeft zekerheid, trots en rust bij
-              oplevering
+            <p className="font-semibold text-[#4D4D4D] text-sm bg-[#90C2421A] p-2 px-4 rounded-xl w-full ">
+              BENG 3 - Aandeel hernieuwbare energie (hoeveel duurzame bronnen
+              worden gebruikt)
             </p>
           </div>
-        }
-        text={
-          <>
-            <p className="text-sm text-[#4D4D4D] ">
-              Stel u een woning voor die klaar is voor de toekomst —
-              energiezuinig, comfortabel en volledig volgens de BENG-eisen.
-              <br />
-              Met een goed energielabel weet u precies waar u staat: uw
-              nieuwbouw voldoet aan de regelgeving, verbruikt minder energie en
-              behoudt zijn waarde.
-              <br />
-              Geen onzekerheid of uitstel meer, maar zekerheid bij oplevering en
-              trots op het resultaat.
-              <br />
-              Wij zorgen voor een helder traject en een snelle oplevering, zodat
-              u zonder zorgen kunt bouwen aan duurzaam woongenot.
-            </p>
-          </>
-        }
-        img="/assets/blogs/section-img2.png"
-      />
+          <p className="text-sm text-[#4D4D4D] md:mt-5 mt-3 ">
+            Na oplevering registreren wij het definitieve energielabel bij de
+            RVO, zodat uw nieuwbouwproject volledig voldoet aan de wettelijke
+            vereisten en direct energiezuinig, toekomstbestendig en compliant
+            is.
+          </p>
+        </div>
+
+        <ServiceOverview
+          roundedBl={false}
+          roundedBr={true}
+          roundedTl={false}
+          imgStyle={{ width: "100%", borderTopLeftRadius: "40px" }}
+          reverse={true}
+          title={
+            <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col mt-2">
+              <span>
+                Geen <span className="text-[#81C713]">inzicht</span> in uw
+                energieverbruik?
+              </span>
+              <span> Dat kost meer dan u denkt</span>
+            </h1>
+          }
+          img="/assets/services/img2.svg"
+          spans={
+            <>
+              <p>
+                Zonder geldig energielabel loopt u niet alleen het risico op een
+                boete — u verliest elke maand geld door onzichtbaar
+                energieverlies. Veel gebouwen verspillen warmte, draaien op
+                verouderde installaties of voldoen niet aan de nieuwste eisen.
+                Het gevolg: hogere kosten, minder comfort en een pand dat aan
+                waarde verliest bij verkoop of verhuur. Zonder duidelijk
+                energielabel blijft besparen giswerk, en dat tikt ongemerkt aan.
+              </p>
+              <p>
+                Onze aanpak is persoonlijk, snel en helder — jij weet precies
+                waar je aan toe bent.
+              </p>
+              <Link
+                href="/contact"
+                className="bg-[#81C713] text-white font-semibold text-sm py-2 px-4 rounded-lg w-fit hover:bg-[#518103] transition-all "
+              >
+                Advies aanvragen
+              </Link>
+            </>
+          }
+        />
+
+        <div className="md:mt-10 mt-5 p-1"></div>
+        <ServicesCTA
+          title={
+            <div>
+              <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl ">
+                Toekomstbestendig{" "}
+                <span className="text-[#81C713] ">bouwen </span>
+                begint hier
+              </h1>
+              <p className="text-sm text-[#4D4D4D] md:mt-0 mt-2">
+                Een goed energielabel geeft zekerheid, trots en rust bij
+                oplevering
+              </p>
+            </div>
+          }
+          text={
+            <>
+              <p className="text-sm text-[#4D4D4D] ">
+                Stel u een woning voor die klaar is voor de toekomst —
+                energiezuinig, comfortabel en volledig volgens de BENG-eisen.
+                <br />
+                Met een goed energielabel weet u precies waar u staat: uw
+                nieuwbouw voldoet aan de regelgeving, verbruikt minder energie
+                en behoudt zijn waarde.
+                <br />
+                Geen onzekerheid of uitstel meer, maar zekerheid bij oplevering
+                en trots op het resultaat.
+                <br />
+                Wij zorgen voor een helder traject en een snelle oplevering,
+                zodat u zonder zorgen kunt bouwen aan duurzaam woongenot.
+              </p>
+            </>
+          }
+          img="/assets/blogs/section-img2.png"
+        />
+      </div>
 
       <div className="md:mt-20 mt-15"></div>
 
