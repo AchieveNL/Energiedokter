@@ -14,13 +14,13 @@ export default function ServicesCTA({
 }) {
   return (
     <div
-      className="md:mt-20 mt-10 lg:px-10 px-5 flex md:gap-10 justify-center"
+      className="md:mt-20 mt-10 flex md:gap-10 justify-center"
       style={{
         fontFamily: "Poppins",
         flexDirection: reverse ? "row-reverse" : "row",
       }}
     >
-      <div className="flex flex-col gap-5 md:w-1/2">
+      <div className="flex flex-col gap-5">
         {title}
         {text}
         <Link

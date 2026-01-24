@@ -243,7 +243,7 @@ export default function ContactSection() {
   return (
     <>
       <div
-        className="flex flex-col items-center md:mb-20 mb-10 md:pt-20 pt-15 min-[1280px]:w-4/5 min-[1700px]:w-4/6 min-[2200px]:w-3/5 min-[2500px]:w-1/2 m-auto"
+        className="flex flex-col items-center md:mb-20 mb-10 md:pt-20 pt-15 min-[1024px]:mx-0 min-[1280px]:mx-20 min-[1536px]:mx-32 min-[1760px]:mx-44 m-auto"
         style={{ fontFamily: "Poppins" }}
       >
         <SectionTitle
@@ -262,7 +262,7 @@ export default function ContactSection() {
           denken graag met je mee. Laat je gegevens achter en we nemen zo snel
           mogelijk contact met je op om samen te kijken naar de mogelijkheden
         </p>
-        <div className="md:mt-20 mt-10 w-full md:px-12 lg:px-24 px-3">
+        <div className="md:mt-20 mt-10 w-full lg:px-20 md:px-10 px-3">
           <div className="flex justify-center md:text-base text-sm w-full">
             <div className="w-1/2 md:block hidden">
               <img

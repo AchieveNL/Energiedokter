@@ -28,7 +28,7 @@ export default function ServiceOverview({
         flexDirection: reverse ? "row-reverse" : "row",
         justifyContent: reverse ? "flex-end" : "flex-start",
       }}
-      className="flex min-[768px]:mt-20 mt-10 min-[768px]:mx-24 w-fit min-[1280px]:w-4/5 min-[1280px]:m-auto min-[1280px]:mt-10 min-[1536px]:w-3/4 min-[1700px]:w-4/6 min-[1900px]:w-3/5 min-[2200px]:w-1/2 "
+      className="flex min-[768px]:mt-20 mt-10 w-fit min-[1280px]:mt-10 "
     >
       <div
         style={{

@@ -35,10 +35,10 @@ export default function ServicesStats({ text }: { text: string }) {
   ];
 
   return (
-    <div className="flex flex-col items-center md:mt-0 mt-15">
+    <div className="flex flex-col items-center md:mt-0 mt-15 px-3 min-[768px]:px-15 min-[1280px]:px-24 min-[1536px]:px-44 min-[1760px]:px-60">
       <div
         style={{ fontFamily: "Poppins" }}
-        className="flex lg:flex-row lg:items-center flex-col md:mx-24 px-5 lg:gap-10 gap-3 "
+        className="flex lg:flex-row lg:items-center flex-col lg:gap-10 gap-3 "
       >
         <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl text-nowrap pt-2 ">
           <span className="text-[#81C713]">Waarom</span> <br /> Energie Dokter?
@@ -46,7 +46,7 @@ export default function ServicesStats({ text }: { text: string }) {
         <p className="text-[#4D4D4D] text-sm ">{text}</p>
       </div>
       <div
-        className="bg-[#F6F6F6] grid grid-cols-2 xl:grid-cols-4 items-center justify-center py-2 mt-10 rounded-4xl md:mx-0 mx-2 md:px-0 px-4  gap-x-7 md:gap-x-0 w-fit m-auto"
+        className="bg-[#F6F6F6] grid grid-cols-2 xl:grid-cols-4 items-center justify-center py-2 mt-10 rounded-4xl md:mx-0 mx-2 md:px-0 px-4 gap-x-7 md:gap-x-0 w-full m-auto"
         style={{ fontFamily: "Poppins" }}
       >
         {aboutStatistiques.map((stat, index) => (

@@ -29,7 +29,7 @@ export default function StepPlan({
 
   return (
     <div
-      className="bg-[linear-gradient(to_top,#FFFFFF,#F2F2CA80,#E5F0BFBF,#D0F0E7BF)] md:p-10 p-5"
+      className="bg-[linear-gradient(to_top,#FFFFFF,#F2F2CA80,#E5F0BFBF,#D0F0E7BF)] md:py-10 py-5 px-5 min-[768px]:px-20 min-[1280px]:px-24 min-[1700px]:px-50 min-[2000px]:px-80"
       style={{ fontFamily: "Poppins" }}
     >
       <nav className="flex flex-wrap items-center xl:justify-center gap-2 md:gap-5">

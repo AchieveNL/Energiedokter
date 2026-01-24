@@ -79,7 +79,7 @@ export default function Reviews({ bg = "white" }: { bg?: string }) {
   return (
     <div
       style={{ fontFamily: "Poppins" }}
-      className="flex flex-col items-center overflow-hidden min-[1024px]:mx-0 min-[1280px]:mx-20 min-[1536px]:mx-32 min-[1760px]:mx-44"
+      className="flex flex-col items-center overflow-hidden"
     >
       <SectionTitle
         title="Reviews"
