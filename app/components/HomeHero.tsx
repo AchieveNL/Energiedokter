@@ -22,7 +22,7 @@ export default function HomeHero() {
   }, []);
 
   return (
-    <div className="w-full relative min-h-scree h-fit flex flex-col md:flex-col-reverse ">
+    <div className="w-full relative xl:h-screen h-fit flex flex-col md:flex-col-reverse ">
       <div className="absolute inset-0 -z-10 h-full">
         <AnimatedBg />
       </div>
@@ -38,7 +38,7 @@ export default function HomeHero() {
         <BrandList />
       </div>
 
-      <div className="m-auto md:pt-40 lg:pt-50 pt-32 flex flex-col items-center w-full md:px-10">
+      <div className="m-auto md:pt-40 lg:pt-50 xl:pt-40 pt-32 flex flex-col items-center w-full md:px-10 xl:absolute top-0">
         <h1
           style={{ fontFamily: "Poppins" }}
           className="font-black text-[#254055] md:text-5xl text-2xl text-center mx-5 "
