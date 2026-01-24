@@ -119,7 +119,7 @@ export default function Service1() {
           Een energielabel is niet alleen verplicht, het biedt ook praktische
           voordelen voor uzelf en toekomstige bewoners:
         </p>
-        <div className="md:mt-10 mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-full">
+        <div className="md:mt-10 mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 w-full">
           {data.map((item, index) => (
             <Card key={index} bold={item.bold} normal={item.normal} />
           ))}
