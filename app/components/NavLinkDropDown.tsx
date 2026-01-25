@@ -110,7 +110,7 @@ export default function NavLinkDropdown({
         style={{ fontFamily: "Poppins" }}
         className={`flex items-center gap-1 w-full ${
           active !== text ? "hover:bg-[#82c71324]" : ""
-        } lg:p-2 lg:px-2 p-1 rounded-2xl transition-all duration-200 lg:text-lg
+        } lg:p-2 lg:px-3 p-1 rounded-2xl transition-all duration-200 md:text-lg
       ${
         active === text
           ? "xl:bg-[#81C713] xl:text-white text-[#81C713]"
