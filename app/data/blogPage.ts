@@ -1,4 +1,22 @@
-export const blogPage = [
+interface BlogSection {
+  title?: string;
+  subtitle?: string;
+  text: string;
+}
+
+interface BlogPost {
+  title: string;
+  imgs: string[];
+  sections: BlogSection[];
+  section: {
+    title: string;
+    subtitle: string;
+    paragraphs: string[];
+    img: string;
+  };
+}
+
+export const blogPage: BlogPost[] = [
   {
     title: "Windenergie in je buurt",
     imgs: [
@@ -12,10 +30,12 @@ export const blogPage = [
     sections: [
       {
         title: "Wat is windenergie precies?",
+        subtitle: "Duurzame energie uit natuurlijke kracht",
         text: "Windenergie wordt opgewekt door windturbines die de kracht van de wind omzetten in elektriciteit. Hoe harder het waait, hoe meer energie er wordt opgewekt. Deze elektriciteit gaat rechtstreeks het stroomnet op en kan gebruikt worden door huishoudens en bedrijven in de regio.",
       },
       {
         title: "Wat merk je ervan in je omgeving?",
+        subtitle: "Hoe wind wordt omgezet in elektriciteit",
         text: "Wanneer er windmolens in de buurt staan, kan dat verschillende effecten hebben. Veel mensen zien ze als een teken van verduurzaming, anderen maken zich zorgen over geluid, uitzicht of slagschaduw. In de praktijk zijn moderne windturbines steeds stiller en gelden er strenge regels om overlast te beperken.",
       },
     ],
@@ -47,6 +67,7 @@ export const blogPage = [
       },
       {
         title: "Wat zijn slimme lampen?",
+        subtitle:"Automatische verlichting voor efficiënt energiegebruik",
         text: "Slimme lampen zijn LED-lampen die je kunt bedienen via een app, afstandsbediening of automatische instellingen. Ze kunnen aan- en uitgaan op vaste tijden, dimmen wanneer er minder licht nodig is en zelfs reageren op beweging of daglicht. Zo brandt verlichting alleen wanneer het echt nodig is.",
       },
     ],
@@ -78,6 +99,7 @@ export const blogPage = [
       },
       {
         title: "Wat betekent energiebewust werken?",
+        subtitle:"Slim omgaan met energie op de werkvloer",
         text: "Energiebewust werken betekent bewust omgaan met verlichting, apparatuur en verwarming op de werkvloer. Door energie alleen te gebruiken wanneer het nodig is, wordt verspilling voorkomen en blijft het werkklimaat prettig en efficiënt.",
       },
       {

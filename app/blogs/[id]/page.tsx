@@ -31,7 +31,7 @@ export default async function BlogDetails({
       <ImagesSlider images={blogPage[Number(id) - 1].imgs} />
       <div className="mx-5 md:mx-10 lg:mx-24 xl:mx-40">
         <div
-          className="flex flex-col md:gap-10 gap-5 text-[#4D4D4D] mt-10 "
+          className="flex flex-col gap-5 text-[#4D4D4D] mt-10 "
           style={{ fontFamily: "Poppins" }}
         >
           {blogPage[Number(id) - 1].sections.map((section, index) => (
@@ -39,6 +39,11 @@ export default async function BlogDetails({
               <h1 className="text-[#254055] font-bold text-xl ">
                 {section.title}
               </h1>
+              {section.subtitle && (
+                <p className="text-sm mb-4">
+                  {section.subtitle}
+                </p>
+              )}
               <p className="text-sm">{section.text}</p>
             </div>
           ))}
