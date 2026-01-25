@@ -15,6 +15,7 @@ export default function Nav() {
     if (pathname === "/about-us") return "Over ons";
     if (pathname === "/partners") return "Partners";
     if (pathname === "/projects") return "Projecten";
+    if(pathname.startsWith("/projects")) return "Projecten";
     if (pathname === "/blogs") return "Blogs";
     if (pathname === "/faq") return "FAQ";
     if (pathname === "/contact") return "Contact";
