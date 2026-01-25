@@ -85,12 +85,11 @@ const CarouselSlider = ({
                       </div>
 
                       <div className="mt-8 md:mt-0 flex justify-between">
-                        <Link
-                          href={card.id}
+                        <div
                           className="hover:underline text-[#81C713] md:text-base text-sm"
                         >
                           Lees meer
-                        </Link>
+                        </div>
                         {card.date ? (
                           <span className="text-[#4D4D4D] md:text-base text-sm">
                             {card.date}
