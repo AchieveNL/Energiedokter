@@ -29,71 +29,67 @@ export default function Service3() {
         text="Voldoe aan de wettelijke informatieplicht voor energiebesparing zonder gedoe. Wij helpen u met de juiste rapportage, begeleiding en registratie zodat u volledig compliant bent met de RVO-eisen."
       />
       <div id="section1" className="py-2"></div>
-      <ServicesCTA
-        reverse={true}
-        title={
-          <div>
-            <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl ">
-              De <span className="text-[#81C713] ">waarde </span>
-              van informatieplicht
-            </h1>
-          </div>
-        }
-        text={
-          <>
-            <p className="text-sm text-[#4D4D4D] ">
-              De informatieplicht energiebesparing verplicht bedrijven en
-              vastgoedeigenaren om inzicht te geven in het energieverbruik van
-              hun pand en de mogelijkheden om dit te verminderen. Dit geldt voor
-              gebouwen van 50 m² of groter en is onderdeel van de wettelijke
-              verplichtingen om energieverspilling tegen te gaan.
-            </p>
-            <p className="text-sm text-[#4D4D4D] ">
-              Bij Energie Dokter ondersteunen we u volledig bij het in kaart
-              brengen van de energieprestatie van uw gebouwen. Onze experts
-              inventariseren het verbruik, analyseren technische installaties en
-              adviseren over haalbare besparingsmaatregelen. Zo krijgt u een
-              compleet overzicht dat voldoet aan de wettelijke eisen en
-              tegelijkertijd praktisch bruikbaar is voor uw organisatie.
-            </p>
-          </>
-        }
-        img="/assets/blogs/section-img3.png"
-      />
+      <div className="px-5 min-[768px]:px-20 min-[1280px]:px-24 min-[1700px]:px-50 min-[2000px]:px-80">
+        <ServicesCTA
+          reverse={true}
+          title={
+            <div>
+              <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl ">
+                De <span className="text-[#81C713] ">waarde </span>
+                van informatieplicht
+              </h1>
+            </div>
+          }
+          text={
+            <>
+              <p className="text-sm text-[#4D4D4D] ">
+                De informatieplicht energiebesparing verplicht bedrijven en
+                vastgoedeigenaren om inzicht te geven in het energieverbruik van
+                hun pand en de mogelijkheden om dit te verminderen. Dit geldt
+                voor gebouwen van 50 m² of groter en is onderdeel van de
+                wettelijke verplichtingen om energieverspilling tegen te gaan.
+              </p>
+              <p className="text-sm text-[#4D4D4D] ">
+                Bij Energie Dokter ondersteunen we u volledig bij het in kaart
+                brengen van de energieprestatie van uw gebouwen. Onze experts
+                inventariseren het verbruik, analyseren technische installaties
+                en adviseren over haalbare besparingsmaatregelen. Zo krijgt u
+                een compleet overzicht dat voldoet aan de wettelijke eisen en
+                tegelijkertijd praktisch bruikbaar is voor uw organisatie.
+              </p>
+            </>
+          }
+          img="/assets/blogs/section-img3.png"
+        />
 
-      <div className="md:mt-10 mt-5 p-1"></div>
-      <ServiceOverview
-        title={
-          <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
-            <span className="flex gap-1">
-              De <span className="text-[#81C713]">risico's </span>van het
-              negeren <span className="md:block hidden">van</span>
-            </span>
-            <span className="flex gap-1">
-              <span className="md:hidden block">van </span>
-              <span> de informatieplicht</span>
-            </span>
-          </h1>
-        }
-        img="/assets/services/img6.webp"
-        spans={
-          <>
-            <p>
-              Wanneer de informatieplicht niet correct wordt nageleefd, mist u
-              overzicht en grip op het energieverbruik van uw pand. Dit kan
-              leiden tot onnodige kosten, omdat u geen inzicht heeft in waar
-              energiebesparingen mogelijk zijn. Daarnaast loopt u het risico op
-              boetes of andere sancties door niet-naleving van de wetgeving. Het
-              gebrek aan duidelijke registratie kan ook uw imago aantasten:
-              huurders, kopers of investeerders zien mogelijk een gebrek aan
-              transparantie en duurzaamheid. Zonder een gestructureerde,
-              persoonlijke en heldere aanpak blijft u onzeker over uw
-              verplichtingen en blijft het volledige potentieel van uw gebouw
-              onbenut.
-            </p>
-          </>
-        }
-      />
+        <div className="md:mt-10 mt-5 p-1"></div>
+        <ServiceOverview
+          title={
+            <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055]">
+              De <span className="text-[#81C713]">risico's</span> van het
+              negeren van de informatieplicht
+            </h1>
+          }
+          img="/assets/services/img6.webp"
+          spans={
+            <>
+              <p>
+                Wanneer de informatieplicht niet correct wordt nageleefd, mist u
+                overzicht en grip op het energieverbruik van uw pand. Dit kan
+                leiden tot onnodige kosten, omdat u geen inzicht heeft in waar
+                energiebesparingen mogelijk zijn. Daarnaast loopt u het risico
+                op boetes of andere sancties door niet-naleving van de
+                wetgeving. Het gebrek aan duidelijke registratie kan ook uw
+                imago aantasten: huurders, kopers of investeerders zien mogelijk
+                een gebrek aan transparantie en duurzaamheid. Zonder een
+                gestructureerde, persoonlijke en heldere aanpak blijft u onzeker
+                over uw verplichtingen en blijft het volledige potentieel van uw
+                gebouw onbenut.
+              </p>
+            </>
+          }
+        />
+      </div>
 
       <div className="md:mt-20 mt-15"></div>
 

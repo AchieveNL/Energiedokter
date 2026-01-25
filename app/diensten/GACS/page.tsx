@@ -29,75 +29,81 @@ export default function Service4() {
         text="Met GACS (Gebouw Automatisering en Controle Systemen) optimaliseren wij de prestaties van uw gebouw. Zo krijgt u grip op energieverbruik, comfort en wettelijke verplichtingen — volledig inzichtelijk, volledig onder controle."
       />
       <div id="section1" className="py-2"></div>
-      <ServiceOverview
-        title={
-          <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
-            <span>
-              Wat is<span className="text-[#81C713]"> GACS? </span>
-            </span>
-          </h1>
-        }
-        img="/assets/services/img3.webp"
-        spans={
-          <>
-            <p>
-              Gebouw Automatisering en Controle Systemen (GACS) zijn slimme
-              systemen die het functioneren van een gebouw monitoren, aansturen
-              en optimaliseren. Denk aan het automatisch regelen van verwarming,
-              koeling, ventilatie, verlichting en de binnenmilieukwaliteit
-            </p>
-            <p>
-              Met GACS kun je als gebouweigenaar of -beheerder kosten besparen,
-              het comfort verbeteren, energieverbruik verlagen en je vastgoed
-              toekomstbestendig maken. Bovendien speelt GACS een belangrijke rol
-              in het behalen van duurzaamheidsdoelstellingen.
-            </p>
-            <p>
-              De noodzaak groeit: vanaf 2026 moeten gebouwen voldoen aan de
-              Europese EPBD-eisen, waaronder verplichte monitoring en de Smart
-              Readiness Indicator (SRI). GACS is daarmee niet alleen een slimme
-              keuze, maar in veel gevallen ook een wettelijke verplichting.
-            </p>
-          </>
-        }
-      />
-      <div className="md:mt-10 mt-5 p-1"></div>
-
-      <ServicesCTA
-        reverse={true}
-        title={
-          <div>
-            <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl flex flex-col  ">
-              <span className="flex gap-1">
-                De grootste <span className="text-[#81C713] ">valkuilen </span>{" "}
-                <span className="xl:block hidden">zonder</span>
-              </span>
-              <span className="flex gap-1">
-                <span className="xl:hidden block">zonder</span>
-                <span>goed GACS-beheer</span>
+      <div className="px-5 min-[768px]:px-20 min-[1280px]:px-24 min-[1700px]:px-50 min-[2000px]:px-80">
+        <ServiceOverview
+          title={
+            <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
+              <span>
+                Wat is<span className="text-[#81C713]"> GACS? </span>
               </span>
             </h1>
-          </div>
-        }
-        text={
-          <>
-            <p className="text-sm text-[#4D4D4D] ">
-              Veel organisaties zien dat hun gebouwtechniek niet optimaal
-              functioneert, maar hebben geen compleet inzicht in wat er misgaat.
-              Zonder een goed ingericht GACS ontstaan er problemen zoals een te
-              hoog energieverbruik, slechte luchtkwaliteit of comfortklachten.
-            </p>
-            <p className="text-sm text-[#4D4D4D] ">
-              Daarnaast blijkt vaak dat systemen niet goed op elkaar zijn
-              afgestemd, data niet wordt gemonitord of instellingen jarenlang
-              niet zijn geoptimaliseerd. Dit leidt tot onnodige kosten,
-              inefficiënte installaties en risico's rondom niet voldoen aan wet-
-              en regelgeving, zoals de EPBD-verplichtingen.
-            </p>
-          </>
-        }
-        img="/assets/blogs/section-img4.png"
-      />
+          }
+          img="/assets/services/img3.webp"
+          spans={
+            <>
+              <p>
+                Gebouw Automatisering en Controle Systemen (GACS) zijn slimme
+                systemen die het functioneren van een gebouw monitoren,
+                aansturen en optimaliseren. Denk aan het automatisch regelen van
+                verwarming, koeling, ventilatie, verlichting en de
+                binnenmilieukwaliteit
+              </p>
+              <p>
+                Met GACS kun je als gebouweigenaar of -beheerder kosten
+                besparen, het comfort verbeteren, energieverbruik verlagen en je
+                vastgoed toekomstbestendig maken. Bovendien speelt GACS een
+                belangrijke rol in het behalen van duurzaamheidsdoelstellingen.
+              </p>
+              <p>
+                De noodzaak groeit: vanaf 2026 moeten gebouwen voldoen aan de
+                Europese EPBD-eisen, waaronder verplichte monitoring en de Smart
+                Readiness Indicator (SRI). GACS is daarmee niet alleen een
+                slimme keuze, maar in veel gevallen ook een wettelijke
+                verplichting.
+              </p>
+            </>
+          }
+        />
+        <div className="md:mt-10 mt-5 p-1"></div>
+
+        <ServicesCTA
+          reverse={true}
+          title={
+            <div>
+              <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl flex flex-col  ">
+                <span className="flex gap-1">
+                  De grootste{" "}
+                  <span className="text-[#81C713] ">valkuilen </span>{" "}
+                  <span className="xl:block hidden">zonder</span>
+                </span>
+                <span className="flex gap-1">
+                  <span className="xl:hidden block">zonder</span>
+                  <span>goed GACS-beheer</span>
+                </span>
+              </h1>
+            </div>
+          }
+          text={
+            <>
+              <p className="text-sm text-[#4D4D4D] ">
+                Veel organisaties zien dat hun gebouwtechniek niet optimaal
+                functioneert, maar hebben geen compleet inzicht in wat er
+                misgaat. Zonder een goed ingericht GACS ontstaan er problemen
+                zoals een te hoog energieverbruik, slechte luchtkwaliteit of
+                comfortklachten.
+              </p>
+              <p className="text-sm text-[#4D4D4D] ">
+                Daarnaast blijkt vaak dat systemen niet goed op elkaar zijn
+                afgestemd, data niet wordt gemonitord of instellingen jarenlang
+                niet zijn geoptimaliseerd. Dit leidt tot onnodige kosten,
+                inefficiënte installaties en risico's rondom niet voldoen aan
+                wet- en regelgeving, zoals de EPBD-verplichtingen.
+              </p>
+            </>
+          }
+          img="/assets/blogs/section-img4.png"
+        />
+      </div>
       <div className="mt-20"></div>
 
       <div

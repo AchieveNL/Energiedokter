@@ -28,38 +28,41 @@ export default function Service6() {
         text="Vergroot uw kennis over energieprestaties, regelgeving en duurzaamheid met onze praktijkgerichte trainingen. Energie Dokter biedt heldere opleidingen voor professionals die up-to-date willen blijven in een veranderende energiemarkt."
       />
       <div id="section1" className="py-2"></div>
-      <ServiceOverview
-        title={
-          <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
-            <span>
-              Wat zijn onze<span className="text-[#81C713]"> trainingen? </span>
-            </span>
-          </h1>
-        }
-        img="/assets/services/img5.webp"
-        spans={
-          <>
-            <p>
-              Bij Energie Dokter bieden we praktijkgerichte trainingen op het
-              gebied van energieadvies, duurzaam bouwen en energielabels. Ze
-              zijn geschikt voor professionals, bedrijven en particulieren die
-              hun kennis willen vergroten en direct toepasbare vaardigheden
-              willen ontwikkelen.
-            </p>
-            <p>
-              Onze trainingen zijn alles behalve droge ‘zendverhalen’. Door goed
-              in te schatten wat een groep nodig heeft, houden we de aandacht
-              vast en creëren we een levendige, dynamische sfeer. We combineren
-              theorie met praktijk en zorgen dat deelnemers actief meedoen,
-              oefenen en meteen toepassen wat ze leren.
-            </p>
-            <p>
-              Onze aanpak is persoonlijk, snel en helder — jij weet precies waar
-              je aan toe bent.
-            </p>
-          </>
-        }
-      />
+      <div className="px-5 min-[768px]:px-20 min-[1280px]:px-24 min-[1700px]:px-50 min-[2000px]:px-80">
+        <ServiceOverview
+          title={
+            <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
+              <span>
+                Wat zijn onze
+                <span className="text-[#81C713]"> trainingen? </span>
+              </span>
+            </h1>
+          }
+          img="/assets/services/img5.webp"
+          spans={
+            <>
+              <p>
+                Bij Energie Dokter bieden we praktijkgerichte trainingen op het
+                gebied van energieadvies, duurzaam bouwen en energielabels. Ze
+                zijn geschikt voor professionals, bedrijven en particulieren die
+                hun kennis willen vergroten en direct toepasbare vaardigheden
+                willen ontwikkelen.
+              </p>
+              <p>
+                Onze trainingen zijn alles behalve droge ‘zendverhalen’. Door
+                goed in te schatten wat een groep nodig heeft, houden we de
+                aandacht vast en creëren we een levendige, dynamische sfeer. We
+                combineren theorie met praktijk en zorgen dat deelnemers actief
+                meedoen, oefenen en meteen toepassen wat ze leren.
+              </p>
+              <p>
+                Onze aanpak is persoonlijk, snel en helder — jij weet precies
+                waar je aan toe bent.
+              </p>
+            </>
+          }
+        />
+      </div>
 
       <div className="md:mt-20 mt-10 p-1"></div>
 
@@ -98,41 +101,45 @@ export default function Service6() {
         />
       </div>
       <div className="md:mt-25 mt-20"></div>
-      <ServicesCTA
-        reverse={true}
-        title={
-          <div>
-            <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl flex flex-col  ">
-              <span className="flex gap-1">
-                Zo haalt uw team het
-                <span className="text-[#81C713] xl:block hidden">maximale</span>
-              </span>
-              <span className="text-nowrap">
-                <span className="text-[#81C713] xl:hidden block">
-                  maximale <span className="text-[#254055]">uit</span>
+      <div className="px-5 min-[768px]:px-20 min-[1280px]:px-24 min-[1700px]:px-50 min-[2000px]:px-80">
+        <ServicesCTA
+          reverse={true}
+          title={
+            <div>
+              <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl flex flex-col  ">
+                <span className="flex gap-1">
+                  Zo haalt uw team het
+                  <span className="text-[#81C713] xl:block hidden">
+                    maximale
+                  </span>
                 </span>
-                <span className="xl:inline hidden">uit </span>energiebeheer
-              </span>
-            </h1>
-          </div>
-        }
-        text={
-          <>
-            <p className="text-sm text-[#4D4D4D] ">
-              Met de juiste training beschikken uw medewerkers en opdrachtgevers
-              over de kennis en vaardigheden om gebouwen energiezuinig en
-              duurzaam te beheren. Ze herkennen energiebesparende maatregelen,
-              optimaliseren processen en nemen geïnformeerde beslissingen. Dit
-              leidt tot lagere kosten, hogere efficiëntie en een duurzaam
-              resultaat dat direct waarde toevoegt aan uw organisatie of
-              project. Goed opgeleide teams werken met vertrouwen, voorkomen
-              fouten en zorgen dat uw energie- en duurzaamheidsdoelen
-              daadwerkelijk worden bereikt.
-            </p>
-          </>
-        }
-        img="/assets/blogs/section-img5.png"
-      />
+                <span className="text-nowrap">
+                  <span className="text-[#81C713] xl:hidden block">
+                    maximale <span className="text-[#254055]">uit</span>
+                  </span>
+                  <span className="xl:inline hidden">uit </span>energiebeheer
+                </span>
+              </h1>
+            </div>
+          }
+          text={
+            <>
+              <p className="text-sm text-[#4D4D4D] ">
+                Met de juiste training beschikken uw medewerkers en
+                opdrachtgevers over de kennis en vaardigheden om gebouwen
+                energiezuinig en duurzaam te beheren. Ze herkennen
+                energiebesparende maatregelen, optimaliseren processen en nemen
+                geïnformeerde beslissingen. Dit leidt tot lagere kosten, hogere
+                efficiëntie en een duurzaam resultaat dat direct waarde toevoegt
+                aan uw organisatie of project. Goed opgeleide teams werken met
+                vertrouwen, voorkomen fouten en zorgen dat uw energie- en
+                duurzaamheidsdoelen daadwerkelijk worden bereikt.
+              </p>
+            </>
+          }
+          img="/assets/blogs/section-img5.png"
+        />
+      </div>
 
       <div className="md:mt-20 mt-15"></div>
 

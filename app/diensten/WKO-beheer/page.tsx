@@ -113,36 +113,38 @@ export default function Service5() {
         </div>
       </div>
       <div id="section1" className="py-2"></div>
-      <ServiceOverview
-        title={
-          <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
-            <span>
-              Wat is<span className="text-[#81C713]"> WKO-beheer? </span>
-            </span>
-          </h1>
-        }
-        img="/assets/services/img4.svg"
-        spans={
-          <>
-            <p>
-              Een bodemenergiesysteem, ook wel WKO-systeem (Warmte Koude Opslag)
-              genoemd, is een duurzame installatie die warmte en koude opslaat
-              in de bodem. Warmte die in de zomer wordt geoogst, kan in de
-              winter worden gebruikt om een gebouw te verwarmen. Omgekeerd kan
-              koude die in de winter is opgeslagen in de zomer worden ingezet
-              voor koeling.
-            </p>
-            <p>
-              Goed WKO-beheer is essentieel om het systeem efficiënt,
-              betrouwbaar en toekomstbestendig te laten werken. Bij Energie
-              Dokter zorgen we dat uw WKO optimaal presteert door monitoring,
-              onderhoud en advies op maat te combineren. Zo blijft uw gebouw
-              comfortabel en energiezuinig, terwijl u profiteert van maximale
-              besparingen.
-            </p>
-          </>
-        }
-      />
+      <div className="px-5 min-[768px]:px-20 min-[1280px]:px-24 min-[1700px]:px-50 min-[2000px]:px-80">
+        <ServiceOverview
+          title={
+            <h1 className="md:text-3xl text-2xl font-extrabold text-[#254055] flex flex-col ">
+              <span>
+                Wat is<span className="text-[#81C713]"> WKO-beheer? </span>
+              </span>
+            </h1>
+          }
+          img="/assets/services/img4.svg"
+          spans={
+            <>
+              <p>
+                Een bodemenergiesysteem, ook wel WKO-systeem (Warmte Koude
+                Opslag) genoemd, is een duurzame installatie die warmte en koude
+                opslaat in de bodem. Warmte die in de zomer wordt geoogst, kan
+                in de winter worden gebruikt om een gebouw te verwarmen.
+                Omgekeerd kan koude die in de winter is opgeslagen in de zomer
+                worden ingezet voor koeling.
+              </p>
+              <p>
+                Goed WKO-beheer is essentieel om het systeem efficiënt,
+                betrouwbaar en toekomstbestendig te laten werken. Bij Energie
+                Dokter zorgen we dat uw WKO optimaal presteert door monitoring,
+                onderhoud en advies op maat te combineren. Zo blijft uw gebouw
+                comfortabel en energiezuinig, terwijl u profiteert van maximale
+                besparingen.
+              </p>
+            </>
+          }
+        />
+      </div>
       <div className="md:mt-20 mt-10"></div>
       <div
         style={{ fontFamily: "Poppins" }}
@@ -183,39 +185,41 @@ export default function Service5() {
         />
       </div>
       <div className="mt-20"></div>
-
-      <ServicesCTA
-        reverse={true}
-        title={
-          <div>
-            <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl  flex flex-col  ">
-              <span className="">
-                Haal <span className="text-[#81C713] ">maximaal </span>
-                rendement
-              </span>
-              <span className="text-nowrap">uit uw WKO-installatie</span>
-            </h1>
-          </div>
-        }
-        text={
-          <>
-            <p className="text-sm text-[#4D4D4D] ">
-              Met professioneel WKO-beheer haalt u juist het maximale uit uw
-              installatie. Uw systeem werkt efficiënter, energiekosten blijven
-              laag, het binnenklimaat is stabiel en comfortabel en de levensduur
-              van de installatie wordt verlengd. Door periodieke analyses,
-              optimalisaties en real-time monitoring zien we precies waar
-              verbeteringen mogelijk zijn, zodat u gericht kunt investeren en
-              kunt genieten van optimale prestaties, rust en zekerheid.
-            </p>
-            <p className="text-sm text-[#4D4D4D] ">
-              Onze aanpak is persoonlijk, snel en helder, zodat u altijd weet
-              waar u aan toe bent.
-            </p>
-          </>
-        }
-        img="/assets/blogs/section-img5.png"
-      />
+      <div className="px-5 min-[768px]:px-20 min-[1280px]:px-24 min-[1700px]:px-50 min-[2000px]:px-80">
+        <ServicesCTA
+          reverse={true}
+          title={
+            <div>
+              <h1 className="text-[#254055] font-extrabold md:text-3xl text-2xl  flex flex-col  ">
+                <span className="">
+                  Haal <span className="text-[#81C713] ">maximaal </span>
+                  rendement
+                </span>
+                <span className="text-nowrap">uit uw WKO-installatie</span>
+              </h1>
+            </div>
+          }
+          text={
+            <>
+              <p className="text-sm text-[#4D4D4D] ">
+                Met professioneel WKO-beheer haalt u juist het maximale uit uw
+                installatie. Uw systeem werkt efficiënter, energiekosten blijven
+                laag, het binnenklimaat is stabiel en comfortabel en de
+                levensduur van de installatie wordt verlengd. Door periodieke
+                analyses, optimalisaties en real-time monitoring zien we precies
+                waar verbeteringen mogelijk zijn, zodat u gericht kunt
+                investeren en kunt genieten van optimale prestaties, rust en
+                zekerheid.
+              </p>
+              <p className="text-sm text-[#4D4D4D] ">
+                Onze aanpak is persoonlijk, snel en helder, zodat u altijd weet
+                waar u aan toe bent.
+              </p>
+            </>
+          }
+          img="/assets/blogs/section-img5.png"
+        />
+      </div>
 
       <div className="mt-20"></div>
       <div className="md:mt-20 mt-15"></div>
