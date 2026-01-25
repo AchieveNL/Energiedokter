@@ -11,7 +11,7 @@ import ServicesCTA from "@/app/components/ServicesCTA";
 import ServicesStats from "@/app/components/ServicesStats";
 import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
-import animationData from "@/public/assets/animations/faq.json";
+import animationData from "@/public/assets/animations/nieuwbouw.json";
 import AnimatedBg from "@/app/components/AnimatedBg";
 
 export default function Service2() {

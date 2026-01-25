@@ -8,7 +8,7 @@ import Reviews from "../components/Reviews";
 import Faq from "../components/Faq";
 import Projects from "../components/Projects";
 import Hero from "../components/Hero";
-import animationData from "@/public/assets/animations/faq.json";
+import animationData from "@/public/assets/animations/over ons.json";
 import AnimatedBg from "../components/AnimatedBg";
 
 export default function AboutPage() {

@@ -7,7 +7,7 @@ import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import DienstenSection from "../components/DienstenSection";
 import AnimatedBg from "../components/AnimatedBg";
-import animationData from "@/public/assets/animations/faq.json";
+import animationData from "@/public/assets/animations/partners.json";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import { useEffect, useRef } from "react";
 
@@ -33,7 +33,7 @@ export default function Partners() {
   return (
     <>
       <div
-        className="flex flex-col items-center gap-3 relative "
+        className="flex flex-col items-center gap-3 relative md:mb-10 mb-5 "
         style={{ fontFamily: "Poppins" }}
       >
         <div className="absolute inset-0 -z-10 h-full">

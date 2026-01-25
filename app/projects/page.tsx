@@ -9,7 +9,7 @@ import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import { cards } from "../data/projects";
-import animationData from "@/public/assets/animations/faq.json";
+import animationData from "@/public/assets/animations/projecten.json";
 import AnimatedBg from "../components/AnimatedBg";
 
 export default function ProjectsPage() {
