@@ -33,15 +33,28 @@ export default async function BlogDetails({
 
       <div className="mx-5 md:mx-10 lg:mx-24 xl:mx-40 m-auto">
         <div
-          className="flex flex-col md:gap-10 gap-5 text-[#4D4D4D] mt-10 w-full "
+          className="flex flex-col md:gap-10 gap-5 text-[#4D4D4D] mt-10 w-full"
           style={{ fontFamily: "Poppins" }}
         >
           {projectPage[Number(id) - 1].sections.map((section, index) => (
             <div key={index}>
-              <h1 className="text-[#254055] font-bold md:text-2xl text-xl ">
+              <h1 className="text-[#254055] font-bold md:text-2xl text-xl">
                 {section.title}
               </h1>
-              <p className="text-sm">{section.text}</p>
+              {section.subtitle && (
+                <p className="text-sm">{section.subtitle}</p>
+              )}
+
+              {/* Handle both string and array */}
+              {Array.isArray(section.text) ? (
+                section.text.map((text, textIndex) => (
+                  <p key={textIndex} className="text-sm mt-4">
+                    {text}
+                  </p>
+                ))
+              ) : (
+                <p className="text-sm mt-4">{section.text}</p>
+              )}
             </div>
           ))}
         </div>
@@ -59,12 +72,27 @@ export default async function BlogDetails({
                 {projectPage[Number(id) - 1].section.subtitle}
               </p>
             </div>
-            {projectPage[Number(id) - 1].section.paragraphs.map(
-              (paragraph, index) => (
-                <p key={index} className="text-sm text-[#4D4D4D] ">
-                  {paragraph}
-                </p>
-              ),
+            {id != "2" ? (
+              projectPage[Number(id) - 1].section.paragraphs.map(
+                (paragraph, index) => (
+                  <p key={index} className="text-sm text-[#4D4D4D] ">
+                    {paragraph}
+                  </p>
+                ),
+              )
+            ) : (
+              <div>
+                {projectPage[Number(id) - 1].section.paragraphs.map(
+                  (paragraph, index) => (
+                    <div key={index} className="flex items-center gap-2">
+                      <div className="bg-[#4D4D4D] size-1 rounded-full"></div>
+                      <p className="text-sm text-[#4D4D4D] ">
+                        {paragraph}
+                      </p>
+                    </div>
+                  ),
+                )}
+              </div>
             )}
           </div>
           <img
