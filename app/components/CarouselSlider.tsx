@@ -1,4 +1,3 @@
-
 import React, { useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
@@ -23,7 +22,7 @@ const CarouselSlider = ({
       skipSnaps: false,
       containScroll: "trimSnaps",
     },
-    [Autoplay({ delay: 5000, stopOnInteraction: false })]
+    [Autoplay({ delay: 5000, stopOnInteraction: false })],
   );
 
   const [selectedIndex, setSelectedIndex] = React.useState(0);
@@ -59,7 +58,8 @@ const CarouselSlider = ({
                     minWidth: 0,
                   }}
                 >
-                  <div
+                  <Link
+                    href={card.id}
                     className={`
                       relative rounded-xl overflow-hidden border border-[#E3E3E3] bg-[#F9F9F9] hover:bg-[#F0F8E2] transition-all duration-500 ease-out w-full flex flex-col
                       ${isActive ? "scale-95" : "scale-90 opacity-90"}
@@ -97,8 +97,9 @@ const CarouselSlider = ({
                           </span>
                         ) : null}
                       </div>
+                      {/* </div> */}
                     </div>
-                  </div>
+                  </Link>
                 </div>
               );
             })}
