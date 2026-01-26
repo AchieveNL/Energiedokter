@@ -96,7 +96,8 @@ export default function StepPlan({
       className="relative overflow-hidden bg-[linear-gradient(to_top,#FFFFFF,#F2F2CA80,#E5F0BFBF,#D0F0E7BF)] md:py-10 py-5 px-5 min-[768px]:px-20 min-[1280px]:px-24 min-[1700px]:px-50 min-[2000px]:px-80"
       style={{ fontFamily: "Poppins" }}
     >
-      <div className="absolute bottom-0 left-0 right-0 w-full flex items-end">
+      {/* Layer 2: Lottie Animation */}
+      <div className="absolute bottom-0 left-0 right-0 w-full flex items-end z-10">
         <Lottie
           lottieRef={LottieRef}
           animationData={animationData}
@@ -105,15 +106,19 @@ export default function StepPlan({
           style={{ width: "100%", height: "auto" }}
         />
       </div>
-      <nav className="flex flex-wrap items-center xl:justify-center gap-2 md:gap-5 relative z-10">
-        <NavLink text="Onze aanpak" />
-        <NavLink text="Energielabels" />
-        <NavLink text="GACS" />
-        <NavLink text="Informatieplicht" />
-        <NavLink text="WKO-beheer" />
-        <NavLink text="Trainingen" />
-      </nav>
-      <Plan active={active} />
+
+      {/* Layer 3: Content (Nav + Plan) */}
+      <div className="relative z-20">
+        <nav className="flex flex-wrap items-center xl:justify-center gap-2 md:gap-5">
+          <NavLink text="Onze aanpak" />
+          <NavLink text="Energielabels" />
+          <NavLink text="GACS" />
+          <NavLink text="Informatieplicht" />
+          <NavLink text="WKO-beheer" />
+          <NavLink text="Trainingen" />
+        </nav>
+        <Plan active={active} />
+      </div>
     </div>
   );
 }
