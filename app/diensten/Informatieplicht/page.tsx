@@ -1,3 +1,4 @@
+"use client";
 import AboutSection from "@/app/components/AboutSection";
 import Contact from "@/app/components/Contact";
 import ContactSection from "@/app/components/ContactSection";
@@ -11,10 +12,14 @@ import ServicesCTA from "@/app/components/ServicesCTA";
 import ServicesStats from "@/app/components/ServicesStats";
 import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
-import animationData from "@/public/assets/animations/informatieplicht.json";
+import animationData from "@/public/assets/animations/arrows.json";
 import AnimatedBg from "@/app/components/AnimatedBg";
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
+import { useRef } from "react";
 
 export default function Service3() {
+  const lottieDesktopRef = useRef<LottieRefCurrentProps>(null);
+
   return (
     <>
       <Hero
@@ -119,14 +124,15 @@ export default function Service3() {
         >
           Advies aanvragen
         </Link>
-        <img
-          src="/assets/services/arrow1.svg"
-          className="md:w-40 w-20 absolute bottom-10 left-0 -z-10"
-        />
-        <img
-          src="/assets/services/arrow2.svg"
-          className="md:w-40 w-20 absolute top-10 right-0 -z-10"
-        />
+        <div className="w-full absolute -z-10">
+          <Lottie
+            lottieRef={lottieDesktopRef}
+            animationData={animationData}
+            loop
+            autoplay
+            style={{ width: "100%", height: "auto" }}
+          />
+        </div>
       </div>
 
       <div className="md:mt-20 mt-15"></div>

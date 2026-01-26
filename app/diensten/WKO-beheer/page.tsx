@@ -12,6 +12,7 @@ import ServicesStats from "@/app/components/ServicesStats";
 import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
 import animationData from "@/public/assets/animations/wko.json";
+import animationData1 from "@/public/assets/animations/gares.json";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import { useEffect, useRef } from "react";
 import AnimatedBg from "@/app/components/AnimatedBg";
@@ -176,14 +177,15 @@ export default function Service5() {
         >
           Advies aanvragen
         </Link>
-        <img
-          src="/assets/services/icon4.svg"
-          className="md:w-32 w-20 absolute top-0 left-0 -z-10"
-        />
-        <img
-          src="/assets/services/icon3.svg"
-          className="md:w-20 w-10 absolute bottom-0 right-0 -z-10"
-        />
+        <div className="w-full absolute -z-10">
+          <Lottie
+            lottieRef={lottieDesktopRef}
+            animationData={animationData1}
+            loop
+            autoplay
+            style={{ width: "100%", height: "auto" }}
+          />
+        </div>
       </div>
       <div className="mt-20"></div>
       <div className="px-5 min-[768px]:px-20 min-[1280px]:px-24 min-[1700px]:px-50 min-[2000px]:px-80">

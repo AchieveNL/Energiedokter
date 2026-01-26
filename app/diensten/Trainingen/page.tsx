@@ -1,3 +1,4 @@
+"use client";
 import AboutSection from "@/app/components/AboutSection";
 import Contact from "@/app/components/Contact";
 import ContactSection from "@/app/components/ContactSection";
@@ -11,9 +12,14 @@ import ServicesCTA from "@/app/components/ServicesCTA";
 import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
 import animationData from "@/public/assets/animations/trainingen.json";
+import animationData1 from "@/public/assets/animations/clouds.json";
 import AnimatedBg from "@/app/components/AnimatedBg";
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
+import { useRef } from "react";
 
 export default function Service6() {
+  const lottieDesktopRef = useRef<LottieRefCurrentProps>(null);
+
   return (
     <>
       <Hero
@@ -92,14 +98,15 @@ export default function Service6() {
         >
           Advies aanvragen
         </Link>
-        <img
-          src="/assets/services/icon6.svg"
-          className="md:w-60 w-40 absolute md:top-0 bottom-0 md:translate-y-1 -translate-y-1/2 left-0 -z-10"
-        />
-        <img
-          src="/assets/services/icon7.svg"
-          className="md:w-28 w-20 absolute md:top-0 top-10 md:right-10 right-5 -z-10"
-        />
+        <div className="w-full absolute -z-10">
+          <Lottie
+            lottieRef={lottieDesktopRef}
+            animationData={animationData1}
+            loop
+            autoplay
+            style={{ width: "100%", height: "auto" }}
+          />
+        </div>
       </div>
       <div className="md:mt-25 mt-20"></div>
       <div className="px-5 min-[768px]:px-20 min-[1280px]:px-24 min-[1700px]:px-50 min-[2000px]:px-80">
