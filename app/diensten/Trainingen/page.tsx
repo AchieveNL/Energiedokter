@@ -10,13 +10,14 @@ import ServiceOverview from "@/app/components/ServiceOverview";
 import ServicesCTA from "@/app/components/ServicesCTA";
 import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
-import animationData from "@/public/assets/animations/faq.json";
+import animationData from "@/public/assets/animations/trainingen.json";
 import AnimatedBg from "@/app/components/AnimatedBg";
 
 export default function Service6() {
   return (
     <>
       <Hero
+        heroStyle="50px"
         animationData={animationData}
         desktopSectionId="section1"
         title="Diensten"

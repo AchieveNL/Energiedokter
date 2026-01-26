@@ -18,6 +18,7 @@ export default function Service3() {
   return (
     <>
       <Hero
+        heroStyle="90px"
         animationData={animationData}
         desktopSectionId="section1"
         title="Diensten"

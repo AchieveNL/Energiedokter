@@ -11,7 +11,7 @@ import ServicesCTA from "@/app/components/ServicesCTA";
 import ServicesStats from "@/app/components/ServicesStats";
 import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
-import animationData from "@/public/assets/animations/faq.json";
+import animationData from "@/public/assets/animations/wko.json";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import { useEffect, useRef } from "react";
 import AnimatedBg from "@/app/components/AnimatedBg";
@@ -38,7 +38,7 @@ export default function Service5() {
   return (
     <>
       <div
-        className="flex flex-col items-center gap-3 relative "
+        className="flex flex-col items-center gap-3 relative"
         style={{ fontFamily: "Poppins" }}
       >
         <div className="absolute inset-0 -z-10 h-full">
@@ -110,6 +110,7 @@ export default function Service5() {
             autoplay
             style={{ width: "100%", height: "auto" }}
           />
+          <div className="bg-white p-1 w-full absolute -bottom-1.5"></div>
         </div>
       </div>
       <div id="section1" className="py-2"></div>
