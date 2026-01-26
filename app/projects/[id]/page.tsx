@@ -4,7 +4,7 @@ import Hero from "@/app/components/Hero";
 import ImagesSlider from "@/app/components/ImagesSlider";
 import Projects from "@/app/components/Projects";
 import { projectPage } from "@/app/data/projectPage";
-import animationData from "@/public/assets/animations/faq.json";
+import animationData from "@/public/assets/animations/projecten.json";
 
 export default async function BlogDetails({
   params,
@@ -16,6 +16,7 @@ export default async function BlogDetails({
   return (
     <>
       <Hero
+        heroStyle="90px"
         animationData={animationData}
         displayBtns={false}
         desktopSectionId="section1"
@@ -86,9 +87,7 @@ export default async function BlogDetails({
                   (paragraph, index) => (
                     <div key={index} className="flex items-center gap-2">
                       <div className="bg-[#4D4D4D] size-1 rounded-full"></div>
-                      <p className="text-sm text-[#4D4D4D] ">
-                        {paragraph}
-                      </p>
+                      <p className="text-sm text-[#4D4D4D] ">{paragraph}</p>
                     </div>
                   ),
                 )}
