@@ -16,6 +16,7 @@ export default function ProjectsPage() {
   return (
     <>
       <Hero
+        heroStyle="100px"
         animationData={animationData}
         desktopSectionId="projects2"
         mobileSectionId="projects1"

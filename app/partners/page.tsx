@@ -41,7 +41,7 @@ export default function Partners() {
         </div>
         <div
           className="relative w-full xl:block hidden pointer-events-none"
-          style={{ paddingTop: "130px" }}
+          style={{ paddingTop: "150px" }}
         >
           <Lottie
             lottieRef={lottieDesktopRef}
