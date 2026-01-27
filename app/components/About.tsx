@@ -77,29 +77,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        {/* Second Section */}
-        {/* <div
-          className="bg-[#F6F6F6] flex flex-col md:flex-row items-center justify-center py-2 mt-10 rounded-4xl md:mx-0 mx-10 md:px-0 px-10 w-fit m-auto"
-          style={{ fontFamily: "Poppins" }}
-        >
-          {aboutStatistiques.map((stat, index) => (
-            <div
-              key={index}
-              className={`flex flex-col items-center gap-2 md:px-20 py-5 ${
-                stat.title !== "12+"
-                  ? "md:border-r-4 border-r-0 md:border-b-0 border-b-4 border-white"
-                  : ""
-              } `}
-            >
-              <span className="text-[#3C8101] text-3xl font-bold ">
-                {stat.title}
-              </span>
-              <span className="text-[rgb(77,77,77)] text-center">
-                {stat.subtitle}
-              </span>
-            </div>
-          ))}
-        </div> */}
+      
         <div
           className="bg-[#F6F6F6] py-2 mt-10 rounded-4xl md:mx-0 mx-2 md:px-0 px-3 w-fit m-auto"
           style={{ fontFamily: "Poppins" }}
@@ -145,12 +123,9 @@ export default function About() {
         className="md:mt-20 mt-15 flex flex-col items-center md:gap-8 gap-5 md:py-20 py-10 relative overflow-hidden"
         style={{ fontFamily: "Poppins" }}
       >
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="w-full h-full flex blur-sm">
-            <div className="shrink-0 h-full">
-              <AnimatedBg />
-            </div>
-            <div className="shrink-0 h-full bg-red-300">
+        <div className="absolute inset-0 -z-10 overflow-hidden w-full">
+          <div className="w-full h-full flex">
+            <div className="shrink-0 h-full w-full">
               <SectionAnimatedBg />
             </div>
           </div>
