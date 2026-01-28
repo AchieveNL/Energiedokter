@@ -83,18 +83,18 @@ export default function Hero({
         </p>
         <div
           style={{ display: displayBtns ? "flex" : "none" }}
-          className="flex lg:justify-start justify-center lg:gap-5 gap-2 lg:mt-10 mt-5 lg:mb-0"
+          className="flex lg:justify-start justify-center items-center lg:gap-5 gap-2 lg:mt-10 mt-5 lg:mb-0"
         >
           <Link
             href="/contact"
-            className="text-white bg-[#81C713] hover:bg-[#689e12] transition-all duration-200 md:py-2 md:pb-3 px-5 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
+            className="text-white bg-[#81C713] hover:bg-[#689e12] transition-all duration-200 py-3 px-8 rounded-full inline-flex items-center justify-center md:text-lg text-sm"
           >
             Plan een gesprek
           </Link>
           <Link
             onClick={() => scrollToSection(desktopSectionId, mobileSectionId)}
             href="#"
-            className="text-[#4D4D4D] bg-white hover:bg-[#82c71350] transition-all duration-200 md:py-2 md:pb-3 p-3 px-8 rounded-full flex items-center justify-center w-fit md:text-lg text-sm "
+            className="text-[#4D4D4D] bg-white hover:bg-[#82c71350] transition-all duration-200 py-3 px-8 rounded-full inline-flex items-center justify-center md:text-lg text-sm"
           >
             Lees meer
           </Link>
