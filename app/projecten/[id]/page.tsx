@@ -6,6 +6,7 @@ import Projects from "@/app/components/Projects";
 import { projectPage } from "@/app/data/projectPage";
 import animationData from "@/public/assets/animations/projecten.json";
 
+
 export default async function BlogDetails({
   params,
 }: {
@@ -20,14 +21,13 @@ export default async function BlogDetails({
         animationData={animationData}
         displayBtns={false}
         desktopSectionId="section1"
-        title="Blog"
+        title="Projecten"
         span={
           <span className="font-black md:text-4xl text-2xl text-[#254055] flex flex-col gap-2 ">
             {projectPage[Number(id) - 1].title}
           </span>
         }
         text=""
-        // text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. At rem distinctio corrupti veniam magni dolor quibusdam, iste quidem nam dolorum non eligendi? Qui deserunt nobis rerum repudiandae, molestias pariatur harum."
       />
       <div id="section1"></div>
       <ImagesSlider images={projectPage[Number(id) - 1].imgs} />

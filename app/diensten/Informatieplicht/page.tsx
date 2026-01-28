@@ -12,7 +12,8 @@ import ServicesCTA from "@/app/components/ServicesCTA";
 import ServicesStats from "@/app/components/ServicesStats";
 import StepPlan from "@/app/components/StepPlan";
 import Link from "next/link";
-import animationData from "@/public/assets/animations/arrows.json";
+import animationData from "@/public/assets/animations/informatieplicht.json";
+import animationData1 from "@/public/assets/animations/arrows.json";
 import AnimatedBg from "@/app/components/AnimatedBg";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import { useRef } from "react";
@@ -127,7 +128,7 @@ export default function Service3() {
         <div className="w-full absolute -z-10">
           <Lottie
             lottieRef={lottieDesktopRef}
-            animationData={animationData}
+            animationData={animationData1}
             loop
             autoplay
             style={{ width: "100%", height: "auto" }}

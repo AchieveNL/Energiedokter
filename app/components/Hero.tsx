@@ -64,6 +64,7 @@ export default function Hero({
           autoplay
           style={{ width: "100%", height: "auto" }}
         />
+        <div className="bg-white p-1 -mt-1 -mb-1"></div>
       </div>
 
       <div className="lg:absolute md:pt-20 lg:pt-36 lg:ml-10">
@@ -107,6 +108,7 @@ export default function Hero({
             autoplay
             style={{ width: "100%", height: "auto" }}
           />
+          <div className="bg-white p-1 -mt-1 -mb-1"></div>
         </div>
       </div>
     </div>

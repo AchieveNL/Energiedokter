@@ -56,6 +56,7 @@ export default function Service5() {
             autoplay
             style={{ width: "100%", height: "auto" }}
           />
+          <div className="bg-white p-1 -mt-1 -mb-1"></div>
         </div>
         <div className="lg:absolute pt-36 flex flex-col items-center">
           <div className="md:flex hidden text-center  ">
