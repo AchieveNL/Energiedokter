@@ -50,6 +50,7 @@ export default function Partners() {
             autoplay
             style={{ width: "100%", height: "auto" }}
           />
+          <div className="bg-white p-1 -mt-1 -mb-1"></div>
         </div>
         <div className="xl:absolute pt-36 md:w-2/3 lg:w-1/2 flex flex-col items-center">
           <div className="lg:flex hidden text-center  ">
@@ -106,6 +107,7 @@ export default function Partners() {
             autoplay
             style={{ width: "100%", height: "auto" }}
           />
+          <div className="bg-white p-1 -mt-px -mb-1"></div>
         </div>
       </div>
 

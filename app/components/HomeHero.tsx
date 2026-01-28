@@ -89,7 +89,7 @@ export default function HomeHero() {
           autoplay
           style={{ width: "100%", height: "auto" }}
         />
-        <div className="py-3 bg-white"></div>
+        <div className="py-3 bg-white -mt-0.5"></div>
         <BrandList />
       </div>
     </div>
