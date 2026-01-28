@@ -10,6 +10,7 @@ import Projects from "../components/Projects";
 import Hero from "../components/Hero";
 import animationData from "@/public/assets/animations/over ons.json";
 import AnimatedBg from "../components/AnimatedBg";
+import SectionAnimatedBg from "../components/SectionAnimatedBg";
 
 export default function AboutPage() {
   return (
@@ -38,9 +39,12 @@ export default function AboutPage() {
       <div className="md:mt-32 mt-20"></div>
       {/* help */}
       <div
-        className="bg-[url('/assets/HomeHeroBg.svg')] bg-cover lg:p-7 p-3 rounded-tl-4xl rounded-br-4xl md:mx-10 xl:mx-24 mx-3 relative"
+        className="lg:p-7 p-3 rounded-tl-4xl rounded-br-4xl md:mx-10 xl:mx-24 mx-3 relative"
         style={{ fontFamily: "Poppins" }}
       >
+        <div className="inset-0 absolute w-full -z-10 rounded-tl-4xl rounded-br-4xl overflow-hidden">
+          <SectionAnimatedBg />
+        </div>
         <div className="lg:w-auto w-2/3 pb-3">
           <h1 className="text-[#0D2131] font-bold md:text-2xl pb-2 ">
             Last van energieverlies? De{" "}
