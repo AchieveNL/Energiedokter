@@ -286,14 +286,14 @@ export default function Footer() {
           >
             <div className="flex gap-2">
               <Link href="#" className="hover:underline">
-                Privacy Policy
+                Algemene voorwaarden
               </Link>
               <Link href="#" className="hover:underline">
-                Terms Of Service
+                Privacy beleid
               </Link>
             </div>
             <div>
-              Developed by{" "}
+              Ontwikkeld door{" "}
               <Link href="http://achieve.nl" className="hover:underline">
                 Achieve.nl
               </Link>
@@ -387,14 +387,14 @@ export default function Footer() {
         >
           <div className="flex gap-5">
             <Link href="#" className="hover:underline">
-              Privacy Policy
+              Algemene voorwaarden
             </Link>
             <Link href="#" className="hover:underline">
-              Terms Of Service
+              Privacy beleid
             </Link>
           </div>
           <div>
-            Developed by{" "}
+            Ontwikkeld door{" "}
             <Link href="http://achieve.nl" className="hover:underline">
               Achieve.nl
             </Link>
@@ -408,14 +408,14 @@ export default function Footer() {
         >
           <div className="flex gap-2">
             <Link href="#" className="hover:underline">
-              Privacy Policy
+              Algemene voorwaarden
             </Link>
             <Link href="#" className="hover:underline">
-              Terms Of Service
+              Privacy beleid
             </Link>
           </div>
           <div>
-            Developed by{" "}
+            Ontwikkeld door{" "}
             <Link href="http://achieve.nl" className="hover:underline">
               Achieve.nl
             </Link>

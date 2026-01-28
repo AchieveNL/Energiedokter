@@ -12,10 +12,10 @@ export default function Nav() {
   // Map pathnames to nav link text
   const getActiveLink = () => {
     if (pathname === "/") return "Home";
-    if (pathname === "/about-us") return "Over ons";
+    if (pathname === "/over-ons") return "Over ons";
     if (pathname === "/partners") return "Partners";
-    if (pathname === "/projects") return "Projecten";
-    if(pathname.startsWith("/projects")) return "Projecten";
+    if (pathname === "/projecten") return "Projecten";
+    if(pathname.startsWith("/projecten")) return "Projecten";
     if (pathname === "/blogs") return "Blogs";
     if (pathname === "/faq") return "FAQ";
     if (pathname === "/contact") return "Contact";
@@ -70,7 +70,7 @@ export default function Nav() {
         {/* Desktop Navigation */}
         <div className="hidden xl:flex bg-[#FFFFFF78] items-center gap-3 rounded-2xl px-3 py-1">
           <NavLink href="/" text="Home" active={active} />
-          <NavLink href="/about-us" text="Over ons" active={active} />
+          <NavLink href="/over-ons" text="Over ons" active={active} />
           <NavLinkDropdown
             text="Diensten"
             active={active}
@@ -94,7 +94,7 @@ export default function Nav() {
             ]}
           />
           <NavLink href="/partners" text="Partners" active={active} />
-          <NavLink href="/projects" text="Projecten" active={active} />
+          <NavLink href="/projecten" text="Projecten" active={active} />
           <NavLink href="/blogs" text="Blogs" active={active} />
           <NavLink href="/faq" text="FAQ" active={active} />
           <NavLink href="/contact" text="Contact" active={active} />
@@ -119,7 +119,7 @@ export default function Nav() {
       >
         <div className="bg-[#ffffff] flex flex-col w-full px-2 relative pt-15 gap-1">
           <NavLink href="/" text="Home" active={active} />
-          <NavLink href="/about-us" text="Over ons" active={active} />
+          <NavLink href="/over-ons" text="Over ons" active={active} />
           <NavLinkDropdown
             text="Diensten"
             active={active}
@@ -144,7 +144,7 @@ export default function Nav() {
           />
 
           <NavLink href="/partners" text="Partners" active={active} />
-          <NavLink href="/projects" text="Projecten" active={active} />
+          <NavLink href="/projecten" text="Projecten" active={active} />
           <NavLink href="/blogs" text="Blogs" active={active} />
           <NavLink href="/faq" text="FAQ" active={active} />
           <NavLink href="/contact" text="Contact" active={active} />
