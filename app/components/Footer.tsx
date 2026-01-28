@@ -232,7 +232,7 @@ export default function Footer() {
                     className="md:size-13 size-10"
                   />
                 </Link>
-                <Link href="#">
+                <Link href="mailto:info@energiedokter.nl">
                   <img
                     src="/assets/footer/mail.svg"
                     className="md:size-13 size-10"
@@ -342,7 +342,7 @@ export default function Footer() {
                   alt="Phone"
                 />
               </Link>
-              <Link href="#">
+              <Link href="mailto:info@energiedokter.nl">
                 <img
                   src="/assets/footer/mail.svg"
                   className="md:size-13 size-10"
