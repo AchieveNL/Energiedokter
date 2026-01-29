@@ -56,7 +56,7 @@ export default function StepPlan({
   return (
     <div
       ref={containerRef}
-      className="relative overflow-hidden bg-[linear-gradient(to_top,#FFFFFF,#F2F2CA80,#E5F0BFBF,#D0F0E7BF)] md:py-10 py-5 px-5 min-[768px]:px-20 min-[1280px]:px-24 min-[1700px]:px-50 min-[2000px]:px-80"
+      className="relative overflow-hidden bg-[linear-gradient(to_top,#FFFFFF,#F2F2CA80,#E5F0BFBF,#D0F0E7BF)] md:pt-10 pt-5 px-5 min-[768px]:px-20 min-[1280px]:px-24 min-[1700px]:px-50 min-[2000px]:px-80"
       style={{ fontFamily: "Poppins", minHeight: `${minHeight}px` }}
     >
       {/* Layer 2: Lottie Animation */}

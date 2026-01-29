@@ -33,7 +33,7 @@ export default function Partners() {
   return (
     <>
       <div
-        className="flex flex-col items-center gap-3 relative md:mb-10 mb-5 "
+        className="flex flex-col items-center gap-3 relative"
         style={{ fontFamily: "Poppins" }}
       >
         <div className="absolute inset-0 -z-10 h-full">
