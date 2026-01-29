@@ -25,30 +25,25 @@ export default function AboutSection() {
       style={{ fontFamily: "Poppins" }}
       className="md:pt-20 lg:pt-28 pt-10 flex lg:flex-row flex-col md:gap-5 lg:gap-10 gap-1 md:mx-20 mx-5"
     >
-      <div className="lg:hidden block">
-        <div className="w-full relative flex items-center">
-          <img
-            src="/assets/about/img1.png"
-            className="w-10 rounded-full absolute left-0"
-          />
-          <img
-            src="/assets/about/img2.png"
-            className="size-10 rounded-full absolute left-7 z-10"
-          />
-          <img
-            src="/assets/about/img3.png"
-            className="size-10 rounded-full absolute left-14 z-20"
-          />
-          <Plus className="bg-black rounded-full absolute z-30 left-21 size-10 text-white p-3" />
-          <span className="text-[#4D4D4D] ml-34 text-sm ">
-            Onze klanten vertrouwen ons
-          </span>
-        </div>
-        <div className="flex gap-3 items-center mt-3">
-          <span className="text-[#3C8101] font-bold text-3xl ">150+</span>
-          <span className="text-[#4D4D4D] text-sm ">
-            Positieve beoordelingen
-          </span>
+      <div className="lg:hidden flex flex-col gap-3">
+        <h1 className="text-xl text-[#254055] font-extrabold">
+          Onze klanten <span className="text-[#81C713]">vertrouwen</span> ons
+        </h1>
+        <div className="items-center gap-5 flex lg:hidden">
+          <div className="p-[2px] rounded-2xl bg-linear-to-b from-[#F2F2CA80] to-[#D0F0E7BF] w-15 h-15">
+            <div className="w-full h-full rounded-2xl bg-white p-3 flex items-center justify-center">
+              <img
+                src="/assets/about/google.png"
+                className="w-full h-full object-contain"
+                alt=""
+              />
+            </div>
+          </div>
+          <div>
+            <h1 className="text-[#4D4D4D]">Bekijk onze Google Reviews</h1>
+            <img src="/assets/about/stars.png" className="w-24 mt-2" alt="" />
+            <div className="text-transparent">-</div>
+          </div>
         </div>
       </div>
 
@@ -103,29 +98,24 @@ export default function AboutSection() {
       {/* right section */}
       <div className="lg:w-1/2 flex flex-col gap-5">
         <div className="lg:block hidden">
-          <div className="w-full relative flex items-center">
-            <img
-              src="/assets/about/img1.png"
-              className="w-10 rounded-full absolute left-0"
-            />
-            <img
-              src="/assets/about/img2.png"
-              className="size-10 rounded-full absolute left-7 z-10"
-            />
-            <img
-              src="/assets/about/img3.png"
-              className="size-10 rounded-full absolute left-14 z-20"
-            />
-            <Plus className="bg-black rounded-full absolute z-30 left-21 size-10 text-white p-3" />
-            <span className="text-[#4D4D4D] ml-34 text-sm ">
-              Onze klanten vertrouwen ons
-            </span>
+          <h1 className="text-3xl text-[#254055] font-extrabold">
+            Onze klanten <span className="text-[#81C713]">vertrouwen</span> ons
+          </h1>
+        </div>
+        <div className="items-center gap-5 hidden lg:flex">
+          <div className="p-[2px] rounded-2xl bg-linear-to-b from-[#F2F2CA80] to-[#D0F0E7BF] w-20 h-20">
+            <div className="w-full h-full rounded-2xl bg-white p-4 flex items-center justify-center">
+              <img
+                src="/assets/about/google.png"
+                className="w-full h-full object-contain"
+                alt=""
+              />
+            </div>
           </div>
-          <div className="flex gap-3 items-center mt-3">
-            <span className="text-[#3C8101] font-bold text-3xl ">150+</span>
-            <span className="text-[#4D4D4D] text-sm ">
-              Positieve beoordelingen
-            </span>
+          <div>
+            <h1 className="text-[#4D4D4D]">Bekijk onze Google Reviews</h1>
+            <img src="/assets/about/stars.png" className="w-24 mt-2" alt="" />
+            <div className="text-transparent">-</div>
           </div>
         </div>
 
