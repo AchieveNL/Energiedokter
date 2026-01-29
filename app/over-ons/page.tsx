@@ -39,7 +39,7 @@ export default function AboutPage() {
       <div className="md:mt-32 mt-20"></div>
       {/* help */}
       <div
-        className="lg:p-7 p-3 rounded-tl-4xl rounded-br-4xl md:mx-10 xl:mx-24 mx-3 relative"
+        className="lg:p-7 p-3 rounded-tl-4xl rounded-br-4xl min-[768px]:mx-10 min-[1280px]:mx-28 min-[1500px]:mx-52 min-[1700px]:mx-60 min-[1900px]:mx-90 min-[2200px]:mx-100 min-[2300px]:mx-120 min-[2500px]:mx-150 mx-3 relative"
         style={{ fontFamily: "Poppins" }}
       >
         <div className="inset-0 absolute w-full -z-10 rounded-tl-4xl rounded-br-4xl overflow-hidden">
@@ -70,6 +70,7 @@ export default function AboutPage() {
             Bekijk alle diensten
           </Link>
         </div>
+        <div className="bg-white p-1 absolute w-full -top-[13%] z-20"></div>
         <img
           src="/assets/about/man.svg"
           className="absolute bottom-0 md:right-32 right-5 h-[110%] lg:block hidden"
