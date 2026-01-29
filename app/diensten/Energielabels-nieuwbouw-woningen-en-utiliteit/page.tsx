@@ -152,12 +152,12 @@ export default function Service2() {
 
       <div className="md:mt-20 mt-15"></div>
 
-      <StepPlan />
+      <StepPlan activeBtn="Energielabels" />
       <Contact />
       <div className="md:mt-31 mt-10"></div>
       <ServicesStats text="Bij Energie Dokter begeleiden we uw project vanaf het ontwerptraject en voeren we de EP-berekening uit volgens de BENG-eisen. Onze adviseurs geven praktisch advies over installaties en isolatie, zorgen voor de officiële registratie bij de RVO en houden het proces transparant en overzichtelijk. Zo bent u verzekerd van een compliant, energiezuinig en toekomstbestendig nieuwbouwproject dat voldoet aan alle wettelijke eisen." />
       <div className="md:py-10 py-7"></div>
-      <Faq />
+      <Faq activeTab="Energielabels" />
       <Projects />
       <div className="bg-cover py-10 mt-10 relative ">
         <div className="inset-0 absolute -z-10">

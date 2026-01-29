@@ -171,7 +171,7 @@ export default function Service1() {
       <div className="py-3"></div>
 
       <div className="md:mt-20 mt-10"></div>
-      <StepPlan />
+      <StepPlan activeBtn="Energielabels" />
       <Contact />
 
       <div className="md:mt-31 mt-10"></div>
@@ -187,7 +187,7 @@ export default function Service1() {
           waarde voor uw woning."
       />
       <div className="md:py-10 py-7"></div>
-      <Faq />
+      <Faq activeTab="Energielabels" />
       <Projects />
       <div className="bg-cover py-10 mt-10 relative ">
         <div className="inset-0 absolute -z-10">

@@ -233,7 +233,7 @@ export default function Service5() {
       <div className="md:mt-31 mt-10"></div>
       <ServicesStats text="Bij Energie Dokter combineren we technische kennis, ervaring en praktische oplossingen. Onze gecertificeerde adviseurs voeren grondige analyses uit, stellen een maatwerkplan op en monitoren uw WKO-installatie continu. Zo bent u verzekerd van optimale prestaties, inzicht in besparingsmogelijkheden en betrouwbare ondersteuning bij onderhoud en aanpassingen. Met Energie Dokter haalt u niet alleen een goed beheerde WKO-installatie in huis, maar ook rust, zekerheid en duurzame waarde voor uw gebouw." />
       <div className="md:py-10 py-7"></div>
-      <Faq />
+      <Faq activeTab="WKO-beheer" />
       <Projects />
       <div className="bg-cover py-10 mt-10 relative ">
         <div className="inset-0 absolute -z-10">

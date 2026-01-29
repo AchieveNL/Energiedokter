@@ -144,7 +144,7 @@ export default function Service3() {
       <ServicesStats text="Bij Energie Dokter combineren we technische expertise met praktische uitvoerbaarheid. Wij zorgen dat uw informatieplicht volledig en correct wordt nageleefd, en vertalen complexe regelgeving naar overzichtelijke, bruikbare adviezen. Van opname en analyse tot rapportage en advies: onze adviseurs begeleiden u stap voor stap, zodat u precies weet wat nodig is en direct actie kunt ondernemen. Zo krijgt u niet alleen inzicht in uw energieverbruik, maar ook grip op kosten, duurzaamheid en toekomstbestendigheid van uw gebouwen." />
       <div className="md:py-10 py-7"></div>
 
-      <Faq />
+      <Faq activeTab="Informatieplicht" />
       <Projects />
       <div className="bg-cover py-10 mt-10 relative ">
         <div className="inset-0 absolute -z-10">

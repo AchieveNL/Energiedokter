@@ -154,7 +154,7 @@ export default function Service6() {
       <StepPlan activeBtn="Trainingen" />
       <Contact />
       <div className="md:py-10 py-7"></div>
-      <Faq />
+      <Faq activeTab="Trainingen" />
       <Projects />
       <div className="bg-cover py-10 mt-10 relative ">
         <div className="inset-0 absolute -z-10">

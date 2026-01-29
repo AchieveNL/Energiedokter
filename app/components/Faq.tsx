@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
 import { data } from "../data/faq";
 
-export default function Faq() {
+export default function Faq({ activeTab="Algemene vragen" }: { activeTab?: string }) {
   const services = [
     "Algemene vragen",
-    "Energielabels",              
+    "Energielabels",
     "GACS",
     "Informatieplicht",
     "WKO-beheer",
     "Trainingen",
   ];
-  const [active, setActive] = useState<string>("Algemene vragen");
+  const [active, setActive] = useState<string>(activeTab);
   const [open, setOpen] = useState<number | null>(null);
 
   const toggleActive = ({ title }: { title: string }) => {
