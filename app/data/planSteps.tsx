@@ -20,7 +20,7 @@ export const planSteps = [
           <br />
           Onderdeel van de diagnose:
           <br />
-          <ul className="space-y-2 ml-3">
+          <ul className="space-y-2 ml-3 mt-3">
             <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
               Benchmark werkelijk energieverbruik
             </li>
@@ -54,7 +54,7 @@ export const planSteps = [
           <br />
           Dit behandelplan kan bestaan uit:
           <br />
-          <ul className="space-y-2 ml-2">
+          <ul className="space-y-2 ml-2 mt-3">
             <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
               EED-audit
             </li>
@@ -114,7 +114,7 @@ export const planSteps = [
         <>
           Tijdens het bezoek bekijkt de energieadviseur:
           <br />
-          <ul className="space-y-2 ml-3">
+          <ul className="space-y-2 ml-3 mt-3">
             <li className="relative pl-5 before:absolute before:left-0 before:top-2 before:h-2 before:w-2 before:rounded-full before:bg-black">
               De isolatie van dak, gevels en vloeren
             </li>
