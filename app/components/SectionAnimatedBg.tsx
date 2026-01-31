@@ -1,32 +1,18 @@
 export default function SectionAnimatedBg({ speed = 1 }) {
   const baseSpeed = {
-    gradient1: 25 / speed,
-    gradient2: 22 / speed,
-    gradient3: 28 / speed,
-    gradient4: 24 / speed,
-    gradient5: 26 / speed,
-    rect: 30 / speed,
-    circle1Cx: 35 / speed,
-    circle1Cy: 40 / speed,
-    circle1R: 33 / speed,
-    circle2Cx: 38 / speed,
-    circle2Cy: 42 / speed,
-    circle2R: 36 / speed,
-    circle3Cx: 40 / speed,
-    circle3Cy: 38 / speed,
-    circle3R: 35 / speed,
-    circle4Cx: 42 / speed,
-    circle4Cy: 45 / speed,
-    circle4R: 40 / speed,
-    circle5Cx: 44 / speed,
-    circle5Cy: 48 / speed,
-    circle5R: 38 / speed,
-    circle6Cx: 46 / speed,
-    circle6Cy: 43 / speed,
-    circle6R: 41 / speed,
-    circle7Cx: 39 / speed,
-    circle7Cy: 47 / speed,
-    circle7R: 37 / speed,
+    gradient1: 8 / speed,
+    gradient2: 7 / speed,
+    gradient3: 9 / speed,
+    gradient4: 7.5 / speed,
+    gradient5: 8.5 / speed,
+    rect: 12 / speed,
+    circle1: 15 / speed,
+    circle2: 18 / speed,
+    circle3: 16 / speed,
+    circle4: 14 / speed,
+    circle5: 17 / speed,
+    circle6: 19 / speed,
+    circle7: 13 / speed,
   };
 
   return (
@@ -55,7 +41,10 @@ export default function SectionAnimatedBg({ speed = 1 }) {
               repeatCount="indefinite"
             />
           </stop>
-          <stop offset="100%" style={{ stopColor: "#d1f0f5", stopOpacity: 0.3 }} />
+          <stop
+            offset="100%"
+            style={{ stopColor: "#d1f0f5", stopOpacity: 0.3 }}
+          />
         </radialGradient>
 
         {/* Green gradient for center */}
@@ -76,7 +65,10 @@ export default function SectionAnimatedBg({ speed = 1 }) {
               repeatCount="indefinite"
             />
           </stop>
-          <stop offset="100%" style={{ stopColor: "#e5f0c0", stopOpacity: 0.3 }} />
+          <stop
+            offset="100%"
+            style={{ stopColor: "#e5f0c0", stopOpacity: 0.3 }}
+          />
         </radialGradient>
 
         {/* Transition gradient - blue-green */}
@@ -97,7 +89,10 @@ export default function SectionAnimatedBg({ speed = 1 }) {
               repeatCount="indefinite"
             />
           </stop>
-          <stop offset="100%" style={{ stopColor: "#d8f0e5", stopOpacity: 0.25 }} />
+          <stop
+            offset="100%"
+            style={{ stopColor: "#d8f0e5", stopOpacity: 0.25 }}
+          />
         </radialGradient>
 
         {/* Accent gradient */}
@@ -110,8 +105,14 @@ export default function SectionAnimatedBg({ speed = 1 }) {
               repeatCount="indefinite"
             />
           </stop>
-          <stop offset="60%" style={{ stopColor: "#b5e5ed", stopOpacity: 0.5 }} />
-          <stop offset="100%" style={{ stopColor: "#d1f0f5", stopOpacity: 0.2 }} />
+          <stop
+            offset="60%"
+            style={{ stopColor: "#b5e5ed", stopOpacity: 0.5 }}
+          />
+          <stop
+            offset="100%"
+            style={{ stopColor: "#d1f0f5", stopOpacity: 0.2 }}
+          />
         </radialGradient>
 
         {/* Accent gradient green */}
@@ -124,8 +125,14 @@ export default function SectionAnimatedBg({ speed = 1 }) {
               repeatCount="indefinite"
             />
           </stop>
-          <stop offset="50%" style={{ stopColor: "#d0e8a0", stopOpacity: 0.6 }} />
-          <stop offset="100%" style={{ stopColor: "#e0edb5", stopOpacity: 0.2 }} />
+          <stop
+            offset="50%"
+            style={{ stopColor: "#d0e8a0", stopOpacity: 0.6 }}
+          />
+          <stop
+            offset="100%"
+            style={{ stopColor: "#e0edb5", stopOpacity: 0.2 }}
+          />
         </radialGradient>
 
         <filter id="blur-smoke">
@@ -158,20 +165,20 @@ export default function SectionAnimatedBg({ speed = 1 }) {
       >
         <animate
           attributeName="cx"
-          values="200;280;320;250;200"
-          dur={`${baseSpeed.circle1Cx}s`}
+          values="200;350;150;280;200"
+          dur={`${baseSpeed.circle1}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="cy"
-          values="200;180;220;210;200"
-          dur={`${baseSpeed.circle1Cy}s`}
+          values="200;100;280;150;200"
+          dur={`${baseSpeed.circle1}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="r"
-          values="280;310;270;300;280"
-          dur={`${baseSpeed.circle1R}s`}
+          values="280;350;240;310;280"
+          dur={`${baseSpeed.circle1}s`}
           repeatCount="indefinite"
         />
       </circle>
@@ -186,20 +193,20 @@ export default function SectionAnimatedBg({ speed = 1 }) {
       >
         <animate
           attributeName="cx"
-          values="350;420;480;400;350"
-          dur={`${baseSpeed.circle5Cx}s`}
+          values="350;480;320;420;350"
+          dur={`${baseSpeed.circle5}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="cy"
-          values="280;260;295;275;280"
-          dur={`${baseSpeed.circle5Cy}s`}
+          values="280;180;340;240;280"
+          dur={`${baseSpeed.circle5}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="r"
-          values="200;220;190;215;200"
-          dur={`${baseSpeed.circle5R}s`}
+          values="200;260;180;230;200"
+          dur={`${baseSpeed.circle5}s`}
           repeatCount="indefinite"
         />
       </circle>
@@ -215,20 +222,20 @@ export default function SectionAnimatedBg({ speed = 1 }) {
       >
         <animate
           attributeName="cx"
-          values="800;750;850;780;800"
-          dur={`${baseSpeed.circle2Cx}s`}
+          values="800;680;920;750;800"
+          dur={`${baseSpeed.circle2}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="cy"
-          values="200;240;160;220;200"
-          dur={`${baseSpeed.circle2Cy}s`}
+          values="200;300;100;250;200"
+          dur={`${baseSpeed.circle2}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="r"
-          values="300;330;290;320;300"
-          dur={`${baseSpeed.circle2R}s`}
+          values="300;380;260;340;300"
+          dur={`${baseSpeed.circle2}s`}
           repeatCount="indefinite"
         />
       </circle>
@@ -243,20 +250,20 @@ export default function SectionAnimatedBg({ speed = 1 }) {
       >
         <animate
           attributeName="cx"
-          values="700;760;640;720;700"
-          dur={`${baseSpeed.circle6Cx}s`}
+          values="700;820;600;760;700"
+          dur={`${baseSpeed.circle6}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="cy"
-          values="120;80;140;100;120"
-          dur={`${baseSpeed.circle6Cy}s`}
+          values="120;40;200;80;120"
+          dur={`${baseSpeed.circle6}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="r"
-          values="180;200;170;195;180"
-          dur={`${baseSpeed.circle6R}s`}
+          values="180;240;160;210;180"
+          dur={`${baseSpeed.circle6}s`}
           repeatCount="indefinite"
         />
       </circle>
@@ -272,20 +279,20 @@ export default function SectionAnimatedBg({ speed = 1 }) {
       >
         <animate
           attributeName="cx"
-          values="1400;1320;1280;1350;1400"
-          dur={`${baseSpeed.circle3Cx}s`}
+          values="1400;1250;1450;1320;1400"
+          dur={`${baseSpeed.circle3}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="cy"
-          values="200;220;180;210;200"
-          dur={`${baseSpeed.circle3Cy}s`}
+          values="200;300;100;250;200"
+          dur={`${baseSpeed.circle3}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="r"
-          values="280;310;270;300;280"
-          dur={`${baseSpeed.circle3R}s`}
+          values="280;350;240;310;280"
+          dur={`${baseSpeed.circle3}s`}
           repeatCount="indefinite"
         />
       </circle>
@@ -300,20 +307,20 @@ export default function SectionAnimatedBg({ speed = 1 }) {
       >
         <animate
           attributeName="cx"
-          values="1250;1180;1120;1200;1250"
-          dur={`${baseSpeed.circle4Cx}s`}
+          values="1250;1120;1280;1180;1250"
+          dur={`${baseSpeed.circle4}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="cy"
-          values="280;295;265;285;280"
-          dur={`${baseSpeed.circle4Cy}s`}
+          values="280;360;180;320;280"
+          dur={`${baseSpeed.circle4}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="r"
-          values="200;220;190;215;200"
-          dur={`${baseSpeed.circle4R}s`}
+          values="200;260;180;230;200"
+          dur={`${baseSpeed.circle4}s`}
           repeatCount="indefinite"
         />
       </circle>
@@ -329,20 +336,20 @@ export default function SectionAnimatedBg({ speed = 1 }) {
       >
         <animate
           attributeName="cx"
-          values="550;600;580;520;550"
-          dur={`${baseSpeed.circle7Cx}s`}
+          values="550;650;480;600;550"
+          dur={`${baseSpeed.circle7}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="cy"
-          values="200;240;160;180;200"
-          dur={`${baseSpeed.circle7Cy}s`}
+          values="200;300;120;260;200"
+          dur={`${baseSpeed.circle7}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="r"
-          values="220;240;210;235;220"
-          dur={`${baseSpeed.circle7R}s`}
+          values="220;280;190;250;220"
+          dur={`${baseSpeed.circle7}s`}
           repeatCount="indefinite"
         />
       </circle>
@@ -357,20 +364,20 @@ export default function SectionAnimatedBg({ speed = 1 }) {
       >
         <animate
           attributeName="cx"
-          values="1050;1000;1080;1020;1050"
-          dur={`${baseSpeed.circle7Cx}s`}
+          values="1050;950;1120;1000;1050"
+          dur={`${baseSpeed.circle7}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="cy"
-          values="200;240;160;220;200"
-          dur={`${baseSpeed.circle7Cy}s`}
+          values="200;300;100;260;200"
+          dur={`${baseSpeed.circle7}s`}
           repeatCount="indefinite"
         />
         <animate
           attributeName="r"
-          values="220;240;210;235;220"
-          dur={`${baseSpeed.circle7R}s`}
+          values="220;280;190;250;220"
+          dur={`${baseSpeed.circle7}s`}
           repeatCount="indefinite"
         />
       </circle>
