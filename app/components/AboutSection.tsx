@@ -1,6 +1,7 @@
 "use client";
 
 import { Plus } from "lucide-react";
+import Link from "next/link";
 
 export default function AboutSection() {
   const Statics = ({
@@ -29,7 +30,11 @@ export default function AboutSection() {
         <h1 className="text-xl text-[#254055] font-extrabold">
           Onze klanten <span className="text-[#81C713]">vertrouwen</span> ons
         </h1>
-        <div className="items-center gap-5 flex lg:hidden">
+        <Link
+          href="https://maps.app.goo.gl/odE4dC1eoqHBEMfD9"
+          target="_blank"
+          className="items-center gap-5 flex lg:hidden"
+        >
           <div className="p-[2px] rounded-2xl bg-linear-to-b from-[#F2F2CA80] to-[#D0F0E7BF] w-15 h-15">
             <div className="w-full h-full rounded-2xl bg-white p-3 flex items-center justify-center">
               <img
@@ -44,7 +49,7 @@ export default function AboutSection() {
             <img src="/assets/about/stars.png" className="w-24 mt-2" alt="" />
             <div className="text-transparent">-</div>
           </div>
-        </div>
+        </Link>
       </div>
 
       {/* left section */}
@@ -102,7 +107,7 @@ export default function AboutSection() {
             Onze klanten <span className="text-[#81C713]">vertrouwen</span> ons
           </h1>
         </div>
-        <div className="items-center gap-5 hidden lg:flex">
+        <Link href="https://maps.app.goo.gl/odE4dC1eoqHBEMfD9" target="_blank" className="items-center gap-5 hidden lg:flex">
           <div className="p-[2px] rounded-2xl bg-linear-to-b from-[#F2F2CA80] to-[#D0F0E7BF] w-20 h-20">
             <div className="w-full h-full rounded-2xl bg-white p-4 flex items-center justify-center">
               <img
@@ -117,7 +122,7 @@ export default function AboutSection() {
             <img src="/assets/about/stars.png" className="w-24 mt-2" alt="" />
             <div className="text-transparent">-</div>
           </div>
-        </div>
+        </Link>
 
         <div className="bg-[#F0F8E2] rounded-4xl md:p-7 p-4 md:px-10 flex flex-col gap-5 md:mt-0 mt-7">
           <h1 className="text-[#254055] md:text-3xl text-2xl font-extrabold ">
